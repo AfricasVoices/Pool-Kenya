@@ -4,7 +4,7 @@ from src.pipeline_configuration_spec import *
 
 rapid_pro_uuid_filter = UuidFilter(
     uuid_file_url="gs://avf-project-datasets/2022/POOL-KENYA/initial-pool-kenya-de-identified-uuids.json"
-),
+)
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="Create-Kenya-Pool",
@@ -158,7 +158,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_location", #TODO Rename as Pool_Kenya_location
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("kenya_constituency"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("kenya_county"), auto_coder=None)
                     ],
                     ws_code_string_value="location"
@@ -167,7 +167,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_gender",
                     engagement_db_dataset="gender",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("gender"),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
                                                 auto_coder=swahili.DemographicCleaner.clean_gender)
                     ],
                     ws_code_string_value="gender"
@@ -176,7 +176,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_age",
                     engagement_db_dataset="age",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("age"), auto_coder=lambda x:
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
                                                 str(swahili.DemographicCleaner.clean_age_within_range(x)))
                     ],
                     ws_code_string_value="age"
@@ -185,12 +185,20 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_disabled",
                     engagement_db_dataset="disabled",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("disabled"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
                     ],
                     ws_code_string_value="disabled"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_old_rqa_datasets",
+                    engagement_db_dataset="kenya_pool_old_rqa_datasets",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("kenya_pool_old_rqa_datasets"), auto_coder=None)
+                    ],
+                    ws_code_string_value="kenya_pool_old_rqa_datasets"
+                ),
             ],
-            ws_correct_dataset_code_scheme=load_code_scheme("kenya_pool_ws_correct_dataset"),
+            ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
             default_ws_dataset="kenya_pool_old_rqa_datasets"
         )
