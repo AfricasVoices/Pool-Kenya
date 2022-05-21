@@ -38,6 +38,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("undp_kenya_s01_demog", "gender", "gender"),
                     FlowResultConfiguration("undp_kenya_s01_demog", "age", "age")
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -51,6 +52,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("covid19_s01_demog", "gender", "gender"),
                     FlowResultConfiguration("covid19_s01_demog", "age", "age"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -64,6 +66,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("unicef_covid19_ke_s01_demog", "gender", "gender"),
                     FlowResultConfiguration("unicef_covid19_ke_s01_demog", "age", "age"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -78,6 +81,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("oxfam_wash_s01_demog", "age", "age"),
                     FlowResultConfiguration("oxfam_wash_s01_demog", "disabled", "disabled"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -91,6 +95,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("worldvision_s01_demog", "gender", "gender"),
                     FlowResultConfiguration("worldvision_s01_demog", "age", "age"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -105,6 +110,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("gpsdd_kilifi_s01_demog", "age", "age"),
                     FlowResultConfiguration("gpsdd_kilifi_s01_demog", "disabled", "disabled"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -119,6 +125,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("gpsdd_kiambu_s01_demog", "age", "age"),
                     FlowResultConfiguration("gpsdd_kiambu_s01_demog", "disabled", "disabled"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -133,6 +140,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("gpsdd_bungoma_s01_demog", "age", "age"),
                     FlowResultConfiguration("gpsdd_bungoma_s01_demog", "disabled", "disabled"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
         ),
         RapidProSource(
@@ -147,8 +155,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("ke_constitution_review_poll_demog", "age", "age"),
                     FlowResultConfiguration("ke_constitution_review_poll_demog", "disabled", "disabled"),
                 ],
+                uuid_filter=rapid_pro_uuid_filter
             )
-        ),
+        )
     ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
