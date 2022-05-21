@@ -62,9 +62,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
-                    FlowResultConfiguration("unicef_covid19_ke_s01_demog", "constituency", "location"),
-                    FlowResultConfiguration("unicef_covid19_ke_s01_demog", "gender", "gender"),
-                    FlowResultConfiguration("unicef_covid19_ke_s01_demog", "age", "age"),
+                    FlowResultConfiguration("UNICEF_COVID19_KE_S01_Demog", "constituency", "location"),
+                    FlowResultConfiguration("UNICEF_COVID19_KE_S01_Demog", "gender", "gender"),
+                    FlowResultConfiguration("UNICEF_COVID19_KE_S01_Demog", "age", "age"),
                 ],
                 uuid_filter=rapid_pro_uuid_filter
             )
