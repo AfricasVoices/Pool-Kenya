@@ -3,7 +3,7 @@ from core_data_modules.cleaners import swahili
 from src.pipeline_configuration_spec import *
 
 rapid_pro_uuid_filter = UuidFilter(
-    uuid_file_url="gs://avf-project-datasets/2022/POOL-KENYA/initial-pool-kenya-de-identified-uuids.json"
+    uuid_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-initial-de-identified-uuids.json"
 )
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
@@ -12,7 +12,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 "UNDP-Kenya, UNICEF-KENYA, OXFAM-KENYA, World Vision, GPSDD and KE polls",
     engagement_database=EngagementDatabaseClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
-        database_path="engagement_databases/Kenya"
+        database_path="engagement_databases/KENYA"
     ),
     uuid_table=UUIDTableClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
