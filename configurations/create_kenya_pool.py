@@ -2,9 +2,6 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
-rapid_pro_uuid_filter = UuidFilter(
-    uuid_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-initial-de-identified-uuids.json"
-)
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="Create-Kenya-Pool",
