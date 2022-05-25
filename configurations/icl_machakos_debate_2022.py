@@ -176,7 +176,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 raw_dataset="machakos_governor_poll_2022_raw",
                 coding_configs=[
                     CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/icl/governor_poll_2022"),
+                        code_scheme=load_code_scheme("rqas/icl/machakos_governor_poll_2022"),
                         analysis_dataset="machakos_governor_poll_2022"
                     )
                 ],
