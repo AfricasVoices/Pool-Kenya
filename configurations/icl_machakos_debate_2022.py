@@ -129,6 +129,114 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             default_ws_dataset="kenya_pool_old_rqa_datasets"
         )
     ),
+    analysis=AnalysisConfiguration(
+        google_drive_upload=GoogleDriveUploadConfiguration(
+            credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+            drive_dir="machakos_debate_2022_analysis_outputs"
+        ),
+        dataset_configurations=[
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["machakos_county_priorities_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="machakos_county_priorities_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqa/icl/machakos_county_priorities_2022"),
+                        analysis_dataset="machakos_county_priorities_2022"
+                    )
+                ],
+                rapid_pro_non_relevant_field=ContactField(key="machakos_county_priorities_2022_non_relevant_contacts",
+                                                          label = "machakos county priorities 2022 non relevant contacts"),
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["machakos_womenrep_poll_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="machakos_womenrep_poll_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqa/icl/machakos_womenrep_poll_2022"),
+                        analysis_dataset="machakos_womenrep_poll_2022"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["machakos_senator_poll_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="machakos_senator_poll_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqa/icl/machakos_senator_poll_2022"),
+                        analysis_dataset="machakos_senator_poll_2022"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["machakos_governor_poll_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="machakos_governor_poll_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqa/icl/governor_poll_2022"),
+                        analysis_dataset="machakos_governor_poll_2022"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gender"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="gender_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/gender"),
+                        analysis_dataset="gender"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["location"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="location_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_county"),
+                        analysis_dataset="kenya_county",
+                        analysis_location=AnalysisLocations.KENYA_COUNTY
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_constituency"),
+                        analysis_dataset="kenya_constituency",
+                        analysis_location=AnalysisLocations.KENYA_CONSTITUENCY
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["age"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="age_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/age"),
+                        analysis_dataset="age"
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/age_category"),
+                        analysis_dataset="age_category",
+                        age_category_config=AgeCategoryConfiguration(
+                            age_analysis_dataset="age",
+                            categories={
+                                (10, 14): "10 to 14",
+                                (15, 17): "15 to 17",
+                                (18, 35): "18 to 35",
+                                (36, 54): "36 to 54",
+                                (55, 99): "55 to 99"
+                            }
+                        )
+                    ),
+                ],
+            )
+        ],
+        ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+    ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",
         bucket_dir_path="2022/ICL/"
