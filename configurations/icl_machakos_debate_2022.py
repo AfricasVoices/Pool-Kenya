@@ -141,7 +141,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 raw_dataset="machakos_county_priorities_2022_raw",
                 coding_configs=[
                     CodingConfiguration(
-                        code_scheme=load_code_scheme("rqa/icl/machakos_county_priorities_2022"),
+                        code_scheme=load_code_scheme("rqas/icl/machakos_county_priorities_2022"),
                         analysis_dataset="machakos_county_priorities_2022"
                     )
                 ],
@@ -165,7 +165,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 raw_dataset="machakos_senator_poll_2022_raw",
                 coding_configs=[
                     CodingConfiguration(
-                        code_scheme=load_code_scheme("rqa/icl/machakos_senator_poll_2022"),
+                        code_scheme=load_code_scheme("rqas/icl/machakos_senator_poll_2022"),
                         analysis_dataset="machakos_senator_poll_2022"
                     )
                 ],
@@ -176,7 +176,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 raw_dataset="machakos_governor_poll_2022_raw",
                 coding_configs=[
                     CodingConfiguration(
-                        code_scheme=load_code_scheme("rqa/icl/governor_poll_2022"),
+                        code_scheme=load_code_scheme("rqas/icl/governor_poll_2022"),
                         analysis_dataset="machakos_governor_poll_2022"
                     )
                 ],
