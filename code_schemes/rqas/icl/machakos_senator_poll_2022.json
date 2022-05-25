@@ -4,6 +4,22 @@
   "Version": "0.0.0.6",
   "Codes": [
     {
+      "CodeID": "code-18b75cad",
+      "CodeType": "Normal",
+      "DisplayText": "sen two",
+      "NumericValue": 1,
+      "StringValue": "sen_two",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-759331a7",
+      "CodeType": "Normal",
+      "DisplayText": "sen two",
+      "NumericValue": 2,
+      "StringValue": "sen_two",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

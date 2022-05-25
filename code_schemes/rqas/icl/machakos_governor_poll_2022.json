@@ -4,6 +4,22 @@
   "Version": "0.0.0.6",
   "Codes": [
     {
+      "CodeID": "code-18b75cad",
+      "CodeType": "Normal",
+      "DisplayText": "gov one",
+      "NumericValue": 1,
+      "StringValue": "gov_one",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-759331a7",
+      "CodeType": "Normal",
+      "DisplayText": "gov two",
+      "NumericValue": 2,
+      "StringValue": "gov_two",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
