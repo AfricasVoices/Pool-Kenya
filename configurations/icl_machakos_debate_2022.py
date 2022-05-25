@@ -6,7 +6,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="icl_machakos_debate_2022",
     engagement_database=EngagementDatabaseClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
-        database_path="engagement_databases/POOL-KENYA"
+        database_path="engagement_databases/POOL-KENYA-ICL-TEST"
     ),
     uuid_table=UUIDTableClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
