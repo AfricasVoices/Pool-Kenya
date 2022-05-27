@@ -6,41 +6,41 @@
     {
       "CodeID": "code-43380111",
       "CodeType": "Normal",
-      "DisplayText": "1. wavinya ndeti",
+      "DisplayText": "1. francis maliti",
       "NumericValue": 1,
-      "StringValue": "1_wavinya_ndeti",
+      "StringValue": "1_francis_maliti",
       "VisibleInCoda": true
     },
     {
       "CodeID": "code-b5573512",
       "CodeType": "Normal",
-      "DisplayText": "2. nzioko waita",
+      "DisplayText": "2. johnstone muthama",
       "NumericValue": 2,
-      "StringValue": "2_nzioko_waita",
+      "StringValue": "2_johnstone_muthama",
       "VisibleInCoda": true
     },
     {
       "CodeID": "code-bd341448",
       "CodeType": "Normal",
-      "DisplayText": "3. johnstone muthama",
+      "DisplayText": "3. nzioka waita",
       "NumericValue": 3,
-      "StringValue": "3_johnstone_muthama",
+      "StringValue": "3_nzioka_waita",
       "VisibleInCoda": true
     },
     {
       "CodeID": "code-7a0989af",
       "CodeType": "Normal",
-      "DisplayText": "4. francis maliti",
+      "DisplayText": "4. rose mulwa",
       "NumericValue": 4,
-      "StringValue": "4_francis_maliti",
+      "StringValue": "4_rose_mulwa",
       "VisibleInCoda": true
     },
     {
       "CodeID": "code-4d9e51f5",
       "CodeType": "Normal",
-      "DisplayText": "5. rose mulwa",
+      "DisplayText": "5. wavinya ndeti",
       "NumericValue": 5,
-      "StringValue": "5_rose_mulwa",
+      "StringValue": "5_wavinya_ndeti",
       "VisibleInCoda": true
     },
     {
