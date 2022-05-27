@@ -32,7 +32,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                             "machakos_county_priorities_2022", "machakos_county_priorities_2022"),
                     FlowResultConfiguration("icl_machakos_womenrep_poll_activation_2022",
                                             "machakos_womenrep_poll_2022", "machakos_womenrep_poll_2022"),
-                    FlowResultConfiguration("icl_machakos_senator_poll_activation_2022", "senator_poll_2022",
+                    FlowResultConfiguration("icl_machakos_senator_2022_poll_ad", "senator_poll_2022",
                                             "machakos_senator_poll_2022"),
                     FlowResultConfiguration("icl_machakos_governor_poll_activation_2022", "machakos_governor_poll_2022",
                                             "machakos_governor_poll_2022")
