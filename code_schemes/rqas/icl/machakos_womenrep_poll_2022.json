@@ -4,6 +4,22 @@
   "Version": "0.0.0.6",
   "Codes": [
     {
+      "CodeID": "code-f0c2d3f9",
+      "CodeType": "Normal",
+      "DisplayText": "1. yes",
+      "NumericValue": 5,
+      "StringValue": "1_yes",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-37cbc4e2",
+      "CodeType": "Normal",
+      "DisplayText": "2. no",
+      "NumericValue": 6,
+      "StringValue": "2_no",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-bb86c63b",
       "CodeType": "Normal",
       "DisplayText": "1. kameme kasimbi",
