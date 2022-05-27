@@ -44,59 +44,59 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_location",
-                    engagement_db_dataset="location",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
-                    ],
-                    ws_code_string_value="location"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_gender",
-                    engagement_db_dataset="gender",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
-                                                auto_coder=swahili.DemographicCleaner.clean_gender)
-                    ],
-                    ws_code_string_value="gender"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_age",
-                    engagement_db_dataset="age",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
-                                                str(swahili.DemographicCleaner.clean_age_within_range(x)))
-                    ],
-                    ws_code_string_value="age"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_disabled",
-                    engagement_db_dataset="disabled",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
-                    ],
-                    ws_code_string_value="disabled"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_old_rqa_datasets",
-                    engagement_db_dataset="kenya_pool_old_rqa_datasets",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("kenya_pool_old_rqa_datasets"), auto_coder=None)
-                    ],
-                    ws_code_string_value="kenya_pool_old_rqa_datasets"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="ICL_machakos_county_priorities_2022",
-                    engagement_db_dataset="machakos_county_priorities_2022",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_county_priorities_2022"),
-                                                auto_coder=None),
-                    ],
-                    ws_code_string_value="icl_machakos_county_priorities_2022"
-                ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Kenya_Pool_location",
+                #     engagement_db_dataset="location",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
+                #     ],
+                #     ws_code_string_value="location"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Kenya_Pool_gender",
+                #     engagement_db_dataset="gender",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
+                #                                 auto_coder=swahili.DemographicCleaner.clean_gender)
+                #     ],
+                #     ws_code_string_value="gender"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Kenya_Pool_age",
+                #     engagement_db_dataset="age",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
+                #                                 str(swahili.DemographicCleaner.clean_age_within_range(x)))
+                #     ],
+                #     ws_code_string_value="age"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Kenya_Pool_disabled",
+                #     engagement_db_dataset="disabled",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
+                #     ],
+                #     ws_code_string_value="disabled"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Kenya_Pool_old_rqa_datasets",
+                #     engagement_db_dataset="kenya_pool_old_rqa_datasets",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("kenya_pool_old_rqa_datasets"), auto_coder=None)
+                #     ],
+                #     ws_code_string_value="kenya_pool_old_rqa_datasets"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="ICL_machakos_county_priorities_2022",
+                #     engagement_db_dataset="machakos_county_priorities_2022",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_county_priorities_2022"),
+                #                                 auto_coder=None),
+                #     ],
+                #     ws_code_string_value="icl_machakos_county_priorities_2022"
+                # ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_womenrep_poll_2022",
                     engagement_db_dataset="machakos_womenrep_poll_2022",
