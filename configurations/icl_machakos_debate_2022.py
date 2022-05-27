@@ -109,6 +109,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_string_value="icl_machakos_womenrep_poll_2022"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="ICL_machakos_womenrep_poll_2022_rita",
+                    engagement_db_dataset="machakos_womenrep_poll_2022_rita",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_womenrep_poll_2022_rita"),
+                                                auto_coder=None),
+                    ],
+                    ws_code_string_value="icl_machakos_womenrep_poll_2022_rita"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_senator_poll_2022",
                     engagement_db_dataset="machakos_senator_poll_2022",
                     code_scheme_configurations=[
@@ -159,6 +168,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/icl/machakos_womenrep_poll_2022"),
                         analysis_dataset="machakos_womenrep_poll_2022"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["machakos_womenrep_poll_2022_rita"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="machakos_womenrep_poll_2022_rita_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/icl/machakos_womenrep_poll_2022_rita"),
+                        analysis_dataset="machakos_womenrep_poll_2022_rita"
                     )
                 ],
             ),
