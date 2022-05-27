@@ -4,27 +4,27 @@
   "Version": "0.0.0.6",
   "Codes": [
     {
+      "CodeID": "code-bb86c63b",
+      "CodeType": "Normal",
+      "DisplayText": "1. kameme kasimbi",
+      "NumericValue": 1,
+      "StringValue": "1_kameme_kasimbi",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-9814dd8d",
       "CodeType": "Normal",
-      "DisplayText": "1. Liz Kisyanga",
-      "NumericValue": 1,
-      "StringValue": "1_liz_kisyanga",
+      "DisplayText": "2. liz kisyanga",
+      "NumericValue": 2,
+      "StringValue": "2_liz_kisyanga",
       "VisibleInCoda": true
     },
     {
       "CodeID": "code-16be364f",
       "CodeType": "Normal",
-      "DisplayText": "2. Rita Ndunge",
-      "NumericValue": 2,
-      "StringValue": "2_rita_ndunge",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-bb86c63b",
-      "CodeType": "Normal",
-      "DisplayText": "3. Kameme Kasimbi",
+      "DisplayText": "3. rita ndunge",
       "NumericValue": 3,
-      "StringValue": "3_kameme_kasimbi",
+      "StringValue": "3_rita_ndunge",
       "VisibleInCoda": true
     },
     {
