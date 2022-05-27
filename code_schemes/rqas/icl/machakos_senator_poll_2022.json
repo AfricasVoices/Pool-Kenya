@@ -4,43 +4,27 @@
   "Version": "0.0.0.6",
   "Codes": [
     {
-      "CodeID": "code-bf3f9ef0",
+      "CodeID": "code-d88f1122",
       "CodeType": "Normal",
-      "DisplayText": "1. agnes kavindu",
+      "DisplayText": "1. bernard mungata",
       "NumericValue": 1,
-      "StringValue": "1_agnes_kavindu",
+      "StringValue": "1_bernard_mungata",
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-d88f1122",
+      "CodeID": "code-bf3f9ef0",
       "CodeType": "Normal",
-      "DisplayText": "2. bernard mungata",
+      "DisplayText": "2. maureen ndunga mwikya",
       "NumericValue": 2,
-      "StringValue": "2_bernard_mungata",
+      "StringValue": "2_maureen_ndunga_mwikya",
       "VisibleInCoda": true
     },
     {
       "CodeID": "code-2ed681d4",
       "CodeType": "Normal",
-      "DisplayText": "3. joel kyatha",
+      "DisplayText": "3. dickson kimanthi muli",
       "NumericValue": 3,
-      "StringValue": "3_joel_kyatha",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-b508d5ad",
-      "CodeType": "Normal",
-      "DisplayText": "4. mutua katuku",
-      "NumericValue": 4,
-      "StringValue": "4_mutua_katuku",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-77b3582f",
-      "CodeType": "Normal",
-      "DisplayText": "5. ngengele muthama",
-      "NumericValue": 5,
-      "StringValue": "5_ngengele_muthama",
+      "StringValue": "3_dickson_kimanthi_muli",
       "VisibleInCoda": true
     },
     {
