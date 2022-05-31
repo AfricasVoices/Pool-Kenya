@@ -90,15 +90,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 #     ],
                 #     ws_code_string_value="kenya_pool_old_rqa_datasets"
                 # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="ICL_machakos_county_priorities_2022",
-                #     engagement_db_dataset="machakos_county_priorities_2022",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_county_priorities_2022"),
-                #                                 auto_coder=None),
-                #     ],
-                #     ws_code_string_value="icl_machakos_county_priorities_2022"
-                # ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="ICL_machakos_county_priorities_2022",
+                    engagement_db_dataset="machakos_county_priorities_2022",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_county_priorities_2022"),
+                                                auto_coder=None),
+                    ],
+                    ws_code_string_value="icl_machakos_county_priorities_2022"
+                ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_womenrep_poll_2022",
                     engagement_db_dataset="machakos_womenrep_poll_2022",
