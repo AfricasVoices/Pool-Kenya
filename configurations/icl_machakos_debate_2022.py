@@ -215,27 +215,27 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     )
                 ]
             ),
-            # AnalysisDatasetConfiguration(
-            #     engagement_db_datasets=["location"],
-            #     dataset_type=DatasetTypes.DEMOGRAPHIC,
-            #     raw_dataset="location_raw",
-            #     coding_configs=[
-            #         CodingConfiguration(
-            #             code_scheme=load_code_scheme("demographics/kenya_ward"),
-            #             analysis_dataset="kenya_ward"
-            #         ),
-            #         CodingConfiguration(
-            #             code_scheme=load_code_scheme("demographics/kenya_county"),
-            #             analysis_dataset="kenya_county",
-            #             analysis_location=AnalysisLocations.KENYA_COUNTY
-            #         ),
-            #         CodingConfiguration(
-            #             code_scheme=load_code_scheme("demographics/kenya_constituency"),
-            #             analysis_dataset="kenya_constituency",
-            #             analysis_location=AnalysisLocations.KENYA_CONSTITUENCY
-            #         )
-            #     ]
-            # ),
+            AnalysisDatasetConfiguration(
+                 engagement_db_datasets=["location"],
+                 dataset_type=DatasetTypes.DEMOGRAPHIC,
+                 raw_dataset="location_raw",
+                 coding_configs=[
+                     CodingConfiguration(
+                         code_scheme=load_code_scheme("demographics/kenya_ward"),
+                         analysis_dataset="kenya_ward"
+                     ),
+                     CodingConfiguration(
+                         code_scheme=load_code_scheme("demographics/kenya_county"),
+                         analysis_dataset="kenya_county",
+                         analysis_location=AnalysisLocations.KENYA_COUNTY
+                     ),
+                     CodingConfiguration(
+                         code_scheme=load_code_scheme("demographics/kenya_constituency"),
+                         analysis_dataset="kenya_constituency",
+                         analysis_location=AnalysisLocations.KENYA_CONSTITUENCY
+                     )
+                 ]
+             ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["age"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
