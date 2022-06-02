@@ -222,7 +222,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                  coding_configs=[
                      CodingConfiguration(
                          code_scheme=load_code_scheme("demographics/kenya_ward"),
-                         analysis_dataset="kenya_ward"
+                         analysis_dataset="kenya_ward",
+                         analysis_location=AnalysisLocations.KENYA_WARD
+
                      ),
                      CodingConfiguration(
                          code_scheme=load_code_scheme("demographics/kenya_county"),
