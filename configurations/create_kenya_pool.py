@@ -12,7 +12,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 "UNDP-Kenya, UNICEF-KENYA, OXFAM-KENYA, World Vision, GPSDD and KE polls",
     engagement_database=EngagementDatabaseClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
-        database_path="engagement_databases/Kenya"
+        database_path="engagement_databases/POOL-KENYA"
     ),
     uuid_table=UUIDTableClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
@@ -62,9 +62,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
-                    FlowResultConfiguration("unicef_covid19_ke_s01_demog", "constituency", "location"),
-                    FlowResultConfiguration("unicef_covid19_ke_s01_demog", "gender", "gender"),
-                    FlowResultConfiguration("unicef_covid19_ke_s01_demog", "age", "age"),
+                    FlowResultConfiguration("UNICEF_COVID19_KE_S01_Demog", "constituency", "location"),
+                    FlowResultConfiguration("UNICEF_COVID19_KE_S01_Demog", "gender", "gender"),
+                    FlowResultConfiguration("UNICEF_COVID19_KE_S01_Demog", "age", "age"),
                 ],
                 uuid_filter=rapid_pro_uuid_filter
             )
@@ -214,6 +214,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",
-        bucket_dir_path="2022/CREATE-KENYA-POOL/"
+        bucket_dir_path="2022/CREATE-KENYA-POOL"
     )
 )
