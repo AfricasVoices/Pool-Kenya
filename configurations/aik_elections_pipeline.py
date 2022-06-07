@@ -4,6 +4,16 @@ from src.pipeline_configuration_spec import *
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="AIK-ELECTIONS",
+    test_participant_uuids=[
+        "avf-participant-uuid-ced0f78f-f989-42e4-8813-b1ead4fff0ae",
+        "avf-participant-uuid-2fa53f8c-8f71-490c-8aff-40c6929b2675",
+        "avf-participant-uuid-7d817591-37b9-43ef-b3c3-303fdfa1544f",
+        "avf-participant-uuid-88ef05ba-4c56-41f8-a00c-29104abab73e",
+        "avf-participant-uuid-b972d5f2-be30-4eea-be1c-a4d973a15330",
+        "avf-participant-uuid-7d144e9e-b54f-4d1f-bca9-3e8cdeeaedcc",
+        "avf-participant-uuid-73b4f00a-5e49-418d-896f-95185f59fe4d",
+        "avf-participant-uuid-f24811c3-90a6-4fcd-bf32-e8b38eb98ca4"
+    ],
     engagement_database=EngagementDatabaseClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
         database_path="engagement_databases/POOL-KENYA"
