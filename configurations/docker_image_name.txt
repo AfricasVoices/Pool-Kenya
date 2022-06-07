@@ -1,0 +1,1 @@
+ghcr.io/africasvoices/engagement-data-pipeline:v1.2.0
