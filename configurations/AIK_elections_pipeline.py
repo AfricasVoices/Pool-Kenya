@@ -31,6 +31,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             google_form_client=GoogleFormsClientConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
             ),
+            # TODO: Update google form to engagement db config
             sync_config=GoogleFormToEngagementDBConfiguration(
                 form_id="",
                 participant_id_configuration=ParticipantIdConfiguration(
@@ -47,6 +48,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 domain="textit.com",
                 token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
             ),
+            # TODO: Update rapidpro to engagement db config
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[],
             )
