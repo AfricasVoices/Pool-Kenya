@@ -153,11 +153,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         age_category_config=AgeCategoryConfiguration(
                             age_analysis_dataset="age",
                             categories={
-                                (10, 14): "10 to 14",
-                                (15, 17): "15 to 17",
-                                (18, 35): "18 to 35",
-                                (36, 54): "36 to 54",
-                                (55, 99): "55 to 99"
+                                (18, 24): "18 to 24",
+                                (25, 34): "25 to 34",
+                                (35, 49): "35 to 49",
+                                (50, 64): "50 to 64",
+                                (65, 99): "65 to 99"
                             }
                         )
                     ),
