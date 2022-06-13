@@ -37,7 +37,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("icl_machakos_senator_2022_poll_ad", "senator_poll_2022",
                                             "machakos_senator_poll_2022"),
                     FlowResultConfiguration("icl_machakos_governor_poll_ad_2022", "governor_poll_2022",
-                                            "machakos_governor_poll_2022")
+                                            "machakos_governor_poll_2022"),
+                    FlowResultConfiguration("icl_pool_invitation_activation_2022", "icl_pool_invitation_2022",
+                                            "icl_pool_invitation_2022")
                 ],
             )
         )
@@ -135,6 +137,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_string_value="icl_machakos_governor_poll_2022"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="ICL_pool_invitation_2022",
+                    engagement_db_dataset="icl_pool_invitation_2022",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/icl_pool_invitation_2022"),
+                                                auto_coder=None),
+                    ],
+                    ws_code_string_value="icl_pool_invitation_2022"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
@@ -201,6 +212,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/icl/machakos_governor_poll_2022"),
                         analysis_dataset="machakos_governor_poll_2022"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["icl_pool_invitation_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="icl_pool_invitation_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/icl/icl_pool_invitation_2022"),
+                        analysis_dataset="icl_pool_invitation_2022"
                     )
                 ],
             ),
