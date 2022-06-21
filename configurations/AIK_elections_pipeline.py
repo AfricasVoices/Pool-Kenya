@@ -67,7 +67,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme(
                             "demographics/kenya_county"), auto_coder=None)
                     ],
-                    ws_code_string_value="location",
+                    ws_code_match_value="location",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
                 CodaDatasetConfiguration(
@@ -77,7 +77,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
                                                 auto_coder=swahili.DemographicCleaner.clean_gender)
                     ],
-                    ws_code_string_value="gender",
+                    ws_code_match_value="gender",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
                 CodaDatasetConfiguration(
@@ -87,7 +87,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
                                                 str(swahili.DemographicCleaner.clean_age_within_range(x)))
                     ],
-                    ws_code_string_value="age",
+                    ws_code_match_value="age",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
                 CodaDatasetConfiguration(
@@ -96,7 +96,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
                     ],
-                    ws_code_string_value="disabled",
+                    ws_code_match_value="disabled",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
             ],
