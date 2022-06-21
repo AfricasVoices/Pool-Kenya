@@ -110,3 +110,5 @@ venv.bak/
 .vscode
 
 data/
+
+run_icl_pipeline.sh
