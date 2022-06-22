@@ -54,6 +54,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_gender", "gender"),
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
+
+                    # s01q01 -> survey 1 question 1
+                    FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q01", "aik_elections_s01q01"),
+                    FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q02", "aik_elections_s01q02"),
+                    FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q03", "aik_elections_s01q03"),
                 ],
             )
         )
