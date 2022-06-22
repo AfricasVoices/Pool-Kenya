@@ -48,9 +48,13 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 domain="textit.com",
                 token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
             ),
-            # TODO: Update rapidpro to engagement db config
             sync_config=RapidProToEngagementDBConfiguration(
-                flow_result_configurations=[],
+                flow_result_configurations=[                   
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_age", "age"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_gender", "gender"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
+                ],
             )
         )
     ],
