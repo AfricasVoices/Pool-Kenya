@@ -62,10 +62,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme(
-                            "demographics/kenya_constituency"), auto_coder=None),
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme(
-                            "demographics/kenya_county"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
                     ],
                     ws_code_match_value="location",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
@@ -135,6 +134,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         code_scheme=load_code_scheme("demographics/kenya_constituency"),
                         analysis_dataset="kenya_constituency",
                         analysis_location=AnalysisLocations.KENYA_CONSTITUENCY
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_ward"),
+                        analysis_dataset="kenya_ward",
+                        analysis_location=AnalysisLocations.KENYA_WARD
                     )
                 ]
             ),
