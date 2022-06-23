@@ -1,30 +1,33 @@
 {
-  "SchemeID": "Scheme-f25eb061",
-  "Name": "Machakos Senator Poll 2022",
+  "SchemeID": "Scheme-21b4ab58",
+  "Name": "ICL Pool Invitation 2022",
   "Version": "0.0.0.6",
   "Codes": [
     {
-      "CodeID": "code-d88f1122",
-      "CodeType": "Normal",
-      "DisplayText": "1. bernard mungata",
-      "NumericValue": 1,
-      "StringValue": "1_bernard_mungata",
+      "CodeID": "code-OI-c5f1d054",
+      "CodeType": "Meta",
+      "MetaCode": "opt-in",
+      "DisplayText": "meta: opt-in",
+      "NumericValue": -100040,
+      "StringValue": "opt_in",
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-2ed681d4",
-      "CodeType": "Normal",
-      "DisplayText": "2. dickson kimanthi muli",
-      "NumericValue": 2,
-      "StringValue": "2_dickson_kimanthi_muli",
+      "CodeID": "code-STOP-08b832a8",
+      "CodeType": "Control",
+      "ControlCode": "STOP",
+      "DisplayText": "STOP",
+      "NumericValue": -90,
+      "StringValue": "STOP",
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-bf3f9ef0",
-      "CodeType": "Normal",
-      "DisplayText": "3. maureen ndunga mwikya",
-      "NumericValue": 3,
-      "StringValue": "3_maureen_ndunga_mwikya",
+      "CodeID": "code-WS-adb25603b7af",
+      "CodeType": "Control",
+      "ControlCode": "WS",
+      "DisplayText": "WS (wrong scheme)",
+      "NumericValue": -100,
+      "StringValue": "WS",
       "VisibleInCoda": true
     },
     {
@@ -81,24 +84,7 @@
       "NumericValue": -60,
       "CodeType": "Control"
     },
-    {
-      "CodeID": "code-STOP-08b832a8",
-      "CodeType": "Control",
-      "ControlCode": "STOP",
-      "DisplayText": "STOP",
-      "NumericValue": -90,
-      "StringValue": "STOP",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-WS-adb25603b7af",
-      "CodeType": "Control",
-      "ControlCode": "WS",
-      "DisplayText": "WS (wrong scheme)",
-      "NumericValue": -100,
-      "StringValue": "WS",
-      "VisibleInCoda": true
-    },
+
     {
       "CodeID": "code-CE-016c1e22",
       "CodeType": "Control",
@@ -144,15 +130,7 @@
       "StringValue": "greeting",
       "VisibleInCoda": true
     },
-    {
-      "CodeID": "code-OI-c5f1d054",
-      "CodeType": "Meta",
-      "MetaCode": "opt-in",
-      "DisplayText": "meta: opt-in",
-      "NumericValue": -100040,
-      "StringValue": "opt_in",
-      "VisibleInCoda": true
-    },
+
     {
       "CodeID": "code-SC-a3a065bc",
       "CodeType": "Meta",

@@ -4,6 +4,86 @@
   "Version": "0.0.0.6",
   "Codes": [
     {
+      "CodeID": "code-bf0d4184",
+      "CodeType": "Normal",
+      "DisplayText": "road, water and education",
+      "NumericValue": 1,
+      "StringValue": "road_water_and_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-edeefe49",
+      "CodeType": "Normal",
+      "DisplayText": "job creation",
+      "NumericValue": 2,
+      "StringValue": "job_creation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cfd8b479",
+      "CodeType": "Normal",
+      "DisplayText": "improve hospital quality",
+      "NumericValue": 3,
+      "StringValue": "improve_hospital_quality",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f4e55429",
+      "CodeType": "Normal",
+      "DisplayText": "electricity",
+      "NumericValue": 4,
+      "StringValue": "electricity",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a01dd9fd",
+      "CodeType": "Normal",
+      "DisplayText": "security",
+      "NumericValue": 5,
+      "StringValue": "security",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e2a7588e",
+      "CodeType": "Normal",
+      "DisplayText": "improve agriculture",
+      "NumericValue": 6,
+      "StringValue": "improve_agriculture",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-eebd7955",
+      "CodeType": "Normal",
+      "DisplayText": "lower food prices",
+      "NumericValue": 7,
+      "StringValue": "lower_food_prices",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-af703a4e",
+      "CodeType": "Normal",
+      "DisplayText": "just leadership",
+      "NumericValue": 8,
+      "StringValue": "just_leadership",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2a957753",
+      "CodeType": "Normal",
+      "DisplayText": "improve the economy",
+      "NumericValue": 9,
+      "StringValue": "improve_the_economy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-64e78d57",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 10,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+   },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

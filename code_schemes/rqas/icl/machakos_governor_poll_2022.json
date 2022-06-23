@@ -1,22 +1,22 @@
 {
   "SchemeID": "Scheme-135fbf1e",
-  "Name": "Machakos County Priorities 2022",
+  "Name": "Machakos Governor Poll 2022",
   "Version": "0.0.0.6",
   "Codes": [
     {
-      "CodeID": "code-18b75cad",
+      "CodeID": "code-43380111",
       "CodeType": "Normal",
-      "DisplayText": "gov one",
+      "DisplayText": "1. francis maliti",
       "NumericValue": 1,
-      "StringValue": "gov_one",
+      "StringValue": "1_francis_maliti",
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-759331a7",
+      "CodeID": "code-3b85fd97",
       "CodeType": "Normal",
-      "DisplayText": "gov two",
+      "DisplayText": "2. joseph musyoka",
       "NumericValue": 2,
-      "StringValue": "gov_two",
+      "StringValue": "2_joseph_musyoka",
       "VisibleInCoda": true
     },
     {
