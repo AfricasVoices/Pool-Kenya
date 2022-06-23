@@ -59,6 +59,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q01", "aik_elections_s01q01"),
                     # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q02", "aik_elections_s01q02"),
                     # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q03", "aik_elections_s01q03"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q04", "aik_elections_s01q04"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q05", "aik_elections_s01q05"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q06", "aik_elections_s01q06"),
                 ],
             )
         )
