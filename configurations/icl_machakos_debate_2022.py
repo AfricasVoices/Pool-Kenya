@@ -288,6 +288,39 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
     ),
+    rapid_pro_target=RapidProTarget(
+        rapid_pro=RapidProClientConfiguration(
+            domain="textit.com",
+            token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
+        ),
+        sync_config=EngagementDBToRapidProConfiguration(
+            normal_datasets=[
+                DatasetConfiguration(
+                    engagement_db_datasets=["age"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_age", label="pool kenya age")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["gender"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_gender", label="pool kenya gender")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["location"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_location", label="pool kenya location")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["disabled"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_disabled", label="pool kenya disabled")
+                ),
+            ],
+            consent_withdrawn_dataset=DatasetConfiguration(
+                engagement_db_datasets=["age", "gender", "location", "disabled", "machakos_governor_poll_2022",
+                                        "machakos_senator_poll_2022", "machakos_womenrep_poll_2022_rita", "machakos_womenrep_poll_2022",
+                                        "machakos_county_priorities_2022", "icl_pool_invitation_2022"],
+                rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
+            ),
+            write_mode=WriteModes.CONCATENATE_TEXTS
+        )
+    ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",
         bucket_dir_path="2022/ICL/"
