@@ -1,30 +1,22 @@
 {
-  "SchemeID": "Scheme-f25eb061",
-  "Name": "Machakos Senator Poll 2022",
+  "SchemeID": "Scheme-31b3ab58",
+  "Name": "Machakos Women Rep Poll 2022",
   "Version": "0.0.0.6",
   "Codes": [
     {
-      "CodeID": "code-d88f1122",
+      "CodeID": "code-f0c2d3f9",
       "CodeType": "Normal",
-      "DisplayText": "1. bernard mungata",
-      "NumericValue": 1,
-      "StringValue": "1_bernard_mungata",
+      "DisplayText": "1. yes",
+      "NumericValue": 5,
+      "StringValue": "1_yes",
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-2ed681d4",
+      "CodeID": "code-37cbc4e2",
       "CodeType": "Normal",
-      "DisplayText": "2. dickson kimanthi muli",
-      "NumericValue": 2,
-      "StringValue": "2_dickson_kimanthi_muli",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-bf3f9ef0",
-      "CodeType": "Normal",
-      "DisplayText": "3. maureen ndunga mwikya",
-      "NumericValue": 3,
-      "StringValue": "3_maureen_ndunga_mwikya",
+      "DisplayText": "2. no",
+      "NumericValue": 6,
+      "StringValue": "2_no",
       "VisibleInCoda": true
     },
     {

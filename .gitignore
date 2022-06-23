@@ -111,4 +111,6 @@ venv.bak/
 
 data/
 
+archive/
+
 run_icl_pipeline.sh
