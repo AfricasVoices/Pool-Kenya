@@ -20,38 +20,6 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-bb86c63b",
-      "CodeType": "Normal",
-      "DisplayText": "1. kameme kasimbi",
-      "NumericValue": 1,
-      "StringValue": "1_kameme_kasimbi",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-9814dd8d",
-      "CodeType": "Normal",
-      "DisplayText": "2. liz kisyanga",
-      "NumericValue": 2,
-      "StringValue": "2_liz_kisyanga",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-16be364f",
-      "CodeType": "Normal",
-      "DisplayText": "3. rita ndunge",
-      "NumericValue": 3,
-      "StringValue": "3_rita_ndunge",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-b29c49f9",
-      "CodeType": "Normal",
-      "DisplayText": "4. selina mwende kioko",
-      "NumericValue": 4,
-      "StringValue": "4_selina_mwende_kioko",
-      "VisibleInCoda": true
-    },
-    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
