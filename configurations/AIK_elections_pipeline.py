@@ -1,0 +1,173 @@
+from core_data_modules.cleaners import swahili
+
+from src.pipeline_configuration_spec import *
+
+PIPELINE_CONFIGURATION = PipelineConfiguration(
+    pipeline_name="AIK-ELECTIONS",
+    test_participant_uuids=[
+        "avf-participant-uuid-ced0f78f-f989-42e4-8813-b1ead4fff0ae",
+        "avf-participant-uuid-2fa53f8c-8f71-490c-8aff-40c6929b2675",
+        "avf-participant-uuid-7d817591-37b9-43ef-b3c3-303fdfa1544f",
+        "avf-participant-uuid-88ef05ba-4c56-41f8-a00c-29104abab73e",
+        "avf-participant-uuid-b972d5f2-be30-4eea-be1c-a4d973a15330",
+        "avf-participant-uuid-7d144e9e-b54f-4d1f-bca9-3e8cdeeaedcc",
+        "avf-participant-uuid-73b4f00a-5e49-418d-896f-95185f59fe4d",
+        "avf-participant-uuid-f24811c3-90a6-4fcd-bf32-e8b38eb98ca4"
+    ],
+    engagement_database=EngagementDatabaseClientConfiguration(
+        credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
+        database_path="engagement_databases/POOL-KENYA"
+    ),
+    uuid_table=UUIDTableClientConfiguration(
+        credentials_file_url="gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
+        table_name="avf-global-urn-to-participant-uuid",
+        uuid_prefix="avf-participant-uuid-"
+    ),
+    operations_dashboard=OperationsDashboardConfiguration(
+        credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
+    ),
+    google_form_sources=[
+        GoogleFormSource(
+            google_form_client=GoogleFormsClientConfiguration(
+                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+            ),
+            # TODO: Update google form to engagement db config
+            sync_config=GoogleFormToEngagementDBConfiguration(
+                form_id="",
+                participant_id_configuration=ParticipantIdConfiguration(
+                    question_title="",
+                    id_type=""
+                ),
+                question_configurations=[]
+            )
+        )
+    ],
+    rapid_pro_sources=[
+        RapidProSource(
+            rapid_pro=RapidProClientConfiguration(
+                domain="textit.com",
+                token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
+            ),
+            # TODO: Update rapidpro to engagement db config
+            sync_config=RapidProToEngagementDBConfiguration(
+                flow_result_configurations=[],
+            )
+        )
+    ],
+    coda_sync=CodaConfiguration(
+        coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
+        sync_config=CodaSyncConfiguration(
+            dataset_configurations=[
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_location",
+                    engagement_db_dataset="location",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme(
+                            "demographics/kenya_constituency"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme(
+                            "demographics/kenya_county"), auto_coder=None)
+                    ],
+                    ws_code_match_value="location",
+                    dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_gender",
+                    engagement_db_dataset="gender",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
+                                                auto_coder=swahili.DemographicCleaner.clean_gender)
+                    ],
+                    ws_code_match_value="gender",
+                    dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_age",
+                    engagement_db_dataset="age",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
+                                                str(swahili.DemographicCleaner.clean_age_within_range(x)))
+                    ],
+                    ws_code_match_value="age",
+                    dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_disabled",
+                    engagement_db_dataset="disabled",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
+                    ],
+                    ws_code_match_value="disabled",
+                    dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
+                ),
+            ],
+            ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+            project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/aik_elections_coda_users.json",
+        )
+    ),
+    analysis=AnalysisConfiguration(
+        google_drive_upload=GoogleDriveUploadConfiguration(
+            credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+            drive_dir="aik_elections_analysis_outputs"
+        ),
+        dataset_configurations=[
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gender"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="gender_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/gender"),
+                        analysis_dataset="gender"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["location"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="location_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_county"),
+                        analysis_dataset="kenya_county",
+                        analysis_location=AnalysisLocations.KENYA_COUNTY
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_constituency"),
+                        analysis_dataset="kenya_constituency",
+                        analysis_location=AnalysisLocations.KENYA_CONSTITUENCY
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["age"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="age_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/age"),
+                        analysis_dataset="age"
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/age_category"),
+                        analysis_dataset="age_category",
+                        age_category_config=AgeCategoryConfiguration(
+                            age_analysis_dataset="age",
+                            categories={
+                                (18, 24): "18 to 24",
+                                (25, 34): "25 to 34",
+                                (35, 49): "35 to 49",
+                                (50, 64): "50 to 64",
+                                (65, 99): "65 to 99"
+                            }
+                        )
+                    ),
+                ],
+            )
+        ],
+        ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+    ),
+    archive_configuration=ArchiveConfiguration(
+        archive_upload_bucket="gs://pipeline-execution-backup-archive",
+        bucket_dir_path="2022/AIK-ELECTIONS/"
+    )
+)
