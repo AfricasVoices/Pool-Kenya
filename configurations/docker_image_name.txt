@@ -1,1 +1,1 @@
-ghcr.io/africasvoices/engagement-data-pipeline:support_ke_wards
+ghcr.io/africasvoices/engagement-data-pipeline:v2.0.0
