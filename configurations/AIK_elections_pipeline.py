@@ -26,22 +26,22 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     operations_dashboard=OperationsDashboardConfiguration(
         credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
     ),
-    google_form_sources=[
-        GoogleFormSource(
-            google_form_client=GoogleFormsClientConfiguration(
-                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
-            ),
-            # TODO: Update google form to engagement db config
-            sync_config=GoogleFormToEngagementDBConfiguration(
-                form_id="",
-                participant_id_configuration=ParticipantIdConfiguration(
-                    question_title="",
-                    id_type=""
-                ),
-                question_configurations=[]
-            )
-        )
-    ],
+    # google_form_sources=[
+    #     GoogleFormSource(
+    #         google_form_client=GoogleFormsClientConfiguration(
+    #             credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+    #         ),
+    #         # TODO: Update google form to engagement db config
+    #         sync_config=GoogleFormToEngagementDBConfiguration(
+    #             form_id="",
+    #             participant_id_configuration=ParticipantIdConfiguration(
+    #                 question_title="",
+    #                 id_type=""
+    #             ),
+    #             question_configurations=[]
+    #         )
+    #     )
+    # ],
     rapid_pro_sources=[
         RapidProSource(
             rapid_pro=RapidProClientConfiguration(
