@@ -26,31 +26,43 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     operations_dashboard=OperationsDashboardConfiguration(
         credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
     ),
-    google_form_sources=[
-        GoogleFormSource(
-            google_form_client=GoogleFormsClientConfiguration(
-                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
-            ),
-            # TODO: Update google form to engagement db config
-            sync_config=GoogleFormToEngagementDBConfiguration(
-                form_id="",
-                participant_id_configuration=ParticipantIdConfiguration(
-                    question_title="",
-                    id_type=""
-                ),
-                question_configurations=[]
-            )
-        )
-    ],
+    # google_form_sources=[
+    #     GoogleFormSource(
+    #         google_form_client=GoogleFormsClientConfiguration(
+    #             credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+    #         ),
+    #         # TODO: Update google form to engagement db config
+    #         sync_config=GoogleFormToEngagementDBConfiguration(
+    #             form_id="",
+    #             participant_id_configuration=ParticipantIdConfiguration(
+    #                 question_title="",
+    #                 id_type=""
+    #             ),
+    #             question_configurations=[]
+    #         )
+    #     )
+    # ],
     rapid_pro_sources=[
         RapidProSource(
             rapid_pro=RapidProClientConfiguration(
                 domain="textit.com",
                 token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
             ),
-            # TODO: Update rapidpro to engagement db config
             sync_config=RapidProToEngagementDBConfiguration(
-                flow_result_configurations=[],
+                flow_result_configurations=[                   
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_age", "age"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_gender", "gender"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
+
+                    # s01q01 -> survey 1 question 1
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q01", "aik_elections_s01q01"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q02", "aik_elections_s01q02"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q03", "aik_elections_s01q03"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q04", "aik_elections_s01q04"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q05", "aik_elections_s01q05"),
+                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q06", "aik_elections_s01q06"),
+                ],
             )
         )
     ],
@@ -62,10 +74,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme(
-                            "demographics/kenya_constituency"), auto_coder=None),
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme(
-                            "demographics/kenya_county"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
                     ],
                     ws_code_match_value="location",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
@@ -135,6 +146,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         code_scheme=load_code_scheme("demographics/kenya_constituency"),
                         analysis_dataset="kenya_constituency",
                         analysis_location=AnalysisLocations.KENYA_CONSTITUENCY
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_ward"),
+                        analysis_dataset="kenya_ward",
+                        analysis_location=AnalysisLocations.KENYA_WARD
                     )
                 ]
             ),
