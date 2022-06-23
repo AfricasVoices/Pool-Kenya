@@ -322,6 +322,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             allow_clearing_fields=False,
             weekly_advert_contact_field=ContactField(key="icl_pool_advert_contact",
                                                      label="icl pool advert contact"),
+            sync_advert_contacts=True,
         )
     ),
     archive_configuration=ArchiveConfiguration(
