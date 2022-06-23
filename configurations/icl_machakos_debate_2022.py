@@ -105,7 +105,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="ICL_machakos_womenrep_poll_2022",
                     engagement_db_dataset="machakos_womenrep_poll_2022",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_womenrep_poll_2022"),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_womenrep_poll_2022_selina"),
                                                 auto_coder=None),
                     ],
                     ws_code_string_value="icl_machakos_womenrep_poll_2022"
