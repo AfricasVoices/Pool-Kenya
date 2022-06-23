@@ -76,6 +76,15 @@
             "MatchValues": ["icl_machakos_governor_poll_2022"]
         },
         {
+            "CodeID": "code-6e5870fb",
+            "CodeType": "Normal",
+            "DisplayText": "icl pool invitation 2022",
+            "StringValue": "icl_pool_invitation_2022",
+            "NumericValue": 470,
+            "VisibleInCoda": true,
+            "MatchValues": ["icl_pool_invitation_2022"]
+        },
+        {
             "CodeID": "code-eef95368",
             "CodeType": "Normal",
             "DisplayText": "KE_Engagement_poll_chatting_apps",

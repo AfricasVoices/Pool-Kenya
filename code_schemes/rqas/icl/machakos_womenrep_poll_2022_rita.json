@@ -1,22 +1,22 @@
 {
   "SchemeID": "Scheme-31b3ab58",
-  "Name": "Machakos County Priorities 2022",
+  "Name": "Machakos Women Rep Poll 2022",
   "Version": "0.0.0.6",
   "Codes": [
     {
-      "CodeID": "code-18b75cad",
+      "CodeID": "code-f0c2d3f9",
       "CodeType": "Normal",
-      "DisplayText": "womenrep two",
-      "NumericValue": 1,
-      "StringValue": "womenrep_two",
+      "DisplayText": "1. yes",
+      "NumericValue": 5,
+      "StringValue": "1_yes",
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-759331a7",
+      "CodeID": "code-37cbc4e2",
       "CodeType": "Normal",
-      "DisplayText": "womenrep one",
-      "NumericValue": 2,
-      "StringValue": "womenrep_one",
+      "DisplayText": "2. no",
+      "NumericValue": 6,
+      "StringValue": "2_no",
       "VisibleInCoda": true
     },
     {
