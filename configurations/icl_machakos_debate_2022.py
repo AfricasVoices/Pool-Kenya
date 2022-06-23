@@ -56,7 +56,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
                     ],
-                    ws_code_string_value="location"
+                    ws_code_match_value="location"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_gender",
@@ -65,7 +65,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
                                                 auto_coder=swahili.DemographicCleaner.clean_gender)
                     ],
-                    ws_code_string_value="gender"
+                    ws_code_match_value="gender"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_age",
@@ -74,7 +74,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
                                                 str(swahili.DemographicCleaner.clean_age_within_range(x)))
                     ],
-                    ws_code_string_value="age"
+                    ws_code_match_value="age"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_disabled",
@@ -82,7 +82,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
                     ],
-                    ws_code_string_value="disabled"
+                    ws_code_match_value="disabled"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_old_rqa_datasets",
@@ -90,7 +90,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("kenya_pool_old_rqa_datasets"), auto_coder=None)
                     ],
-                    ws_code_string_value="kenya_pool_old_rqa_datasets"
+                    ws_code_match_value="kenya_pool_old_rqa_datasets"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_county_priorities_2022",
@@ -99,7 +99,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_county_priorities_2022"),
                                                 auto_coder=None, coda_code_schemes_count=3),
                     ],
-                    ws_code_string_value="icl_machakos_county_priorities_2022"
+                    ws_code_match_value="icl_machakos_county_priorities_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_womenrep_poll_2022",
@@ -108,7 +108,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_womenrep_poll_2022_selina"),
                                                 auto_coder=None),
                     ],
-                    ws_code_string_value="icl_machakos_womenrep_poll_2022"
+                    ws_code_match_value="icl_machakos_womenrep_poll_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_womenrep_poll_2022_rita",
@@ -117,7 +117,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_womenrep_poll_2022_rita"),
                                                 auto_coder=None),
                     ],
-                    ws_code_string_value="icl_machakos_womenrep_poll_2022_rita"
+                    ws_code_match_value="icl_machakos_womenrep_poll_2022_rita"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_senator_poll_2022",
@@ -126,7 +126,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_senator_poll_2022"),
                                                 auto_coder=None),
                     ],
-                    ws_code_string_value="icl_machakos_senator_poll_2022"
+                    ws_code_match_value="icl_machakos_senator_poll_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_governor_poll_2022",
@@ -135,7 +135,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_governor_poll_2022"),
                                                 auto_coder=None),
                     ],
-                    ws_code_string_value="icl_machakos_governor_poll_2022"
+                    ws_code_match_value="icl_machakos_governor_poll_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_pool_invitation_2022",
@@ -144,7 +144,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/icl_pool_invitation_2022"),
                                                 auto_coder=None),
                     ],
-                    ws_code_string_value="icl_pool_invitation_2022"
+                    ws_code_match_value="icl_pool_invitation_2022"
                 ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
