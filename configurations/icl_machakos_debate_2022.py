@@ -318,7 +318,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                         "machakos_county_priorities_2022", "icl_pool_invitation_2022"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
-            write_mode=WriteModes.CONCATENATE_TEXTS
+            write_mode=WriteModes.CONCATENATE_TEXTS,
+            allow_clearing_fields=False,
+            weekly_advert_contact_field=ContactField(key="icl_pool_advert_contact",
+                                                     label="icl pool advert contact"),
         )
     ),
     archive_configuration=ArchiveConfiguration(
