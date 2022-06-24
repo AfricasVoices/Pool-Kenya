@@ -168,8 +168,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         analysis_dataset="machakos_county_priorities_2022"
                     )
                 ],
-                rapid_pro_non_relevant_field=ContactField(key="machakos_county_priorities_2022_non_relevant_contacts",
-                                                          label = "machakos county priorities 2022 non relevant contacts"),
             ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["machakos_womenrep_poll_2022"],
