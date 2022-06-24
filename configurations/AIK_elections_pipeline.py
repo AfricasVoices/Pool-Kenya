@@ -164,7 +164,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         analysis_dataset="age"
                     ),
                     CodingConfiguration(
-                        code_scheme=load_code_scheme("demographics/age_category"),
+                        code_scheme=load_code_scheme("demographics/aik_elections_age_category"),
                         analysis_dataset="age_category",
                         age_category_config=AgeCategoryConfiguration(
                             age_analysis_dataset="age",
