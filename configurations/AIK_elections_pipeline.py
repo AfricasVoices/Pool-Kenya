@@ -55,13 +55,13 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
 
-                    # s01q01 -> survey 1 question 1
-                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q01", "aik_elections_s01q01"),
-                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q02", "aik_elections_s01q02"),
-                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q03", "aik_elections_s01q03"),
-                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q04", "aik_elections_s01q04"),
-                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q05", "aik_elections_s01q05"),
-                    # FlowResultConfiguration("AIK_survey_01_activation", "rqa_aik_elections_s01q06", "aik_elections_s01q06"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_political_participation", "aik_political_participation"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_election_conversations", "aik_election_conversations"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_influence_on_voting_choices", "aik_influence_on_voting_choices"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_concern_about_safety_and_security", "aik_concern_about_safety_and_security"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_incidents_of_violence_and_polarisation", "aik_incidents_of_violence_and_polarisation"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_electoral_sexual_gender_based_violence", "aik_electoral_sexual_gender_based_violence"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_response_to_electoral_related_insecurity", "aik_response_to_electoral_related_insecurity"),
                 ],
             )
         )
