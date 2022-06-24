@@ -223,6 +223,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         analysis_dataset="icl_pool_invitation_2022"
                     )
                 ],
+                rapid_pro_non_relevant_field=ContactField(key="pool_kenya_contact",
+                                                             label="pool kenya contacts"),
             ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["gender"],

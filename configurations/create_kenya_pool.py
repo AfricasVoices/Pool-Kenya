@@ -212,6 +212,70 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             default_ws_dataset="kenya_pool_old_rqa_datasets"
         )
     ),
+    analysis=AnalysisConfiguration(
+        dataset_configurations=[
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gender"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="gender_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/gender"),
+                        analysis_dataset="gender"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["location"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="location_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_ward"),
+                        analysis_dataset="kenya_ward",
+                        analysis_location=AnalysisLocations.KENYA_WARD
+
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_county"),
+                        analysis_dataset="kenya_county",
+                        analysis_location=AnalysisLocations.KENYA_COUNTY
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/kenya_constituency"),
+                        analysis_dataset="kenya_constituency",
+                        analysis_location=AnalysisLocations.KENYA_CONSTITUENCY
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["age"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="age_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/age"),
+                        analysis_dataset="age"
+                    ),
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/age_category"),
+                        analysis_dataset="age_category",
+                        age_category_config=AgeCategoryConfiguration(
+                            age_analysis_dataset="age",
+                            categories={
+                                (10, 14): "10 to 14",
+                                (15, 17): "15 to 17",
+                                (18, 35): "18 to 35",
+                                (36, 54): "36 to 54",
+                                (55, 99): "55 to 99"
+                            }
+                        )
+                    ),
+                ],
+            )
+        ],
+        ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+    ),
     rapid_pro_target=RapidProTarget(
         rapid_pro=RapidProClientConfiguration(
             domain="textit.com",
@@ -240,7 +304,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 engagement_db_datasets=["age", "gender", "location", "disabled",],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
-            write_mode=WriteModes.CONCATENATE_TEXTS
+            write_mode=WriteModes.CONCATENATE_TEXTS,
+            allow_clearing_fields=False,
+            weekly_advert_contact_field=ContactField(key="pool_kenya_contact",
+                                                     label="pool kenya contacts"),
+            sync_advert_contacts=True,
         )
     ),
     archive_configuration=ArchiveConfiguration(
