@@ -98,6 +98,69 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="disabled",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_political_participation",
+                    engagement_db_dataset="aik_political_participation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_political_participation"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_political_participation"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_election_conversations",
+                    engagement_db_dataset="aik_election_conversations",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_election_conversations"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_election_conversations"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_influence_on_voting_choices",
+                    engagement_db_dataset="aik_influence_on_voting_choices",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_influence_on_voting_choices"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_influence_on_voting_choices"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_concern_about_safety_and_security",
+                    engagement_db_dataset="aik_concern_about_safety_and_security",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_concern_about_safety_and_security"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_concern_about_safety_and_security"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_incidents_of_violence_and_polarisation",
+                    engagement_db_dataset="aik_incidents_of_violence_and_polarisation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incidents_of_violence_and_polarisation"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_incidents_of_violence_and_polarisation"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_electoral_sexual_gender_based_violence",
+                    engagement_db_dataset="aik_electoral_sexual_gender_based_violence",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_electoral_sexual_gender_based_violence"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_electoral_sexual_gender_based_violence"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_response_to_electoral_related_insecurity",
+                    engagement_db_dataset="aik_response_to_electoral_related_insecurity",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_response_to_electoral_related_insecurity"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_response_to_electoral_related_insecurity"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/aik_elections_coda_users.json",
