@@ -169,7 +169,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         age_category_config=AgeCategoryConfiguration(
                             age_analysis_dataset="age",
                             categories={
-                                (11, 17): "10 to 17",
+                                (10, 17): "10 to 17",
                                 (18, 24): "18 to 24",
                                 (25, 34): "25 to 34",
                                 (35, 49): "35 to 49",
