@@ -14,10 +14,21 @@
       "Shortcut": "e"
     },
     {
+      "CodeID": "code-47d47e8a",
+      "CodeType": "Normal",
+      "DisplayText": "10 to 17",
+      "NumericValue": 1,
+      "StringValue": "10_to_17",
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "10 to 17"
+      ]
+    },
+    {
       "CodeID": "code-5dfae456",
       "CodeType": "Normal",
       "DisplayText": "18 to 24",
-      "NumericValue": 1,
+      "NumericValue": 2,
       "StringValue": "18_to_24",
       "VisibleInCoda": true,
       "MatchValues": [
@@ -28,7 +39,7 @@
       "CodeID": "code-36f83606",
       "CodeType": "Normal",
       "DisplayText": "25 to 34",
-      "NumericValue": 2,
+      "NumericValue": 3,
       "StringValue": "25_to_34",
       "VisibleInCoda": true,
       "MatchValues": [
@@ -39,7 +50,7 @@
       "CodeID": "code-28830578",
       "CodeType": "Normal",
       "DisplayText": "35 to 49",
-      "NumericValue": 3,
+      "NumericValue": 4,
       "StringValue": "35_to_49",
       "VisibleInCoda": true,
       "MatchValues": [
@@ -50,7 +61,7 @@
       "CodeID": "code-b48eb423",
       "CodeType": "Normal",
       "DisplayText": "50 to 64",
-      "NumericValue": 4,
+      "NumericValue": 5,
       "StringValue": "50_to_64",
       "VisibleInCoda": true,
       "MatchValues": [
@@ -61,7 +72,7 @@
       "CodeID": "code-e750d8be",
       "CodeType": "Normal",
       "DisplayText": "65 to 99",
-      "NumericValue": 5,
+      "NumericValue": 6,
       "StringValue": "65_to_99",
       "VisibleInCoda": true,
       "MatchValues": [
