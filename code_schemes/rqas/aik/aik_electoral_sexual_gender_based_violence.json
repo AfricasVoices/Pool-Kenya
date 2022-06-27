@@ -4,6 +4,16 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-E-720cdb66",
+            "CodeType": "Meta",
+            "MetaCode": "escalate",
+            "DisplayText": "meta: ESCALATE",
+            "NumericValue": -100080,
+            "StringValue": "escalate",
+            "VisibleInCoda": true,
+            "Shortcut": "e"
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
@@ -191,16 +201,6 @@
             "StringValue": "impact",
             "NumericValue": -100140,
             "VisibleInCoda": false
-        },
-        {
-            "CodeID": "code-E-720cdb66",
-            "CodeType": "Meta",
-            "MetaCode": "escalate",
-            "DisplayText": "meta: ESCALATE",
-            "NumericValue": -100080,
-            "StringValue": "escalate",
-            "VisibleInCoda": true,
-            "Shortcut": "e"
         }
     ]
 }
