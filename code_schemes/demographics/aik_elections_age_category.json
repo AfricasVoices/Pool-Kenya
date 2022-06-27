@@ -14,6 +14,17 @@
       "Shortcut": "e"
     },
     {
+      "CodeID": "code-47d47e8a",
+      "CodeType": "Normal",
+      "DisplayText": "10 to 17",
+      "NumericValue": 0,
+      "StringValue": "10_to_17",
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "10 to 17"
+      ]
+    },
+    {
       "CodeID": "code-5dfae456",
       "CodeType": "Normal",
       "DisplayText": "18 to 24",
