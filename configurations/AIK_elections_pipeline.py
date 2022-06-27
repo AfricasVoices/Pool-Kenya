@@ -26,31 +26,43 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     operations_dashboard=OperationsDashboardConfiguration(
         credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
     ),
-    google_form_sources=[
-        GoogleFormSource(
-            google_form_client=GoogleFormsClientConfiguration(
-                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
-            ),
-            # TODO: Update google form to engagement db config
-            sync_config=GoogleFormToEngagementDBConfiguration(
-                form_id="",
-                participant_id_configuration=ParticipantIdConfiguration(
-                    question_title="",
-                    id_type=""
-                ),
-                question_configurations=[]
-            )
-        )
-    ],
+    # google_form_sources=[
+    #     GoogleFormSource(
+    #         google_form_client=GoogleFormsClientConfiguration(
+    #             credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+    #         ),
+    #         # TODO: Update google form to engagement db config
+    #         sync_config=GoogleFormToEngagementDBConfiguration(
+    #             form_id="",
+    #             participant_id_configuration=ParticipantIdConfiguration(
+    #                 question_title="",
+    #                 id_type=""
+    #             ),
+    #             question_configurations=[]
+    #         )
+    #     )
+    # ],
     rapid_pro_sources=[
         RapidProSource(
             rapid_pro=RapidProClientConfiguration(
                 domain="textit.com",
                 token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
             ),
-            # TODO: Update rapidpro to engagement db config
             sync_config=RapidProToEngagementDBConfiguration(
-                flow_result_configurations=[],
+                flow_result_configurations=[                   
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_age", "age"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_gender", "gender"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
+                    FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
+
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_political_participation", "aik_political_participation"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_election_conversations", "aik_election_conversations"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_influence_on_voting_choices", "aik_influence_on_voting_choices"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_concern_about_safety_and_security", "aik_concern_about_safety_and_security"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_incidents_of_violence_and_polarisation", "aik_incidents_of_violence_and_polarisation"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_electoral_sexual_gender_based_violence", "aik_electoral_sexual_gender_based_violence"),
+                    FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_response_to_electoral_related_insecurity", "aik_response_to_electoral_related_insecurity"),
+                ],
             )
         )
     ],
