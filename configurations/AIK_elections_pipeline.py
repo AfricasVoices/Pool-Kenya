@@ -55,6 +55,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
 
+                    FlowResultConfiguration("AIK_pool_invitation_activation", "AIK_pool_invitation_2022", "aik_pool_invitation_2022"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_political_participation", "aik_political_participation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_election_conversations", "aik_election_conversations"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_influence_on_voting_choices", "aik_influence_on_voting_choices"),
@@ -109,6 +110,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="disabled",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_pool_invitation_2022",
+                    engagement_db_dataset="aik_pool_invitation_2022",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/aik_pool_invitation_2022"),
+                                                auto_coder=None),
+                    ],
+                    ws_code_match_value="aik_pool_invitation_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="AIK_political_participation",
@@ -241,6 +251,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                             }
                         )
                     ),
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["aik_pool_invitation_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="aik_pool_invitation_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/aik/aik_pool_invitation_2022"),
+                        analysis_dataset="aik_pool_invitation_2022"
+                    )
                 ],
             ),
             AnalysisDatasetConfiguration(
