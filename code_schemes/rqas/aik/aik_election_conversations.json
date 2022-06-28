@@ -14,6 +14,46 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-07fcc20a",
+            "CodeType": "Normal",
+            "DisplayText": "nothing has changed",
+            "NumericValue": 1,
+            "StringValue": "nothing_has_changed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-73dbbd2b",
+            "CodeType": "Normal",
+            "DisplayText": "there is conflict",
+            "NumericValue": 2,
+            "StringValue": "there_is_conflict",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-046f5fc1",
+            "CodeType": "Normal",
+            "DisplayText": "it is peaceful or need to promote peace",
+            "NumericValue": 3,
+            "StringValue": "it_is_peaceful_or_need_to_promote_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-75e9b187",
+            "CodeType": "Normal",
+            "DisplayText": "it has changed",
+            "NumericValue": 4,
+            "StringValue": "it_has_changed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fbcd509b",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 5,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
