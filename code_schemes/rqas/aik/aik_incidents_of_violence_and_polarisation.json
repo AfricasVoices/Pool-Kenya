@@ -62,18 +62,10 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
-            "CodeType": "Normal",
-            "DisplayText": "i do not know",
-            "NumericValue": 7,
-            "StringValue": "i_do_not_know",
-            "VisibleInCoda": true
-        },
-        {
             "CodeID": "code-c4b57b15",
             "CodeType": "Normal",
             "DisplayText": "no signs of violence yet",
-            "NumericValue": 8,
+            "NumericValue": 7,
             "StringValue": "no_signs_of_violence_yet",
             "VisibleInCoda": true
         },
@@ -81,8 +73,16 @@
             "CodeID": "code-14e03002",
             "CodeType": "Normal",
             "DisplayText": "bad economy",
-            "NumericValue": 9,
+            "NumericValue": 8,
             "StringValue": "bad_economy",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-92cd2289",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 9,
+            "StringValue": "i_do_not_know",
             "VisibleInCoda": true
         },
         {
