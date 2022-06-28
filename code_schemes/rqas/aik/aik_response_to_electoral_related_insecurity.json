@@ -14,6 +14,86 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-05e927e8",
+            "CodeType": "Normal",
+            "DisplayText": "create awareness or promote peace",
+            "NumericValue": 1,
+            "StringValue": "create_awareness_or_promote_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3c83c4ce",
+            "CodeType": "Normal",
+            "DisplayText": "pray to God",
+            "NumericValue": 2,
+            "StringValue": "pray_to_god",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ec1cb78d",
+            "CodeType": "Normal",
+            "DisplayText": "nothing",
+            "NumericValue": 3,
+            "StringValue": "nothing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a38bdb8b",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 4,
+            "StringValue": "i_do_not_know",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-380a363d",
+            "CodeType": "Normal",
+            "DisplayText": "flee to safer areas",
+            "NumericValue": 5,
+            "StringValue": "flee_to_safer_areas",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-31e670f1",
+            "CodeType": "Normal",
+            "DisplayText": "report to authorities",
+            "NumericValue": 6,
+            "StringValue": "report_to_authorities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7f48e5e1",
+            "CodeType": "Normal",
+            "DisplayText": "stay indoor",
+            "NumericValue": 7,
+            "StringValue": "stay_indoor",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3b8e80f2",
+            "CodeType": "Normal",
+            "DisplayText": "there will be no violence",
+            "NumericValue": 8,
+            "StringValue": "there_will_be_no_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-288792a8",
+            "CodeType": "Normal",
+            "DisplayText": "self defense",
+            "NumericValue": 9,
+            "StringValue": "self_defense",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-42b20313",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 10,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
