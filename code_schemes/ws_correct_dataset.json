@@ -40,6 +40,69 @@
             "MatchValues": ["disabled"]
         },
         {
+            "CodeID": "code-3f0c3558",
+            "CodeType": "Normal",
+            "DisplayText": "aik political participation",
+            "StringValue": "aik_political_participation",
+            "NumericValue": 471,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_political_participation"]
+        },
+        {
+            "CodeID": "code-64c8a605",
+            "CodeType": "Normal",
+            "DisplayText": "aik election conversations",
+            "StringValue": "aik_election_conversations",
+            "NumericValue": 472,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_election_conversations"]
+        },
+        {
+            "CodeID": "code-5bbb4c2c",
+            "CodeType": "Normal",
+            "DisplayText": "aik influence on voting choices",
+            "StringValue": "aik_influence_on_voting_choices",
+            "NumericValue": 473,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_influence_on_voting_choices"]
+        },
+        {
+            "CodeID": "code-6b525239",
+            "CodeType": "Normal",
+            "DisplayText": "aik concern about safety and security",
+            "StringValue": "aik_concern_about_safety_and_security",
+            "NumericValue": 474,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_concern_about_safety_and_security"]
+        },
+        {
+            "CodeID": "code-8c5a70da",
+            "CodeType": "Normal",
+            "DisplayText": "aik incidents of violence and polarisation",
+            "StringValue": "aik_incidents_of_violence_and_polarisation",
+            "NumericValue": 475,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_incidents_of_violence_and_polarisation"]
+        },
+        {
+            "CodeID": "code-a8b3a0af",
+            "CodeType": "Normal",
+            "DisplayText": "aik electoral sexual gender based violence",
+            "StringValue": "aik_electoral_sexual_gender_based_violence",
+            "NumericValue": 476,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_electoral_sexual_gender_based_violence"]
+        },
+        {
+            "CodeID": "code-37cb7f93",
+            "CodeType": "Normal",
+            "DisplayText": "aik response to electoral related insecurity",
+            "StringValue": "aik_response_to_electoral_related_insecurity",
+            "NumericValue": 477,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_response_to_electoral_related_insecurity"]
+        },
+        {
             "CodeID": "code-180095d9",
             "CodeType": "Normal",
             "DisplayText": "machakos county priorities 2022",
