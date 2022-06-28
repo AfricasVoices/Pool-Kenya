@@ -14,6 +14,70 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-0e64085c",
+            "CodeType": "Normal",
+            "DisplayText": "cost of living",
+            "NumericValue": 1,
+            "StringValue": "cost_of_living",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5d8450ae",
+            "CodeType": "Normal",
+            "DisplayText": "need for good leadership",
+            "NumericValue": 2,
+            "StringValue": "need_for_good_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fa2c2965",
+            "CodeType": "Normal",
+            "DisplayText": "need for development and change",
+            "NumericValue": 3,
+            "StringValue": "need_for_development_and_change",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-69be66f7",
+            "CodeType": "Normal",
+            "DisplayText": "democratic or constitutional right to vote",
+            "NumericValue": 4,
+            "StringValue": "democratic_or_constitutional_right_to_vote",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fa6a0f56",
+            "CodeType": "Normal",
+            "DisplayText": "policies or manifesto",
+            "NumericValue": 5,
+            "StringValue": "policies_or_manifesto",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a3456946",
+            "CodeType": "Normal",
+            "DisplayText": "no need of voting",
+            "NumericValue": 6,
+            "StringValue": "no_need_of_voting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a0c35898",
+            "CodeType": "Normal",
+            "DisplayText": "no assurance of security",
+            "NumericValue": 7,
+            "StringValue": "no_assurance_of_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-62bed6cf",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
