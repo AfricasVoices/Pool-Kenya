@@ -115,7 +115,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="AIK_pool_invitation_2022",
                     engagement_db_dataset="aik_pool_invitation_2022",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/aik_pool_invitation_2022"),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_pool_invitation_2022"),
                                                 auto_coder=None),
                     ],
                     ws_code_match_value="aik_pool_invitation_2022"
