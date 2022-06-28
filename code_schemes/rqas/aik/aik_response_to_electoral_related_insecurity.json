@@ -64,9 +64,9 @@
         {
             "CodeID": "code-7f48e5e1",
             "CodeType": "Normal",
-            "DisplayText": "stay indoor",
+            "DisplayText": "stay indoors",
             "NumericValue": 7,
-            "StringValue": "stay_indoor",
+            "StringValue": "stay_indoors",
             "VisibleInCoda": true
         },
         {
