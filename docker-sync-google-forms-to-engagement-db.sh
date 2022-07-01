@@ -2,7 +2,7 @@
 
 set -e
 
-PROJECT_NAME="$(<configurations/docker_image_project_name.txt)"
+PROJECT_NAME="$(<configurations/docker_image_name.txt)"
 IMAGE_NAME=$PROJECT_NAME-sync-google-forms-to-engagement-db
 
 while [[ $# -gt 0 ]]; do
