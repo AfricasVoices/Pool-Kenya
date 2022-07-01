@@ -103,6 +103,78 @@
             "MatchValues": ["aik_response_to_electoral_related_insecurity"]
         },
         {
+            "CodeID": "code-af66ed7d",
+            "CodeType": "Normal",
+            "DisplayText": "aik iebc effectiveness",
+            "StringValue": "aik_iebc_effectiveness",
+            "NumericValue": 478,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_iebc_effectiveness"]
+        },
+        {
+            "CodeID": "code-16ba528e",
+            "CodeType": "Normal",
+            "DisplayText": "aik nps effectiveness",
+            "StringValue": "aik_nps_effectiveness",
+            "NumericValue": 479,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_nps_effectiveness"]
+        },
+        {
+            "CodeID": "code-eba2af6b",
+            "CodeType": "Normal",
+            "DisplayText": "aik ncic effectiveness",
+            "StringValue": "aik_ncic_effectiveness",
+            "NumericValue": 480,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_ncic_effectiveness"]
+        },
+        {
+            "CodeID": "code-eeeb5063",
+            "CodeType": "Normal",
+            "DisplayText": "aik dpp effectiveness",
+            "StringValue": "aik_dpp_effectiveness",
+            "NumericValue": 481,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_dpp_effectiveness"]
+        },
+        {
+            "CodeID": "code-a170d08f",
+            "CodeType": "Normal",
+            "DisplayText": "aik ipoa effectiveness",
+            "StringValue": "aik_ipoa_effectiveness",
+            "NumericValue": 482,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_ipoa_effectiveness"]
+        },
+        {
+            "CodeID": "code-35af7167",
+            "CodeType": "Normal",
+            "DisplayText": "aik judiciary effectiveness",
+            "StringValue": "aik_judiciary_effectiveness",
+            "NumericValue": 483,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_judiciary_effectiveness"]
+        },
+        {
+            "CodeID": "code-d0c9381d",
+            "CodeType": "Normal",
+            "DisplayText": "aik knchr effectiveness",
+            "StringValue": "aik_knchr_effectiveness",
+            "NumericValue": 484,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_knchr_effectiveness"]
+        },
+        {
+            "CodeID": "code-763fe466",
+            "CodeType": "Normal",
+            "DisplayText": "aik other institutions effectiveness",
+            "StringValue": "aik_other_institutions_effectiveness",
+            "NumericValue": 485,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_other_institutions_effectiveness"]
+        },
+        {
             "CodeID": "code-180095d9",
             "CodeType": "Normal",
             "DisplayText": "machakos county priorities 2022",
