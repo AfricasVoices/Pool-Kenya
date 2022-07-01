@@ -242,6 +242,78 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="aik_response_to_electoral_related_insecurity"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_IEBC_effectiveness",
+                    engagement_db_dataset="aik_iebc_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_iebc_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_iebc_effectiveness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_NPS_effectiveness",
+                    engagement_db_dataset="aik_nps_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_nps_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_nps_effectiveness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_NCIC_effectiveness",
+                    engagement_db_dataset="aik_ncic_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_ncic_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_ncic_effectiveness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_DPP_effectiveness",
+                    engagement_db_dataset="aik_dpp_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_dpp_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_dpp_effectiveness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_IPOA_effectiveness",
+                    engagement_db_dataset="aik_ipoa_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_ipoa_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_ipoa_effectiveness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_judiciary_effectiveness",
+                    engagement_db_dataset="aik_judiciary_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_judiciary_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_judiciary_effectiveness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_KNCHR_effectiveness",
+                    engagement_db_dataset="aik_knchr_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_knchr_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_knchr_effectiveness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_other_institutions_effectiveness",
+                    engagement_db_dataset="aik_other_institutions_effectiveness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_other_institutions_effectiveness"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_other_institutions_effectiveness"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/aik_elections_coda_users.json",
