@@ -37,9 +37,6 @@ CONFIGURATION_FILE=$3
 CODE_SCHEMES_DIR=$4
 DATA_DIR=$5
 
-# Build an image for this pipeline stage.
-docker build -t "$IMAGE_NAME" .
-
 # Create a container from the image that was just built.
 CMD="pipenv run python -u sync_google_forms_to_engagement_db.py ${DRY_RUN} ${INCREMENTAL_ARG} \
     ${USER} /credentials/google-cloud-credentials.json configuration"
