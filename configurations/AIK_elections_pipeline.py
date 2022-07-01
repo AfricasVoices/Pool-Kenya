@@ -314,6 +314,132 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="aik_other_institutions_effectiveness"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_electoral_violence_anxiety",
+                    engagement_db_dataset="aik_electoral_violence_anxiety",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_electoral_violence_anxiety"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_electoral_violence_anxiety"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_hate_speech_and_actions_target",
+                    engagement_db_dataset="aik_hate_speech_and_actions_target",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_hate_speech_and_actions_target"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_hate_speech_and_actions_target"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_identity_groups_increase",
+                    engagement_db_dataset="aik_identity_groups_increase",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_identity_groups_increase"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_identity_groups_increase"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_inability_to_work",
+                    engagement_db_dataset="aik_inability_to_work",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_inability_to_work"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_inability_to_work"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_intolerance_incidents",
+                    engagement_db_dataset="aik_intolerance_incidents",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_intolerance_incidents"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_intolerance_incidents"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_peace_and_security_initiatives",
+                    engagement_db_dataset="aik_peace_and_security_initiatives",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_peace_and_security_initiatives"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_peace_and_security_initiatives"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_physical_harm",
+                    engagement_db_dataset="aik_physical_harm",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_physical_harm"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_physical_harm"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_police_brutality",
+                    engagement_db_dataset="aik_police_brutality",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_police_brutality"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_police_brutality"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_political_environment",
+                    engagement_db_dataset="aik_political_environment",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_political_environment"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_political_environment"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_political_events_disruption",
+                    engagement_db_dataset="aik_political_events_disruption",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_political_events_disruption"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_political_events_disruption"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_sexual_assault",
+                    engagement_db_dataset="aik_sexual_assault",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_sexual_assault"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_sexual_assault"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_unsafe_areas",
+                    engagement_db_dataset="aik_unsafe_areas",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_unsafe_areas"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_unsafe_areas"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_vandalism_theft_incidents",
+                    engagement_db_dataset="aik_vandalism_theft_incidents",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_vandalism_theft_incidents"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_vandalism_theft_incidents"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_violence_displacement",
+                    engagement_db_dataset="aik_violence_displacement",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_violence_displacement"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_violence_displacement"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/aik_elections_coda_users.json",
