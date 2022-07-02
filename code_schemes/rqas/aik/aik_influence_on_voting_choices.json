@@ -72,65 +72,65 @@
         {
             "CodeID": "code-b6d5f068",
             "CodeType": "Normal",
-            "DisplayText": "Political Party affiliation",
+            "DisplayText": "political party affiliation",
             "NumericValue": 8,
-            "StringValue": "Political Party affiliation",
+            "StringValue": "political_party_affiliation",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-e8ddb205",
             "CodeType": "Normal",
-            "DisplayText": "Money/Bribery",
+            "DisplayText": "money or bribery",
             "NumericValue": 9,
-            "StringValue": "Money/Bribery",
+            "StringValue": "money_or_bribery",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-6aef04dd",
             "CodeType": "Normal",
-            "DisplayText": "Tribal affiliation/Ethnicity",
+            "DisplayText": "tribal affiliation or ethnicity",
             "NumericValue": 10,
-            "StringValue": "Tribal affiliation/Ethnicity",
+            "StringValue": "tribal_affiliation_or_ethnicity",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-4a99ab0f",
             "CodeType": "Normal",
-            "DisplayText": "Community decision/Local leaders influence",
+            "DisplayText": "community decision or local leaders influence",
             "NumericValue": 11,
-            "StringValue": "Community decision/Local leaders influence",
+            "StringValue": "community_decision_or_local_leaders_influence",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-bc2abcc1",
             "CodeType": "Normal",
-            "DisplayText": "Popularity of contestant",
+            "DisplayText": "popularity of contestant",
             "NumericValue": 12,
-            "StringValue": "Popularity of contestant",
+            "StringValue": "popularity_of_contestant",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-b7774c14",
             "CodeType": "Normal",
-            "DisplayText": "Government influence",
+            "DisplayText": "government influence",
             "NumericValue": 13,
-            "StringValue": "Government influence",
+            "StringValue": "government_influence",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-58048748",
             "CodeType": "Normal",
-            "DisplayText": "Level of Confidence in IEBC",
+            "DisplayText": "level of confidence in IEBC",
             "NumericValue": 14,
-            "StringValue": "Level of Confidence in IEBC",
+            "StringValue": "level_of_confidence_in_iebc",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-0208692d",
             "CodeType": "Normal",
-            "DisplayText": "Peaceful campaigns",
+            "DisplayText": "peaceful campaigns",
             "NumericValue": 15,
-            "StringValue": "Peaceful campaigns",
+            "StringValue": "peaceful_campaigns",
             "VisibleInCoda": true
         },
         {
