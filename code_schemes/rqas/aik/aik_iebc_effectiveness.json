@@ -14,6 +14,78 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-67879ee2",
+            "CodeType": "Normal",
+            "DisplayText": "lacks fairness",
+            "NumericValue": 1,
+            "StringValue": "lacks_fairness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0c041c40",
+            "CodeType": "Normal",
+            "DisplayText": "lacks independence",
+            "NumericValue": 2,
+            "StringValue": "lacks_independence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-efdbc632",
+            "CodeType": "Normal",
+            "DisplayText": "they are incompetent",
+            "NumericValue": 3,
+            "StringValue": "they_are_incompetent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c0457df7",
+            "CodeType": "Normal",
+            "DisplayText": "conduct free and fair elections",
+            "NumericValue": 4,
+            "StringValue": "conduct_free_and_fair_elections",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-74ff611e",
+            "CodeType": "Normal",
+            "DisplayText": "they are performing their jobs well",
+            "NumericValue": 5,
+            "StringValue": "they_are_performing_their_jobs_well",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d0644f0e",
+            "CodeType": "Normal",
+            "DisplayText": "they are corrupt",
+            "NumericValue": 6,
+            "StringValue": "they_are_corrupt",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d1dd1233",
+            "CodeType": "Normal",
+            "DisplayText": "they plan peaceful elections",
+            "NumericValue": 7,
+            "StringValue": "they_plan_peaceful_elections",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d6789bf9",
+            "CodeType": "Normal",
+            "DisplayText": "not aware of them",
+            "NumericValue": 8,
+            "StringValue": "not_aware_of_them",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-eba11035",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
