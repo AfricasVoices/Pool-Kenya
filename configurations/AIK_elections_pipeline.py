@@ -32,6 +32,60 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
             ),
             sync_config=GoogleFormToEngagementDBConfiguration(
+                form_id="1zU-4CZRIPCT88qMH352pPMnn_hh_F-j5BWY_vhCPaZ8",
+                question_configurations=[
+                    # GENERAL ELECTORAL ENVIRONMENT
+                    QuestionConfiguration(engagement_db_dataset="aik_voting_participation", question_titles=["Do you plan on voting in the August 9th General Elections?", "Why are you not planning to vote?"]),
+
+                    # PARTICIPATION IN POLITICAL ACTIVITIES
+                    QuestionConfiguration(engagement_db_dataset="aik_political_participation", question_titles=["Do you feel comfortable participating in any political activities in your area of residence?", 
+                                                                                                               "Give reasons for your answer on political activities participation"]),
+                    
+                    # HATE SPEECH & INCITEMENT
+                    QuestionConfiguration(engagement_db_dataset="aik_election_conversations", question_titles=["In your view, have elections-related conversations become more controversial and conflictual in the past two weeks than the two weeks before? Give details."]),
+                    
+                    # UNDUE INFLUENCE & CORRUPTION
+                    QuestionConfiguration(engagement_db_dataset="aik_influence_on_voting_choices", question_titles=["Based on the campaign activities over the past two weeks, what do you think will influence people's voting choices in your area?"]),
+
+                    # RISKS OF VIOLENCE
+                    QuestionConfiguration(engagement_db_dataset="aik_concern_about_safety_and_security", question_titles=["Based on the current political and security environment, are you concerned about safety and security within your community?", "What are you most concerned about?"]),
+
+                    # VIOLENCE INCIDENT
+                    QuestionConfiguration(engagement_db_dataset="aik_incidents_of_violence_and_polarisation", question_titles=["Do you know of incidents of violence and polarisation in your community?"]),
+
+                    # ELECTORAL VIOLENCE CONCERN
+                    QuestionConfiguration(engagement_db_dataset="aik_electoral_violence_anxiety", question_titles=["Are you or your family/neighbours more worried about electoral violence now than two weeks ago?", 
+                                                                                                                  "Why are they worried about electoral violence?"]),
+
+                    # ELECTORAL SEXUAL GENDER-BASED VIOLENCE
+                    QuestionConfiguration(engagement_db_dataset="aik_electoral_sexual_gender_based_violence", question_titles=["Are you or your family/neighbours more worried about electoral sexual gender-based violence  now than two weeks ago?", 
+                                                                                                                              "Why are they worried about electoral gender-based violence?"]),
+                    
+                    # INDIVIDUAL AND INSTITUTIONS ROLES IN THIS ELECTION
+                    QuestionConfiguration(engagement_db_dataset="aik_response_to_electoral_related_insecurity", question_titles=["How would you respond to electoral related insecurity in your area?\t"]),
+
+                    QuestionConfiguration(engagement_db_dataset="aik_iebc_effectiveness", question_titles=["Independent Electoral and Boundaries Commission (IEBC)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_nps_effectiveness", question_titles=["National Police Service (NPS)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_ncic_effectiveness", question_titles=["National Cohesion and Integration Commission (NCIC)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_dpp_effectiveness", question_titles=["Office of the Director of Public Prosecutions (DPP)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_ipoa_effectiveness", question_titles=["Independent Policing Oversight Authority (IPOA)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_judiciary_effectiveness", question_titles=["The Judiciary"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_knchr_effectiveness", question_titles=["Kenya National Commission on Human Rights (KNCHR)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_other_institutions_effectiveness", question_titles=["List other institutions and their ratings?"]),
+
+                    # DEMOGRAPHICS
+                    QuestionConfiguration(engagement_db_dataset="pool_kenya_age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="pool_kenya_gender", question_titles=["What is your sex?"]),
+                    QuestionConfiguration(engagement_db_dataset="pool_kenya_location", question_titles=["Which constituency do you live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="pool_kenya_disabled", question_titles=["Do you have any form of disability?"]),
+                ]
+            )
+        ),
+        GoogleFormSource(
+            google_form_client=GoogleFormsClientConfiguration(
+                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+            ),
+            sync_config=GoogleFormToEngagementDBConfiguration(
                 form_id="1cEeq9ujJTv381xTXEB0oP0vLNnSLIfP9Rz32zL1HnHk",
                 participant_id_configuration=ParticipantIdConfiguration(
                     question_title="What is your phone number",
