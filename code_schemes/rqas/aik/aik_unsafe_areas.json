@@ -14,6 +14,70 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-93a48ac7",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 1,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8b3d4fd9",
+            "CodeType": "Normal",
+            "DisplayText": "yes, killing and theft",
+            "NumericValue": 2,
+            "StringValue": "yes_killing_and_theft",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e2bedbb9",
+            "CodeType": "Normal",
+            "DisplayText": "yes, insecurity",
+            "NumericValue": 3,
+            "StringValue": "yes_insecurity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8687d607",
+            "CodeType": "Normal",
+            "DisplayText": "yes, political affliation or ethnicity",
+            "NumericValue": 4,
+            "StringValue": "yes_political_affliation_or_ethnicity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c7eed271",
+            "CodeType": "Normal",
+            "DisplayText": "yes, due to political differences",
+            "NumericValue": 5,
+            "StringValue": "yes_due_to_political_differences",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2786f86d",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 6,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3e475c20",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 7,
+            "StringValue": "i_do_not_know",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-abc1c67b",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
