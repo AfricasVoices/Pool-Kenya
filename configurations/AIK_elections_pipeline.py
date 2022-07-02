@@ -99,7 +99,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     QuestionConfiguration(engagement_db_dataset="aik_employment_status", question_titles=["What is your employment Status ?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_religion", question_titles=["What is your religion ?"]),
                     QuestionConfiguration(engagement_db_dataset="pool_kenya_gender", question_titles=["What is your sex? "]),
-                    QuestionConfiguration(engagement_db_dataset="aik_household income", question_titles=["Approximately what is your gross monthly household income? (I.e. This is the combined monthly income of all your household members). This will help us in determining your social-economic class."]),
+                    QuestionConfiguration(engagement_db_dataset="aik_household_income", question_titles=["Approximately what is your gross monthly household income? (I.e. This is the combined monthly income of all your household members). This will help us in determining your social-economic class."]),
                     QuestionConfiguration(engagement_db_dataset="pool_kenya_disabled", question_titles=["Do you have any form of disability? (If disability is visible, do not ask, make the judgement)"]),
                     QuestionConfiguration(engagement_db_dataset="aik_communities", question_titles=["What community do you belong to?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_indigenous_or_minority", question_titles=["Is it considered indigenous or minority?  if yes provide details."]),
