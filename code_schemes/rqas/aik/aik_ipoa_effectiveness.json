@@ -14,7 +14,7 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-97c1bc25",
             "CodeType": "Normal",
             "DisplayText": "dont know or never heard about IPOA",
             "NumericValue": 1,
@@ -22,7 +22,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-753ea1b3",
             "CodeType": "Normal",
             "DisplayText": "corrupt",
             "NumericValue": 2,
@@ -30,7 +30,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-76c60a7f",
             "CodeType": "Normal",
             "DisplayText": "incompetent or not proactive",
             "NumericValue": 3,
@@ -38,7 +38,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-8cc9a77e",
             "CodeType": "Normal",
             "DisplayText": "fair or impartial",
             "NumericValue": 4,
@@ -46,7 +46,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-b62c4ad6",
             "CodeType": "Normal",
             "DisplayText": "average",
             "NumericValue": 5,
@@ -54,7 +54,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-6e5d851b",
             "CodeType": "Normal",
             "DisplayText": "competent",
             "NumericValue": 6,
@@ -62,7 +62,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-e34a5b6e",
             "CodeType": "Normal",
             "DisplayText": "biased or unfair",
             "NumericValue": 7,
@@ -70,7 +70,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-",
+            "CodeID": "code-9396588a",
             "CodeType": "Normal",
             "DisplayText": "other theme",
             "NumericValue": 8,
