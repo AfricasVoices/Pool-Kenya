@@ -76,9 +76,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     QuestionConfiguration(engagement_db_dataset="aik_engaging_authorities", question_titles=["Does your household know how to safely and quickly report a crime or seek help from the authorities? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_incitement_sources", question_titles=["Which sources have you seen or heard hateful/inciteful statements about other communities, identities, and religions in the last two weeks?",
                                                                                                           "If there are any, what was the nature of the statements?"]),
-                    QuestionConfiguration(engagement_db_dataset="aik_vote_buying", question_titles=["Have you heard or seen incidents of voters being encouraged not to vote or sell their voters cards?", 
-                                                                                                   "If YES, when and where did this incidents of encouragement on not to vote happen?",
-                                                                                                   "Who encouraged this?"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_vote_buying_incidents", question_titles=["Have you heard or seen incidents of voters being encouraged not to vote or sell their voters cards?", 
+                                                                                                   "If YES, when and where did this incidents of encouragement on not to vote happen?"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_source_of_vote_buying", question_titles=["Who encouraged this?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_influence_on_voting_choices", question_titles=["Based on the campaign activities over the past two weeks, what do you think will influence people's voting choices in your area?"]),
                     
                     ## RISK OF VIOLENCE & CONFLICT
