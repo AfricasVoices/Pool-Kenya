@@ -14,6 +14,54 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-9ee4a91c",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 1,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a81419fb",
+            "CodeType": "Normal",
+            "DisplayText": "yes, high prices of commodities",
+            "NumericValue": 2,
+            "StringValue": "yes_high_prices_of_commodities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-35a01042",
+            "CodeType": "Normal",
+            "DisplayText": "yes, closed bussinesses",
+            "NumericValue": 3,
+            "StringValue": "yes_closed_bussinesses",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e12dfa7b",
+            "CodeType": "Normal",
+            "DisplayText": "yes, crime and insecurity",
+            "NumericValue": 4,
+            "StringValue": "yes_crime_and_insecurity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f3dee94d",
+            "CodeType": "Normal",
+            "DisplayText": "yes, discrimination",
+            "NumericValue": 5,
+            "StringValue": "yes_discrimination",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1d957db4",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
