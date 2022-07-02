@@ -94,6 +94,78 @@
             "VisibleInCoda": true
         },
         {
+            "CodeID": "code-afe152d4",
+            "CodeType": "Normal",
+            "DisplayText": "they promote peace",
+            "NumericValue": 11,
+            "StringValue": "they_promote_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4c1f17a3",
+            "CodeType": "Normal",
+            "DisplayText": "they are inactive",
+            "NumericValue": 12,
+            "StringValue": "they_are_inactive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4efe5965",
+            "CodeType": "Normal",
+            "DisplayText": "never heard of them",
+            "NumericValue": 13,
+            "StringValue": "never_heard_of_them",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-36deb0ee",
+            "CodeType": "Normal",
+            "DisplayText": "corruption",
+            "NumericValue": 14,
+            "StringValue": "corruption",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1a6af86f",
+            "CodeType": "Normal",
+            "DisplayText": "they promote equality",
+            "NumericValue": 15,
+            "StringValue": "they_promote_equality",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a2d2b6fa",
+            "CodeType": "Normal",
+            "DisplayText": "they are fair",
+            "NumericValue": 16,
+            "StringValue": "they_are_fair",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c2bc4952",
+            "CodeType": "Normal",
+            "DisplayText": "they are biased",
+            "NumericValue": 17,
+            "StringValue": "they_are_biased",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8baef473",
+            "CodeType": "Normal",
+            "DisplayText": "they perform well",
+            "NumericValue": 18,
+            "StringValue": "they_perform_well",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4e8a1eb9",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 19,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
