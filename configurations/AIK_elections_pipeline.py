@@ -62,7 +62,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                                                                                               "Why are they worried about electoral gender-based violence?"]),
                     
                     # INDIVIDUAL AND INSTITUTIONS ROLES IN THIS ELECTION
-                    QuestionConfiguration(engagement_db_dataset="aik_response_to_electoral_related_insecurity", question_titles=["How would you respond to electoral related insecurity in your area?"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_response_to_electoral_related_insecurity", question_titles=["How would you respond to electoral related insecurity in your area?\t"]),
 
                     QuestionConfiguration(engagement_db_dataset="aik_iebc_effectiveness", question_titles=["Independent Electoral and Boundaries Commission (IEBC)"]),
                     QuestionConfiguration(engagement_db_dataset="aik_nps_effectiveness", question_titles=["National Police Service (NPS)"]),
