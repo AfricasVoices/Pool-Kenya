@@ -40,9 +40,9 @@
         {
             "CodeID": "code-038eaec2",
             "CodeType": "Normal",
-            "DisplayText": "yes, hatespeech and inciteful remarks",
+            "DisplayText": "yes, hate speech and inciteful remarks",
             "NumericValue": 4,
-            "StringValue": "yes_hatespeech_and_inciteful_remarks",
+            "StringValue": "yes_hate_speech_and_inciteful_remarks",
             "VisibleInCoda": true
         },
         {
