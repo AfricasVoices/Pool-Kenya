@@ -39,7 +39,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
                 question_configurations=[
                     # Demographic Questions
-                    QuestionConfiguration(engagement_db_dataset="aik_language", question_titles=["We could either do the interview in English or Swahili. Which language would you prefer? "]),
+                    # QuestionConfiguration(engagement_db_dataset="aik_language", question_titles=["We could either do the interview in English or Swahili. Which language would you prefer? "]),
                     QuestionConfiguration(engagement_db_dataset="pool_kenya_age", question_titles=["Do you mind telling me how old you are?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_education", question_titles=["What is the highest level of education attained ? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_employment_status", question_titles=["What is your employment Status ?"]),
