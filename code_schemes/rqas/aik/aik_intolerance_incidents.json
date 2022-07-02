@@ -14,6 +14,78 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-8ba080a9",
+            "CodeType": "Normal",
+            "DisplayText": "no, no reason",
+            "NumericValue": 1,
+            "StringValue": "no_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9cad130b",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 2,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8d529918",
+            "CodeType": "Normal",
+            "DisplayText": "yes, ethnicty",
+            "NumericValue": 3,
+            "StringValue": "yes_ethnicty",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ee42693f",
+            "CodeType": "Normal",
+            "DisplayText": "yes, social media attack",
+            "NumericValue": 4,
+            "StringValue": "yes_social_media_attack",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9210c681",
+            "CodeType": "Normal",
+            "DisplayText": "yes, violence incidents",
+            "NumericValue": 5,
+            "StringValue": "yes_violence_incidents",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a5016d52",
+            "CodeType": "Normal",
+            "DisplayText": "yes, political afflliation or difference",
+            "NumericValue": 6,
+            "StringValue": "yes_political_afflliation_or_difference",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6c0a4284",
+            "CodeType": "Normal",
+            "DisplayText": "yes, gender based violence",
+            "NumericValue": 7,
+            "StringValue": "yes_gender_based_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-43d8b5b3",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 8,
+            "StringValue": "i_do_not_know",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ec4dcd41",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
