@@ -14,6 +14,62 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-9b477f42",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 1,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d7a5bb5b",
+            "CodeType": "Normal",
+            "DisplayText": "no, no reason",
+            "NumericValue": 2,
+            "StringValue": "no_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6348f069",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know or not sure",
+            "NumericValue": 3,
+            "StringValue": "i_do_not_know_or_not_sure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-84595613",
+            "CodeType": "Normal",
+            "DisplayText": "no, have not heard of it",
+            "NumericValue": 4,
+            "StringValue": "no_have_not_heard_of_it",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-aabb0d47",
+            "CodeType": "Normal",
+            "DisplayText": "no, have not seen",
+            "NumericValue": 5,
+            "StringValue": "no_have_not_seen",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a6959a42",
+            "CodeType": "Normal",
+            "DisplayText": "yes, happen during campaigns",
+            "NumericValue": 6,
+            "StringValue": "yes_happen_during_campaigns",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-24ed706f",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
