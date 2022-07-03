@@ -495,6 +495,60 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="aik_violence_displacement"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_education",
+                    engagement_db_dataset="aik_education",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_education"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_education"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_employment_status",
+                    engagement_db_dataset="aik_employment_status",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_employment_status"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_employment_status"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_religion",
+                    engagement_db_dataset="aik_religion",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_religion"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_religion"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_household_income",
+                    engagement_db_dataset="aik_household_income",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_household_income"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_household_income"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_communities",
+                    engagement_db_dataset="aik_communities",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_communities"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_communities"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_indigenous_or_minority",
+                    engagement_db_dataset="aik_indigenous_or_minority",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_indigenous_or_minority"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_indigenous_or_minority"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/aik_elections_coda_users.json",
