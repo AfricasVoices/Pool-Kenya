@@ -14,6 +14,38 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-fce00cb6",
+            "CodeType": "Normal",
+            "DisplayText": "GoK through government commissions eg CAJ",
+            "NumericValue": 1,
+            "StringValue": "gok_through_government_commissions_eg_caj",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-25e666d9",
+            "CodeType": "Normal",
+            "DisplayText": "civil societies",
+            "NumericValue": 2,
+            "StringValue": "civil_societies",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-702f9797",
+            "CodeType": "Normal",
+            "DisplayText": "NGOs and CBOs",
+            "NumericValue": 3,
+            "StringValue": "ngos_and_cbos",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8a704a02",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 4,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
