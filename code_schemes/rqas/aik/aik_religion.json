@@ -14,6 +14,62 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-8b206264",
+            "CodeType": "Normal",
+            "DisplayText": "protestant",
+            "NumericValue": 1,
+            "StringValue": "protestant",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-444975b8",
+            "CodeType": "Normal",
+            "DisplayText": "catholic",
+            "NumericValue": 2,
+            "StringValue": "catholic",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c174dd31",
+            "CodeType": "Normal",
+            "DisplayText": "african religions",
+            "NumericValue": 3,
+            "StringValue": "african_religions",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-59940ae0",
+            "CodeType": "Normal",
+            "DisplayText": "muslim",
+            "NumericValue": 4,
+            "StringValue": "muslim",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8559bc6d",
+            "CodeType": "Normal",
+            "DisplayText": "hindu",
+            "NumericValue": 5,
+            "StringValue": "hindu",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2d910cdd",
+            "CodeType": "Normal",
+            "DisplayText": "none",
+            "NumericValue": 6,
+            "StringValue": "none",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1dd48b1e",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
