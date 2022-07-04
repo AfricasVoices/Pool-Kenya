@@ -16,9 +16,9 @@
         {
             "CodeID": "code-fce00cb6",
             "CodeType": "Normal",
-            "DisplayText": "GoK through government commissions eg CAJ",
+            "DisplayText": "kenya red cross",
             "NumericValue": 1,
-            "StringValue": "gok_through_government_commissions_eg_caj",
+            "StringValue": "kenya_red_cross",
             "VisibleInCoda": true
         },
         {
@@ -38,10 +38,114 @@
             "VisibleInCoda": true
         },
         {
+            "CodeID": "code-991b1b66",
+            "CodeType": "Normal",
+            "DisplayText": "office of registrar political parties",
+            "NumericValue": 4,
+            "StringValue": "office_of_registrar_political_parties",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7938e2cb",
+            "CodeType": "Normal",
+            "DisplayText": "ministry of interior",
+            "NumericValue": 5,
+            "StringValue": "ministry_of_interior",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-05c66f6a",
+            "CodeType": "Normal",
+            "DisplayText": "social justice center",
+            "NumericValue": 6,
+            "StringValue": "social_justice_center",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-440e9859",
+            "CodeType": "Normal",
+            "DisplayText": "church",
+            "NumericValue": 7,
+            "StringValue": "church",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-153b7c6f",
+            "CodeType": "Normal",
+            "DisplayText": "tana peace initiative",
+            "NumericValue": 8,
+            "StringValue": "tana_peace_initiative",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1e4dcdd2",
+            "CodeType": "Normal",
+            "DisplayText": "kenya revenue authority",
+            "NumericValue": 9,
+            "StringValue": "kenya_revenue_authority",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f5f408db",
+            "CodeType": "Normal",
+            "DisplayText": "office of president",
+            "NumericValue": 10,
+            "StringValue": "office_of_president",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-af6101b9",
+            "CodeType": "Normal",
+            "DisplayText": "immigration department",
+            "NumericValue": 11,
+            "StringValue": "immigration_department",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-52dfa6f2",
+            "CodeType": "Normal",
+            "DisplayText": "EACC",
+            "NumericValue": 12,
+            "StringValue": "eacc",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4951585e",
+            "CodeType": "Normal",
+            "DisplayText": "parliament",
+            "NumericValue": 13,
+            "StringValue": "parliament",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-590aae89",
+            "CodeType": "Normal",
+            "DisplayText": "MUHURI",
+            "NumericValue": 14,
+            "StringValue": "MUHURI",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6a12bf8c",
+            "CodeType": "Normal",
+            "DisplayText": "village elders",
+            "NumericValue": 15,
+            "StringValue": "village_elders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5422b75e",
+            "CodeType": "Normal",
+            "DisplayText": "cheifs",
+            "NumericValue": 16,
+            "StringValue": "cheifs",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-8a704a02",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 4,
+            "NumericValue": 17,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
