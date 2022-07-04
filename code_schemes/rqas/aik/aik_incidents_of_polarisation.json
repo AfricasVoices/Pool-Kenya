@@ -14,6 +14,38 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-7598ee9e",
+            "CodeType": "Normal",
+            "DisplayText": "yes, nairobi",
+            "NumericValue": 1,
+            "StringValue": "yes_nairobi",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bf6317a1",
+            "CodeType": "Normal",
+            "DisplayText": "yes, eldoret",
+            "NumericValue": 2,
+            "StringValue": "yes_eldoret",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-18608d76",
+            "CodeType": "Normal",
+            "DisplayText": "yes, garissa, marsabit",
+            "NumericValue": 3,
+            "StringValue": "yes_garissa_marsabit",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6f68cff6",
+            "CodeType": "Normal",
+            "DisplayText": "yes, kisumu",
+            "NumericValue": 4,
+            "StringValue": "yes_kisumu",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
