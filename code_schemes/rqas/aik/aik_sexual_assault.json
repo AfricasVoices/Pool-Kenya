@@ -14,6 +14,46 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-e33916ef",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 1,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8403a41b",
+            "CodeType": "Normal",
+            "DisplayText": "no, cannot disclose",
+            "NumericValue": 2,
+            "StringValue": "no_cannot_disclose",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-372feb51",
+            "CodeType": "Normal",
+            "DisplayText": "yes, sexual harrasment during campaigns",
+            "NumericValue": 3,
+            "StringValue": "yes_sexual_harrasment_during_campaigns",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6c39102e",
+            "CodeType": "Normal",
+            "DisplayText": "yes, domestic violence",
+            "NumericValue": 4,
+            "StringValue": "yes_domestic_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d68ac964",
+            "CodeType": "Normal",
+            "DisplayText": "yes, report to police",
+            "NumericValue": 5,
+            "StringValue": "yes_report_to_police",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
