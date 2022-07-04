@@ -235,6 +235,69 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_voting_participation",
+                    engagement_db_dataset="aik_voting_participation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_voting_participation"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_voting_participation"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_willingness_to_help_victims",
+                    engagement_db_dataset="aik_willingness_to_help_victims",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_willingness_to_help_victims"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_willingness_to_help_victims"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_engaging_authorities",
+                    engagement_db_dataset="aik_engaging_authorities",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_engaging_authorities"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_engaging_authorities"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_incitement_sources",
+                    engagement_db_dataset="aik_incitement_sources",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incitement_sources"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_incitement_sources"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_vote_buying_incidents",
+                    engagement_db_dataset="aik_vote_buying_incidents",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_vote_buying_incidents"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_vote_buying_incidents"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_source_of_vote_buying",
+                    engagement_db_dataset="aik_source_of_vote_buying",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_source_of_vote_buying"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_source_of_vote_buying"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_incidents_of_polarisation",
+                    engagement_db_dataset="aik_incidents_of_polarisation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incidents_of_polarisation"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_incidents_of_polarisation"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="AIK_political_participation",
                     engagement_db_dataset="aik_political_participation",
                     code_scheme_configurations=[
