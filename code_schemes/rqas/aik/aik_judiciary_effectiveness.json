@@ -14,6 +14,78 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-a1d1fddc",
+            "CodeType": "Normal",
+            "DisplayText": "they are unjust and unfair",
+            "NumericValue": 1,
+            "StringValue": "they_are_unjust_and_unfair",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-339813fe",
+            "CodeType": "Normal",
+            "DisplayText": "they are corrupt",
+            "NumericValue": 2,
+            "StringValue": "they_are_corrupt",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dc65e659",
+            "CodeType": "Normal",
+            "DisplayText": "justice and fairness",
+            "NumericValue": 3,
+            "StringValue": "justice_and_fairness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d6da36c8",
+            "CodeType": "Normal",
+            "DisplayText": "they are competent",
+            "NumericValue": 4,
+            "StringValue": "they_are_competent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-99531416",
+            "CodeType": "Normal",
+            "DisplayText": "they are independent",
+            "NumericValue": 5,
+            "StringValue": "they_are_independent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5784be14",
+            "CodeType": "Normal",
+            "DisplayText": "lacks independence",
+            "NumericValue": 6,
+            "StringValue": "lacks_independence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-df4afa03",
+            "CodeType": "Normal",
+            "DisplayText": "they lack capability",
+            "NumericValue": 7,
+            "StringValue": "they_lack_capability",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3e6247d2",
+            "CodeType": "Normal",
+            "DisplayText": "not aware of them",
+            "NumericValue": 8,
+            "StringValue": "not_aware_of_them",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-85d8c159",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
