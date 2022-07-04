@@ -14,6 +14,54 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-0a627a8e",
+            "CodeType": "Normal",
+            "DisplayText": "university or post-graduate",
+            "NumericValue": 1,
+            "StringValue": "university_or_post_graduate",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-50ddfc76",
+            "CodeType": "Normal",
+            "DisplayText": "college",
+            "NumericValue": 2,
+            "StringValue": "college",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dd78f7fa",
+            "CodeType": "Normal",
+            "DisplayText": "secondary",
+            "NumericValue": 3,
+            "StringValue": "secondary",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b8b10b42",
+            "CodeType": "Normal",
+            "DisplayText": "primary",
+            "NumericValue": 4,
+            "StringValue": "primary",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-28d492ca",
+            "CodeType": "Normal",
+            "DisplayText": "none",
+            "NumericValue": 5,
+            "StringValue": "none",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e402ce01",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
