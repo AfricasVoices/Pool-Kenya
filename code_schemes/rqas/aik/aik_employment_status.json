@@ -14,6 +14,46 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-91d6bd46",
+            "CodeType": "Normal",
+            "DisplayText": "employed",
+            "NumericValue": 1,
+            "StringValue": "employed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-69ac2f25",
+            "CodeType": "Normal",
+            "DisplayText": "self employed",
+            "NumericValue": 2,
+            "StringValue": "self_employed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c0ba8878",
+            "CodeType": "Normal",
+            "DisplayText": "unemployed",
+            "NumericValue": 3,
+            "StringValue": "unemployed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-49aa824c",
+            "CodeType": "Normal",
+            "DisplayText": "retired",
+            "NumericValue": 4,
+            "StringValue": "retired",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3c35fae3",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 5,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
