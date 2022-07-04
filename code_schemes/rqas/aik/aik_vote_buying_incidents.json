@@ -14,6 +14,62 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 1,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-",
+            "CodeType": "Normal",
+            "DisplayText": "yes, nairobi, during party primaries",
+            "NumericValue": 2,
+            "StringValue": "yes_nairobi_during_party_primaries",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-",
+            "CodeType": "Normal",
+            "DisplayText": "yes, mombasa",
+            "NumericValue": 3,
+            "StringValue": "yes_mombasa",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-",
+            "CodeType": "Normal",
+            "DisplayText": "yes, kwale",
+            "NumericValue": 4,
+            "StringValue": "yes_kwale",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-",
+            "CodeType": "Normal",
+            "DisplayText": "yes, kisumu",
+            "NumericValue": 5,
+            "StringValue": "yes_kisumu",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-",
+            "CodeType": "Normal",
+            "DisplayText": "yes, lamu",
+            "NumericValue": 6,
+            "StringValue": "yes_lamu",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-",
+            "CodeType": "Normal",
+            "DisplayText": "yes, tana river",
+            "NumericValue": 7,
+            "StringValue": "yes_tana_river",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
