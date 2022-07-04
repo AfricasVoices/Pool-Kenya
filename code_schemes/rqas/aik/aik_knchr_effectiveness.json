@@ -14,6 +14,62 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-46bd679a",
+            "CodeType": "Normal",
+            "DisplayText": "KNCHR not known",
+            "NumericValue": 1,
+            "StringValue": "knchr_not_known",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6867d9f3",
+            "CodeType": "Normal",
+            "DisplayText": "corrupt",
+            "NumericValue": 2,
+            "StringValue": "corrupt",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-716d540f",
+            "CodeType": "Normal",
+            "DisplayText": "not competent",
+            "NumericValue": 3,
+            "StringValue": "not_competent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0aec29f0",
+            "CodeType": "Normal",
+            "DisplayText": "average",
+            "NumericValue": 4,
+            "StringValue": "average",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0f0a7beb",
+            "CodeType": "Normal",
+            "DisplayText": "competent or proactive",
+            "NumericValue": 5,
+            "StringValue": "competent_or_proactive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-907334ce",
+            "CodeType": "Normal",
+            "DisplayText": "biased or compromised",
+            "NumericValue":6 ,
+            "StringValue": "biased_or_compromised",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-76d26019",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
