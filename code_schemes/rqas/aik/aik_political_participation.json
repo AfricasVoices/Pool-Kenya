@@ -70,18 +70,10 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-731842d4",
-            "CodeType": "Normal",
-            "DisplayText": "Yes, due to personal interest",
-            "NumericValue": 8,
-            "StringValue": "yes_due_to_personal_interest",
-            "VisibleInCoda": true
-        },
-        {
             "CodeID": "code-9b74bd5a",
             "CodeType": "Normal",
             "DisplayText": "no, no reason",
-            "NumericValue": 9,
+            "NumericValue": 8,
             "StringValue": "no_no_reason",
             "VisibleInCoda": true
         },
@@ -89,7 +81,7 @@
             "CodeID": "code-412e8a89",
             "CodeType": "Normal",
             "DisplayText": "no, distrust for politics or politicians",
-            "NumericValue": 10,
+            "NumericValue": 9,
             "StringValue": "no_distrust_for_politics_or_politicians",
             "VisibleInCoda": true
         },
@@ -97,7 +89,7 @@
             "CodeID": "code-06df1701",
             "CodeType": "Normal",
             "DisplayText": "no, busy at work",
-            "NumericValue": 11,
+            "NumericValue": 10,
             "StringValue": "no_busy_at_work",
             "VisibleInCoda": true
         },
@@ -105,7 +97,7 @@
             "CodeID": "code-8eb58c57",
             "CodeType": "Normal",
             "DisplayText": "no, health constraints",
-            "NumericValue": 12,
+            "NumericValue": 11,
             "StringValue": "no_health_constraints",
             "VisibleInCoda": true
         },
@@ -113,7 +105,7 @@
             "CodeID": "code-2cf5e03c",
             "CodeType": "Normal",
             "DisplayText": "no, fear of insecurity or violence",
-            "NumericValue": 13,
+            "NumericValue": 12,
             "StringValue": "no_fear_of_insecurity_or_violence",
             "VisibleInCoda": true
         },
@@ -121,7 +113,7 @@
             "CodeID": "code-066ef3e1",
             "CodeType": "Normal",
             "DisplayText": "no or not interested",
-            "NumericValue": 14,
+            "NumericValue": 13,
             "StringValue": "no_or_not_interested",
             "VisibleInCoda": true
         },
@@ -129,7 +121,7 @@
             "CodeID": "code-1427d73a",
             "CodeType": "Normal",
             "DisplayText": "maybe",
-            "NumericValue": 15,
+            "NumericValue": 14,
             "StringValue": "maybe",
             "VisibleInCoda": true
         },
@@ -137,7 +129,7 @@
             "CodeID": "code-d87251ac",
             "CodeType": "Normal",
             "DisplayText": "i do not know",
-            "NumericValue": 16,
+            "NumericValue": 15,
             "StringValue": "i_do_not_know",
             "VisibleInCoda": true
         },
@@ -145,7 +137,7 @@
             "CodeID": "code-6a42d742",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 17,
+            "NumericValue": 16,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
