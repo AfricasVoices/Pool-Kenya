@@ -14,6 +14,46 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-cf795576",
+            "CodeType": "Normal",
+            "DisplayText": "mainstream media",
+            "NumericValue": 1,
+            "StringValue": "mainstream_media",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6f463249",
+            "CodeType": "Normal",
+            "DisplayText": "social media",
+            "NumericValue": 2,
+            "StringValue": "social_media",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f642bb08",
+            "CodeType": "Normal",
+            "DisplayText": "community leaders",
+            "NumericValue": 3,
+            "StringValue": "community_leaders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-55f445dd",
+            "CodeType": "Normal",
+            "DisplayText": "family or friends",
+            "NumericValue": 4,
+            "StringValue": "family_or_friends",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f173e344",
+            "CodeType": "Normal",
+            "DisplayText": "politicians",
+            "NumericValue": 5,
+            "StringValue": "politicians",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
