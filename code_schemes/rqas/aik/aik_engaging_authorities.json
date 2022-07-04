@@ -14,6 +14,38 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-15d435a0",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 1,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-58c7bd79",
+            "CodeType": "Normal",
+            "DisplayText": "yes",
+            "NumericValue": 2,
+            "StringValue": "yes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-12fb101d",
+            "CodeType": "Normal",
+            "DisplayText": "not sure",
+            "NumericValue": 3,
+            "StringValue": "not_sure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-aaa36ea8",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 4,
+            "StringValue": "i_do_not_know",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
