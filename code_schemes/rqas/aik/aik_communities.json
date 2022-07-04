@@ -16,105 +16,105 @@
         {
             "CodeID": "code-cfef155a",
             "CodeType": "Normal",
-            "DisplayText": "agikuyu",
+            "DisplayText": "abagusii",
             "NumericValue": 1,
-            "StringValue": "agikuyu",
+            "StringValue": "abagusii",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-08dbada6",
             "CodeType": "Normal",
-            "DisplayText": "mijikenda",
+            "DisplayText": "agikuyu",
             "NumericValue": 2,
-            "StringValue": "mijikenda",
+            "StringValue": "agikuyu",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-7a0c27c8",
             "CodeType": "Normal",
-            "DisplayText": "abagusii",
+            "DisplayText": "akamba",
             "NumericValue": 3,
-            "StringValue": "abagusii",
+            "StringValue": "akamba",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-5f3ef1ef",
             "CodeType": "Normal",
-            "DisplayText": "kalenjin",
+            "DisplayText": "ameru",
             "NumericValue": 4,
-            "StringValue": "kalenjin",
+            "StringValue": "ameru",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-b193a782",
             "CodeType": "Normal",
-            "DisplayText": "luhya",
+            "DisplayText": "arab",
             "NumericValue": 5,
-            "StringValue": "luhya",
+            "StringValue": "arab",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-d8d81d63",
             "CodeType": "Normal",
-            "DisplayText": "luo",
+            "DisplayText": "borana",
             "NumericValue": 6,
-            "StringValue": "luo",
+            "StringValue": "borana",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-6cb14b42",
             "CodeType": "Normal",
-            "DisplayText": "arab",
+            "DisplayText": "hindu",
             "NumericValue": 7,
-            "StringValue": "arab",
+            "StringValue": "hindu",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-0cbdb835",
             "CodeType": "Normal",
-            "DisplayText": "akamba",
+            "DisplayText": "kalenjin",
             "NumericValue": 8,
-            "StringValue": "akamba",
+            "StringValue": "kalenjin",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-3277fd7a",
             "CodeType": "Normal",
-            "DisplayText": "ameru",
+            "DisplayText": "luhya",
             "NumericValue": 9,
-            "StringValue": "ameru",
+            "StringValue": "luhya",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-3c014447",
             "CodeType": "Normal",
-            "DisplayText": "pokomo",
+            "DisplayText": "luo",
             "NumericValue": 10,
-            "StringValue": "pokomo",
+            "StringValue": "luo",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-7a32f3d3",
             "CodeType": "Normal",
-            "DisplayText": "somali",
+            "DisplayText": "mijikenda",
             "NumericValue": 11,
-            "StringValue": "somali",
+            "StringValue": "mijikenda",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-7b56d015",
             "CodeType": "Normal",
-            "DisplayText": "taita",
+            "DisplayText": "nubian",
             "NumericValue": 12,
-            "StringValue": "taita",
+            "StringValue": "nubian",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-ea256ab7",
             "CodeType": "Normal",
-            "DisplayText": "nubian",
+            "DisplayText": "ogiek",
             "NumericValue": 13,
-            "StringValue": "nubian",
+            "StringValue": "ogiek",
             "VisibleInCoda": true
         },
         {
@@ -128,41 +128,41 @@
         {
             "CodeID": "code-198c28a4",
             "CodeType": "Normal",
-            "DisplayText": "wardei",
+            "DisplayText": "pokomo",
             "NumericValue": 15,
-            "StringValue": "wardei",
+            "StringValue": "pokomo",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-62a4ea20",
             "CodeType": "Normal",
-            "DisplayText": "ogiek",
+            "DisplayText": "somali",
             "NumericValue": 16,
-            "StringValue": "ogiek",
+            "StringValue": "somali",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-9bcbc606",
             "CodeType": "Normal",
-            "DisplayText": "borana",
+            "DisplayText": "swahili",
             "NumericValue": 17,
-            "StringValue": "borana",
+            "StringValue": "swahili",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-3e76980a",
             "CodeType": "Normal",
-            "DisplayText": "teso",
+            "DisplayText": "taita",
             "NumericValue": 18,
-            "StringValue": "teso",
+            "StringValue": "taita",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-adaae26c",
             "CodeType": "Normal",
-            "DisplayText": "swahili",
+            "DisplayText": "teso",
             "NumericValue": 19,
-            "StringValue": "swahili",
+            "StringValue": "teso",
             "VisibleInCoda": true
         },
         {
@@ -176,9 +176,9 @@
         {
             "CodeID": "code-400e14ca",
             "CodeType": "Normal",
-            "DisplayText": "hindu",
+            "DisplayText": "wardei",
             "NumericValue": 21,
-            "StringValue": "hindu",
+            "StringValue": "wardei",
             "VisibleInCoda": true
         },
         {
