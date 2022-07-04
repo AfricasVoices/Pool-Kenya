@@ -14,6 +14,38 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-0d97651a",
+            "CodeType": "Normal",
+            "DisplayText": "no, no voters card or id",
+            "NumericValue": 1,
+            "StringValue": "no_no_voters_card_or_id",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c2a5a080",
+            "CodeType": "Normal",
+            "DisplayText": "no, registered in a different county",
+            "NumericValue": 2,
+            "StringValue": "no_registered_in_a_different_county",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-69a2c9be",
+            "CodeType": "Normal",
+            "DisplayText": "no, nothing will change",
+            "NumericValue": 3,
+            "StringValue": "no_nothing_will_change",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a7098beb",
+            "CodeType": "Normal",
+            "DisplayText": "no, long queues",
+            "NumericValue": 4,
+            "StringValue": "no_long_queues",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
