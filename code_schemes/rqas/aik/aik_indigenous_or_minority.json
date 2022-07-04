@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-463e7e45",
-    "Name": "Police Brutality",
+    "SchemeID": "Scheme-ba9db353",
+    "Name": "Indigenous or Minority",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -12,38 +12,6 @@
             "StringValue": "escalate",
             "VisibleInCoda": true,
             "Shortcut": "e"
-        },
-        {
-            "CodeID": "code-d033249b",
-            "CodeType": "Normal",
-            "DisplayText": "no",
-            "NumericValue": 1,
-            "StringValue": "no",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-69573686",
-            "CodeType": "Normal",
-            "DisplayText": "yes, recently, western",
-            "NumericValue": 2,
-            "StringValue": "yes_recently_western",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-b3369f9e",
-            "CodeType": "Normal",
-            "DisplayText": "yes, recently, coast",
-            "NumericValue": 3,
-            "StringValue": "yes_recently_coast",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-0f531b91",
-            "CodeType": "Normal",
-            "DisplayText": "yes, recently, rift valley",
-            "NumericValue": 4,
-            "StringValue": "yes_recently_rift_valley",
-            "VisibleInCoda": true
         },
         {
             "CodeID": "code-NA-f93d3eb7",
