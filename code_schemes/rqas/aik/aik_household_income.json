@@ -48,7 +48,7 @@
         {
             "CodeID": "code-bdb1dc5e",
             "CodeType": "Normal",
-            "DisplayText": "ksh 70,001 -100,000",
+            "DisplayText": "ksh 70,001 - 100,000",
             "NumericValue": 5,
             "StringValue": "ksh_70001_100000",
             "VisibleInCoda": true
