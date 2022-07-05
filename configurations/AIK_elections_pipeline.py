@@ -2,15 +2,15 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
-def make_rqa_analysis_dataset_config(dataset_name):
+def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER):
     return AnalysisDatasetConfiguration(
-        engagement_db_datasets=[f"{dataset_name}"],
-        dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+        engagement_db_datasets=[dataset_name],
+        dataset_type=dataset_type,
         raw_dataset=f"{dataset_name}_raw",
         coding_configs=[
             CodingConfiguration(
                 code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}"),
-                analysis_dataset=f"{dataset_name}"
+                analysis_dataset=dataset_name
             )
         ]
     )
@@ -696,6 +696,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ),
                 ],
             ),
+            make_rqa_analysis_dataset_config("aik_education", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_employment_status", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_religion", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_communities", DatasetTypes.DEMOGRAPHIC),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["aik_political_participation"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
@@ -802,10 +806,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             make_rqa_analysis_dataset_config("aik_unsafe_areas"),
             make_rqa_analysis_dataset_config("aik_vandalism_theft_incidents"),
             make_rqa_analysis_dataset_config("aik_violence_displacement"),
-            make_rqa_analysis_dataset_config("aik_education"),
-            make_rqa_analysis_dataset_config("aik_employment_status"),
-            make_rqa_analysis_dataset_config("aik_religion"),
-            make_rqa_analysis_dataset_config("aik_communities"),
             make_rqa_analysis_dataset_config("aik_indigenous_or_minority"),
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
