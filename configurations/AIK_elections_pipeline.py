@@ -2,6 +2,20 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
+def make_rqa_analysis_dataset_config(dataset_name):
+    return AnalysisDatasetConfiguration(
+        engagement_db_datasets=[f"{dataset_name}"],
+        dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+        raw_dataset=f"{dataset_name}_raw",
+        coding_configs=[
+            CodingConfiguration(
+                code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}"),
+                analysis_dataset=f"{dataset_name}"
+            )
+        ]
+    )
+
+
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="AIK-ELECTIONS",
     test_participant_uuids=[
@@ -759,6 +773,40 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     )
                 ],
             ),
+            make_rqa_analysis_dataset_config("aik_voting_participation"),
+            make_rqa_analysis_dataset_config("aik_willingness_to_help_victims"),
+            make_rqa_analysis_dataset_config("aik_engaging_authorities"),
+            make_rqa_analysis_dataset_config("aik_incitement_sources"),
+            make_rqa_analysis_dataset_config("aik_vote_buying_incidents"),
+            make_rqa_analysis_dataset_config("aik_source_of_vote_buying"),
+            make_rqa_analysis_dataset_config("aik_incidents_of_polarisation"),
+            make_rqa_analysis_dataset_config("aik_iebc_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_nps_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_ncic_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_dpp_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_ipoa_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_judiciary_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_knchr_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_other_institutions_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_electoral_violence_anxiety"),
+            make_rqa_analysis_dataset_config("aik_hate_speech_and_actions_target"),
+            make_rqa_analysis_dataset_config("aik_identity_groups_increase"),
+            make_rqa_analysis_dataset_config("aik_inability_to_work"),
+            make_rqa_analysis_dataset_config("aik_intolerance_incidents"),
+            make_rqa_analysis_dataset_config("aik_peace_and_security_initiatives"),
+            make_rqa_analysis_dataset_config("aik_physical_harm"),
+            make_rqa_analysis_dataset_config("aik_police_brutality"),
+            make_rqa_analysis_dataset_config("aik_political_environment"),
+            make_rqa_analysis_dataset_config("aik_political_events_disruption"),
+            make_rqa_analysis_dataset_config("aik_sexual_assault"),
+            make_rqa_analysis_dataset_config("aik_unsafe_areas"),
+            make_rqa_analysis_dataset_config("aik_vandalism_theft_incidents"),
+            make_rqa_analysis_dataset_config("aik_violence_displacement"),
+            make_rqa_analysis_dataset_config("aik_education"),
+            make_rqa_analysis_dataset_config("aik_employment_status"),
+            make_rqa_analysis_dataset_config("aik_religion"),
+            make_rqa_analysis_dataset_config("aik_communities"),
+            make_rqa_analysis_dataset_config("aik_indigenous_or_minority"),
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
     ),
