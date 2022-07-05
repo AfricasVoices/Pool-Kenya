@@ -4,13 +4,13 @@ from src.pipeline_configuration_spec import *
 
 def make_rqa_analysis_dataset_config(dataset_name):
     return AnalysisDatasetConfiguration(
-        engagement_db_datasets=[f"{dataset_name}"],
+        engagement_db_datasets=[dataset_name],
         dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
         raw_dataset=f"{dataset_name}_raw",
         coding_configs=[
             CodingConfiguration(
                 code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}"),
-                analysis_dataset=f"{dataset_name}"
+                analysis_dataset=dataset_name
             )
         ]
     )
