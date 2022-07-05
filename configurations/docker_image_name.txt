@@ -1,1 +1,1 @@
-ghcr.io/africasvoices/engagement-data-pipeline:correct-error-message
+ghcr.io/africasvoices/engagement-data-pipeline:sync-aik-google-form
