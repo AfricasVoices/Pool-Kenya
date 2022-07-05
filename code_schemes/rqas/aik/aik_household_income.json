@@ -14,6 +14,78 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-4599d6d5",
+            "CodeType": "Normal",
+            "DisplayText": "under ksh 10,000",
+            "NumericValue": 1,
+            "StringValue": "under_ksh_10000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dd3195cb",
+            "CodeType": "Normal",
+            "DisplayText": "ksh 10,001 - 20,000",
+            "NumericValue": 2,
+            "StringValue": "ksh_10001_20000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-411451f4",
+            "CodeType": "Normal",
+            "DisplayText": "ksh 20,001 - 40,000",
+            "NumericValue": 3,
+            "StringValue": "ksh_20001_40000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-160f5c92",
+            "CodeType": "Normal",
+            "DisplayText": "ksh 40,001 - 70,000",
+            "NumericValue": 4,
+            "StringValue": "ksh_40001_70000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bdb1dc5e",
+            "CodeType": "Normal",
+            "DisplayText": "ksh 70,001 -100,000",
+            "NumericValue": 5,
+            "StringValue": "ksh_70001_100000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8f74305a",
+            "CodeType": "Normal",
+            "DisplayText": "ksh 100,001 - 150,000",
+            "NumericValue": 6,
+            "StringValue": "ksh_100001_150000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9fde165a",
+            "CodeType": "Normal",
+            "DisplayText": "ksh 150,001 - 250,000",
+            "NumericValue": 7,
+            "StringValue": "ksh_150001_250000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dbcfa8ca",
+            "CodeType": "Normal",
+            "DisplayText": "over ksh 250,000",
+            "NumericValue": 8,
+            "StringValue": "over_ksh_250000",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-339f0cdf",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
