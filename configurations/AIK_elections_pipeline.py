@@ -2,10 +2,10 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
-def make_rqa_analysis_dataset_config(dataset_name):
+def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER):
     return AnalysisDatasetConfiguration(
         engagement_db_datasets=[dataset_name],
-        dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+        dataset_type=dataset_type,
         raw_dataset=f"{dataset_name}_raw",
         coding_configs=[
             CodingConfiguration(
@@ -696,6 +696,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ),
                 ],
             ),
+            make_rqa_analysis_dataset_config("aik_education", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_employment_status", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_religion", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_communities", DatasetTypes.DEMOGRAPHIC),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["aik_political_participation"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
