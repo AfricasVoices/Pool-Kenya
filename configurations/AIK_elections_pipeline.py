@@ -41,6 +41,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
     ),
     google_form_sources=[
+        # TODO: Remove duplicate db datasets set under different names i.e Kenya_pool_location is the same as location in db
         GoogleFormSource(
             google_form_client=GoogleFormsClientConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
