@@ -26,7 +26,7 @@
             "CodeType": "Normal",
             "DisplayText": "ksh 10,001 - 20,000",
             "NumericValue": 2,
-            "StringValue": "ksh_10001_20000",
+            "StringValue": "ksh_10001_to_20000",
             "VisibleInCoda": true
         },
         {
@@ -34,7 +34,7 @@
             "CodeType": "Normal",
             "DisplayText": "ksh 20,001 - 40,000",
             "NumericValue": 3,
-            "StringValue": "ksh_20001_40000",
+            "StringValue": "ksh_20001_to_40000",
             "VisibleInCoda": true
         },
         {
@@ -42,7 +42,7 @@
             "CodeType": "Normal",
             "DisplayText": "ksh 40,001 - 70,000",
             "NumericValue": 4,
-            "StringValue": "ksh_40001_70000",
+            "StringValue": "ksh_40001_to_70000",
             "VisibleInCoda": true
         },
         {
@@ -50,7 +50,7 @@
             "CodeType": "Normal",
             "DisplayText": "ksh 70,001 - 100,000",
             "NumericValue": 5,
-            "StringValue": "ksh_70001_100000",
+            "StringValue": "ksh_70001_to_100000",
             "VisibleInCoda": true
         },
         {
@@ -58,7 +58,7 @@
             "CodeType": "Normal",
             "DisplayText": "ksh 100,001 - 150,000",
             "NumericValue": 6,
-            "StringValue": "ksh_100001_150000",
+            "StringValue": "ksh_100001_to_150000",
             "VisibleInCoda": true
         },
         {
@@ -66,7 +66,7 @@
             "CodeType": "Normal",
             "DisplayText": "ksh 150,001 - 250,000",
             "NumericValue": 7,
-            "StringValue": "ksh_150001_250000",
+            "StringValue": "ksh_150001_to_250000",
             "VisibleInCoda": true
         },
         {
