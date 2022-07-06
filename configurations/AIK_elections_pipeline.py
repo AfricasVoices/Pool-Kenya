@@ -700,6 +700,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             make_rqa_analysis_dataset_config("aik_employment_status", DatasetTypes.DEMOGRAPHIC),
             make_rqa_analysis_dataset_config("aik_religion", DatasetTypes.DEMOGRAPHIC),
             make_rqa_analysis_dataset_config("aik_communities", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_household_income", DatasetTypes.DEMOGRAPHIC),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["aik_political_participation"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
