@@ -41,6 +41,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
     ),
     google_form_sources=[
+        # TODO: Remove duplicate db datasets set under different names i.e Kenya_pool_location is the same as location in db
         GoogleFormSource(
             google_form_client=GoogleFormsClientConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
@@ -88,10 +89,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     QuestionConfiguration(engagement_db_dataset="aik_other_institutions_effectiveness", question_titles=["List other institutions and their ratings?"]),
 
                     # DEMOGRAPHICS
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_age", question_titles=["How old are you?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_gender", question_titles=["What is your sex?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_location", question_titles=["Which constituency do you live in?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_disabled", question_titles=["Do you have any form of disability?"]),
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your sex?"]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Which constituency do you live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability?"]),
                 ]
             )
         ),
@@ -108,16 +109,16 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 question_configurations=[
                     # Demographic Questions
                     # QuestionConfiguration(engagement_db_dataset="aik_language", question_titles=["We could either do the interview in English or Swahili. Which language would you prefer? "]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_age", question_titles=["Do you mind telling me how old you are?"]),
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["Do you mind telling me how old you are?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_education", question_titles=["What is the highest level of education attained ? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_employment_status", question_titles=["What is your employment Status ?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_religion", question_titles=["What is your religion ?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_gender", question_titles=["What is your sex? "]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your sex? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_household_income", question_titles=["Approximately what is your gross monthly household income? (I.e. This is the combined monthly income of all your household members). This will help us in determining your social-economic class."]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_disabled", question_titles=["Do you have any form of disability? (If disability is visible, do not ask, make the judgement)"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability? (If disability is visible, do not ask, make the judgement)"]),
                     QuestionConfiguration(engagement_db_dataset="aik_communities", question_titles=["What community do you belong to?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_indigenous_or_minority", question_titles=["Is it considered indigenous or minority?  if yes provide details."]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_location", question_titles=["Can I presume that you are currently a resident of; …………… County? [mention name of the target county]", 
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Can I presume that you are currently a resident of; …………… County? [mention name of the target county]", 
                                                                                                        "Can I presume that you are currently a resident of; …………… Sub-County / Constituency? [mention name of the target sub-county]",
                                                                                                        "Can I presume that you are currently a resident of; …………… Ward? [mention name of the target ward]"]),
                     ## GENERAL ELECTORAL ENVIRONMENT
