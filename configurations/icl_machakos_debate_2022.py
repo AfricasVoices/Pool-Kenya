@@ -24,6 +24,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
+                    FlowResultConfiguration("icl_machakos_poll_registration_activation_2022", "icl_machakos_poll_registration_2022",
+                                            "machakos_poll_registration_2022"),
                     FlowResultConfiguration("icl_machakos_demog_2022", "ward", "location"),
                     FlowResultConfiguration("icl_machakos_demog_2022", "gender", "gender"),
                     FlowResultConfiguration("icl_machakos_demog_2022", "age", "age"),
@@ -93,6 +95,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="kenya_pool_old_rqa_datasets"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="ICL_machakos_poll_registration_2022",
+                    engagement_db_dataset="machakos_poll_registration_2022",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_poll_registration_2022"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="icl_machakos_poll_registration_2022"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_county_priorities_2022",
                     engagement_db_dataset="machakos_county_priorities_2022",
                     code_scheme_configurations=[
@@ -158,6 +169,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             drive_dir="machakos_debate_2022_analysis_outputs"
         ),
         dataset_configurations=[
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["machakos_poll_registration_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="machakos_poll_registration_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/icl/machakos_poll_registration_2022"),
+                        analysis_dataset="machakos_poll_registration_2022"
+                    )
+                ],
+            ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["machakos_county_priorities_2022"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
@@ -313,7 +335,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             consent_withdrawn_dataset=DatasetConfiguration(
                 engagement_db_datasets=["age", "gender", "location", "disabled", "machakos_governor_poll_2022",
                                         "machakos_senator_poll_2022", "machakos_womenrep_poll_2022_rita", "machakos_womenrep_poll_2022",
-                                        "machakos_county_priorities_2022", "icl_pool_invitation_2022"],
+                                        "machakos_county_priorities_2022", "icl_pool_invitation_2022", "machakos_poll_registration_2022"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,
