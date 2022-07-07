@@ -175,6 +175,15 @@
             "MatchValues": ["aik_other_institutions_effectiveness"]
         },
         {
+            "CodeID": "code-41ce38e7",
+            "CodeType": "Normal",
+            "DisplayText": "machakos poll registration 2022",
+            "StringValue": "machakos_poll_registration_2022",
+            "NumericValue": 486,
+            "VisibleInCoda": true,
+            "MatchValues": ["machakos_poll_registration_2022"]
+        },
+        {
             "CodeID": "code-180095d9",
             "CodeType": "Normal",
             "DisplayText": "machakos county priorities 2022",
