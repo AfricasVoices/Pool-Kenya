@@ -24,14 +24,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
-                    FlowResultConfiguration("icl_machakos_poll_registration_activation_2022", "icl_machakos_poll_registration_2022",
-                                            "machakos_poll_registration_2022"),
                     FlowResultConfiguration("icl_machakos_demog_2022", "ward", "location"),
                     FlowResultConfiguration("icl_machakos_demog_2022", "gender", "gender"),
                     FlowResultConfiguration("icl_machakos_demog_2022", "age", "age"),
 
                     FlowResultConfiguration("icl_machakos_county_priorities_activation_2022",
                                             "machakos_county_priorities_2022", "machakos_county_priorities_2022"),
+                    FlowResultConfiguration("icl_machakos_poll_registration_activation_2022",
+                                            "icl_machakos_poll_registration_2022",
+                                            "machakos_poll_registration_2022"),
                     FlowResultConfiguration("icl_machakos_womenrep_poll_ad_2022",
                                             "womenrep_poll_2022_selina", "machakos_womenrep_poll_2022"),
                     FlowResultConfiguration("icl_machakos_womenrep_poll_ad_2022_rita",
@@ -95,15 +96,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="kenya_pool_old_rqa_datasets"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="ICL_machakos_poll_registration_2022",
-                    engagement_db_dataset="machakos_poll_registration_2022",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_poll_registration_2022"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="icl_machakos_poll_registration_2022"
-                ),
-                CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_county_priorities_2022",
                     engagement_db_dataset="machakos_county_priorities_2022",
                     code_scheme_configurations=[
@@ -111,6 +103,16 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3),
                     ],
                     ws_code_match_value="icl_machakos_county_priorities_2022"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="ICL_machakos_poll_registration_2022",
+                    engagement_db_dataset="machakos_poll_registration_2022",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(
+                            code_scheme=load_code_scheme("rqas/icl/machakos_poll_registration_2022"),
+                            auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="icl_machakos_poll_registration_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_womenrep_poll_2022",
