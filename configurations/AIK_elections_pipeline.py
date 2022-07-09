@@ -194,7 +194,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
 
-                    FlowResultConfiguration("AIK_pool_invitation_activation", "AIK_pool_invitation_2022", "aik_pool_invitation_2022"),
+                    FlowResultConfiguration("AIK_pool_invitation_activation", "aik_pool_invitation_2022", "aik_pool_invitation_2022"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_political_participation", "aik_political_participation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_election_conversations", "aik_election_conversations"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_influence_on_voting_choices", "aik_influence_on_voting_choices"),
