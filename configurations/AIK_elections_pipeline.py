@@ -26,7 +26,7 @@ def make_rqa_coda_dataset_config(coda_dataset_id, survey=1):
         coda_dataset_id=f"{coda_dataset_id}{suffix}".strip(),
         engagement_db_dataset=f"{coda_dataset_id.lower()}{suffix}".strip(),
         code_scheme_configurations=[
-            CodeSchemeConfiguration(code_scheme=load_code_scheme(f"rqas/aik/{coda_dataset_id.lower()}"),
+            CodeSchemeConfiguration(code_scheme=load_code_scheme(f"rqas/aik/{coda_dataset_id.lower()}{suffix}".strip()),
                                     auto_coder=None, coda_code_schemes_count=3),
         ],
         ws_code_match_value=f"{coda_dataset_id.lower()}{suffix}".strip()
