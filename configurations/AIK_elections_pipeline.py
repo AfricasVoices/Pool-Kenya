@@ -16,6 +16,23 @@ def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RES
     )
 
 
+def make_rqa_coda_dataset_config(coda_dataset_id, survey):
+    if survey == 1:
+        suffix = ""
+    else:
+        suffix = f"_{survey}"
+    
+    return CodaDatasetConfiguration(
+        coda_dataset_id=f"{coda_dataset_id}{suffix}".strip(),
+        engagement_db_dataset=f"{coda_dataset_id.lower()}{suffix}".strip(),
+        code_scheme_configurations=[
+            CodeSchemeConfiguration(code_scheme=load_code_scheme(f"rqas/aik/{coda_dataset_id.lower()}"),
+                                    auto_coder=None, coda_code_schemes_count=3),
+        ],
+        ws_code_match_value=f"{coda_dataset_id.lower()}{suffix}".strip()
+    ),
+
+
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="AIK-ELECTIONS",
     test_participant_uuids=[
