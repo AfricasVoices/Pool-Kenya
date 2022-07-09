@@ -35,7 +35,7 @@ def make_rqa_coda_dataset_config(coda_dataset_id, survey=1):
                                     auto_coder=None, coda_code_schemes_count=3),
         ],
         ws_code_match_value=f"{coda_dataset_id.lower()}{suffix}".strip()
-    ),
+    )
 
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
