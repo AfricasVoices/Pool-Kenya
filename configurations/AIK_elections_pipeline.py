@@ -2,15 +2,20 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
-def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER):
+def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER, survey=1):
+    if survey == 1:
+        suffix = ""
+    else:
+        suffix = f"_{survey}"
+
     return AnalysisDatasetConfiguration(
-        engagement_db_datasets=[dataset_name],
+        engagement_db_datasets=[f"{dataset_name}{suffix}".strip()],
         dataset_type=dataset_type,
-        raw_dataset=f"{dataset_name}_raw",
+        raw_dataset=f"{dataset_name}{suffix}_raw".strip(),
         coding_configs=[
             CodingConfiguration(
                 code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}"),
-                analysis_dataset=dataset_name
+                analysis_dataset=f"{dataset_name}{suffix}".strip()
             )
         ]
     )
@@ -809,6 +814,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             make_rqa_analysis_dataset_config("aik_vandalism_theft_incidents"),
             make_rqa_analysis_dataset_config("aik_violence_displacement"),
             make_rqa_analysis_dataset_config("aik_indigenous_or_minority"),
+
+            make_rqa_analysis_dataset_config("aik_political_participation", survey=2),
+            make_rqa_analysis_dataset_config("aik_election_conversations", survey=2),
+            make_rqa_analysis_dataset_config("aik_influence_on_voting_choices", survey=2),
+            make_rqa_analysis_dataset_config("aik_concern_about_safety_and_security", survey=2),
+            make_rqa_analysis_dataset_config("aik_incidents_of_violence_and_polarisation", survey=2),
+            make_rqa_analysis_dataset_config("aik_electoral_sexual_gender_based_violence", survey=2),
+            make_rqa_analysis_dataset_config("aik_response_to_electoral_related_insecurity", survey=2),
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
     ),
