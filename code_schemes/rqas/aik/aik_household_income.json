@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-ac170359",
+    "Name": "Household Income",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,82 +14,74 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-4599d6d5",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "under ksh 10,000",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "under_ksh_10000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-dd3195cb",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "ksh 10,001 - 20,000",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "ksh_10001_to_20000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-411451f4",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "ksh 20,001 - 40,000",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "ksh_20001_to_40000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-160f5c92",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "ksh 40,001 - 70,000",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "ksh_40001_to_70000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-bdb1dc5e",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "ksh 70,001 - 100,000",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "ksh_70001_to_100000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-8f74305a",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
+            "DisplayText": "ksh 100,001 - 150,000",
             "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "StringValue": "ksh_100001_to_150000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
+            "CodeID": "code-9fde165a",
             "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
+            "DisplayText": "ksh 150,001 - 250,000",
             "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
+            "StringValue": "ksh_150001_to_250000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-14e03002",
+            "CodeID": "code-dbcfa8ca",
             "CodeType": "Normal",
-            "DisplayText": "bad economy",
+            "DisplayText": "over ksh 250,000",
             "NumericValue": 8,
-            "StringValue": "bad_economy",
+            "StringValue": "over_ksh_250000",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
-            "CodeType": "Normal",
-            "DisplayText": "i do not know",
-            "NumericValue": 9,
-            "StringValue": "i_do_not_know",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-40484168",
+            "CodeID": "code-339f0cdf",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 10,
+            "NumericValue": 9,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

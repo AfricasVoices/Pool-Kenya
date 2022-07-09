@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-50a81cdb",
+    "Name": "Peace And Security Initiatives",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,82 +14,74 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-d29ea1fc",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "no",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "no",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-4405424b",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "yes, without reason",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "yes_without_reason",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-390fa1d6",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "yes, community peace initiatives",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "yes_community_peace_initiatives",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-2ce9e2fd",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "yes, haki africa",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "yes_haki_africa",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-5755a2bb",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "yes, amnesty",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "yes_amnesty",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-240710a9",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
+            "DisplayText": "yes, youth groups or initiatives",
             "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "StringValue": "yes_youth_groups_or_initiatives",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
+            "CodeID": "code-2beac31c",
             "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
+            "DisplayText": "yes, church initiatives",
             "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
+            "StringValue": "yes_church_initiatives",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-14e03002",
+            "CodeID": "code-4dca68ec",
             "CodeType": "Normal",
-            "DisplayText": "bad economy",
+            "DisplayText": "yes, NGOS",
             "NumericValue": 8,
-            "StringValue": "bad_economy",
+            "StringValue": "yes_ngos",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
-            "CodeType": "Normal",
-            "DisplayText": "i do not know",
-            "NumericValue": 9,
-            "StringValue": "i_do_not_know",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-40484168",
+            "CodeID": "code-c2b943a9",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 10,
+            "NumericValue": 9,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

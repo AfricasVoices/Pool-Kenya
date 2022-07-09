@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-580542b6",
+    "Name": "Hate Speech And Actions Target",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,83 +14,83 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-b762df12",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "yes, political persuasion",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "yes_political_persuasion",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-ce072365",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "yes, gender",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "yes_gender",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-a28a7eea",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "yes, ethnicity",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "yes_ethnicity",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-745fa648",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "yes, religion",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "yes_religion",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-b822b7fc",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "yes, sexual orientation",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "yes_sexual_orientation",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-2ab28cab",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
+            "DisplayText": "yes, class",
             "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "StringValue": "yes_class",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
+            "CodeID": "code-bb6e4b43",
             "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
+            "DisplayText": "yes, disability",
             "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
+            "StringValue": "yes_disability",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-14e03002",
+            "CodeID": "code-c8237914",
             "CodeType": "Normal",
-            "DisplayText": "bad economy",
+            "DisplayText": "no, gender",
             "NumericValue": 8,
-            "StringValue": "bad_economy",
+            "StringValue": "no_gender",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
+            "CodeID": "code-6315594f",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "no, sexual orientation",
             "NumericValue": 9,
-            "StringValue": "i_do_not_know",
+            "StringValue": "no_sexual_orientation",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-40484168",
+            "CodeID": "code-d31b9dc1",
             "CodeType": "Normal",
-            "DisplayText": "other theme",
+            "DisplayText": "no, ethnicity",
             "NumericValue": 10,
-            "StringValue": "other_theme",
+            "StringValue": "no_ethnicity",
             "VisibleInCoda": true
         },
         {

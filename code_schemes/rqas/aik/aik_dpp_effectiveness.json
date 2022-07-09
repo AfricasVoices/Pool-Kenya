@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-c7c722bd",
+    "Name": "DPP Effectiveness",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,83 +14,83 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-29d6c154",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "i dont know",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "i_dont_know",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-c2b623c5",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "corrupt",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "corrupt",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-1b2424e8",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "incompetent",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "incompetent",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-30a9869c",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "slow in prosecuting",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "slow_in_prosecuting",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-c0376cad",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "biased",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "biased",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-874b6520",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
+            "DisplayText": "average",
             "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "StringValue": "average",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
+            "CodeID": "code-37a9a51a",
             "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
+            "DisplayText": "trustworthy",
             "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
+            "StringValue": "trustworthy",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-14e03002",
+            "CodeID": "code-d05a4431",
             "CodeType": "Normal",
-            "DisplayText": "bad economy",
+            "DisplayText": "transparent",
             "NumericValue": 8,
-            "StringValue": "bad_economy",
+            "StringValue": "transparent",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
+            "CodeID": "code-4eb12d67",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "competent and effective",
             "NumericValue": 9,
-            "StringValue": "i_do_not_know",
+            "StringValue": "competent_and_effective",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-40484168",
+            "CodeID": "code-035c8109",
             "CodeType": "Normal",
-            "DisplayText": "other theme",
+            "DisplayText": "dependent on state",
             "NumericValue": 10,
-            "StringValue": "other_theme",
+            "StringValue": "dependent_on_state",
             "VisibleInCoda": true
         },
         {
