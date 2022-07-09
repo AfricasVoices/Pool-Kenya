@@ -16,6 +16,23 @@ def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RES
     )
 
 
+def make_rqa_coda_dataset_config(coda_dataset_id, survey=1):
+    if survey == 1:
+        suffix = ""
+    else:
+        suffix = f"_{survey}"
+    
+    return CodaDatasetConfiguration(
+        coda_dataset_id=f"{coda_dataset_id}{suffix}".strip(),
+        engagement_db_dataset=f"{coda_dataset_id.lower()}{suffix}".strip(),
+        code_scheme_configurations=[
+            CodeSchemeConfiguration(code_scheme=load_code_scheme(f"rqas/aik/{coda_dataset_id.lower()}{suffix}".strip()),
+                                    auto_coder=None, coda_code_schemes_count=3),
+        ],
+        ws_code_match_value=f"{coda_dataset_id.lower()}{suffix}".strip()
+    ),
+
+
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="AIK-ELECTIONS",
     test_participant_uuids=[
@@ -202,6 +219,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_incidents_of_violence_and_polarisation", "aik_incidents_of_violence_and_polarisation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_electoral_sexual_gender_based_violence", "aik_electoral_sexual_gender_based_violence"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_response_to_electoral_related_insecurity", "aik_response_to_electoral_related_insecurity"),
+
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_political_participation_2", "aik_political_participation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_election_conversations_2", "aik_election_conversations_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_influence_on_voting_choices_2", "aik_influence_on_voting_choices_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_concern_about_safety_and_security_2", "aik_concern_about_safety_and_security_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_incidents_of_violence_and_polarisation_2", "aik_incidents_of_violence_and_polarisation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_electoral_sexual_gender_based_violence_2", "aik_electoral_sexual_gender_based_violence_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_response_to_electoral_related_insecurity_2", "aik_response_to_electoral_related_insecurity_2"),
                 ],
             )
         )
@@ -250,6 +275,13 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="disabled",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
+                make_rqa_coda_dataset_config("AIK_political_participation", 2),
+                make_rqa_coda_dataset_config("AIK_election_conversations", 2),
+                make_rqa_coda_dataset_config("AIK_influence_on_voting_choices", 2),
+                make_rqa_coda_dataset_config("AIK_concern_about_safety_and_security", 2),
+                make_rqa_coda_dataset_config("AIK_incidents_of_violence_and_polarisation", 2),
+                make_rqa_coda_dataset_config("AIK_electoral_sexual_gender_based_violence", 2),
+                make_rqa_coda_dataset_config("AIK_response_to_electoral_related_insecurity", 2),
                 CodaDatasetConfiguration(
                     coda_dataset_id="AIK_pool_invitation_2022",
                     engagement_db_dataset="aik_pool_invitation_2022",
