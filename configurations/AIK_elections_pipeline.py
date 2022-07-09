@@ -217,6 +217,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_incidents_of_violence_and_polarisation", "aik_incidents_of_violence_and_polarisation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_electoral_sexual_gender_based_violence", "aik_electoral_sexual_gender_based_violence"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_response_to_electoral_related_insecurity", "aik_response_to_electoral_related_insecurity"),
+
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_political_participation_2", "aik_political_participation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_election_conversations_2", "aik_election_conversations_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_influence_on_voting_choices_2", "aik_influence_on_voting_choices_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_concern_about_safety_and_security_2", "aik_concern_about_safety_and_security_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_incidents_of_violence_and_polarisation_2", "aik_incidents_of_violence_and_polarisation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_electoral_sexual_gender_based_violence_2", "aik_electoral_sexual_gender_based_violence_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_response_to_electoral_related_insecurity_2", "aik_response_to_electoral_related_insecurity_2"),
                 ],
             )
         )
