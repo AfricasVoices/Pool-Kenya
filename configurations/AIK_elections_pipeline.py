@@ -16,7 +16,7 @@ def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RES
     )
 
 
-def make_rqa_coda_dataset_config(coda_dataset_id, survey):
+def make_rqa_coda_dataset_config(coda_dataset_id, survey=1):
     if survey == 1:
         suffix = ""
     else:
