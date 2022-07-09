@@ -14,6 +14,94 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-5fd07a3a",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 1,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4ed63f2a",
+            "CodeType": "Normal",
+            "DisplayText": "yes, there is concern",
+            "NumericValue": 2,
+            "StringValue": "yes_there_is_concern",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-21063982",
+            "CodeType": "Normal",
+            "DisplayText": "no, no reason",
+            "NumericValue": 3,
+            "StringValue": "no_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f47a9b3f",
+            "CodeType": "Normal",
+            "DisplayText": "no concern",
+            "NumericValue": 4,
+            "StringValue": "no_concern",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-110b65b0",
+            "CodeType": "Normal",
+            "DisplayText": "fear of violence",
+            "NumericValue": 5,
+            "StringValue": "fear_of_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d9c28a6b",
+            "CodeType": "Normal",
+            "DisplayText": "there is uncertainty",
+            "NumericValue": 6,
+            "StringValue": "there_is_uncertainty",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-77e11bd7",
+            "CodeType": "Normal",
+            "DisplayText": "hate speech or tribalism by politicians",
+            "NumericValue": 7,
+            "StringValue": "hate_speech_or_tribalism_by_politicians",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7c6be5ff",
+            "CodeType": "Normal",
+            "DisplayText": "somewhat concerned",
+            "NumericValue": 8,
+            "StringValue": "somewhat_concerned",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7297b7a0",
+            "CodeType": "Normal",
+            "DisplayText": "there is safety and security",
+            "NumericValue": 9,
+            "StringValue": "there_is_safety_and_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b37fca5e",
+            "CodeType": "Normal",
+            "DisplayText": "trusting God",
+            "NumericValue": 10,
+            "StringValue": "trusting_god",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-39e222a6",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 11,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",

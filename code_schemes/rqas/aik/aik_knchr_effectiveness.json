@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-6cede6da",
+    "Name": "KNCHR Effectiveness",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,82 +14,58 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-46bd679a",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "KNCHR not known",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "knchr_not_known",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-6867d9f3",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "corrupt",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "corrupt",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-716d540f",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "not competent",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "not_competent",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-0aec29f0",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "average",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "average",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-0f0a7beb",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "competent or proactive",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "competent_or_proactive",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-907334ce",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
-            "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "DisplayText": "biased or compromised",
+            "NumericValue":6 ,
+            "StringValue": "biased_or_compromised",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
-            "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
-            "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-14e03002",
-            "CodeType": "Normal",
-            "DisplayText": "bad economy",
-            "NumericValue": 8,
-            "StringValue": "bad_economy",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-92cd2289",
-            "CodeType": "Normal",
-            "DisplayText": "i do not know",
-            "NumericValue": 9,
-            "StringValue": "i_do_not_know",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-40484168",
+            "CodeID": "code-76d26019",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 10,
+            "NumericValue": 7,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

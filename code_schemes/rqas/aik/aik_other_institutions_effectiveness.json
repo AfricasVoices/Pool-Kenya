@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-9fef237f",
+    "Name": "Other Institutions Effectiveness",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,82 +14,138 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-fce00cb6",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "kenya red cross",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "kenya_red_cross",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-25e666d9",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "civil societies",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "civil_societies",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-702f9797",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "NGOs and CBOs",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "ngos_and_cbos",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-991b1b66",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "office of registrar political parties",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "office_of_registrar_political_parties",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-7938e2cb",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "ministry of interior",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "ministry_of_interior",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-05c66f6a",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
+            "DisplayText": "social justice center",
             "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "StringValue": "social_justice_center",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
+            "CodeID": "code-440e9859",
             "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
+            "DisplayText": "church",
             "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
+            "StringValue": "church",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-14e03002",
+            "CodeID": "code-153b7c6f",
             "CodeType": "Normal",
-            "DisplayText": "bad economy",
+            "DisplayText": "tana peace initiative",
             "NumericValue": 8,
-            "StringValue": "bad_economy",
+            "StringValue": "tana_peace_initiative",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
+            "CodeID": "code-1e4dcdd2",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "kenya revenue authority",
             "NumericValue": 9,
-            "StringValue": "i_do_not_know",
+            "StringValue": "kenya_revenue_authority",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-40484168",
+            "CodeID": "code-f5f408db",
+            "CodeType": "Normal",
+            "DisplayText": "office of president",
+            "NumericValue": 10,
+            "StringValue": "office_of_president",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-af6101b9",
+            "CodeType": "Normal",
+            "DisplayText": "immigration department",
+            "NumericValue": 11,
+            "StringValue": "immigration_department",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-52dfa6f2",
+            "CodeType": "Normal",
+            "DisplayText": "EACC",
+            "NumericValue": 12,
+            "StringValue": "eacc",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4951585e",
+            "CodeType": "Normal",
+            "DisplayText": "parliament",
+            "NumericValue": 13,
+            "StringValue": "parliament",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-590aae89",
+            "CodeType": "Normal",
+            "DisplayText": "MUHURI",
+            "NumericValue": 14,
+            "StringValue": "MUHURI",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6a12bf8c",
+            "CodeType": "Normal",
+            "DisplayText": "village elders",
+            "NumericValue": 15,
+            "StringValue": "village_elders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5422b75e",
+            "CodeType": "Normal",
+            "DisplayText": "chiefs",
+            "NumericValue": 16,
+            "StringValue": "chiefs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8a704a02",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 10,
+            "NumericValue": 17,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

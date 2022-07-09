@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-85882b70",
+    "Name": "Education",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,82 +14,50 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-0a627a8e",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "university or post-graduate",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "university_or_post_graduate",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-50ddfc76",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "college",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "college",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-dd78f7fa",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "secondary",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "secondary",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-b8b10b42",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "primary",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "primary",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-28d492ca",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "none",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "none",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
-            "CodeType": "Normal",
-            "DisplayText": "no, no violence",
-            "NumericValue": 6,
-            "StringValue": "no_no_violence",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-c4b57b15",
-            "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
-            "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-14e03002",
-            "CodeType": "Normal",
-            "DisplayText": "bad economy",
-            "NumericValue": 8,
-            "StringValue": "bad_economy",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-92cd2289",
-            "CodeType": "Normal",
-            "DisplayText": "i do not know",
-            "NumericValue": 9,
-            "StringValue": "i_do_not_know",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-40484168",
+            "CodeID": "code-e402ce01",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 10,
+            "NumericValue": 6,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

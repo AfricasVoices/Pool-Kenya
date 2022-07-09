@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-0bdb86ae",
+    "Name": "Communities",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,82 +14,178 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-cfef155a",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "abagusii",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "abagusii",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-08dbada6",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "agikuyu",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "agikuyu",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-7a0c27c8",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "akamba",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "akamba",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-5f3ef1ef",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "ameru",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "ameru",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-b193a782",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "arab",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "arab",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-d8d81d63",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
+            "DisplayText": "borana",
             "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "StringValue": "borana",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
+            "CodeID": "code-6cb14b42",
             "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
+            "DisplayText": "hindu",
             "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
+            "StringValue": "hindu",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-14e03002",
+            "CodeID": "code-0cbdb835",
             "CodeType": "Normal",
-            "DisplayText": "bad economy",
+            "DisplayText": "kalenjin",
             "NumericValue": 8,
-            "StringValue": "bad_economy",
+            "StringValue": "kalenjin",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
+            "CodeID": "code-3277fd7a",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "luhya",
             "NumericValue": 9,
-            "StringValue": "i_do_not_know",
+            "StringValue": "luhya",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-40484168",
+            "CodeID": "code-3c014447",
+            "CodeType": "Normal",
+            "DisplayText": "luo",
+            "NumericValue": 10,
+            "StringValue": "luo",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7a32f3d3",
+            "CodeType": "Normal",
+            "DisplayText": "mijikenda",
+            "NumericValue": 11,
+            "StringValue": "mijikenda",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7b56d015",
+            "CodeType": "Normal",
+            "DisplayText": "nubian",
+            "NumericValue": 12,
+            "StringValue": "nubian",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ea256ab7",
+            "CodeType": "Normal",
+            "DisplayText": "ogiek",
+            "NumericValue": 13,
+            "StringValue": "ogiek",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-75a1b314",
+            "CodeType": "Normal",
+            "DisplayText": "orma",
+            "NumericValue": 14,
+            "StringValue": "orma",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-198c28a4",
+            "CodeType": "Normal",
+            "DisplayText": "pokomo",
+            "NumericValue": 15,
+            "StringValue": "pokomo",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-62a4ea20",
+            "CodeType": "Normal",
+            "DisplayText": "somali",
+            "NumericValue": 16,
+            "StringValue": "somali",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9bcbc606",
+            "CodeType": "Normal",
+            "DisplayText": "swahili",
+            "NumericValue": 17,
+            "StringValue": "swahili",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3e76980a",
+            "CodeType": "Normal",
+            "DisplayText": "taita",
+            "NumericValue": 18,
+            "StringValue": "taita",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-adaae26c",
+            "CodeType": "Normal",
+            "DisplayText": "teso",
+            "NumericValue": 19,
+            "StringValue": "teso",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d78bd59d",
+            "CodeType": "Normal",
+            "DisplayText": "turkana",
+            "NumericValue": 20,
+            "StringValue": "turkana",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-400e14ca",
+            "CodeType": "Normal",
+            "DisplayText": "wardei",
+            "NumericValue": 21,
+            "StringValue": "wardei",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-72c8b70a",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 10,
+            "NumericValue": 22,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

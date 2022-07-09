@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-66f4afc1",
-    "Name": "Incidents of Violence and Polarisation",
+    "SchemeID": "Scheme-2d560994",
+    "Name": "Electoral Violence Anxiety",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,83 +14,107 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-36e77085",
+            "CodeID": "code-4b8768d1",
             "CodeType": "Normal",
-            "DisplayText": "yes, no reason",
+            "DisplayText": "yes",
+            "NumericValue": 0,
+            "StringValue": "yes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-08f1e320",
+            "CodeType": "Normal",
+            "DisplayText": "yes, bad economy",
             "NumericValue": 1,
-            "StringValue": "yes_no_reason",
+            "StringValue": "yes_bad_economy",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-3e7fb212",
+            "CodeID": "code-c9f9551c",
             "CodeType": "Normal",
-            "DisplayText": "yes, there is violence",
+            "DisplayText": "yes, contested or disputed results",
             "NumericValue": 2,
-            "StringValue": "yes_there_is_violence",
+            "StringValue": "yes_contested_or_disputed_results",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1a02350c",
+            "CodeID": "code-b604c617",
             "CodeType": "Normal",
-            "DisplayText": "yes, incitement from politicians",
+            "DisplayText": "yes, political unrest or chaos",
             "NumericValue": 3,
-            "StringValue": "yes_incitement_from_politicians",
+            "StringValue": "yes_political_unrest_or_chaos",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-43b957c7",
+            "CodeID": "code-038eaec2",
             "CodeType": "Normal",
-            "DisplayText": "yes, tribalism and favouritism",
+            "DisplayText": "yes, hate speech and inciteful remarks",
             "NumericValue": 4,
-            "StringValue": "yes_tribalism_and_favouristism",
+            "StringValue": "yes_hate_speech_and_inciteful_remarks",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-bffab90d",
+            "CodeID": "code-f502a8cc",
             "CodeType": "Normal",
-            "DisplayText": "no, no reason",
+            "DisplayText": "yes, past history or routine cycle",
             "NumericValue": 5,
-            "StringValue": "no_no_reason",
+            "StringValue": "yes_past_history_or_routine_cycle",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-505245cf",
+            "CodeID": "code-746771c6",
             "CodeType": "Normal",
-            "DisplayText": "no, no violence",
+            "DisplayText": "yes, tribal or ethnically instigated clashes",
             "NumericValue": 6,
-            "StringValue": "no_no_violence",
+            "StringValue": "yes_tribal_or_ethnically_instigated_clashes",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c4b57b15",
+            "CodeID": "code-06094c09",
             "CodeType": "Normal",
-            "DisplayText": "no signs of violence yet",
+            "DisplayText": "yes, election malpractices",
             "NumericValue": 7,
-            "StringValue": "no_signs_of_violence_yet",
+            "StringValue": "yes_election_malpractices",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-14e03002",
+            "CodeID": "code-27e0f0d7",
             "CodeType": "Normal",
-            "DisplayText": "bad economy",
+            "DisplayText": "yes, general uncertainity",
             "NumericValue": 8,
-            "StringValue": "bad_economy",
+            "StringValue": "yes_general_uncertainity",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-92cd2289",
+            "CodeID": "code-869284f4",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "yes, high political stakes",
             "NumericValue": 9,
-            "StringValue": "i_do_not_know",
+            "StringValue": "yes_high_political_stakes",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-40484168",
+            "CodeID": "code-0f91e45d",
             "CodeType": "Normal",
-            "DisplayText": "other theme",
+            "DisplayText": "yes, organized gangs",
             "NumericValue": 10,
-            "StringValue": "other_theme",
+            "StringValue": "yes_organized_gangs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e67f8740",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 11,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-45f400e9",
+            "CodeType": "Normal",
+            "DisplayText": "no, i dont know",
+            "NumericValue": 12,
+            "StringValue": "no_i_dont_know",
             "VisibleInCoda": true
         },
         {
