@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-bcdac21d",
-    "Name": "Political Events Disruption",
+    "SchemeID": "Scheme-a30a9f0c",
+    "Name": "Invitation",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -12,30 +12,6 @@
             "StringValue": "escalate",
             "VisibleInCoda": true,
             "Shortcut": "e"
-        },
-        {
-            "CodeID": "code-c3005ba3",
-            "CodeType": "Normal",
-            "DisplayText": "yes",
-            "NumericValue": 1,
-            "StringValue": "yes",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-a73b8c81",
-            "CodeType": "Normal",
-            "DisplayText": "no",
-            "NumericValue": 2,
-            "StringValue": "no",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-5b2950f8",
-            "CodeType": "Normal",
-            "DisplayText": "i do not know",
-            "NumericValue": 3,
-            "StringValue": "i_do_not_know",
-            "VisibleInCoda": true
         },
         {
             "CodeID": "code-NA-f93d3eb7",

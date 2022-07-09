@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-bcdac21d",
-    "Name": "Political Events Disruption",
+    "SchemeID": "Scheme-6ccc712b",
+    "Name": "Vote Buying Incidents",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,27 +14,59 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-c3005ba3",
-            "CodeType": "Normal",
-            "DisplayText": "yes",
-            "NumericValue": 1,
-            "StringValue": "yes",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-a73b8c81",
+            "CodeID": "code-8093a44f",
             "CodeType": "Normal",
             "DisplayText": "no",
-            "NumericValue": 2,
+            "NumericValue": 1,
             "StringValue": "no",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-5b2950f8",
+            "CodeID": "code-ea7f14eb",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "yes, nairobi, during party primaries",
+            "NumericValue": 2,
+            "StringValue": "yes_nairobi_during_party_primaries",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3ead36b9",
+            "CodeType": "Normal",
+            "DisplayText": "yes, mombasa",
             "NumericValue": 3,
-            "StringValue": "i_do_not_know",
+            "StringValue": "yes_mombasa",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-717f5650",
+            "CodeType": "Normal",
+            "DisplayText": "yes, kwale",
+            "NumericValue": 4,
+            "StringValue": "yes_kwale",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-90bff627",
+            "CodeType": "Normal",
+            "DisplayText": "yes, kisumu",
+            "NumericValue": 5,
+            "StringValue": "yes_kisumu",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e9de195b",
+            "CodeType": "Normal",
+            "DisplayText": "yes, lamu",
+            "NumericValue": 6,
+            "StringValue": "yes_lamu",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-27f94bad",
+            "CodeType": "Normal",
+            "DisplayText": "yes, tana river",
+            "NumericValue": 7,
+            "StringValue": "yes_tana_river",
             "VisibleInCoda": true
         },
         {

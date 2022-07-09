@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-bcdac21d",
-    "Name": "Political Events Disruption",
+    "SchemeID": "Scheme-85882b70",
+    "Name": "Education",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,27 +14,51 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-c3005ba3",
+            "CodeID": "code-0a627a8e",
             "CodeType": "Normal",
-            "DisplayText": "yes",
+            "DisplayText": "university or post-graduate",
             "NumericValue": 1,
-            "StringValue": "yes",
+            "StringValue": "university_or_post_graduate",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-a73b8c81",
+            "CodeID": "code-50ddfc76",
             "CodeType": "Normal",
-            "DisplayText": "no",
+            "DisplayText": "college",
             "NumericValue": 2,
-            "StringValue": "no",
+            "StringValue": "college",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-5b2950f8",
+            "CodeID": "code-dd78f7fa",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "secondary",
             "NumericValue": 3,
-            "StringValue": "i_do_not_know",
+            "StringValue": "secondary",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b8b10b42",
+            "CodeType": "Normal",
+            "DisplayText": "primary",
+            "NumericValue": 4,
+            "StringValue": "primary",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-28d492ca",
+            "CodeType": "Normal",
+            "DisplayText": "none",
+            "NumericValue": 5,
+            "StringValue": "none",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e402ce01",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
             "VisibleInCoda": true
         },
         {

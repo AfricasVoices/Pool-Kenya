@@ -2,6 +2,42 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
+def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER, survey=1):
+    if survey == 1:
+        suffix = ""
+    else:
+        suffix = f"_{survey}"
+
+    return AnalysisDatasetConfiguration(
+        engagement_db_datasets=[f"{dataset_name}{suffix}".strip()],
+        dataset_type=dataset_type,
+        raw_dataset=f"{dataset_name}{suffix}_raw".strip(),
+        coding_configs=[
+            CodingConfiguration(
+                code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}{suffix}".strip()),
+                analysis_dataset=f"{dataset_name}{suffix}".strip()
+            )
+        ]
+    )
+
+
+def make_rqa_coda_dataset_config(coda_dataset_id, survey=1):
+    if survey == 1:
+        suffix = ""
+    else:
+        suffix = f"_{survey}"
+    
+    return CodaDatasetConfiguration(
+        coda_dataset_id=f"{coda_dataset_id}{suffix}".strip(),
+        engagement_db_dataset=f"{coda_dataset_id.lower()}{suffix}".strip(),
+        code_scheme_configurations=[
+            CodeSchemeConfiguration(code_scheme=load_code_scheme(f"rqas/aik/{coda_dataset_id.lower()}{suffix}".strip()),
+                                    auto_coder=None, coda_code_schemes_count=3),
+        ],
+        ws_code_match_value=f"{coda_dataset_id.lower()}{suffix}".strip()
+    )
+
+
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="AIK-ELECTIONS",
     test_participant_uuids=[
@@ -27,6 +63,61 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
     ),
     google_form_sources=[
+        # TODO: Remove duplicate db datasets set under different names i.e Kenya_pool_location is the same as location in db
+        GoogleFormSource(
+            google_form_client=GoogleFormsClientConfiguration(
+                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+            ),
+            sync_config=GoogleFormToEngagementDBConfiguration(
+                form_id="1zU-4CZRIPCT88qMH352pPMnn_hh_F-j5BWY_vhCPaZ8",
+                question_configurations=[
+                    # GENERAL ELECTORAL ENVIRONMENT
+                    QuestionConfiguration(engagement_db_dataset="aik_voting_participation", question_titles=["Do you plan on voting in the August 9th General Elections?", "Why are you not planning to vote?"]),
+
+                    # PARTICIPATION IN POLITICAL ACTIVITIES
+                    QuestionConfiguration(engagement_db_dataset="aik_political_participation", question_titles=["Do you feel comfortable participating in any political activities in your area of residence?", 
+                                                                                                               "Give reasons for your answer on political activities participation"]),
+                    
+                    # HATE SPEECH & INCITEMENT
+                    QuestionConfiguration(engagement_db_dataset="aik_election_conversations", question_titles=["In your view, have elections-related conversations become more controversial and conflictual in the past two weeks than the two weeks before? Give details."]),
+                    
+                    # UNDUE INFLUENCE & CORRUPTION
+                    QuestionConfiguration(engagement_db_dataset="aik_influence_on_voting_choices", question_titles=["Based on the campaign activities over the past two weeks, what do you think will influence people's voting choices in your area?"]),
+
+                    # RISKS OF VIOLENCE
+                    QuestionConfiguration(engagement_db_dataset="aik_concern_about_safety_and_security", question_titles=["Based on the current political and security environment, are you concerned about safety and security within your community?", "What are you most concerned about?"]),
+
+                    # VIOLENCE INCIDENT
+                    QuestionConfiguration(engagement_db_dataset="aik_incidents_of_violence_and_polarisation", question_titles=["Do you know of incidents of violence and polarisation in your community?"]),
+
+                    # ELECTORAL VIOLENCE CONCERN
+                    QuestionConfiguration(engagement_db_dataset="aik_electoral_violence_anxiety", question_titles=["Are you or your family/neighbours more worried about electoral violence now than two weeks ago?", 
+                                                                                                                  "Why are they worried about electoral violence?"]),
+
+                    # ELECTORAL SEXUAL GENDER-BASED VIOLENCE
+                    QuestionConfiguration(engagement_db_dataset="aik_electoral_sexual_gender_based_violence", question_titles=["Are you or your family/neighbours more worried about electoral sexual gender-based violence  now than two weeks ago?", 
+                                                                                                                              "Why are they worried about electoral gender-based violence?"]),
+                    
+                    # INDIVIDUAL AND INSTITUTIONS ROLES IN THIS ELECTION
+                    QuestionConfiguration(engagement_db_dataset="aik_response_to_electoral_related_insecurity", question_titles=["How would you respond to electoral related insecurity in your area?\t"]),
+
+                    QuestionConfiguration(engagement_db_dataset="aik_iebc_effectiveness", question_titles=["Independent Electoral and Boundaries Commission (IEBC)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_nps_effectiveness", question_titles=["National Police Service (NPS)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_ncic_effectiveness", question_titles=["National Cohesion and Integration Commission (NCIC)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_dpp_effectiveness", question_titles=["Office of the Director of Public Prosecutions (DPP)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_ipoa_effectiveness", question_titles=["Independent Policing Oversight Authority (IPOA)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_judiciary_effectiveness", question_titles=["The Judiciary"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_knchr_effectiveness", question_titles=["Kenya National Commission on Human Rights (KNCHR)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_other_institutions_effectiveness", question_titles=["List other institutions and their ratings?"]),
+
+                    # DEMOGRAPHICS
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your sex?"]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Which constituency do you live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability?"]),
+                ]
+            )
+        ),
         GoogleFormSource(
             google_form_client=GoogleFormsClientConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
@@ -39,16 +130,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
                 question_configurations=[
                     # Demographic Questions
-                    QuestionConfiguration(engagement_db_dataset="aik_language", question_titles=["We could either do the interview in English or Swahili. Which language would you prefer? "]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_age", question_titles=["Do you mind telling me how old you are?"]),
+                    # QuestionConfiguration(engagement_db_dataset="aik_language", question_titles=["We could either do the interview in English or Swahili. Which language would you prefer? "]),
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["Do you mind telling me how old you are?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_education", question_titles=["What is the highest level of education attained ? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_employment_status", question_titles=["What is your employment Status ?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_religion", question_titles=["What is your religion ?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_gender", question_titles=["What is your sex? "]),
-                    QuestionConfiguration(engagement_db_dataset="aik_household income", question_titles=["Approximately what is your gross monthly household income? (I.e. This is the combined monthly income of all your household members). This will help us in determining your social-economic class."]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_disabled", question_titles=["Do you have any form of disability? (If disability is visible, do not ask, make the judgement)"]),
-                    QuestionConfiguration(engagement_db_dataset="aik_community", question_titles=["What community do you belong to?", "Is it considered indigenous or minority?  if yes provide details."]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_location", question_titles=["Can I presume that you are currently a resident of; …………… County? [mention name of the target county]", 
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your sex? "]),
+                    QuestionConfiguration(engagement_db_dataset="aik_household_income", question_titles=["Approximately what is your gross monthly household income? (I.e. This is the combined monthly income of all your household members). This will help us in determining your social-economic class."]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability? (If disability is visible, do not ask, make the judgement)"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_communities", question_titles=["What community do you belong to?"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_indigenous_or_minority", question_titles=["Is it considered indigenous or minority?  if yes provide details."]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Can I presume that you are currently a resident of; …………… County? [mention name of the target county]", 
                                                                                                        "Can I presume that you are currently a resident of; …………… Sub-County / Constituency? [mention name of the target sub-county]",
                                                                                                        "Can I presume that you are currently a resident of; …………… Ward? [mention name of the target ward]"]),
                     ## GENERAL ELECTORAL ENVIRONMENT
@@ -75,9 +167,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     QuestionConfiguration(engagement_db_dataset="aik_engaging_authorities", question_titles=["Does your household know how to safely and quickly report a crime or seek help from the authorities? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_incitement_sources", question_titles=["Which sources have you seen or heard hateful/inciteful statements about other communities, identities, and religions in the last two weeks?",
                                                                                                           "If there are any, what was the nature of the statements?"]),
-                    QuestionConfiguration(engagement_db_dataset="aik_vote_buying", question_titles=["Have you heard or seen incidents of voters being encouraged not to vote or sell their voters cards?", 
-                                                                                                   "If YES, when and where did this incidents of encouragement on not to vote happen?",
-                                                                                                   "Who encouraged this?"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_vote_buying_incidents", question_titles=["Have you heard or seen incidents of voters being encouraged not to vote or sell their voters cards?", 
+                                                                                                   "If YES, when and where did this incidents of encouragement on not to vote happen?"]),
+                    QuestionConfiguration(engagement_db_dataset="aik_source_of_vote_buying", question_titles=["Who encouraged this?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_influence_on_voting_choices", question_titles=["Based on the campaign activities over the past two weeks, what do you think will influence people's voting choices in your area?"]),
                     
                     ## RISK OF VIOLENCE & CONFLICT
@@ -124,6 +216,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
 
+                    FlowResultConfiguration("AIK_pool_invitation_activation", "aik_pool_invitation_2022", "aik_pool_invitation_2022"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_political_participation", "aik_political_participation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_election_conversations", "aik_election_conversations"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_influence_on_voting_choices", "aik_influence_on_voting_choices"),
@@ -131,6 +224,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_incidents_of_violence_and_polarisation", "aik_incidents_of_violence_and_polarisation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_electoral_sexual_gender_based_violence", "aik_electoral_sexual_gender_based_violence"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_response_to_electoral_related_insecurity", "aik_response_to_electoral_related_insecurity"),
+
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_political_participation_2", "aik_political_participation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_election_conversations_2", "aik_election_conversations_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_influence_on_voting_choices_2", "aik_influence_on_voting_choices_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_concern_about_safety_and_security_2", "aik_concern_about_safety_and_security_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_incidents_of_violence_and_polarisation_2", "aik_incidents_of_violence_and_polarisation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_electoral_sexual_gender_based_violence_2", "aik_electoral_sexual_gender_based_violence_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_response_to_electoral_related_insecurity_2", "aik_response_to_electoral_related_insecurity_2"),
                 ],
             )
         )
@@ -178,6 +279,85 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="disabled",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
+                ),
+                make_rqa_coda_dataset_config("AIK_political_participation", 2),
+                make_rqa_coda_dataset_config("AIK_election_conversations", 2),
+                make_rqa_coda_dataset_config("AIK_influence_on_voting_choices", 2),
+                make_rqa_coda_dataset_config("AIK_concern_about_safety_and_security", 2),
+                make_rqa_coda_dataset_config("AIK_incidents_of_violence_and_polarisation", 2),
+                make_rqa_coda_dataset_config("AIK_electoral_sexual_gender_based_violence", 2),
+                make_rqa_coda_dataset_config("AIK_response_to_electoral_related_insecurity", 2),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_pool_invitation_2022",
+                    engagement_db_dataset="aik_pool_invitation_2022",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_pool_invitation_2022"),
+                                                auto_coder=None),
+                    ],
+                    ws_code_match_value="aik_pool_invitation_2022"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_voting_participation",
+                    engagement_db_dataset="aik_voting_participation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_voting_participation"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_voting_participation"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_willingness_to_help_victims",
+                    engagement_db_dataset="aik_willingness_to_help_victims",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_willingness_to_help_victims"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_willingness_to_help_victims"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_engaging_authorities",
+                    engagement_db_dataset="aik_engaging_authorities",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_engaging_authorities"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_engaging_authorities"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_incitement_sources",
+                    engagement_db_dataset="aik_incitement_sources",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incitement_sources"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_incitement_sources"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_vote_buying_incidents",
+                    engagement_db_dataset="aik_vote_buying_incidents",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_vote_buying_incidents"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_vote_buying_incidents"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_source_of_vote_buying",
+                    engagement_db_dataset="aik_source_of_vote_buying",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_source_of_vote_buying"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_source_of_vote_buying"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_incidents_of_polarisation",
+                    engagement_db_dataset="aik_incidents_of_polarisation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incidents_of_polarisation"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_incidents_of_polarisation"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="AIK_political_participation",
@@ -440,6 +620,60 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="aik_violence_displacement"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_education",
+                    engagement_db_dataset="aik_education",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_education"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_education"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_employment_status",
+                    engagement_db_dataset="aik_employment_status",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_employment_status"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_employment_status"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_religion",
+                    engagement_db_dataset="aik_religion",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_religion"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_religion"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_household_income",
+                    engagement_db_dataset="aik_household_income",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_household_income"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_household_income"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_communities",
+                    engagement_db_dataset="aik_communities",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_communities"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_communities"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_indigenous_or_minority",
+                    engagement_db_dataset="aik_indigenous_or_minority",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_indigenous_or_minority"),
+                                                auto_coder=None, coda_code_schemes_count=3),
+                    ],
+                    ws_code_match_value="aik_indigenous_or_minority"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/aik_elections_coda_users.json",
@@ -508,6 +742,22 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                             }
                         )
                     ),
+                ],
+            ),
+            make_rqa_analysis_dataset_config("aik_education", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_employment_status", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_religion", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_communities", DatasetTypes.DEMOGRAPHIC),
+            make_rqa_analysis_dataset_config("aik_household_income", DatasetTypes.DEMOGRAPHIC),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["aik_pool_invitation_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="aik_pool_invitation_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/aik/aik_pool_invitation_2022"),
+                        analysis_dataset="aik_pool_invitation_2022"
+                    )
                 ],
             ),
             AnalysisDatasetConfiguration(
@@ -587,6 +837,44 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     )
                 ],
             ),
+            make_rqa_analysis_dataset_config("aik_voting_participation"),
+            make_rqa_analysis_dataset_config("aik_willingness_to_help_victims"),
+            make_rqa_analysis_dataset_config("aik_engaging_authorities"),
+            make_rqa_analysis_dataset_config("aik_incitement_sources"),
+            make_rqa_analysis_dataset_config("aik_vote_buying_incidents"),
+            make_rqa_analysis_dataset_config("aik_source_of_vote_buying"),
+            make_rqa_analysis_dataset_config("aik_incidents_of_polarisation"),
+            make_rqa_analysis_dataset_config("aik_iebc_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_nps_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_ncic_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_dpp_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_ipoa_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_judiciary_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_knchr_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_other_institutions_effectiveness"),
+            make_rqa_analysis_dataset_config("aik_electoral_violence_anxiety"),
+            make_rqa_analysis_dataset_config("aik_hate_speech_and_actions_target"),
+            make_rqa_analysis_dataset_config("aik_identity_groups_increase"),
+            make_rqa_analysis_dataset_config("aik_inability_to_work"),
+            make_rqa_analysis_dataset_config("aik_intolerance_incidents"),
+            make_rqa_analysis_dataset_config("aik_peace_and_security_initiatives"),
+            make_rqa_analysis_dataset_config("aik_physical_harm"),
+            make_rqa_analysis_dataset_config("aik_police_brutality"),
+            make_rqa_analysis_dataset_config("aik_political_environment"),
+            make_rqa_analysis_dataset_config("aik_political_events_disruption"),
+            make_rqa_analysis_dataset_config("aik_sexual_assault"),
+            make_rqa_analysis_dataset_config("aik_unsafe_areas"),
+            make_rqa_analysis_dataset_config("aik_vandalism_theft_incidents"),
+            make_rqa_analysis_dataset_config("aik_violence_displacement"),
+            make_rqa_analysis_dataset_config("aik_indigenous_or_minority"),
+
+            make_rqa_analysis_dataset_config("aik_political_participation", survey=2),
+            make_rqa_analysis_dataset_config("aik_election_conversations", survey=2),
+            make_rqa_analysis_dataset_config("aik_influence_on_voting_choices", survey=2),
+            make_rqa_analysis_dataset_config("aik_concern_about_safety_and_security", survey=2),
+            make_rqa_analysis_dataset_config("aik_incidents_of_violence_and_polarisation", survey=2),
+            make_rqa_analysis_dataset_config("aik_electoral_sexual_gender_based_violence", survey=2),
+            make_rqa_analysis_dataset_config("aik_response_to_electoral_related_insecurity", survey=2),
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
     ),

@@ -14,6 +14,22 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-3809303b",
+            "CodeType": "Normal",
+            "DisplayText": "yes",
+            "NumericValue": 1,
+            "StringValue": "yes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4f7ca55c",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 2,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
