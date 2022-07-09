@@ -14,7 +14,7 @@ def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RES
         raw_dataset=f"{dataset_name}{suffix}_raw".strip(),
         coding_configs=[
             CodingConfiguration(
-                code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}"),
+                code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}{suffix}".strip()),
                 analysis_dataset=f"{dataset_name}{suffix}".strip()
             )
         ]
