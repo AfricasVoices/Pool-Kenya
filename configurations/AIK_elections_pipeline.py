@@ -273,6 +273,13 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="disabled",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
                 ),
+                make_rqa_coda_dataset_config("AIK_political_participation", 2),
+                make_rqa_coda_dataset_config("AIK_election_conversations", 2),
+                make_rqa_coda_dataset_config("AIK_influence_on_voting_choices", 2),
+                make_rqa_coda_dataset_config("AIK_concern_about_safety_and_security", 2),
+                make_rqa_coda_dataset_config("AIK_incidents_of_violence_and_polarisation", 2),
+                make_rqa_coda_dataset_config("AIK_electoral_sexual_gender_based_violence", 2),
+                make_rqa_coda_dataset_config("AIK_response_to_electoral_related_insecurity", 2),
                 CodaDatasetConfiguration(
                     coda_dataset_id="AIK_voting_participation",
                     engagement_db_dataset="aik_voting_participation",
