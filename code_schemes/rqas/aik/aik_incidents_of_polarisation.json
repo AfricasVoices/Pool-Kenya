@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-bcdac21d",
-    "Name": "Political Events Disruption",
+    "SchemeID": "Scheme-a197a716",
+    "Name": "Incidents Of Polarisation",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,27 +14,43 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-c3005ba3",
+            "CodeID": "code-7021e633",
             "CodeType": "Normal",
             "DisplayText": "yes",
-            "NumericValue": 1,
+            "NumericValue": 0,
             "StringValue": "yes",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-a73b8c81",
+            "CodeID": "code-7598ee9e",
             "CodeType": "Normal",
-            "DisplayText": "no",
-            "NumericValue": 2,
-            "StringValue": "no",
+            "DisplayText": "yes, nairobi",
+            "NumericValue": 1,
+            "StringValue": "yes_nairobi",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-5b2950f8",
+            "CodeID": "code-bf6317a1",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "yes, eldoret",
+            "NumericValue": 2,
+            "StringValue": "yes_eldoret",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-18608d76",
+            "CodeType": "Normal",
+            "DisplayText": "yes, garissa, marsabit",
             "NumericValue": 3,
-            "StringValue": "i_do_not_know",
+            "StringValue": "yes_garissa_marsabit",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6f68cff6",
+            "CodeType": "Normal",
+            "DisplayText": "yes, kisumu",
+            "NumericValue": 4,
+            "StringValue": "yes_kisumu",
             "VisibleInCoda": true
         },
         {

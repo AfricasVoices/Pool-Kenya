@@ -14,6 +14,70 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-97c1bc25",
+            "CodeType": "Normal",
+            "DisplayText": "dont know or never heard about IPOA",
+            "NumericValue": 1,
+            "StringValue": "dont_know_or_never_heard_about_ipoa",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-753ea1b3",
+            "CodeType": "Normal",
+            "DisplayText": "corrupt",
+            "NumericValue": 2,
+            "StringValue": "corrupt",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-76c60a7f",
+            "CodeType": "Normal",
+            "DisplayText": "incompetent or not proactive",
+            "NumericValue": 3,
+            "StringValue": "incompetent_or_not_proactive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8cc9a77e",
+            "CodeType": "Normal",
+            "DisplayText": "fair or impartial",
+            "NumericValue": 4,
+            "StringValue": "fair_or_impartial",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b62c4ad6",
+            "CodeType": "Normal",
+            "DisplayText": "average",
+            "NumericValue": 5,
+            "StringValue": "average",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6e5d851b",
+            "CodeType": "Normal",
+            "DisplayText": "competent",
+            "NumericValue": 6,
+            "StringValue": "competent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e34a5b6e",
+            "CodeType": "Normal",
+            "DisplayText": "biased or unfair",
+            "NumericValue": 7,
+            "StringValue": "biased_or_unfair",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9396588a",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",

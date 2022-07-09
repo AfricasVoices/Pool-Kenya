@@ -14,6 +14,62 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-02947169",
+            "CodeType": "Normal",
+            "DisplayText": "corrupt",
+            "NumericValue": 1,
+            "StringValue": "corrupt",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-eb48b319",
+            "CodeType": "Normal",
+            "DisplayText": "incompetent",
+            "NumericValue": 2,
+            "StringValue": "incompetent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5bf8e69b",
+            "CodeType": "Normal",
+            "DisplayText": "average",
+            "NumericValue": 3,
+            "StringValue": "average",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c919679b",
+            "CodeType": "Normal",
+            "DisplayText": "competent or proactive",
+            "NumericValue": 4,
+            "StringValue": "competent_or_proactive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fc58885e",
+            "CodeType": "Normal",
+            "DisplayText": "biased or compromised",
+            "NumericValue": 5,
+            "StringValue": "biased_or_compromised",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c3a2b82a",
+            "CodeType": "Normal",
+            "DisplayText": "use exessive force",
+            "NumericValue": 6,
+            "StringValue": "use_exessive_force",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2e3762f2",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",

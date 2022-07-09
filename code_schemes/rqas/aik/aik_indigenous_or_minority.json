@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-bcdac21d",
-    "Name": "Political Events Disruption",
+    "SchemeID": "Scheme-ba9db353",
+    "Name": "Indigenous or Minority",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,27 +14,35 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-c3005ba3",
+            "CodeID": "code-7a2e1a18",
             "CodeType": "Normal",
-            "DisplayText": "yes",
+            "DisplayText": "indigenous",
             "NumericValue": 1,
-            "StringValue": "yes",
+            "StringValue": "indigenous",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-a73b8c81",
+            "CodeID": "code-3a654550",
             "CodeType": "Normal",
-            "DisplayText": "no",
+            "DisplayText": "minority",
             "NumericValue": 2,
-            "StringValue": "no",
+            "StringValue": "minority",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-5b2950f8",
+            "CodeID": "code-ad580098",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "neither indigenous nor minority",
             "NumericValue": 3,
-            "StringValue": "i_do_not_know",
+            "StringValue": "neither_indigenous_nor_minority",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f27aadb0",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 4,
+            "StringValue": "other_theme",
             "VisibleInCoda": true
         },
         {

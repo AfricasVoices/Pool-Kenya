@@ -70,10 +70,74 @@
             "VisibleInCoda": true
         },
         {
+            "CodeID": "code-b6d5f068",
+            "CodeType": "Normal",
+            "DisplayText": "political party affiliation",
+            "NumericValue": 8,
+            "StringValue": "political_party_affiliation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e8ddb205",
+            "CodeType": "Normal",
+            "DisplayText": "money or bribery",
+            "NumericValue": 9,
+            "StringValue": "money_or_bribery",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6aef04dd",
+            "CodeType": "Normal",
+            "DisplayText": "tribal affiliation or ethnicity",
+            "NumericValue": 10,
+            "StringValue": "tribal_affiliation_or_ethnicity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4a99ab0f",
+            "CodeType": "Normal",
+            "DisplayText": "community decision or local leaders influence",
+            "NumericValue": 11,
+            "StringValue": "community_decision_or_local_leaders_influence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bc2abcc1",
+            "CodeType": "Normal",
+            "DisplayText": "popularity of contestant",
+            "NumericValue": 12,
+            "StringValue": "popularity_of_contestant",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b7774c14",
+            "CodeType": "Normal",
+            "DisplayText": "government influence",
+            "NumericValue": 13,
+            "StringValue": "government_influence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-58048748",
+            "CodeType": "Normal",
+            "DisplayText": "level of confidence in IEBC",
+            "NumericValue": 14,
+            "StringValue": "level_of_confidence_in_iebc",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0208692d",
+            "CodeType": "Normal",
+            "DisplayText": "peaceful campaigns",
+            "NumericValue": 15,
+            "StringValue": "peaceful_campaigns",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-62bed6cf",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 8,
+            "NumericValue": 16,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

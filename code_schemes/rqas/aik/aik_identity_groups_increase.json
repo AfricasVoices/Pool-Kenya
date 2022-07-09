@@ -14,6 +14,62 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-2b44f3b5",
+            "CodeType": "Normal",
+            "DisplayText": "no",
+            "NumericValue": 1,
+            "StringValue": "no",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-014a1f82",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know or not sure",
+            "NumericValue": 2,
+            "StringValue": "i_do_not_know_or_not_sure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d1e9aaca",
+            "CodeType": "Normal",
+            "DisplayText": "yes, without reason",
+            "NumericValue": 3,
+            "StringValue": "yes_without_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d0c6a4be",
+            "CodeType": "Normal",
+            "DisplayText": "yes, exist on social media",
+            "NumericValue": 4,
+            "StringValue": "yes_exist_on_social_media",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e29d9c96",
+            "CodeType": "Normal",
+            "DisplayText": "yes, tribal affiliations",
+            "NumericValue": 5,
+            "StringValue": "yes_tribal_affiliations",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-59cb77bc",
+            "CodeType": "Normal",
+            "DisplayText": "yes, emergence of political groups",
+            "NumericValue": 6,
+            "StringValue": "yes_emergence_of_political_groups",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4fbffc2b",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",

@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-bcdac21d",
-    "Name": "Political Events Disruption",
+    "SchemeID": "Scheme-592f5ed1",
+    "Name": "Source of Vote Buying",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,27 +14,35 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-c3005ba3",
+            "CodeID": "code-2a7a463d",
             "CodeType": "Normal",
-            "DisplayText": "yes",
+            "DisplayText": "politicians' agents",
             "NumericValue": 1,
-            "StringValue": "yes",
+            "StringValue": "politicians_agents",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-a73b8c81",
+            "CodeID": "code-243219ca",
             "CodeType": "Normal",
-            "DisplayText": "no",
+            "DisplayText": "politicians",
             "NumericValue": 2,
-            "StringValue": "no",
+            "StringValue": "politicians",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-5b2950f8",
+            "CodeID": "code-8d413fad",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "supporters",
             "NumericValue": 3,
-            "StringValue": "i_do_not_know",
+            "StringValue": "supporters",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0d24e812",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 4,
+            "StringValue": "other_theme",
             "VisibleInCoda": true
         },
         {

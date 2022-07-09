@@ -14,6 +14,118 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-34288858",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 1,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-05229e77",
+            "CodeType": "Normal",
+            "DisplayText": "no, no reason",
+            "NumericValue": 2,
+            "StringValue": "no_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7053278d",
+            "CodeType": "Normal",
+            "DisplayText": "yes, in hola",
+            "NumericValue": 3,
+            "StringValue": "yes_in_hola",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-326d9dd8",
+            "CodeType": "Normal",
+            "DisplayText": "yes, in kabiro",
+            "NumericValue": 4,
+            "StringValue": "yes_in_kabiro",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7157adb7",
+            "CodeType": "Normal",
+            "DisplayText": "yes, at mtopanga primary areas",
+            "NumericValue": 5,
+            "StringValue": "yes_at_mtopanga_primary_areas",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fd7dcf7b",
+            "CodeType": "Normal",
+            "DisplayText": "yes, in clay city ward",
+            "NumericValue": 6,
+            "StringValue": "yes_in_clay_city_ward",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e5863d63",
+            "CodeType": "Normal",
+            "DisplayText": "yes, in jacaranda",
+            "NumericValue": 7,
+            "StringValue": "yes_in_jacaranda",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-11f59d0d",
+            "CodeType": "Normal",
+            "DisplayText": "yes, in garissa",
+            "NumericValue": 8,
+            "StringValue": "yes_in_garissa",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b6c94ade",
+            "CodeType": "Normal",
+            "DisplayText": "yes, in mombasa",
+            "NumericValue": 9,
+            "StringValue": "yes_in_mombasa",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1278b4df",
+            "CodeType": "Normal",
+            "DisplayText": "yes, at ngombeni",
+            "NumericValue": 10,
+            "StringValue": "yes_at_ngombeni",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5aa30e67",
+            "CodeType": "Normal",
+            "DisplayText": "yes, at tononoka",
+            "NumericValue": 11,
+            "StringValue": "yes_at_tononoka",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d365a437",
+            "CodeType": "Normal",
+            "DisplayText": "yes, kondele flyover",
+            "NumericValue": 12,
+            "StringValue": "yes_kondele_flyover",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6eb54e49",
+            "CodeType": "Normal",
+            "DisplayText": "yes, at lakeview estate, nakuru",
+            "NumericValue": 13,
+            "StringValue": "yes_at_lakeview_estate_nakuru",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b0a8b21a",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 14,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",

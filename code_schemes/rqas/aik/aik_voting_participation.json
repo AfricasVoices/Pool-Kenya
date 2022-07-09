@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-bcdac21d",
-    "Name": "Political Events Disruption",
+    "SchemeID": "Scheme-24a878dd",
+    "Name": "Voting Participation",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -14,27 +14,51 @@
             "Shortcut": "e"
         },
         {
-            "CodeID": "code-c3005ba3",
+            "CodeID": "code-0d97651a",
             "CodeType": "Normal",
-            "DisplayText": "yes",
+            "DisplayText": "no, no voters card or id",
             "NumericValue": 1,
-            "StringValue": "yes",
+            "StringValue": "no_no_voters_card_or_id",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-a73b8c81",
+            "CodeID": "code-c2a5a080",
             "CodeType": "Normal",
-            "DisplayText": "no",
+            "DisplayText": "no, registered in a different county",
             "NumericValue": 2,
-            "StringValue": "no",
+            "StringValue": "no_registered_in_a_different_county",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-5b2950f8",
+            "CodeID": "code-69a2c9be",
             "CodeType": "Normal",
-            "DisplayText": "i do not know",
+            "DisplayText": "no, nothing will change",
             "NumericValue": 3,
-            "StringValue": "i_do_not_know",
+            "StringValue": "no_nothing_will_change",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a7098beb",
+            "CodeType": "Normal",
+            "DisplayText": "no, long queues",
+            "NumericValue": 4,
+            "StringValue": "no_long_queues",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-922099e0",
+            "CodeType": "Normal",
+            "DisplayText": "no, reason",
+            "NumericValue": 5,
+            "StringValue": "no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8eb4c187",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
             "VisibleInCoda": true
         },
         {
