@@ -14,6 +14,14 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-01069ffe",
+            "CodeType": "Normal",
+            "DisplayText": "do not share",
+            "NumericValue": 0,
+            "StringValue": "do_not_share",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-97c1bc25",
             "CodeType": "Normal",
             "DisplayText": "dont know or never heard about IPOA",

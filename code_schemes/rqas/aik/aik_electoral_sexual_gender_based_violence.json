@@ -14,6 +14,14 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-01069ffe",
+            "CodeType": "Normal",
+            "DisplayText": "do not share",
+            "NumericValue": 12,
+            "StringValue": "do_not_share",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-de68ea8e",
             "CodeType": "Normal",
             "DisplayText": "sexual violence against women",
