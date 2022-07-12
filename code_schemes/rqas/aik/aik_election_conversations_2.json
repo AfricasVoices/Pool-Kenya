@@ -14,6 +14,62 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-b8277bad",
+            "CodeType": "Normal",
+            "DisplayText": "nothing has changed",
+            "NumericValue": 1,
+            "StringValue": "nothing_has_changed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4ec32965",
+            "CodeType": "Normal",
+            "DisplayText": "there is conflict",
+            "NumericValue": 2,
+            "StringValue": "there_is_conflict",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-269c89f7",
+            "CodeType": "Normal",
+            "DisplayText": "there is peace",
+            "NumericValue": 3,
+            "StringValue": "there_is_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-adc6f7df",
+            "CodeType": "Normal",
+            "DisplayText": "it has changed",
+            "NumericValue": 4,
+            "StringValue": "it_has_changed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0aad6fda",
+            "CodeType": "Normal",
+            "DisplayText": "hate speech",
+            "NumericValue": 5,
+            "StringValue": "hate_speech",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-92d0d4f7",
+            "CodeType": "Normal",
+            "DisplayText": "there is security",
+            "NumericValue": 6,
+            "StringValue": "there_is_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1f1cc701",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
