@@ -14,6 +14,102 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-ecdeafbf",
+            "CodeType": "Normal",
+            "DisplayText": "no, no reason",
+            "NumericValue": 1,
+            "StringValue": "no_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8c648095",
+            "CodeType": "Normal",
+            "DisplayText": "no, there is security",
+            "NumericValue": 2,
+            "StringValue": "no_there_is_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8f63dda5",
+            "CodeType": "Normal",
+            "DisplayText": "no, there is no violence",
+            "NumericValue": 3,
+            "StringValue": "no_there_is_no_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ef645f5a",
+            "CodeType": "Normal",
+            "DisplayText": "no, there is peace",
+            "NumericValue": 4,
+            "StringValue": "no_there_is_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ad0251da",
+            "CodeType": "Normal",
+            "DisplayText": "no, everything is going well",
+            "NumericValue": 5,
+            "StringValue": "no_everything_is_going_well",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c517f3de",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 6,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-742f96e1",
+            "CodeType": "Normal",
+            "DisplayText": "yes, there is violence",
+            "NumericValue": 7,
+            "StringValue": "yes_there_is_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d7b24013",
+            "CodeType": "Normal",
+            "DisplayText": "yes, because of tribalism",
+            "NumericValue": 8,
+            "StringValue": "yes_because_of_tribalism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-37823d19",
+            "CodeType": "Normal",
+            "DisplayText": "yes, incitement from politicians",
+            "NumericValue": 9,
+            "StringValue": "yes_incitement_from_politicians",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d595e0d4",
+            "CodeType": "Normal",
+            "DisplayText": "yes, there is security",
+            "NumericValue": 10,
+            "StringValue": "yes_there_is_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-534a1ac0",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 11,
+            "StringValue": "i_do_not_know",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4cf2e961",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 12,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
