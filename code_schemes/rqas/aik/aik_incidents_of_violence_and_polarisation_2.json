@@ -56,9 +56,9 @@
         {
             "CodeID": "code-87c29382",
             "CodeType": "Normal",
-            "DisplayText": "yes, due to disputed results",
+            "DisplayText": "yes, disputed results",
             "NumericValue": 8,
-            "StringValue": "yes_due_to_disputed_results",
+            "StringValue": "yes_disputed_results",
             "VisibleInCoda": true
         },
         {
@@ -72,9 +72,9 @@
         {
             "CodeID": "code-850ced9c",
             "CodeType": "Normal",
-            "DisplayText": "yes, due to political differences",
+            "DisplayText": "yes, political differences",
             "NumericValue": 10,
-            "StringValue": "yes_due_to_political_differences",
+            "StringValue": "yes_political_differences",
             "VisibleInCoda": true
         },
         {
