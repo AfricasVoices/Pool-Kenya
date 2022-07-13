@@ -22,6 +22,94 @@
             "Shortcut": "e"
         },
         {
+            "CodeID": "code-a8e36bc1",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 1,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9eedab76",
+            "CodeType": "Normal",
+            "DisplayText": "yes, there is violence",
+            "NumericValue": 2,
+            "StringValue": "yes_there_is_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d23443f9",
+            "CodeType": "Normal",
+            "DisplayText": "yes, incitement from politicians",
+            "NumericValue": 3,
+            "StringValue": "yes_incitement_from_politicians",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-19635ab9",
+            "CodeType": "Normal",
+            "DisplayText": "yes, tribalism and favouritism",
+            "NumericValue": 4,
+            "StringValue": "yes_tribalism_and_favouristism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-87c29382",
+            "CodeType": "Normal",
+            "DisplayText": "yes, disputed results",
+            "NumericValue": 8,
+            "StringValue": "yes_disputed_results",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4538dce4",
+            "CodeType": "Normal",
+            "DisplayText": "yes, rumours and threats or fear",
+            "NumericValue": 9,
+            "StringValue": "yes_rumours_and_threats_or_fear",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-850ced9c",
+            "CodeType": "Normal",
+            "DisplayText": "yes, political differences",
+            "NumericValue": 10,
+            "StringValue": "yes_political_differences",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f26b26a9",
+            "CodeType": "Normal",
+            "DisplayText": "no, no reason",
+            "NumericValue": 5,
+            "StringValue": "no_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0862f780",
+            "CodeType": "Normal",
+            "DisplayText": "no, no violence",
+            "NumericValue": 6,
+            "StringValue": "no_no_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-353f73ab",
+            "CodeType": "Normal",
+            "DisplayText": "no signs of violence yet",
+            "NumericValue": 7,
+            "StringValue": "no_signs_of_violence_yet",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-102c249b",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 11,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
             "ControlCode": "NA",
