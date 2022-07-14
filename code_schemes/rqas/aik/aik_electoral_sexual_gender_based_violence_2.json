@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-592f5ed1",
-    "Name": "Source of Vote Buying",
+    "SchemeID": "Scheme-2bfa857c",
+    "Name": "S02 Electoral Sexual Gender Based Violence",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -22,34 +22,98 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-2a7a463d",
+            "CodeID": "code-ecdeafbf",
             "CodeType": "Normal",
-            "DisplayText": "politicians' agents",
+            "DisplayText": "no, no reason",
             "NumericValue": 1,
-            "StringValue": "politicians_agents",
+            "StringValue": "no_no_reason",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-243219ca",
+            "CodeID": "code-8c648095",
             "CodeType": "Normal",
-            "DisplayText": "politicians",
+            "DisplayText": "no, there is security",
             "NumericValue": 2,
-            "StringValue": "politicians",
+            "StringValue": "no_there_is_security",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-8d413fad",
+            "CodeID": "code-8f63dda5",
             "CodeType": "Normal",
-            "DisplayText": "supporters",
+            "DisplayText": "no, there is no violence",
             "NumericValue": 3,
-            "StringValue": "supporters",
+            "StringValue": "no_there_is_no_violence",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-0d24e812",
+            "CodeID": "code-ef645f5a",
+            "CodeType": "Normal",
+            "DisplayText": "no, there is peace",
+            "NumericValue": 4,
+            "StringValue": "no_there_is_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ad0251da",
+            "CodeType": "Normal",
+            "DisplayText": "no, everything is going well",
+            "NumericValue": 5,
+            "StringValue": "no_everything_is_going_well",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c517f3de",
+            "CodeType": "Normal",
+            "DisplayText": "yes, no reason",
+            "NumericValue": 6,
+            "StringValue": "yes_no_reason",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-742f96e1",
+            "CodeType": "Normal",
+            "DisplayText": "yes, there is violence",
+            "NumericValue": 7,
+            "StringValue": "yes_there_is_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d7b24013",
+            "CodeType": "Normal",
+            "DisplayText": "yes, because of tribalism",
+            "NumericValue": 8,
+            "StringValue": "yes_because_of_tribalism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-37823d19",
+            "CodeType": "Normal",
+            "DisplayText": "yes, incitement from politicians",
+            "NumericValue": 9,
+            "StringValue": "yes_incitement_from_politicians",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d595e0d4",
+            "CodeType": "Normal",
+            "DisplayText": "yes, there is security",
+            "NumericValue": 10,
+            "StringValue": "yes_there_is_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-534a1ac0",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 11,
+            "StringValue": "i_do_not_know",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4cf2e961",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 4,
+            "NumericValue": 12,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

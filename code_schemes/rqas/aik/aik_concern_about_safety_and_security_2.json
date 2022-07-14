@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-592f5ed1",
-    "Name": "Source of Vote Buying",
+    "SchemeID": "Scheme-aeb84b94",
+    "Name": "S02 Concern About Safety and Security",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -22,34 +22,74 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-2a7a463d",
+            "CodeID": "code-5ad9f5cd",
             "CodeType": "Normal",
-            "DisplayText": "politicians' agents",
+            "DisplayText": "yes, no reason",
             "NumericValue": 1,
-            "StringValue": "politicians_agents",
+            "StringValue": "yes_no_reason",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-243219ca",
+            "CodeID": "code-d161a948",
             "CodeType": "Normal",
-            "DisplayText": "politicians",
+            "DisplayText": "yes, there is concern",
             "NumericValue": 2,
-            "StringValue": "politicians",
+            "StringValue": "yes_there_is_concern",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-8d413fad",
+            "CodeID": "code-ca918f04",
             "CodeType": "Normal",
-            "DisplayText": "supporters",
+            "DisplayText": "no, no reason",
             "NumericValue": 3,
-            "StringValue": "supporters",
+            "StringValue": "no_no_reason",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-0d24e812",
+            "CodeID": "code-76f4f92f",
+            "CodeType": "Normal",
+            "DisplayText": "no concern",
+            "NumericValue": 4,
+            "StringValue": "no_concern",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-435bbfac",
+            "CodeType": "Normal",
+            "DisplayText": "fear of violence",
+            "NumericValue": 5,
+            "StringValue": "fear_of_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-91c91fdb",
+            "CodeType": "Normal",
+            "DisplayText": "somewhat concerned",
+            "NumericValue": 6,
+            "StringValue": "somewhat_concerned",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4a260b54",
+            "CodeType": "Normal",
+            "DisplayText": "there is safety and security",
+            "NumericValue": 7,
+            "StringValue": "there_is_safety_and_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b025c13f",
+            "CodeType": "Normal",
+            "DisplayText": "trusting God",
+            "NumericValue": 8,
+            "StringValue": "trusting_god",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d8283afa",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 4,
+            "NumericValue": 9,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

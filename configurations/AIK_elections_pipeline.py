@@ -2,17 +2,39 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
-def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER):
+def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER, survey=1):
+    if survey == 1:
+        suffix = ""
+    else:
+        suffix = f"_{survey}"
+
     return AnalysisDatasetConfiguration(
-        engagement_db_datasets=[dataset_name],
+        engagement_db_datasets=[f"{dataset_name}{suffix}".strip()],
         dataset_type=dataset_type,
-        raw_dataset=f"{dataset_name}_raw",
+        raw_dataset=f"{dataset_name}{suffix}_raw".strip(),
         coding_configs=[
             CodingConfiguration(
-                code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}"),
-                analysis_dataset=dataset_name
+                code_scheme=load_code_scheme(f"rqas/aik/{dataset_name}{suffix}".strip()),
+                analysis_dataset=f"{dataset_name}{suffix}".strip()
             )
         ]
+    )
+
+
+def make_rqa_coda_dataset_config(coda_dataset_id, survey=1):
+    if survey == 1:
+        suffix = ""
+    else:
+        suffix = f"_{survey}"
+    
+    return CodaDatasetConfiguration(
+        coda_dataset_id=f"{coda_dataset_id}{suffix}".strip(),
+        engagement_db_dataset=f"{coda_dataset_id.lower()}{suffix}".strip(),
+        code_scheme_configurations=[
+            CodeSchemeConfiguration(code_scheme=load_code_scheme(f"rqas/aik/{coda_dataset_id.lower()}{suffix}".strip()),
+                                    auto_coder=None, coda_code_schemes_count=3),
+        ],
+        ws_code_match_value=f"{coda_dataset_id.lower()}{suffix}".strip()
     )
 
 
@@ -41,6 +63,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         credentials_file_url="gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json",
     ),
     google_form_sources=[
+        # TODO: Remove duplicate db datasets set under different names i.e Kenya_pool_location is the same as location in db
         GoogleFormSource(
             google_form_client=GoogleFormsClientConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
@@ -88,10 +111,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     QuestionConfiguration(engagement_db_dataset="aik_other_institutions_effectiveness", question_titles=["List other institutions and their ratings?"]),
 
                     # DEMOGRAPHICS
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_age", question_titles=["How old are you?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_gender", question_titles=["What is your sex?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_location", question_titles=["Which constituency do you live in?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_disabled", question_titles=["Do you have any form of disability?"]),
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your sex?"]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Which constituency do you live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability?"]),
                 ]
             )
         ),
@@ -108,16 +131,16 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 question_configurations=[
                     # Demographic Questions
                     # QuestionConfiguration(engagement_db_dataset="aik_language", question_titles=["We could either do the interview in English or Swahili. Which language would you prefer? "]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_age", question_titles=["Do you mind telling me how old you are?"]),
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["Do you mind telling me how old you are?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_education", question_titles=["What is the highest level of education attained ? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_employment_status", question_titles=["What is your employment Status ?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_religion", question_titles=["What is your religion ?"]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_gender", question_titles=["What is your sex? "]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your sex? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_household_income", question_titles=["Approximately what is your gross monthly household income? (I.e. This is the combined monthly income of all your household members). This will help us in determining your social-economic class."]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_disabled", question_titles=["Do you have any form of disability? (If disability is visible, do not ask, make the judgement)"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability? (If disability is visible, do not ask, make the judgement)"]),
                     QuestionConfiguration(engagement_db_dataset="aik_communities", question_titles=["What community do you belong to?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_indigenous_or_minority", question_titles=["Is it considered indigenous or minority?  if yes provide details."]),
-                    QuestionConfiguration(engagement_db_dataset="pool_kenya_location", question_titles=["Can I presume that you are currently a resident of; …………… County? [mention name of the target county]", 
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Can I presume that you are currently a resident of; …………… County? [mention name of the target county]", 
                                                                                                        "Can I presume that you are currently a resident of; …………… Sub-County / Constituency? [mention name of the target sub-county]",
                                                                                                        "Can I presume that you are currently a resident of; …………… Ward? [mention name of the target ward]"]),
                     ## GENERAL ELECTORAL ENVIRONMENT
@@ -193,6 +216,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_location", "location"),
                     FlowResultConfiguration("AIK_survey_demog", "pool_kenya_disabled", "disabled"),
 
+                    FlowResultConfiguration("AIK_pool_invitation_activation", "aik_pool_invitation_2022", "aik_pool_invitation_2022"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_political_participation", "aik_political_participation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_election_conversations", "aik_election_conversations"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_influence_on_voting_choices", "aik_influence_on_voting_choices"),
@@ -200,6 +224,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_incidents_of_violence_and_polarisation", "aik_incidents_of_violence_and_polarisation"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_electoral_sexual_gender_based_violence", "aik_electoral_sexual_gender_based_violence"),
                     FlowResultConfiguration("AIK_survey_01_sms_ad", "aik_response_to_electoral_related_insecurity", "aik_response_to_electoral_related_insecurity"),
+
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_political_participation_2", "aik_political_participation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_election_conversations_2", "aik_election_conversations_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_influence_on_voting_choices_2", "aik_influence_on_voting_choices_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_concern_about_safety_and_security_2", "aik_concern_about_safety_and_security_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_incidents_of_violence_and_polarisation_2", "aik_incidents_of_violence_and_polarisation_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_electoral_sexual_gender_based_violence_2", "aik_electoral_sexual_gender_based_violence_2"),
+                    FlowResultConfiguration("AIK_survey_02_sms_ad", "aik_response_to_electoral_related_insecurity_2", "aik_response_to_electoral_related_insecurity_2"),
                 ],
             )
         )
@@ -247,6 +279,22 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="disabled",
                     dataset_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json"
+                ),
+                make_rqa_coda_dataset_config("AIK_political_participation", 2),
+                make_rqa_coda_dataset_config("AIK_election_conversations", 2),
+                make_rqa_coda_dataset_config("AIK_influence_on_voting_choices", 2),
+                make_rqa_coda_dataset_config("AIK_concern_about_safety_and_security", 2),
+                make_rqa_coda_dataset_config("AIK_incidents_of_violence_and_polarisation", 2),
+                make_rqa_coda_dataset_config("AIK_electoral_sexual_gender_based_violence", 2),
+                make_rqa_coda_dataset_config("AIK_response_to_electoral_related_insecurity", 2),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="AIK_pool_invitation_2022",
+                    engagement_db_dataset="aik_pool_invitation_2022",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_pool_invitation_2022"),
+                                                auto_coder=None),
+                    ],
+                    ws_code_match_value="aik_pool_invitation_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="AIK_voting_participation",
@@ -702,6 +750,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             make_rqa_analysis_dataset_config("aik_communities", DatasetTypes.DEMOGRAPHIC),
             make_rqa_analysis_dataset_config("aik_household_income", DatasetTypes.DEMOGRAPHIC),
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["aik_pool_invitation_2022"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="aik_pool_invitation_2022_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/aik/aik_pool_invitation_2022"),
+                        analysis_dataset="aik_pool_invitation_2022"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["aik_political_participation"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
                 raw_dataset="aik_political_participation_raw",
@@ -808,8 +867,67 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             make_rqa_analysis_dataset_config("aik_vandalism_theft_incidents"),
             make_rqa_analysis_dataset_config("aik_violence_displacement"),
             make_rqa_analysis_dataset_config("aik_indigenous_or_minority"),
+
+            make_rqa_analysis_dataset_config("aik_political_participation", survey=2),
+            make_rqa_analysis_dataset_config("aik_election_conversations", survey=2),
+            make_rqa_analysis_dataset_config("aik_influence_on_voting_choices", survey=2),
+            make_rqa_analysis_dataset_config("aik_concern_about_safety_and_security", survey=2),
+            make_rqa_analysis_dataset_config("aik_incidents_of_violence_and_polarisation", survey=2),
+            make_rqa_analysis_dataset_config("aik_electoral_sexual_gender_based_violence", survey=2),
+            make_rqa_analysis_dataset_config("aik_response_to_electoral_related_insecurity", survey=2),
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+    ),
+rapid_pro_target=RapidProTarget(
+        rapid_pro=RapidProClientConfiguration(
+            domain="textit.com",
+            token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
+        ),
+        sync_config=EngagementDBToRapidProConfiguration(
+            normal_datasets=[
+                DatasetConfiguration(
+                    engagement_db_datasets=["age"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_age", label="pool kenya age")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["gender"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_gender", label="pool kenya gender")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["location"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_location", label="pool kenya location")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["disabled"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_disabled", label="pool kenya disabled")
+                ),
+            ],
+            consent_withdrawn_dataset=DatasetConfiguration(
+                engagement_db_datasets=["age", "gender", "location", "disabled", "aik_household_income", "aik_communities",
+                                        "aik_religion", "aik_employment_status", "aik_education", "aik_pool_invitation_2022",
+                                        "aik_voting_participation","aik_indigenous_or_minority", "aik_violence_displacement",
+                                        "aik_vandalism_theft_incidents", "aik_unsafe_areas", "aik_sexual_assault",
+                                        "aik_political_events_disruption", "aik_political_environment" 
+                                        "aik_police_brutality","aik_physical_harm", "aik_peace_and_security_initiatives",
+                                        "aik_intolerance_incidents", "aik_inability_to_work", "aik_identity_groups_increase",
+                                        "aik_hate_speech_and_actions_target","aik_electoral_violence_anxiety",
+                                        "aik_other_institutions_effectiveness", "aik_knchr_effectiveness","aik_judiciary_effectiveness",
+                                        "aik_ipoa_effectiveness", "aik_dpp_effectiveness", "aik_ncic_effectiveness",
+                                        "aik_nps_effectiveness", "aik_iebc_effectiveness","aik_incidents_of_polarisation",
+                                        "aik_source_of_vote_buying", "aik_incitement_sources", "aik_engaging_authorities",
+                                        "aik_willingness_to_help_victims", "aik_voting_participation",
+                                        "aik_response_to_electoral_related_insecurity", "aik_electoral_sexual_gender_based_violence",
+                                        "aik_concern_about_safety_and_security", "aik_influence_on_voting_choices",
+                                        "aik_election_conversations", "aik_political_participation",
+                                        ],
+                rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
+            ),
+            write_mode=WriteModes.CONCATENATE_TEXTS,
+            allow_clearing_fields=False,
+            weekly_advert_contact_field=ContactField(key="aik_elections_advert_contact",
+                                                     label="aik elections advert contact"),
+            sync_advert_contacts=True,
+        )
     ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",

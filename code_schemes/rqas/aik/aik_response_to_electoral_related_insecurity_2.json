@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-592f5ed1",
-    "Name": "Source of Vote Buying",
+    "SchemeID": "Scheme-058c92c0",
+    "Name": "S02 Response to Electoral Related Insecurity",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -22,34 +22,74 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-2a7a463d",
+            "CodeID": "code-46225c66",
             "CodeType": "Normal",
-            "DisplayText": "politicians' agents",
+            "DisplayText": "create awareness or promote peace",
             "NumericValue": 1,
-            "StringValue": "politicians_agents",
+            "StringValue": "create_awareness_or_promote_peace",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-243219ca",
+            "CodeID": "code-c40928eb",
             "CodeType": "Normal",
-            "DisplayText": "politicians",
+            "DisplayText": "pray to God",
             "NumericValue": 2,
-            "StringValue": "politicians",
+            "StringValue": "pray_to_god",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-8d413fad",
+            "CodeID": "code-615e6f0f",
             "CodeType": "Normal",
-            "DisplayText": "supporters",
+            "DisplayText": "nothing",
             "NumericValue": 3,
-            "StringValue": "supporters",
+            "StringValue": "nothing",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-0d24e812",
+            "CodeID": "code-d51e8c3b",
+            "CodeType": "Normal",
+            "DisplayText": "i do not know",
+            "NumericValue": 4,
+            "StringValue": "i_do_not_know",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-80dfbdb8",
+            "CodeType": "Normal",
+            "DisplayText": "flee to safer areas",
+            "NumericValue": 5,
+            "StringValue": "flee_to_safer_areas",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a8c663c5",
+            "CodeType": "Normal",
+            "DisplayText": "report to authorities",
+            "NumericValue": 6,
+            "StringValue": "report_to_authorities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f7ab4de1",
+            "CodeType": "Normal",
+            "DisplayText": "stay indoors",
+            "NumericValue": 7,
+            "StringValue": "stay_indoors",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d7ab91e7",
+            "CodeType": "Normal",
+            "DisplayText": "there will be no violence",
+            "NumericValue": 8,
+            "StringValue": "there_will_be_no_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1ee0f2bb",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 4,
+            "NumericValue": 9,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
