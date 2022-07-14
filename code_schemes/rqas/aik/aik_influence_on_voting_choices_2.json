@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-592f5ed1",
-    "Name": "Source of Vote Buying",
+    "SchemeID": "Scheme-c38222c2",
+    "Name": "S02 Influence on Voting Choices",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -22,34 +22,74 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-2a7a463d",
+            "CodeID": "code-43f12b7d",
             "CodeType": "Normal",
-            "DisplayText": "politicians' agents",
+            "DisplayText": "desire for good leadership",
             "NumericValue": 1,
-            "StringValue": "politicians_agents",
+            "StringValue": "desire_for_good_leadership",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-243219ca",
+            "CodeID": "code-58bd7e93",
             "CodeType": "Normal",
-            "DisplayText": "politicians",
+            "DisplayText": "need for development and change",
             "NumericValue": 2,
-            "StringValue": "politicians",
+            "StringValue": "need_for_development_and_change",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-8d413fad",
+            "CodeID": "code-9be736f2",
             "CodeType": "Normal",
-            "DisplayText": "supporters",
+            "DisplayText": "for peace and harmony",
             "NumericValue": 3,
-            "StringValue": "supporters",
+            "StringValue": "for_peace_and_harmony",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-0d24e812",
+            "CodeID": "code-7ccdc60f",
+            "CodeType": "Normal",
+            "DisplayText": "high cost of living",
+            "NumericValue": 4,
+            "StringValue": "high_cost_of_living",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8613cf26",
+            "CodeType": "Normal",
+            "DisplayText": "to change leadership",
+            "NumericValue": 5,
+            "StringValue": "to_change_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0f623585",
+            "CodeType": "Normal",
+            "DisplayText": "democratic or constitutional right to vote",
+            "NumericValue": 6,
+            "StringValue": "democratic_or_constitutional_right_to_vote",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a192f754",
+            "CodeType": "Normal",
+            "DisplayText": "policies or manifesto",
+            "NumericValue": 7,
+            "StringValue": "policies_or_manifesto",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-99cf0c91",
+            "CodeType": "Normal",
+            "DisplayText": "there is no need of voting",
+            "NumericValue": 8,
+            "StringValue": "there_is_no_need_of_voting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-634a6f44",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 4,
+            "NumericValue": 9,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

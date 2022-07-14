@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-592f5ed1",
-    "Name": "Source of Vote Buying",
+    "SchemeID": "Scheme-a1478d5e",
+    "Name": "S02 Political Participation",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -22,31 +22,31 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-2a7a463d",
+            "CodeID": "code-8a066d62",
             "CodeType": "Normal",
-            "DisplayText": "politicians' agents",
+            "DisplayText": "yes, no reason",
             "NumericValue": 1,
-            "StringValue": "politicians_agents",
+            "StringValue": "yes_no_reason",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-243219ca",
+            "CodeID": "code-bfdea2dd",
             "CodeType": "Normal",
-            "DisplayText": "politicians",
+            "DisplayText": "no, no reason",
             "NumericValue": 2,
-            "StringValue": "politicians",
+            "StringValue": "no_no_reason",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-8d413fad",
+            "CodeID": "code-d71a328f",
             "CodeType": "Normal",
-            "DisplayText": "supporters",
+            "DisplayText": "i do not know",
             "NumericValue": 3,
-            "StringValue": "supporters",
+            "StringValue": "i_do_not_know",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-0d24e812",
+            "CodeID": "code-2042bce2",
             "CodeType": "Normal",
             "DisplayText": "other theme",
             "NumericValue": 4,

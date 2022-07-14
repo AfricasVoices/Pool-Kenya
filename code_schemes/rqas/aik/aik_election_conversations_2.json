@@ -1,6 +1,6 @@
 {
-    "SchemeID": "Scheme-592f5ed1",
-    "Name": "Source of Vote Buying",
+    "SchemeID": "Scheme-b01301e6",
+    "Name": "S02 Election Conversations",
     "Version": "0.0.0.1",
     "Codes": [
         {
@@ -22,34 +22,58 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-2a7a463d",
+            "CodeID": "code-b8277bad",
             "CodeType": "Normal",
-            "DisplayText": "politicians' agents",
+            "DisplayText": "nothing has changed",
             "NumericValue": 1,
-            "StringValue": "politicians_agents",
+            "StringValue": "nothing_has_changed",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-243219ca",
+            "CodeID": "code-4ec32965",
             "CodeType": "Normal",
-            "DisplayText": "politicians",
+            "DisplayText": "there is conflict",
             "NumericValue": 2,
-            "StringValue": "politicians",
+            "StringValue": "there_is_conflict",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-8d413fad",
+            "CodeID": "code-269c89f7",
             "CodeType": "Normal",
-            "DisplayText": "supporters",
+            "DisplayText": "there is peace",
             "NumericValue": 3,
-            "StringValue": "supporters",
+            "StringValue": "there_is_peace",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-0d24e812",
+            "CodeID": "code-adc6f7df",
+            "CodeType": "Normal",
+            "DisplayText": "it has changed",
+            "NumericValue": 4,
+            "StringValue": "it_has_changed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0aad6fda",
+            "CodeType": "Normal",
+            "DisplayText": "hate speech",
+            "NumericValue": 5,
+            "StringValue": "hate_speech",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-92d0d4f7",
+            "CodeType": "Normal",
+            "DisplayText": "there is security",
+            "NumericValue": 6,
+            "StringValue": "there_is_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1f1cc701",
             "CodeType": "Normal",
             "DisplayText": "other theme",
-            "NumericValue": 4,
+            "NumericValue": 7,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
