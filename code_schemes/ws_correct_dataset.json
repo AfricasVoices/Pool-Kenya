@@ -175,6 +175,14 @@
             "MatchValues": ["aik_other_institutions_effectiveness"]
         },
         {
+            "CodeID": "code-41ce38e7",
+            "CodeType": "Normal",
+            "DisplayText": "machakos poll registration 2022",
+            "StringValue": "machakos_poll_registration_2022",
+            "NumericValue": 493,
+            "VisibleInCoda": true,
+            "MatchValues": ["machakos_poll_registration_2022"]
+        {
             "CodeID": "code-8cec7e7a",
             "CodeType": "Normal",
             "DisplayText": "aik political participation 2",
