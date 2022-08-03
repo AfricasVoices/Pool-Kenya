@@ -182,6 +182,7 @@
             "NumericValue": 493,
             "VisibleInCoda": true,
             "MatchValues": ["machakos_poll_registration_2022"]
+        },
         {
             "CodeID": "code-8cec7e7a",
             "CodeType": "Normal",
