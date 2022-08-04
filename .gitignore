@@ -114,3 +114,5 @@ data/
 archive/
 
 run_icl_pipeline.sh
+
+.DS_Store
