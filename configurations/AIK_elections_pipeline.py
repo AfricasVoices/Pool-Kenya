@@ -287,393 +287,50 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 make_rqa_coda_dataset_config("AIK_incidents_of_violence_and_polarisation", 2),
                 make_rqa_coda_dataset_config("AIK_electoral_sexual_gender_based_violence", 2),
                 make_rqa_coda_dataset_config("AIK_response_to_electoral_related_insecurity", 2),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_pool_invitation_2022",
-                    engagement_db_dataset="aik_pool_invitation_2022",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_pool_invitation_2022"),
-                                                auto_coder=None),
-                    ],
-                    ws_code_match_value="aik_pool_invitation_2022"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_voting_participation",
-                    engagement_db_dataset="aik_voting_participation",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_voting_participation"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_voting_participation"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_willingness_to_help_victims",
-                    engagement_db_dataset="aik_willingness_to_help_victims",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_willingness_to_help_victims"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_willingness_to_help_victims"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_engaging_authorities",
-                    engagement_db_dataset="aik_engaging_authorities",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_engaging_authorities"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_engaging_authorities"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_incitement_sources",
-                    engagement_db_dataset="aik_incitement_sources",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incitement_sources"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_incitement_sources"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_vote_buying_incidents",
-                    engagement_db_dataset="aik_vote_buying_incidents",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_vote_buying_incidents"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_vote_buying_incidents"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_source_of_vote_buying",
-                    engagement_db_dataset="aik_source_of_vote_buying",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_source_of_vote_buying"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_source_of_vote_buying"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_incidents_of_polarisation",
-                    engagement_db_dataset="aik_incidents_of_polarisation",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incidents_of_polarisation"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_incidents_of_polarisation"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_political_participation",
-                    engagement_db_dataset="aik_political_participation",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_political_participation"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_political_participation"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_election_conversations",
-                    engagement_db_dataset="aik_election_conversations",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_election_conversations"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_election_conversations"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_influence_on_voting_choices",
-                    engagement_db_dataset="aik_influence_on_voting_choices",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_influence_on_voting_choices"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_influence_on_voting_choices"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_concern_about_safety_and_security",
-                    engagement_db_dataset="aik_concern_about_safety_and_security",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_concern_about_safety_and_security"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_concern_about_safety_and_security"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_incidents_of_violence_and_polarisation",
-                    engagement_db_dataset="aik_incidents_of_violence_and_polarisation",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_incidents_of_violence_and_polarisation"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_incidents_of_violence_and_polarisation"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_electoral_sexual_gender_based_violence",
-                    engagement_db_dataset="aik_electoral_sexual_gender_based_violence",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_electoral_sexual_gender_based_violence"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_electoral_sexual_gender_based_violence"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_response_to_electoral_related_insecurity",
-                    engagement_db_dataset="aik_response_to_electoral_related_insecurity",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_response_to_electoral_related_insecurity"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_response_to_electoral_related_insecurity"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_IEBC_effectiveness",
-                    engagement_db_dataset="aik_iebc_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_iebc_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_iebc_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_NPS_effectiveness",
-                    engagement_db_dataset="aik_nps_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_nps_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_nps_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_NCIC_effectiveness",
-                    engagement_db_dataset="aik_ncic_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_ncic_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_ncic_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_DPP_effectiveness",
-                    engagement_db_dataset="aik_dpp_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_dpp_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_dpp_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_IPOA_effectiveness",
-                    engagement_db_dataset="aik_ipoa_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_ipoa_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_ipoa_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_judiciary_effectiveness",
-                    engagement_db_dataset="aik_judiciary_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_judiciary_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_judiciary_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_KNCHR_effectiveness",
-                    engagement_db_dataset="aik_knchr_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_knchr_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_knchr_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_other_institutions_effectiveness",
-                    engagement_db_dataset="aik_other_institutions_effectiveness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_other_institutions_effectiveness"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_other_institutions_effectiveness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_electoral_violence_anxiety",
-                    engagement_db_dataset="aik_electoral_violence_anxiety",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_electoral_violence_anxiety"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_electoral_violence_anxiety"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_hate_speech_and_actions_target",
-                    engagement_db_dataset="aik_hate_speech_and_actions_target",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_hate_speech_and_actions_target"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_hate_speech_and_actions_target"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_identity_groups_increase",
-                    engagement_db_dataset="aik_identity_groups_increase",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_identity_groups_increase"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_identity_groups_increase"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_inability_to_work",
-                    engagement_db_dataset="aik_inability_to_work",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_inability_to_work"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_inability_to_work"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_intolerance_incidents",
-                    engagement_db_dataset="aik_intolerance_incidents",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_intolerance_incidents"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_intolerance_incidents"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_peace_and_security_initiatives",
-                    engagement_db_dataset="aik_peace_and_security_initiatives",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_peace_and_security_initiatives"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_peace_and_security_initiatives"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_physical_harm",
-                    engagement_db_dataset="aik_physical_harm",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_physical_harm"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_physical_harm"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_police_brutality",
-                    engagement_db_dataset="aik_police_brutality",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_police_brutality"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_police_brutality"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_political_environment",
-                    engagement_db_dataset="aik_political_environment",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_political_environment"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_political_environment"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_political_events_disruption",
-                    engagement_db_dataset="aik_political_events_disruption",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_political_events_disruption"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_political_events_disruption"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_sexual_assault",
-                    engagement_db_dataset="aik_sexual_assault",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_sexual_assault"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_sexual_assault"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_unsafe_areas",
-                    engagement_db_dataset="aik_unsafe_areas",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_unsafe_areas"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_unsafe_areas"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_vandalism_theft_incidents",
-                    engagement_db_dataset="aik_vandalism_theft_incidents",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_vandalism_theft_incidents"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_vandalism_theft_incidents"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_violence_displacement",
-                    engagement_db_dataset="aik_violence_displacement",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_violence_displacement"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_violence_displacement"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_education",
-                    engagement_db_dataset="aik_education",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_education"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_education"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_employment_status",
-                    engagement_db_dataset="aik_employment_status",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_employment_status"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_employment_status"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_religion",
-                    engagement_db_dataset="aik_religion",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_religion"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_religion"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_household_income",
-                    engagement_db_dataset="aik_household_income",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_household_income"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_household_income"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_communities",
-                    engagement_db_dataset="aik_communities",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_communities"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_communities"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="AIK_indigenous_or_minority",
-                    engagement_db_dataset="aik_indigenous_or_minority",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/aik/aik_indigenous_or_minority"),
-                                                auto_coder=None, coda_code_schemes_count=3),
-                    ],
-                    ws_code_match_value="aik_indigenous_or_minority"
-                ),
+
+                make_rqa_coda_dataset_config("AIK_pool_invitation_2022"),
+                make_rqa_coda_dataset_config("AIK_voting_participation"),
+                make_rqa_coda_dataset_config("AIK_willingness_to_help_victims"),
+                make_rqa_coda_dataset_config("AIK_engaging_authorities"),
+                make_rqa_coda_dataset_config("AIK_incitement_sources"),
+                make_rqa_coda_dataset_config("AIK_vote_buying_incidents"),
+                make_rqa_coda_dataset_config("AIK_source_of_vote_buying"),
+                make_rqa_coda_dataset_config("AIK_incidents_of_polarisation"),
+                make_rqa_coda_dataset_config("AIK_political_participation"),
+                make_rqa_coda_dataset_config("AIK_election_conversations"),
+                make_rqa_coda_dataset_config("AIK_influence_on_voting_choices"),
+                make_rqa_coda_dataset_config("AIK_concern_about_safety_and_security"),
+                make_rqa_coda_dataset_config("AIK_incidents_of_violence_and_polarisation"),
+                make_rqa_coda_dataset_config("AIK_electoral_sexual_gender_based_violence"),
+                make_rqa_coda_dataset_config("AIK_response_to_electoral_related_insecurity"),
+                make_rqa_coda_dataset_config("AIK_IEBC_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_NPS_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_NCIC_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_DPP_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_IPOA_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_judiciary_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_KNCHR_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_other_institutions_effectiveness"),
+                make_rqa_coda_dataset_config("AIK_electoral_violence_anxiety"),
+                make_rqa_coda_dataset_config("AIK_hate_speech_and_actions_target"),
+                make_rqa_coda_dataset_config("AIK_identity_groups_increase"),
+                make_rqa_coda_dataset_config("AIK_inability_to_work"),
+                make_rqa_coda_dataset_config("AIK_intolerance_incidents"),
+                make_rqa_coda_dataset_config("AIK_peace_and_security_initiatives"),
+                make_rqa_coda_dataset_config("AIK_physical_harm"),
+                make_rqa_coda_dataset_config("AIK_police_brutality"),
+                make_rqa_coda_dataset_config("AIK_political_environment"),
+                make_rqa_coda_dataset_config("AIK_political_events_disruption"),
+                make_rqa_coda_dataset_config("AIK_sexual_assault"),
+                make_rqa_coda_dataset_config("AIK_unsafe_areas"),
+                make_rqa_coda_dataset_config("AIK_vandalism_theft_incidents"),
+                make_rqa_coda_dataset_config("AIK_violence_displacement"),
+                make_rqa_coda_dataset_config("AIK_education"),
+                make_rqa_coda_dataset_config("AIK_employment_status"),
+                make_rqa_coda_dataset_config("AIK_religion"),
+                make_rqa_coda_dataset_config("AIK_household_income"),
+                make_rqa_coda_dataset_config("AIK_communities"),
+                make_rqa_coda_dataset_config("AIK_indigenous_or_minority"),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/aik_elections_coda_users.json",
