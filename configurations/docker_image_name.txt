@@ -1,1 +1,1 @@
-ghcr.io/africasvoices/engagement-data-pipeline:resolve-attribute-error
+ghcr.io/africasvoices/engagement-data-pipeline:debug_duplicate_origin_ids
