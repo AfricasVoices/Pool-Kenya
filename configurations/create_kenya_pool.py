@@ -170,7 +170,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
                     ],
-                    ws_code_string_value="location"
+                    ws_code_match_value="location"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_gender",
@@ -179,7 +179,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
                                                 auto_coder=swahili.DemographicCleaner.clean_gender)
                     ],
-                    ws_code_string_value="gender"
+                    ws_code_match_value="gender"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_age",
@@ -188,7 +188,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
                                                 str(swahili.DemographicCleaner.clean_age_within_range(x)))
                     ],
-                    ws_code_string_value="age"
+                    ws_code_match_value="age"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_disabled",
@@ -196,7 +196,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
                     ],
-                    ws_code_string_value="disabled"
+                    ws_code_match_value="disabled"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_old_rqa_datasets",
@@ -204,7 +204,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("kenya_pool_old_rqa_datasets"), auto_coder=None)
                     ],
-                    ws_code_string_value="kenya_pool_old_rqa_datasets"
+                    ws_code_match_value="kenya_pool_old_rqa_datasets"
                 ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
