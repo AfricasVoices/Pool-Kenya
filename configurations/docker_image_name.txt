@@ -1,1 +1,1 @@
-ghcr.io/africasvoices/engagement-data-pipeline:debug_duplicate_origin_ids
+ghcr.io/africasvoices/engagement-data-pipeline:v2.2.0
