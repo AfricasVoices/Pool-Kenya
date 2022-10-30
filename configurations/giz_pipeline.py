@@ -91,8 +91,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     ),
     analysis=AnalysisConfiguration(
         google_drive_upload=GoogleDriveUploadConfiguration(
-            credentials_file_url="gs://avf-credentials/pipeline-runner-2022-service-acct-avf-data-core-64cc71459fe7.json",
-            drive_dir="machakos_debate_2022_analysis_outputs"
+            credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+            drive_dir="giz_analysis_output"
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
