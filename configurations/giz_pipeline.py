@@ -298,7 +298,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             consent_withdrawn_dataset=DatasetConfiguration(
-                engagement_db_datasets=["age", "gender", "location", "disabled", "giz_s01e01"],
+                engagement_db_datasets=["age", "gender", "location", "disabled", "giz_s01e01", "giz_s01e02",
+                                         "giz_s01e03","giz_s01e04","giz_s01e05","giz_s01e06",],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,
