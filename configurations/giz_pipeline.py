@@ -35,12 +35,12 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                             "rqa_s01e02", "giz_s01e02"),
                     FlowResultConfiguration("giz_s01e03_activation",
                                             "rqa_s01e03", "giz_s01e03"),
-                    # FlowResultConfiguration("giz_s01e04_activation",
-                    #                         "rqa_s01e04", "giz_s01e04"),
-                    # FlowResultConfiguration("giz_s01e05_activation",
-                    #                         "rqa_s01e05", "giz_s01e05"),
-                    # FlowResultConfiguration("giz_s01e06_activation",
-                    #                         "rqa_s01e06", "giz_s01e06")
+                    FlowResultConfiguration("giz_s01e04_activation",
+                                             "rqa_s01e04", "giz_s01e04"),
+                    FlowResultConfiguration("giz_s01e05_activation",
+                                             "rqa_s01e05", "giz_s01e05"),
+                    FlowResultConfiguration("giz_s01e06_activation",
+                                             "rqa_s01e06", "giz_s01e06")
                 ],
             )
         )
