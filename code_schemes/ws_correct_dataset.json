@@ -40,6 +40,60 @@
             "MatchValues": ["disabled"]
         },
         {
+            "CodeID": "code-ge0d191c",
+            "CodeType": "Normal",
+            "DisplayText": "giz s01e01",
+            "StringValue": "giz_s01e01",
+            "NumericValue": 494,
+            "VisibleInCoda": true,
+            "MatchValues": ["giz_s01e01"]
+        },
+        {
+            "CodeID": "code-65b72973",
+            "CodeType": "Normal",
+            "DisplayText": "giz s01e02",
+            "StringValue": "giz_s01e02",
+            "NumericValue": 495,
+            "VisibleInCoda": true,
+            "MatchValues": ["giz_s01e02"]
+        },
+        {
+            "CodeID": "code-4baf7a26",
+            "CodeType": "Normal",
+            "DisplayText": "giz s01e03",
+            "StringValue": "giz_s01e03",
+            "NumericValue": 496,
+            "VisibleInCoda": true,
+            "MatchValues": ["giz_s01e03"]
+        },
+        {
+            "CodeID": "code-778723f0",
+            "CodeType": "Normal",
+            "DisplayText": "giz s01e04",
+            "StringValue": "giz_s01e04",
+            "NumericValue": 497,
+            "VisibleInCoda": true,
+            "MatchValues": ["giz_s01e04"]
+        },
+        {
+            "CodeID": "code-2ff4f43f",
+            "CodeType": "Normal",
+            "DisplayText": "giz s01e05",
+            "StringValue": "giz_s01e05",
+            "NumericValue": 498,
+            "VisibleInCoda": true,
+            "MatchValues": ["giz_s01e05"]
+        },
+        {
+            "CodeID": "code-be643492",
+            "CodeType": "Normal",
+            "DisplayText": "giz s01e06",
+            "StringValue": "giz_s01e06",
+            "NumericValue": 499,
+            "VisibleInCoda": true,
+            "MatchValues": ["giz_s01e06"]
+        },
+        {
             "CodeID": "code-3f0c3558",
             "CodeType": "Normal",
             "DisplayText": "aik political participation",
