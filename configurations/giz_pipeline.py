@@ -6,7 +6,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="GIZ",
     engagement_database=EngagementDatabaseClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
-        database_path="engagement_databases/POOL-KENYA-REBUILD"
+        database_path="engagement_databases/POOL-KENYA-REBUILD" #TODO: rebuilt due to duplicate msgs in POOL-KENYA, update once the pool is fixed.  
     ),
     uuid_table=UUIDTableClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
@@ -223,16 +223,21 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ]
             ),
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["disabled"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="disabled_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/disabled"),
+                        analysis_dataset="disabled"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
                  engagement_db_datasets=["location"],
                  dataset_type=DatasetTypes.DEMOGRAPHIC,
                  raw_dataset="location_raw",
                  coding_configs=[
-                     CodingConfiguration(
-                         code_scheme=load_code_scheme("demographics/kenya_ward"),
-                         analysis_dataset="kenya_ward",
-                         analysis_location=AnalysisLocations.KENYA_WARD
-
-                     ),
                      CodingConfiguration(
                          code_scheme=load_code_scheme("demographics/kenya_county"),
                          analysis_dataset="kenya_county",
