@@ -239,6 +239,12 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                  raw_dataset="location_raw",
                  coding_configs=[
                      CodingConfiguration(
+                         code_scheme=load_code_scheme("demographics/kenya_ward"),
+                         analysis_dataset="kenya_ward",
+                         analysis_location=AnalysisLocations.KENYA_WARD
+
+                     ),
+                     CodingConfiguration(
                          code_scheme=load_code_scheme("demographics/kenya_county"),
                          analysis_dataset="kenya_county",
                          analysis_location=AnalysisLocations.KENYA_COUNTY
@@ -312,7 +318,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             weekly_advert_contact_field=ContactField(key="giz_pool_advert_contact",
                                                      label="giz pool advert contact"),
             sync_advert_contacts=True,
-        )
+        )     
     ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",
