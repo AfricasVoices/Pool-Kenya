@@ -28,7 +28,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_gender", "gender"),
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_age", "age"),
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_disabled", "disabled"),
-                    FlowResultConfiguration("porticus_s01_demogs", "Preferred_Language", "preferred_language"),
+                    FlowResultConfiguration("porticus_s01_demogs", "preferred_language", "preferred_language"),
 
                     FlowResultConfiguration("porticus_s01e01_activation", "rqa_s01e01", "porticus_s01e01"),
                 ],
