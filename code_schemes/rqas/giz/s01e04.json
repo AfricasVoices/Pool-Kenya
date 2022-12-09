@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-a520c356",
+            "CodeType": "Normal",
+            "DisplayText": "sensitization on tax",
+            "NumericValue": 1,
+            "StringValue": "sensitization_on_tax",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-cc074fff",
+            "CodeType": "Normal",
+            "DisplayText": "improve KRA officers",
+            "NumericValue": 2,
+            "StringValue": "improve_kra_officers",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-6f3d5f6a",
+            "CodeType": "Normal",
+            "DisplayText": "Issue KRA PIN",
+            "NumericValue": 3,
+            "StringValue": "issue_kra_pin",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-bf31e584",
+            "CodeType": "Normal",
+            "DisplayText": "strict legal action",
+            "NumericValue": 4,
+            "StringValue": "strict_legal_action",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-f5873ec0",
+            "CodeType": "Normal",
+            "DisplayText": "fight corruption",
+            "NumericValue": 5,
+            "StringValue": "fight_corruption",
+            "VisibleInCoda": true
+          },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",

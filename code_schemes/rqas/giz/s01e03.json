@@ -4,6 +4,78 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-ed2af3b1",
+            "CodeType": "Normal",
+            "DisplayText": "civic education",
+            "NumericValue": 1,
+            "StringValue": "civic_education",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-3810e16f",
+            "CodeType": "Normal",
+            "DisplayText": "punitive legal action",
+            "NumericValue": 2,
+            "StringValue": "punitive_legal_action",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-5811613f",
+            "CodeType": "Normal",
+            "DisplayText": "even distribution of resources",
+            "NumericValue": 3,
+            "StringValue": "even_distribution_of_resources",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-fcacbb93",
+            "CodeType": "Normal",
+            "DisplayText": "fight corruption",
+            "NumericValue": 4,
+            "StringValue": "fight_corruption",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-03577695",
+            "CodeType": "Normal",
+            "DisplayText": "reduce cost of living",
+            "NumericValue": 5,
+            "StringValue": "reduce_cost_of_living",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-0acf2e21",
+            "CodeType": "Normal",
+            "DisplayText": "elect good leaders",
+            "NumericValue": 6,
+            "StringValue": "elect_good_leaders",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-a823e6e3",
+            "CodeType": "Normal",
+            "DisplayText": "create job opportunties",
+            "NumericValue": 7,
+            "StringValue": "create_job_opportunties",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-a29f8240",
+            "CodeType": "Normal",
+            "DisplayText": "public participation",
+            "NumericValue": 8,
+            "StringValue": "public_participation",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-b6c1fa6a",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+          },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
