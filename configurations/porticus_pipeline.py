@@ -126,7 +126,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             drive_dir="porticus_analysis_output"
         ),
         dataset_configurations=[
-            
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["porticus_s01e01"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
