@@ -28,6 +28,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_gender", "gender"),
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_age", "age"),
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_disabled", "disabled"),
+                    FlowResultConfiguration("porticus_s01_demogs", "Preferred_Language", "preferred_language"),
 
                     FlowResultConfiguration("porticus_s01e01_activation", "rqa_s01e01", "porticus_s01e01"),
                 ],
@@ -73,6 +74,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
                     ],
                     ws_code_match_value="disabled"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_preferred_language",
+                    engagement_db_dataset="preferred_language",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/preferred_language"), auto_coder=None)
+                    ],
+                    ws_code_match_value="preferred_language"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Porticus_s01e01",
@@ -180,6 +189,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         analysis_dataset="s01e05"
                     )
                 ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["preferred_language"],
+                dataset_type=DatasetTypes.DEMOGRAPHIC,
+                raw_dataset="preferred_language_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("demographics/preferred_language"),
+                        analysis_dataset="preferred_language"
+                    )
+                ]
             ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["gender"],
