@@ -4,6 +4,20 @@ from src.pipeline_configuration_spec import *
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
     pipeline_name="Porticus",
+    test_participant_uuids=[
+        "avf-participant-uuid-ced0f78f-f989-42e4-8813-b1ead4fff0ae",
+        "avf-participant-uuid-d38dcb19-5170-4441-99de-5aa3e9bcafc1",
+        "avf-participant-uuid-2fa53f8c-8f71-490c-8aff-40c6929b2675", 
+        "avf-participant-uuid-7d817591-37b9-43ef-b3c3-303fdfa1544f", 
+        "avf-participant-uuid-f24811c3-90a6-4fcd-bf32-e8b38eb98ca4", 
+        "avf-participant-uuid-9fe96ca0-18ba-474c-b86f-c4709f45d4ca", 
+        "avf-participant-uuid-dbc84ba4-f55f-4741-b1c8-7b87727f19e1", 
+        "avf-participant-uuid-b972d5f2-be30-4eea-be1c-a4d973a15330", 
+        "avf-participant-uuid-73b4f00a-5e49-418d-896f-95185f59fe4d", 
+        "avf-participant-uuid-7d144e9e-b54f-4d1f-bca9-3e8cdeeaedcc", 
+        "avf-participant-uuid-88ef05ba-4c56-41f8-a00c-29104abab73e", 
+        "avf-participant-uuid-5ca68e07-3dba-484b-a29c-7a6c989036b7"
+    ],
     engagement_database=EngagementDatabaseClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
         database_path="engagement_databases/POOL-KENYA-REBUILD" #TODO: rebuilt due to duplicate msgs in POOL-KENYA, update once the pool is fixed.  
@@ -28,7 +42,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_gender", "gender"),
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_age", "age"),
                     FlowResultConfiguration("porticus_s01_demogs", "pool_kenya_disabled", "disabled"),
-                    FlowResultConfiguration("porticus_s01_demogs", "Preferred_Language", "preferred_language"),
+                    FlowResultConfiguration("porticus_s01_demogs", "preferred_language", "preferred_language"),
 
                     FlowResultConfiguration("porticus_s01e01_activation", "rqa_s01e01", "porticus_s01e01"),
                 ],
@@ -79,7 +93,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_preferred_language",
                     engagement_db_dataset="preferred_language",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/preferred_language"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/preferred_language"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="preferred_language"
                 ),
@@ -87,7 +102,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Porticus_s01e01",
                     engagement_db_dataset="porticus_s01e01",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e01"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e01"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="porticus_s01e01"
                 ),
@@ -95,7 +111,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Porticus_s01e02",
                     engagement_db_dataset="porticus_s01e02",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e02"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="porticus_s01e02"
                 ),
@@ -103,7 +120,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Porticus_s01e03",
                     engagement_db_dataset="porticus_s01e03",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e03"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e03"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="porticus_s01e03"
                 ),
@@ -111,7 +129,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Porticus_s01e04",
                     engagement_db_dataset="porticus_s01e04",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e04"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e04"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="porticus_s01e04"
                 ),
@@ -119,7 +138,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Porticus_s01e05",
                     engagement_db_dataset="porticus_s01e05",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e05"), auto_coder=None)
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e05"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="porticus_s01e05"
                 ),
