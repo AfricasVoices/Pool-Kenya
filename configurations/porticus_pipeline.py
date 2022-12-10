@@ -273,6 +273,41 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
     ),
+    rapid_pro_target=RapidProTarget(
+        rapid_pro=RapidProClientConfiguration(
+            domain="textit.com",
+            token_file_url="gs://avf-credentials/pool-kenya-2-textit-token.txt"
+        ),
+        sync_config=EngagementDBToRapidProConfiguration(
+            normal_datasets=[
+                DatasetConfiguration(
+                    engagement_db_datasets=["age"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_age", label="pool kenya age")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["gender"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_gender", label="pool kenya gender")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["location"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_location", label="pool kenya location")
+                ),
+                DatasetConfiguration(
+                    engagement_db_datasets=["disabled"],
+                    rapid_pro_contact_field=ContactField(key="pool_kenya_disabled", label="pool kenya disabled")
+                ),
+            ],
+            consent_withdrawn_dataset=DatasetConfiguration(
+                engagement_db_datasets=["age", "gender", "location", "disabled"],
+                rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
+            ),
+            write_mode=WriteModes.CONCATENATE_TEXTS,
+            allow_clearing_fields=False,
+            weekly_advert_contact_field=ContactField(key="porticus_pool_advert_contact",
+                                                     label="porticus pool advert contact"),
+            sync_advert_contacts=False,
+        )     
+    ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",
         bucket_dir_path="2022/Porticus/"
