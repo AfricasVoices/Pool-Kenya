@@ -30,9 +30,9 @@
         {
             "CodeID": "code-2673f78a",
             "CodeType": "Normal",
-            "DisplayText": "healthcare and sanitation",
+            "DisplayText": "healthcare",
             "NumericValue": 4,
-            "StringValue": "healthcare_and_sanitation",
+            "StringValue": "healthcare",
             "VisibleInCoda": true
         },
         {
