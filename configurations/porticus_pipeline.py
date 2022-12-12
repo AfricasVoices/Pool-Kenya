@@ -45,6 +45,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("porticus_s01_demogs", "preferred_language", "preferred_language"),
 
                     FlowResultConfiguration("porticus_s01e01_activation", "rqa_s01e01", "porticus_s01e01"),
+                    FlowResultConfiguration("porticus_s01e02_activation", "rqa_s01e02", "porticus_s01e02"),
+                    FlowResultConfiguration("porticus_s01e03_activation", "rqa_s01e03", "porticus_s01e03"),
+                    FlowResultConfiguration("porticus_s01e04_activation", "rqa_s01e04", "porticus_s01e04"),
+                    FlowResultConfiguration("porticus_s01e05_activation", "rqa_s01e05", "porticus_s01e05"),
                 ],
             )
         )
