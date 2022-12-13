@@ -51,6 +51,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     ],
     google_form_sources=[
         GoogleFormSource(
+            # https://docs.google.com/forms/d/e/1FAIpQLSekTlWRokfBg5WELobu6LsMIPR5BcBudKo6-TIs_2mi0sbnxQ/viewform
             google_form_client=GoogleFormsClientConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
             ),
