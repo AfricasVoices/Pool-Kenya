@@ -4,6 +4,94 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-09c9bf9e",
+            "CodeType": "Normal",
+            "DisplayText": "road and transport infrastructure",
+            "NumericValue": 1,
+            "StringValue": "road_and_transport_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-351e376d",
+            "CodeType": "Normal",
+            "DisplayText": "energy and electricity",
+            "NumericValue": 2,
+            "StringValue": "energy_and_electricity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-af541937",
+            "CodeType": "Normal",
+            "DisplayText": "water and sanitation",
+            "NumericValue": 3,
+            "StringValue": "water_and_sanitation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2673f78a",
+            "CodeType": "Normal",
+            "DisplayText": "healthcare",
+            "NumericValue": 4,
+            "StringValue": "healthcare",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-52008073",
+            "CodeType": "Normal",
+            "DisplayText": "survey mapping and land titling",
+            "NumericValue": 5,
+            "StringValue": "survey_mapping_and_land_titling",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6f46f02f",
+            "CodeType": "Normal",
+            "DisplayText": "job opportunities",
+            "NumericValue": 6,
+            "StringValue": "job_opportunities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-92e33381",
+            "CodeType": "Normal",
+            "DisplayText": "education and technical training",
+            "NumericValue": 7,
+            "StringValue": "education_and_technical_training",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-412c29af",
+            "CodeType": "Normal",
+            "DisplayText": "food security",
+            "NumericValue": 8,
+            "StringValue": "food_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4537d847",
+            "CodeType": "Normal",
+            "DisplayText": "payment delays and arrears",
+            "NumericValue": 9,
+            "StringValue": "payment_delays_and_arrears",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-380bcc29",
+            "CodeType": "Normal",
+            "DisplayText": "sports, arts and community",
+            "NumericValue": 10,
+            "StringValue": "sports_arts_and_community",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b4d8e1f4",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 11,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
