@@ -326,11 +326,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                         "aik_pool_invitation_2022", "aik_voting_participation", "aik_indigenous_or_minority", "aik_sexual_assault",
                                         "aik_violence_displacement", "aik_vandalism_theft_incidents", "aik_inability_to_work", "aik_unsafe_areas",
                                         "aik_political_events_disruption", "aik_political_environment", "aik_electoral_violence_anxiety",
-                                        "aik_police_brutality","aik_physical_harm", "aik_peace_and_security_initiatives", "aik_engaging_authorities",
+                                        "aik_police_brutality", "aik_physical_harm", "aik_peace_and_security_initiatives", "aik_engaging_authorities",
                                         "aik_intolerance_incidents",  "aik_identity_groups_increase", "aik_hate_speech_and_actions_target",
                                         "aik_source_of_vote_buying", "aik_incitement_sources", "aik_other_institutions_effectiveness", 
                                         "aik_knchr_effectiveness", "aik_judiciary_effectiveness", "aik_ipoa_effectiveness", "aik_dpp_effectiveness", 
-                                        "aik_ncic_effectiveness", "aik_nps_effectiveness", "aik_iebc_effectiveness","aik_incidents_of_polarisation",
+                                        "aik_ncic_effectiveness", "aik_nps_effectiveness", "aik_iebc_effectiveness", "aik_incidents_of_polarisation",
                                         "aik_willingness_to_help_victims", "aik_voting_participation", "aik_response_to_electoral_related_insecurity", 
                                         "aik_electoral_sexual_gender_based_violence", "aik_concern_about_safety_and_security", "aik_election_conversations",
                                         "aik_influence_on_voting_choices", "aik_political_participation", # Amnesty Datasets 
