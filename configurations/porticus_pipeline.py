@@ -45,9 +45,34 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("porticus_s01_demogs", "preferred_language", "preferred_language"),
 
                     FlowResultConfiguration("porticus_s01e01_activation", "rqa_s01e01", "porticus_s01e01"),
+                    FlowResultConfiguration("porticus_s01e02_activation", "rqa_s01e02", "porticus_s01e02"),
+                    FlowResultConfiguration("porticus_s01e03_activation", "rqa_s01e03", "porticus_s01e03"),
+                    FlowResultConfiguration("porticus_s01e04_activation", "rqa_s01e04", "porticus_s01e04"),
+                    FlowResultConfiguration("porticus_s01e05_activation", "rqa_s01e05", "porticus_s01e05"),
                 ],
             )
         )
+    ],
+    google_form_sources=[
+        GoogleFormSource(
+            # https://docs.google.com/forms/d/e/1FAIpQLSekTlWRokfBg5WELobu6LsMIPR5BcBudKo6-TIs_2mi0sbnxQ/viewform
+            google_form_client=GoogleFormsClientConfiguration(
+                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+            ),
+            sync_config=GoogleFormToEngagementDBConfiguration(
+                form_id="1xWV-X_pzn-niFODjcpb90Oq65EbhF9DXL5nfEn_Nz9U",
+                question_configurations=[
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your gender?"]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Which ward do you currently live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability?"]),
+
+                    QuestionConfiguration(engagement_db_dataset="rqa_s01e01", question_titles=["What are the three priority developments that you would like the County Government to implement in your ward in the next five years?"]),
+                    QuestionConfiguration(engagement_db_dataset="rqa_s01e02", question_titles=["What projects can Kitui, Machakos and Makueni counties collaborate in to advance the region?"]),
+                    QuestionConfiguration(engagement_db_dataset="rqa_s01e03", question_titles=["What ways do you use to participate in the decision making processes in your county?"]),
+                ]
+            )
+        ),
     ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
