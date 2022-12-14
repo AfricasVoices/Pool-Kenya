@@ -360,7 +360,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                         "aik_electoral_sexual_gender_based_violence", "aik_concern_about_safety_and_security", "aik_election_conversations",
                                         "aik_influence_on_voting_choices", "aik_political_participation", # Amnesty Datasets 
                                         "giz_s01e01", "giz_s01e02", "giz_s01e03", "giz_s01e04", "giz_s01e05", "giz_s01e06", # GIZ datasets
-                                        "porticus_s01e01", "porticus_s01e02" # Porticus datasets
+                                        "porticus_s01e01", "porticus_s01e02", # Porticus datasets
+                                        "kenya_pool_old_rqa_datasets"
                                         ],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
