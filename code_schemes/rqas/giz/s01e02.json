@@ -4,6 +4,78 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-4b6fbc9c",
+            "CodeType": "Normal",
+            "DisplayText": "public participation",
+            "NumericValue": 1,
+            "StringValue": "public_participation",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-2667a86a",
+            "CodeType": "Normal",
+            "DisplayText": "voting",
+            "NumericValue": 2,
+            "StringValue": "voting",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-5811613f",
+            "CodeType": "Normal",
+            "DisplayText": "environmental conservation",
+            "NumericValue": 3,
+            "StringValue": "environmental_conservation",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-706d121f",
+            "CodeType": "Normal",
+            "DisplayText": "paying taxes",
+            "NumericValue": 4,
+            "StringValue": "paying_taxes",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-03577695",
+            "CodeType": "Normal",
+            "DisplayText": "promoting peace",
+            "NumericValue": 5,
+            "StringValue": "promoting_peace",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-60975cb5",
+            "CodeType": "Normal",
+            "DisplayText": "promoting transparency and accountability",
+            "NumericValue": 6,
+            "StringValue": "promoting_transparency_and_accountability",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-a823e6e3",
+            "CodeType": "Normal",
+            "DisplayText": "not involved",
+            "NumericValue": 7,
+            "StringValue": "not_involved",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-7f912fd4",
+            "CodeType": "Normal",
+            "DisplayText": "need for help",
+            "NumericValue": 8,
+            "StringValue": "need_for_help",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-fd77a2d2",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+          },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
