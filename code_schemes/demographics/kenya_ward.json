@@ -77,12 +77,12 @@
         },
         {
             "CodeID": "code-66315b97",
-            "DisplayText": "aguthi-gaaki",
+            "DisplayText": "aguthi gaaki",
             "CodeType": "Normal",
             "NumericValue": 9,
             "StringValue": "aguthi_gaaki",
             "VisibleInCoda": true,
-            "MatchValues": ["aguthi-gaaki"]
+            "MatchValues": ["aguthi gaaki"]
         },
         {
             "CodeID": "code-9091cb84",
@@ -572,48 +572,48 @@
         },
         {
             "CodeID": "code-80be4001",
-            "DisplayText": "benane-lagdera",
+            "DisplayText": "benane lagdera",
             "CodeType": "Normal",
             "NumericValue": 64,
             "StringValue": "benane_lagdera",
             "VisibleInCoda": true,
-            "MatchValues": ["benane-lagdera"]
+            "MatchValues": ["benane lagdera"]
         },
         {
             "CodeID": "code-daa2f33b",
-            "DisplayText": "benane-wajir south",
+            "DisplayText": "benane wajir south",
             "CodeType": "Normal",
             "NumericValue": 65,
             "StringValue": "benane_wajir_south",
             "VisibleInCoda": true,
-            "MatchValues": ["benane-wajir south"]
+            "MatchValues": ["benane wajir south"]
         },
         {
             "CodeID": "code-b6a438d6",
-            "DisplayText": "biashara-naivasha",
+            "DisplayText": "biashara naivasha",
             "CodeType": "Normal",
             "NumericValue": 66,
             "StringValue": "biashara_naivasha",
             "VisibleInCoda": true,
-            "MatchValues": ["biashara-naivasha"]
+            "MatchValues": ["biashara naivasha"]
         },
         {
             "CodeID": "code-8ce96c13",
-            "DisplayText": "biashara-nakuru town east",
+            "DisplayText": "biashara nakuru town east",
             "CodeType": "Normal",
             "NumericValue": 67,
             "StringValue": "biashara_nakuru_town_east",
             "VisibleInCoda": true,
-            "MatchValues": ["biashara-nakuru town east"]
+            "MatchValues": ["biashara nakuru town east"]
         },
         {
             "CodeID": "code-8eb78cbc",
-            "DisplayText": "biashara-ruiru",
+            "DisplayText": "biashara ruiru",
             "CodeType": "Normal",
             "NumericValue": 68,
             "StringValue": "biashara_ruiru",
             "VisibleInCoda": true,
-            "MatchValues": ["biashara-ruiru"]
+            "MatchValues": ["biashara ruiru"]
         },
         {
             "CodeID": "code-5f59b521",
@@ -959,21 +959,21 @@
         },
         {
             "CodeID": "code-46622ee6",
-            "DisplayText": "bunyala central",
+            "DisplayText": "bunyala central budalangi",
             "CodeType": "Normal",
             "NumericValue": 107,
             "StringValue": "bunyala_central_budalangi",
             "VisibleInCoda": true,
-            "MatchValues": ["bunyala central"]
+            "MatchValues": ["bunyala central budalangi"]
         },
         {
             "CodeID": "code-b009ffe8",
-            "DisplayText": "bunyala central",
+            "DisplayText": "bunyala central navakholo",
             "CodeType": "Normal",
             "NumericValue": 108,
             "StringValue": "bunyala_central_navakholo",
             "VisibleInCoda": true,
-            "MatchValues": ["bunyala central"]
+            "MatchValues": ["bunyala central navakholo"]
         },
         {
             "CodeID": "code-57376318",
@@ -1004,39 +1004,39 @@
         },
         {
             "CodeID": "code-bd50d93a",
-            "DisplayText": "bunyala west",
+            "DisplayText": "bunyala west budalangi",
             "CodeType": "Normal",
             "NumericValue": 112,
             "StringValue": "bunyala_west_budalangi",
             "VisibleInCoda": true,
-            "MatchValues": ["bunyala west"]
+            "MatchValues": ["bunyala west budalangi"]
         },
         {
             "CodeID": "code-f6e2c554",
-            "DisplayText": "bunyala west",
+            "DisplayText": "bunyala west navakholo",
             "CodeType": "Normal",
             "NumericValue": 113,
             "StringValue": "bunyala_west_navakholo",
             "VisibleInCoda": true,
-            "MatchValues": ["bunyala west"]
+            "MatchValues": ["bunyala west navakholo"]
         },
         {
             "CodeID": "code-876d992c",
-            "DisplayText": "bura-fafi",
+            "DisplayText": "bura fafi",
             "CodeType": "Normal",
             "NumericValue": 114,
             "StringValue": "bura_fafi",
             "VisibleInCoda": true,
-            "MatchValues": ["bura-fafi"]
+            "MatchValues": ["bura fafi"]
         },
         {
             "CodeID": "code-cbe62aa7",
-            "DisplayText": "bura-mwatate",
+            "DisplayText": "bura mwatate",
             "CodeType": "Normal",
             "NumericValue": 115,
             "StringValue": "bura_mwatate",
             "VisibleInCoda": true,
-            "MatchValues": ["bura-mwatate"]
+            "MatchValues": ["bura mwatate"]
         },
         {
             "CodeID": "code-69dfb75a",
@@ -1211,12 +1211,12 @@
         },
         {
             "CodeID": "code-8417ffb4",
-            "DisplayText": "central-karachuonyo",
+            "DisplayText": "central karachuonyo",
             "CodeType": "Normal",
             "NumericValue": 135,
             "StringValue": "central_karachuonyo",
             "VisibleInCoda": true,
-            "MatchValues": ["central-karachuonyo"]
+            "MatchValues": ["central karachuonyo"]
         },
         {
             "CodeID": "code-97b200e7",
@@ -1247,21 +1247,21 @@
         },
         {
             "CodeID": "code-2f053a4c",
-            "DisplayText": "central-mwingi central",
+            "DisplayText": "central mwingi central",
             "CodeType": "Normal",
             "NumericValue": 139,
             "StringValue": "central_mwingi_central",
             "VisibleInCoda": true,
-            "MatchValues": ["central-mwingi central"]
+            "MatchValues": ["central mwingi central"]
         },
         {
             "CodeID": "code-e02b184a",
-            "DisplayText": "central-ndaragwa",
+            "DisplayText": "central ndaragwa",
             "CodeType": "Normal",
             "NumericValue": 140,
             "StringValue": "central_ndaragwa",
             "VisibleInCoda": true,
-            "MatchValues": ["central-ndaragwa"]
+            "MatchValues": ["central ndaragwa"]
         },
         {
             "CodeID": "code-f9f8aaa6",
@@ -1274,21 +1274,21 @@
         },
         {
             "CodeID": "code-cefcac90",
-            "DisplayText": "central sakwa",
+            "DisplayText": "central sakwa awendo",
             "CodeType": "Normal",
             "NumericValue": 142,
             "StringValue": "central_sakwa_awendo",
             "VisibleInCoda": true,
-            "MatchValues": ["central sakwa"]
+            "MatchValues": ["central sakwa awendo"]
         },
         {
             "CodeID": "code-faf0d843",
-            "DisplayText": "central sakwa",
+            "DisplayText": "central sakwa bondo",
             "CodeType": "Normal",
             "NumericValue": 143,
             "StringValue": "central_sakwa_bondo",
             "VisibleInCoda": true,
-            "MatchValues": ["central sakwa"]
+            "MatchValues": ["central sakwa bondo"]
         },
         {
             "CodeID": "code-7a4fe92e",
@@ -1985,21 +1985,21 @@
         },
         {
             "CodeID": "code-5c1c7873",
-            "DisplayText": "east gem",
+            "DisplayText": "east gem gem",
             "CodeType": "Normal",
             "NumericValue": 221,
             "StringValue": "east_gem_gem",
             "VisibleInCoda": true,
-            "MatchValues": ["east gem"]
+            "MatchValues": ["east gem gem"]
         },
         {
             "CodeID": "code-db7af507",
-            "DisplayText": "east gem",
+            "DisplayText": "east gem rangwe",
             "CodeType": "Normal",
             "NumericValue": 222,
             "StringValue": "east_gem_rangwe",
             "VisibleInCoda": true,
-            "MatchValues": ["east gem"]
+            "MatchValues": ["east gem rangwe"]
         },
         {
             "CodeID": "code-bacfba25",
@@ -2120,12 +2120,12 @@
         },
         {
             "CodeID": "code-d06e8593",
-            "DisplayText": "el-barta",
+            "DisplayText": "el barta",
             "CodeType": "Normal",
             "NumericValue": 236,
             "StringValue": "el_barta",
             "VisibleInCoda": true,
-            "MatchValues": ["el-barta"]
+            "MatchValues": ["el barta"]
         },
         {
             "CodeID": "code-adb020dd",
@@ -2768,21 +2768,21 @@
         },
         {
             "CodeID": "code-3de7f4af",
-            "DisplayText": "githiga-githunguri",
+            "DisplayText": "githiga githunguri",
             "CodeType": "Normal",
             "NumericValue": 308,
             "StringValue": "githiga_githunguri",
             "VisibleInCoda": true,
-            "MatchValues": ["githiga-githunguri"]
+            "MatchValues": ["githiga githunguri"]
         },
         {
             "CodeID": "code-f04d0add",
-            "DisplayText": "githiga-laikipia west",
+            "DisplayText": "githiga laikipia west",
             "CodeType": "Normal",
             "NumericValue": 309,
             "StringValue": "githiga_laikipia_west",
             "VisibleInCoda": true,
-            "MatchValues": ["githiga-laikipia west"]
+            "MatchValues": ["githiga laikipia west"]
         },
         {
             "CodeID": "code-454e7359",
@@ -3074,30 +3074,30 @@
         },
         {
             "CodeID": "code-1f07a1b4",
-            "DisplayText": "hospital-kiminini",
+            "DisplayText": "hospital kiminini",
             "CodeType": "Normal",
             "NumericValue": 342,
             "StringValue": "hospital_kiminini",
             "VisibleInCoda": true,
-            "MatchValues": ["hospital-kiminini"]
+            "MatchValues": ["hospital kiminini"]
         },
         {
             "CodeID": "code-44e0b743",
-            "DisplayText": "hospital-mathare",
+            "DisplayText": "hospital mathare",
             "CodeType": "Normal",
             "NumericValue": 343,
             "StringValue": "hospital_mathare",
             "VisibleInCoda": true,
-            "MatchValues": ["hospital-mathare"]
+            "MatchValues": ["hospital mathare"]
         },
         {
             "CodeID": "code-dc93abf4",
-            "DisplayText": "hospital-thika town",
+            "DisplayText": "hospital thika town",
             "CodeType": "Normal",
             "NumericValue": 344,
             "StringValue": "hospital_thika_town",
             "VisibleInCoda": true,
-            "MatchValues": ["hospital-thika town"]
+            "MatchValues": ["hospital thika town"]
         },
         {
             "CodeID": "code-813188d6",
@@ -3110,21 +3110,21 @@
         },
         {
             "CodeID": "code-6e1d102f",
-            "DisplayText": "huruma-mathare",
+            "DisplayText": "huruma mathare",
             "CodeType": "Normal",
             "NumericValue": 346,
             "StringValue": "huruma_mathare",
             "VisibleInCoda": true,
-            "MatchValues": ["huruma-mathare"]
+            "MatchValues": ["huruma mathare"]
         },
         {
             "CodeID": "code-63c41ecf",
-            "DisplayText": "huruma-turbo",
+            "DisplayText": "huruma turbo",
             "CodeType": "Normal",
             "NumericValue": 347,
             "StringValue": "huruma_turbo",
             "VisibleInCoda": true,
-            "MatchValues": ["huruma-turbo"]
+            "MatchValues": ["huruma turbo"]
         },
         {
             "CodeID": "code-a57cc0fd",
@@ -3308,21 +3308,21 @@
         },
         {
             "CodeID": "code-c3db1241",
-            "DisplayText": "ildamat-kajiado central",
+            "DisplayText": "ildamat kajiado central",
             "CodeType": "Normal",
             "NumericValue": 368,
             "StringValue": "ildamat_kajiado_central",
             "VisibleInCoda": true,
-            "MatchValues": ["ildamat-kajiado central"]
+            "MatchValues": ["ildamat kajiado central"]
         },
         {
             "CodeID": "code-a25b483f",
-            "DisplayText": "ildamat-narok east",
+            "DisplayText": "ildamat narok east",
             "CodeType": "Normal",
             "NumericValue": 369,
             "StringValue": "ildamat_narok_east",
             "VisibleInCoda": true,
-            "MatchValues": ["ildamat-narok east"]
+            "MatchValues": ["ildamat narok east"]
         },
         {
             "CodeID": "code-773ac649",
@@ -3389,12 +3389,12 @@
         },
         {
             "CodeID": "code-a410ca9c",
-            "DisplayText": "ingostse-mathia",
+            "DisplayText": "ingostse mathia",
             "CodeType": "Normal",
             "NumericValue": 377,
             "StringValue": "ingostse_mathia",
             "VisibleInCoda": true,
-            "MatchValues": ["ingostse-mathia"]
+            "MatchValues": ["ingostse mathia"]
         },
         {
             "CodeID": "code-99cd0026",
@@ -3407,12 +3407,12 @@
         },
         {
             "CodeID": "code-205598f7",
-            "DisplayText": "iria-ini",
+            "DisplayText": "iria ini",
             "CodeType": "Normal",
             "NumericValue": 379,
             "StringValue": "iria_ini",
             "VisibleInCoda": true,
-            "MatchValues": ["iria-ini"]
+            "MatchValues": ["iria ini"]
         },
         {
             "CodeID": "code-f9e4bac5",
@@ -3839,12 +3839,12 @@
         },
         {
             "CodeID": "code-e2bd37d9",
-            "DisplayText": "kagundu-ini",
+            "DisplayText": "kagundu ini",
             "CodeType": "Normal",
             "NumericValue": 427,
             "StringValue": "kagundu_ini",
             "VisibleInCoda": true,
-            "MatchValues": ["kagundu-ini"]
+            "MatchValues": ["kagundu ini"]
         },
         {
             "CodeID": "code-842564a9",
@@ -4019,21 +4019,21 @@
         },
         {
             "CodeID": "code-829e54eb",
-            "DisplayText": "kaloleni-kaloleni",
+            "DisplayText": "kaloleni kaloleni",
             "CodeType": "Normal",
             "NumericValue": 447,
             "StringValue": "kaloleni_kaloleni",
             "VisibleInCoda": true,
-            "MatchValues": ["kaloleni-kaloleni"]
+            "MatchValues": ["kaloleni kaloleni"]
         },
         {
             "CodeID": "code-a6b59399",
-            "DisplayText": "kaloleni-voi",
+            "DisplayText": "kaloleni voi",
             "CodeType": "Normal",
             "NumericValue": 448,
             "StringValue": "kaloleni_voi",
             "VisibleInCoda": true,
-            "MatchValues": ["kaloleni-voi"]
+            "MatchValues": ["kaloleni voi"]
         },
         {
             "CodeID": "code-0213b82a",
@@ -4316,12 +4316,12 @@
         },
         {
             "CodeID": "code-680f78df",
-            "DisplayText": "kanyenya-ini",
+            "DisplayText": "kanyenya ini",
             "CodeType": "Normal",
             "NumericValue": 480,
             "StringValue": "kanyenya_ini",
             "VisibleInCoda": true,
-            "MatchValues": ["kanyenya-ini"]
+            "MatchValues": ["kanyenya ini"]
         },
         {
             "CodeID": "code-28e792a5",
@@ -4424,21 +4424,21 @@
         },
         {
             "CodeID": "code-7f4ac492",
-            "DisplayText": "kapkures-nakuru town west",
+            "DisplayText": "kapkures nakuru town west",
             "CodeType": "Normal",
             "NumericValue": 492,
             "StringValue": "kapkures_nakuru_town_west",
             "VisibleInCoda": true,
-            "MatchValues": ["kapkures-nakuru town west"]
+            "MatchValues": ["kapkures nakuru town west"]
         },
         {
             "CodeID": "code-ccc53125",
-            "DisplayText": "kapkures-soy",
+            "DisplayText": "kapkures soy",
             "CodeType": "Normal",
             "NumericValue": 493,
             "StringValue": "kapkures_soy",
             "VisibleInCoda": true,
-            "MatchValues": ["kapkures-soy"]
+            "MatchValues": ["kapkures soy"]
         },
         {
             "CodeID": "code-f843a363",
@@ -4496,21 +4496,21 @@
         },
         {
             "CodeID": "code-f6564093",
-            "DisplayText": "kapsaos-ainamoi",
+            "DisplayText": "kapsaos ainamoi",
             "CodeType": "Normal",
             "NumericValue": 500,
             "StringValue": "kapsaos_ainamoi",
             "VisibleInCoda": true,
-            "MatchValues": ["kapsaos-ainamoi"]
+            "MatchValues": ["kapsaos ainamoi"]
         },
         {
             "CodeID": "code-832d2ac1",
-            "DisplayText": "kapsaos-turbo",
+            "DisplayText": "kapsaos turbo",
             "CodeType": "Normal",
             "NumericValue": 501,
             "StringValue": "kapsaos_turbo",
             "VisibleInCoda": true,
-            "MatchValues": ["kapsaos-turbo"]
+            "MatchValues": ["kapsaos turbo"]
         },
         {
             "CodeID": "code-175a3fbb",
@@ -4613,12 +4613,12 @@
         },
         {
             "CodeID": "code-0d1045ec",
-            "DisplayText": "kaptumo-kaboi",
+            "DisplayText": "kaptumo kaboi",
             "CodeType": "Normal",
             "NumericValue": 513,
             "StringValue": "kaptumo_kaboi",
             "VisibleInCoda": true,
-            "MatchValues": ["kaptumo-kaboi"]
+            "MatchValues": ["kaptumo kaboi"]
         },
         {
             "CodeID": "code-a967f80d",
@@ -4973,21 +4973,21 @@
         },
         {
             "CodeID": "code-f9123f62",
-            "DisplayText": "keekonyokie-kajiado west",
+            "DisplayText": "keekonyokie kajiado west",
             "CodeType": "Normal",
             "NumericValue": 553,
             "StringValue": "keekonyokie_kajiado_west",
             "VisibleInCoda": true,
-            "MatchValues": ["keekonyokie-kajiado west"]
+            "MatchValues": ["keekonyokie kajiado west"]
         },
         {
             "CodeID": "code-e13d8799",
-            "DisplayText": "keekonyokie-narok east",
+            "DisplayText": "keekonyokie narok east",
             "CodeType": "Normal",
             "NumericValue": 554,
             "StringValue": "keekonyokie_narok_east",
             "VisibleInCoda": true,
-            "MatchValues": ["keekonyokie-narok east"]
+            "MatchValues": ["keekonyokie narok east"]
         },
         {
             "CodeID": "code-91c178a3",
@@ -5018,12 +5018,12 @@
         },
         {
             "CodeID": "code-55a447a9",
-            "DisplayText": "kemeloi-maraba",
+            "DisplayText": "kemeloi maraba",
             "CodeType": "Normal",
             "NumericValue": 558,
             "StringValue": "kemeloi_maraba",
             "VisibleInCoda": true,
-            "MatchValues": ["kemeloi-maraba"]
+            "MatchValues": ["kemeloi maraba"]
         },
         {
             "CodeID": "code-bd8b8d92",
@@ -5045,12 +5045,12 @@
         },
         {
             "CodeID": "code-86cdb98d",
-            "DisplayText": "kenyawa-poka",
+            "DisplayText": "kenyawa poka",
             "CodeType": "Normal",
             "NumericValue": 561,
             "StringValue": "kenyawa_poka",
             "VisibleInCoda": true,
-            "MatchValues": ["kenyawa-poka"]
+            "MatchValues": ["kenyawa poka"]
         },
         {
             "CodeID": "code-dc96668b",
@@ -5099,21 +5099,21 @@
         },
         {
             "CodeID": "code-a39e56f0",
-            "DisplayText": "khalaba-kanduyi",
+            "DisplayText": "khalaba kanduyi",
             "CodeType": "Normal",
             "NumericValue": 567,
             "StringValue": "khalaba_kanduyi",
             "VisibleInCoda": true,
-            "MatchValues": ["khalaba-kanduyi"]
+            "MatchValues": ["khalaba kanduyi"]
         },
         {
             "CodeID": "code-2ab943a2",
-            "DisplayText": "khalaba-matungu",
+            "DisplayText": "khalaba matungu",
             "CodeType": "Normal",
             "NumericValue": 568,
             "StringValue": "khalaba_matungu",
             "VisibleInCoda": true,
-            "MatchValues": ["khalaba-matungu"]
+            "MatchValues": ["khalaba matungu"]
         },
         {
             "CodeID": "code-912535d8",
@@ -5342,12 +5342,12 @@
         },
         {
             "CodeID": "code-a688a091",
-            "DisplayText": "kihumbu-ini",
+            "DisplayText": "kihumbu ini",
             "CodeType": "Normal",
             "NumericValue": 594,
             "StringValue": "kihumbu_ini",
             "VisibleInCoda": true,
-            "MatchValues": ["kihumbu-ini"]
+            "MatchValues": ["kihumbu ini"]
         },
         {
             "CodeID": "code-d9ca21eb",
@@ -6251,12 +6251,12 @@
         },
         {
             "CodeID": "code-f8b1f364",
-            "DisplayText": "koyo-ndurio",
+            "DisplayText": "koyo ndurio",
             "CodeType": "Normal",
             "NumericValue": 695,
             "StringValue": "koyo_ndurio",
             "VisibleInCoda": true,
-            "MatchValues": ["koyo-ndurio"]
+            "MatchValues": ["koyo ndurio"]
         },
         {
             "CodeID": "code-286b4d7d",
@@ -6602,21 +6602,21 @@
         },
         {
             "CodeID": "code-7975708e",
-            "DisplayText": "lelan-marakwet west",
+            "DisplayText": "lelan marakwet west",
             "CodeType": "Normal",
             "NumericValue": 734,
             "StringValue": "lelan_marakwet_west",
             "VisibleInCoda": true,
-            "MatchValues": ["lelan-marakwet west"]
+            "MatchValues": ["lelan marakwet west"]
         },
         {
             "CodeID": "code-396c49ad",
-            "DisplayText": "lelan-pokot south",
+            "DisplayText": "lelan pokot south",
             "CodeType": "Normal",
             "NumericValue": 735,
             "StringValue": "lelan_pokot_south",
             "VisibleInCoda": true,
-            "MatchValues": ["lelan-pokot south"]
+            "MatchValues": ["lelan pokot south"]
         },
         {
             "CodeID": "code-cbd04e2e",
@@ -6962,12 +6962,12 @@
         },
         {
             "CodeID": "code-6fade45e",
-            "DisplayText": "lugaga-wamuluma",
+            "DisplayText": "lugaga wamuluma",
             "CodeType": "Normal",
             "NumericValue": 774,
             "StringValue": "lugaga_wamuluma",
             "VisibleInCoda": true,
-            "MatchValues": ["lugaga-wamuluma"]
+            "MatchValues": ["lugaga wamuluma"]
         },
         {
             "CodeID": "code-f8d3105a",
@@ -7412,12 +7412,12 @@
         },
         {
             "CodeID": "code-d3719ff3",
-            "DisplayText": "manda-shivanga",
+            "DisplayText": "manda shivanga",
             "CodeType": "Normal",
             "NumericValue": 824,
             "StringValue": "manda_shivanga",
             "VisibleInCoda": true,
-            "MatchValues": ["manda-shivanga"]
+            "MatchValues": ["manda shivanga"]
         },
         {
             "CodeID": "code-078653db",
@@ -7439,12 +7439,12 @@
         },
         {
             "CodeID": "code-5b1e4d36",
-            "DisplayText": "manyatta 'b'",
+            "DisplayText": "manyatta b",
             "CodeType": "Normal",
             "NumericValue": 827,
             "StringValue": "manyatta_b",
             "VisibleInCoda": true,
-            "MatchValues": ["manyatta 'b'"]
+            "MatchValues": ["manyatta b"]
         },
         {
             "CodeID": "code-61e0a309",
@@ -7574,12 +7574,12 @@
         },
         {
             "CodeID": "code-c7fb9252",
-            "DisplayText": "marenyo-shianda",
+            "DisplayText": "marenyo shianda",
             "CodeType": "Normal",
             "NumericValue": 842,
             "StringValue": "marenyo_shianda",
             "VisibleInCoda": true,
-            "MatchValues": ["marenyo-shianda"]
+            "MatchValues": ["marenyo shianda"]
         },
         {
             "CodeID": "code-52d23332",
@@ -8033,21 +8033,21 @@
         },
         {
             "CodeID": "code-c3a587a3",
-            "DisplayText": "mbitini-kitui rural",
+            "DisplayText": "mbitini kitui rural",
             "CodeType": "Normal",
             "NumericValue": 893,
             "StringValue": "mbitini_kitui_rural",
             "VisibleInCoda": true,
-            "MatchValues": ["mbitini-kitui rural"]
+            "MatchValues": ["mbitini kitui rural"]
         },
         {
             "CodeID": "code-05affbc9",
-            "DisplayText": "mbitini-makueni",
+            "DisplayText": "mbitini makueni",
             "CodeType": "Normal",
             "NumericValue": 894,
             "StringValue": "mbitini_makueni",
             "VisibleInCoda": true,
-            "MatchValues": ["mbitini-makueni"]
+            "MatchValues": ["mbitini makueni"]
         },
         {
             "CodeID": "code-b061b4e4",
@@ -8330,21 +8330,21 @@
         },
         {
             "CodeID": "code-f3eb2c84",
-            "DisplayText": "mkomani-lamu west",
+            "DisplayText": "mkomani lamu west",
             "CodeType": "Normal",
             "NumericValue": 926,
             "StringValue": "mkomani_lamu_west",
             "VisibleInCoda": true,
-            "MatchValues": ["mkomani-lamu west"]
+            "MatchValues": ["mkomani lamu west"]
         },
         {
             "CodeID": "code-b28d8bfc",
-            "DisplayText": "mkomani-nyali",
+            "DisplayText": "mkomani nyali",
             "CodeType": "Normal",
             "NumericValue": 927,
             "StringValue": "mkomani_nyali",
             "VisibleInCoda": true,
-            "MatchValues": ["mkomani-nyali"]
+            "MatchValues": ["mkomani nyali"]
         },
         {
             "CodeID": "code-f5fe3876",
@@ -8492,21 +8492,21 @@
         },
         {
             "CodeID": "code-51a23943",
-            "DisplayText": "mosiro-kajiado west",
+            "DisplayText": "mosiro kajiado west",
             "CodeType": "Normal",
             "NumericValue": 944,
             "StringValue": "mosiro_kajiado_west",
             "VisibleInCoda": true,
-            "MatchValues": ["mosiro-kajiado west"]
+            "MatchValues": ["mosiro kajiado west"]
         },
         {
             "CodeID": "code-6bbcae3a",
-            "DisplayText": "mosiro-narok east",
+            "DisplayText": "mosiro narok east",
             "CodeType": "Normal",
             "NumericValue": 945,
             "StringValue": "mosiro_narok_east",
             "VisibleInCoda": true,
-            "MatchValues": ["mosiro-narok east"]
+            "MatchValues": ["mosiro narok east"]
         },
         {
             "CodeID": "code-a4bbcfb2",
@@ -8654,21 +8654,21 @@
         },
         {
             "CodeID": "code-fa2d56a9",
-            "DisplayText": "mugumo-ini",
+            "DisplayText": "mugumo ini",
             "CodeType": "Normal",
             "NumericValue": 962,
             "StringValue": "mugumo_ini",
             "VisibleInCoda": true,
-            "MatchValues": ["mugumo-ini"]
+            "MatchValues": ["mugumo ini"]
         },
         {
             "CodeID": "code-427e29ed",
-            "DisplayText": "mugumu-ini",
+            "DisplayText": "mugumu ini",
             "CodeType": "Normal",
             "NumericValue": 963,
             "StringValue": "mugumu_ini",
             "VisibleInCoda": true,
-            "MatchValues": ["mugumu-ini"]
+            "MatchValues": ["mugumu ini"]
         },
         {
             "CodeID": "code-6a039f0b",
@@ -8762,21 +8762,21 @@
         },
         {
             "CodeID": "code-6f04e0fc",
-            "DisplayText": "mukurwe-ini central",
+            "DisplayText": "mukurwe ini central",
             "CodeType": "Normal",
             "NumericValue": 974,
             "StringValue": "mukurwe_ini_central",
             "VisibleInCoda": true,
-            "MatchValues": ["mukurwe-ini central"]
+            "MatchValues": ["mukurwe ini central"]
         },
         {
             "CodeID": "code-8489f7e3",
-            "DisplayText": "mukurwe-ini west",
+            "DisplayText": "mukurwe ini west",
             "CodeType": "Normal",
             "NumericValue": 975,
             "StringValue": "mukurwe_ini_west",
             "VisibleInCoda": true,
-            "MatchValues": ["mukurwe-ini west"]
+            "MatchValues": ["mukurwe ini west"]
         },
         {
             "CodeID": "code-6aa14635",
@@ -9086,12 +9086,12 @@
         },
         {
             "CodeID": "code-87a7ccc7",
-            "DisplayText": "mutu-ini",
+            "DisplayText": "mutu ini",
             "CodeType": "Normal",
             "NumericValue": 1010,
             "StringValue": "mutu_ini",
             "VisibleInCoda": true,
-            "MatchValues": ["mutu-ini"]
+            "MatchValues": ["mutu ini"]
         },
         {
             "CodeID": "code-fcbf900e",
@@ -9104,12 +9104,12 @@
         },
         {
             "CodeID": "code-9ebdda1f",
-            "DisplayText": "muvuti/kiima-kimwe",
+            "DisplayText": "muvuti/kiima kimwe",
             "CodeType": "Normal",
             "NumericValue": 1012,
             "StringValue": "muvuti_kiima_kimwe",
             "VisibleInCoda": true,
-            "MatchValues": ["muvuti/kiima-kimwe"]
+            "MatchValues": ["muvuti/kiima kimwe"]
         },
         {
             "CodeID": "code-8a47c102",
@@ -9230,21 +9230,21 @@
         },
         {
             "CodeID": "code-3f21faff",
-            "DisplayText": "mwiki-kasarani",
+            "DisplayText": "mwiki kasarani",
             "CodeType": "Normal",
             "NumericValue": 1026,
             "StringValue": "mwiki_kasarani",
             "VisibleInCoda": true,
-            "MatchValues": ["mwiki-kasarani"]
+            "MatchValues": ["mwiki kasarani"]
         },
         {
             "CodeID": "code-b2be0e85",
-            "DisplayText": "mwiki-ruiru",
+            "DisplayText": "mwiki ruiru",
             "CodeType": "Normal",
             "NumericValue": 1027,
             "StringValue": "mwiki_ruiru",
             "VisibleInCoda": true,
-            "MatchValues": ["mwiki-ruiru"]
+            "MatchValues": ["mwiki ruiru"]
         },
         {
             "CodeID": "code-2839dc93",
@@ -9707,21 +9707,21 @@
         },
         {
             "CodeID": "code-0c10fe98",
-            "DisplayText": "nginda-manyatta",
+            "DisplayText": "nginda manyatta",
             "CodeType": "Normal",
             "NumericValue": 1079,
             "StringValue": "nginda_manyatta",
             "VisibleInCoda": true,
-            "MatchValues": ["nginda-manyatta"]
+            "MatchValues": ["nginda manyatta"]
         },
         {
             "CodeID": "code-1a026550",
-            "DisplayText": "nginda-maragwa",
+            "DisplayText": "nginda maragwa",
             "CodeType": "Normal",
             "NumericValue": 1080,
             "StringValue": "nginda_maragwa",
             "VisibleInCoda": true,
-            "MatchValues": ["nginda-maragwa"]
+            "MatchValues": ["nginda maragwa"]
         },
         {
             "CodeID": "code-6d567406",
@@ -9995,21 +9995,21 @@
         },
         {
             "CodeID": "code-46fb0b3d",
-            "DisplayText": "north sakwa",
+            "DisplayText": "north sakwa awendo",
             "CodeType": "Normal",
             "NumericValue": 1111,
             "StringValue": "north_sakwa_awendo",
             "VisibleInCoda": true,
-            "MatchValues": ["north sakwa"]
+            "MatchValues": ["north sakwa awendo"]
         },
         {
             "CodeID": "code-268c495d",
-            "DisplayText": "north sakwa",
+            "DisplayText": "north sakwa bondo",
             "CodeType": "Normal",
             "NumericValue": 1112,
             "StringValue": "north_sakwa_bondo",
             "VisibleInCoda": true,
-            "MatchValues": ["north sakwa"]
+            "MatchValues": ["north sakwa bondo"]
         },
         {
             "CodeID": "code-ae460031",
@@ -10184,12 +10184,12 @@
         },
         {
             "CodeID": "code-4f5db903",
-            "DisplayText": "nyalenda 'a'",
+            "DisplayText": "nyalenda a",
             "CodeType": "Normal",
             "NumericValue": 1132,
             "StringValue": "nyalenda_a",
             "VisibleInCoda": true,
-            "MatchValues": ["nyalenda 'a'"]
+            "MatchValues": ["nyalenda a"]
         },
         {
             "CodeID": "code-c5e2801d",
@@ -10346,12 +10346,12 @@
         },
         {
             "CodeID": "code-56f40f54",
-            "DisplayText": "ol-moran",
+            "DisplayText": "ol moran",
             "CodeType": "Normal",
             "NumericValue": 1150,
             "StringValue": "ol_moran",
             "VisibleInCoda": true,
-            "MatchValues": ["ol-moran"]
+            "MatchValues": ["ol moran"]
         },
         {
             "CodeID": "code-309671ba",
@@ -10562,12 +10562,12 @@
         },
         {
             "CodeID": "code-8c20916c",
-            "DisplayText": "ragana-oruba",
+            "DisplayText": "ragana oruba",
             "CodeType": "Normal",
             "NumericValue": 1174,
             "StringValue": "ragana_oruba",
             "VisibleInCoda": true,
-            "MatchValues": ["ragana-oruba"]
+            "MatchValues": ["ragana oruba"]
         },
         {
             "CodeID": "code-1e809dc2",
@@ -10607,12 +10607,12 @@
         },
         {
             "CodeID": "code-d28e49f4",
-            "DisplayText": "rhamu-dimtu",
+            "DisplayText": "rhamu dimtu",
             "CodeType": "Normal",
             "NumericValue": 1179,
             "StringValue": "rhamu_dimtu",
             "VisibleInCoda": true,
-            "MatchValues": ["rhamu-dimtu"]
+            "MatchValues": ["rhamu dimtu"]
         },
         {
             "CodeID": "code-65efee77",
@@ -10769,12 +10769,12 @@
         },
         {
             "CodeID": "code-0dc0b88c",
-            "DisplayText": "ruma-kaksingri",
+            "DisplayText": "ruma kaksingri",
             "CodeType": "Normal",
             "NumericValue": 1197,
             "StringValue": "ruma_kaksingri",
             "VisibleInCoda": true,
-            "MatchValues": ["ruma-kaksingri"]
+            "MatchValues": ["ruma kaksingri"]
         },
         {
             "CodeID": "code-476c3837",
@@ -10931,21 +10931,21 @@
         },
         {
             "CodeID": "code-49eb61d6",
-            "DisplayText": "sala-bura",
+            "DisplayText": "sala bura",
             "CodeType": "Normal",
             "NumericValue": 1215,
             "StringValue": "sala_bura",
             "VisibleInCoda": true,
-            "MatchValues": ["sala-bura"]
+            "MatchValues": ["sala bura"]
         },
         {
             "CodeID": "code-edd81592",
-            "DisplayText": "sala-lafey",
+            "DisplayText": "sala lafey",
             "CodeType": "Normal",
             "NumericValue": 1216,
             "StringValue": "sala_lafey",
             "VisibleInCoda": true,
-            "MatchValues": ["sala-lafey"]
+            "MatchValues": ["sala lafey"]
         },
         {
             "CodeID": "code-25e3a084",
@@ -11147,21 +11147,21 @@
         },
         {
             "CodeID": "code-3b1476f6",
-            "DisplayText": "shella-lamu west",
+            "DisplayText": "shella lamu west",
             "CodeType": "Normal",
             "NumericValue": 1239,
             "StringValue": "shella_lamu_west",
             "VisibleInCoda": true,
-            "MatchValues": ["shella-lamu west"]
+            "MatchValues": ["shella lamu west"]
         },
         {
             "CodeID": "code-dceb3769",
-            "DisplayText": "shella-malindi",
+            "DisplayText": "shella malindi",
             "CodeType": "Normal",
             "NumericValue": 1240,
             "StringValue": "shella_malindi",
             "VisibleInCoda": true,
-            "MatchValues": ["shella-malindi"]
+            "MatchValues": ["shella malindi"]
         },
         {
             "CodeID": "code-805b78be",
@@ -11210,12 +11210,12 @@
         },
         {
             "CodeID": "code-f4b5fa31",
-            "DisplayText": "shinoyi-shikomari-esumeyia",
+            "DisplayText": "shinoyi shikomari esumeyia",
             "CodeType": "Normal",
             "NumericValue": 1246,
             "StringValue": "shinoyi_shikomari_esumeyia",
             "VisibleInCoda": true,
-            "MatchValues": ["shinoyi-shikomari-esumeyia"]
+            "MatchValues": ["shinoyi shikomari esumeyia"]
         },
         {
             "CodeID": "code-4af94486",
@@ -11237,12 +11237,12 @@
         },
         {
             "CodeID": "code-8d32d81e",
-            "DisplayText": "shirugu-mugai",
+            "DisplayText": "shirugu mugai",
             "CodeType": "Normal",
             "NumericValue": 1249,
             "StringValue": "shirugu_mugai",
             "VisibleInCoda": true,
-            "MatchValues": ["shirugu-mugai"]
+            "MatchValues": ["shirugu mugai"]
         },
         {
             "CodeID": "code-50df4d9c",
@@ -11444,21 +11444,21 @@
         },
         {
             "CodeID": "code-725e6d4b",
-            "DisplayText": "soin-rongai",
+            "DisplayText": "soin rongai",
             "CodeType": "Normal",
             "NumericValue": 1272,
             "StringValue": "soin_rongai",
             "VisibleInCoda": true,
-            "MatchValues": ["soin-rongai"]
+            "MatchValues": ["soin rongai"]
         },
         {
             "CodeID": "code-23fb8c1f",
-            "DisplayText": "soin-sigowet/soin",
+            "DisplayText": "soin sigowet/soin",
             "CodeType": "Normal",
             "NumericValue": 1273,
             "StringValue": "soin_sigowet_soin",
             "VisibleInCoda": true,
-            "MatchValues": ["soin-sigowet/soin"]
+            "MatchValues": ["soin sigowet/soin"]
         },
         {
             "CodeID": "code-030e8070",
@@ -11633,21 +11633,21 @@
         },
         {
             "CodeID": "code-6c1c858f",
-            "DisplayText": "south sakwa",
+            "DisplayText": "south sakwa awendo",
             "CodeType": "Normal",
             "NumericValue": 1293,
             "StringValue": "south_sakwa_awendo",
             "VisibleInCoda": true,
-            "MatchValues": ["south sakwa"]
+            "MatchValues": ["south sakwa awendo"]
         },
         {
             "CodeID": "code-619120fa",
-            "DisplayText": "south sakwa",
+            "DisplayText": "south sakwa bondo",
             "CodeType": "Normal",
             "NumericValue": 1294,
             "StringValue": "south_sakwa_bondo",
             "VisibleInCoda": true,
-            "MatchValues": ["south sakwa"]
+            "MatchValues": ["south sakwa bondo"]
         },
         {
             "CodeID": "code-a17511d6",
@@ -12092,84 +12092,84 @@
         },
         {
             "CodeID": "code-bf91efc6",
-            "DisplayText": "township-garissa township",
+            "DisplayText": "township garissa township",
             "CodeType": "Normal",
             "NumericValue": 1344,
             "StringValue": "township_garissa_township",
             "VisibleInCoda": true,
-            "MatchValues": ["township-garissa township"]
+            "MatchValues": ["township garissa township"]
         },
         {
             "CodeID": "code-ba1c3da7",
-            "DisplayText": "township-kanduyi",
+            "DisplayText": "township kanduyi",
             "CodeType": "Normal",
             "NumericValue": 1345,
             "StringValue": "township_kanduyi",
             "VisibleInCoda": true,
-            "MatchValues": ["township-kanduyi"]
+            "MatchValues": ["township kanduyi"]
         },
         {
             "CodeID": "code-1d788b06",
-            "DisplayText": "township-kiambu",
+            "DisplayText": "township kiambu",
             "CodeType": "Normal",
             "NumericValue": 1346,
             "StringValue": "township_kiambu",
             "VisibleInCoda": true,
-            "MatchValues": ["township-kiambu"]
+            "MatchValues": ["township kiambu"]
         },
         {
             "CodeID": "code-f0e55cb5",
-            "DisplayText": "township-kiharu",
+            "DisplayText": "township kiharu",
             "CodeType": "Normal",
             "NumericValue": 1347,
             "StringValue": "township_kiharu",
             "VisibleInCoda": true,
-            "MatchValues": ["township-kiharu"]
+            "MatchValues": ["township kiharu"]
         },
         {
             "CodeID": "code-d096593a",
-            "DisplayText": "township-kitui central",
+            "DisplayText": "township kitui central",
             "CodeType": "Normal",
             "NumericValue": 1348,
             "StringValue": "township_kitui_central",
             "VisibleInCoda": true,
-            "MatchValues": ["township-kitui central"]
+            "MatchValues": ["township kitui central"]
         },
         {
             "CodeID": "code-70af441d",
-            "DisplayText": "township-mandera east",
+            "DisplayText": "township mandera east",
             "CodeType": "Normal",
             "NumericValue": 1349,
             "StringValue": "township_mandera_east",
             "VisibleInCoda": true,
-            "MatchValues": ["township-mandera east"]
+            "MatchValues": ["township mandera east"]
         },
         {
             "CodeID": "code-0e2c6eb3",
-            "DisplayText": "township-thika town",
+            "DisplayText": "township thika town",
             "CodeType": "Normal",
             "NumericValue": 1350,
             "StringValue": "township_thika_town",
             "VisibleInCoda": true,
-            "MatchValues": ["township-thika town"]
+            "MatchValues": ["township thika town"]
         },
         {
             "CodeID": "code-8bf46a6d",
-            "DisplayText": "township-wajir east",
+            "DisplayText": "township wajir east",
             "CodeType": "Normal",
             "NumericValue": 1351,
             "StringValue": "township_wajir_east",
             "VisibleInCoda": true,
-            "MatchValues": ["township-wajir east"]
+            "MatchValues": ["township wajir east"]
         },
         {
             "CodeID": "code-7dc9a0ae",
-            "DisplayText": "township-west mugirango",
+            "DisplayText": "township west mugirango",
             "CodeType": "Normal",
             "NumericValue": 1352,
             "StringValue": "township_west_mugirango",
             "VisibleInCoda": true,
-            "MatchValues": ["township-west mugirango"]
+            "MatchValues": ["township west mugirango"]
         },
         {
             "CodeID": "code-47a5dc69",
@@ -12407,21 +12407,21 @@
         },
         {
             "CodeID": "code-36abfecf",
-            "DisplayText": "viwandani-makadara",
+            "DisplayText": "viwandani makadara",
             "CodeType": "Normal",
             "NumericValue": 1379,
             "StringValue": "viwandani_makadara",
             "VisibleInCoda": true,
-            "MatchValues": ["viwandani-makadara"]
+            "MatchValues": ["viwandani makadara"]
         },
         {
             "CodeID": "code-ef0fa88e",
-            "DisplayText": "viwandani-naivasha",
+            "DisplayText": "viwandani naivasha",
             "CodeType": "Normal",
             "NumericValue": 1380,
             "StringValue": "viwandani_naivasha",
             "VisibleInCoda": true,
-            "MatchValues": ["viwandani-naivasha"]
+            "MatchValues": ["viwandani naivasha"]
         },
         {
             "CodeID": "code-aaf30ede",
@@ -12470,12 +12470,12 @@
         },
         {
             "CodeID": "code-fc102cf0",
-            "DisplayText": "waia-kako",
+            "DisplayText": "waia kako",
             "CodeType": "Normal",
             "NumericValue": 1386,
             "StringValue": "waia_kako",
             "VisibleInCoda": true,
-            "MatchValues": ["waia-kako"]
+            "MatchValues": ["waia kako"]
         },
         {
             "CodeID": "code-c8ba43d4",
@@ -12605,21 +12605,21 @@
         },
         {
             "CodeID": "code-94e73bd2",
-            "DisplayText": "wargadud-mandera south",
+            "DisplayText": "wargadud mandera south",
             "CodeType": "Normal",
             "NumericValue": 1401,
             "StringValue": "wargadud_mandera_south",
             "VisibleInCoda": true,
-            "MatchValues": ["wargadud-mandera south"]
+            "MatchValues": ["wargadud mandera south"]
         },
         {
             "CodeID": "code-764e2af3",
-            "DisplayText": "wargadud-tarbaj",
+            "DisplayText": "wargadud tarbaj",
             "CodeType": "Normal",
             "NumericValue": 1402,
             "StringValue": "wargadud_tarbaj",
             "VisibleInCoda": true,
-            "MatchValues": ["wargadud-tarbaj"]
+            "MatchValues": ["wargadud tarbaj"]
         },
         {
             "CodeID": "code-b492e7c6",
@@ -12749,21 +12749,21 @@
         },
         {
             "CodeID": "code-092df428",
-            "DisplayText": "west gem",
+            "DisplayText": "west gem gem",
             "CodeType": "Normal",
             "NumericValue": 1417,
             "StringValue": "west_gem_gem",
             "VisibleInCoda": true,
-            "MatchValues": ["west gem"]
+            "MatchValues": ["west gem gem"]
         },
         {
             "CodeID": "code-fc56bd27",
-            "DisplayText": "west gem",
+            "DisplayText": "west gem rangwe",
             "CodeType": "Normal",
             "NumericValue": 1418,
             "StringValue": "west_gem_rangwe",
             "VisibleInCoda": true,
-            "MatchValues": ["west gem"]
+            "MatchValues": ["west gem rangwe"]
         },
         {
             "CodeID": "code-b835c2de",
@@ -12848,21 +12848,21 @@
         },
         {
             "CodeID": "code-d234b2e8",
-            "DisplayText": "west sakwa",
+            "DisplayText": "west sakwa awendo",
             "CodeType": "Normal",
             "NumericValue": 1428,
             "StringValue": "west_sakwa_awendo",
             "VisibleInCoda": true,
-            "MatchValues": ["west sakwa"]
+            "MatchValues": ["west sakwa awendo"]
         },
         {
             "CodeID": "code-ae33ac42",
-            "DisplayText": "west sakwa",
+            "DisplayText": "west sakwa bondo",
             "CodeType": "Normal",
             "NumericValue": 1429,
             "StringValue": "west_sakwa_bondo",
             "VisibleInCoda": true,
-            "MatchValues": ["west sakwa"]
+            "MatchValues": ["west sakwa bondo"]
         },
         {
             "CodeID": "code-699f064f",
