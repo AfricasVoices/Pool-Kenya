@@ -69,7 +69,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
 
                     QuestionConfiguration(engagement_db_dataset="porticus_s01e01", question_titles=["What are the three priority developments that you would like the County Government to implement in your ward in the next five years?"]),
                     QuestionConfiguration(engagement_db_dataset="porticus_s01e02", question_titles=["What projects can Kitui, Machakos and Makueni counties collaborate in to advance the region?"]),
-                    QuestionConfiguration(engagement_db_dataset="porticus_s01e03", question_titles=["What ways do you use to participate in the decision making processes in your county?"]),
+                    QuestionConfiguration(engagement_db_dataset="porticus_s01e03_intro", question_titles=["What ways do you use to participate in the decision making processes in your county?"]),
+                    QuestionConfiguration(engagement_db_dataset="porticus_s01e03", question_titles=["What can your county government do to improve your participation in the county's decision making process?"]),
                 ]
             )
         ),
