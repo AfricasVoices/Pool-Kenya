@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-ef83a51c",
+            "CodeType": "Normal",
+            "DisplayText": "elected leaders",
+            "NumericValue": 1,
+            "StringValue": "elected_leaders",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-9b7f191e",
+            "CodeType": "Normal",
+            "DisplayText": "the president",
+            "NumericValue": 2,
+            "StringValue": "the_president",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-76ffcdc6",
+            "CodeType": "Normal",
+            "DisplayText": "rule of law",
+            "NumericValue": 3,
+            "StringValue": "rule_of_law",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-f2e3651c",
+            "CodeType": "Normal",
+            "DisplayText": "citizens",
+            "NumericValue": 4,
+            "StringValue": "citizens",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-d552df54",
+            "CodeType": "Normal",
+            "DisplayText": "opposition",
+            "NumericValue": 5,
+            "StringValue": "opposition",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-9d0ff4a7",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+          },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
