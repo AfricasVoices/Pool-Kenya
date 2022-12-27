@@ -67,6 +67,38 @@
             "StringValue": "need_for_help",
             "VisibleInCoda": true
           },
+           {
+            "CodeID": "code-d5c882e4",
+            "CodeType": "Normal",
+            "DisplayText": "fighting corruption",
+            "NumericValue": 10,
+            "StringValue": "fighting_corruption",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-03c0a6df",
+            "CodeType": "Normal",
+            "DisplayText": "promoting justice and equality",
+            "NumericValue": 11,
+            "StringValue": "promoting_justice_and_equality",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-b9ddda31",
+            "CodeType": "Normal",
+            "DisplayText": "public education",
+            "NumericValue": 12,
+            "StringValue": "public_education",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-cebc094c",
+            "CodeType": "Normal",
+            "DisplayText": "suggestions",
+            "NumericValue": 13,
+            "StringValue": "suggestions",
+            "VisibleInCoda": true
+          },
           {
             "CodeID": "code-fd77a2d2",
             "CodeType": "Normal",

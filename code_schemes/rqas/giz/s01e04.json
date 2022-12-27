@@ -38,9 +38,25 @@
           {
             "CodeID": "code-f5873ec0",
             "CodeType": "Normal",
-            "DisplayText": "fight corruption",
-            "NumericValue": 5,
-            "StringValue": "fight_corruption",
+            "DisplayText": "digitization (of kra)",
+            "NumericValue": 10,
+            "StringValue": "digitization_kra",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-940e4c7a",
+            "CodeType": "Normal",
+            "DisplayText": "job creation",
+            "NumericValue": 11,
+            "StringValue": "job_creation",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-8a2a6118",
+            "CodeType": "Normal",
+            "DisplayText": "reduce tax",
+            "NumericValue": 12,
+            "StringValue": "reduce_tax",
             "VisibleInCoda": true
           },
           {
