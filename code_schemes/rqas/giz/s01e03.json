@@ -68,6 +68,30 @@
             "VisibleInCoda": true
           },
           {
+            "CodeID": "code-91d83c93",
+            "CodeType": "Normal",
+            "DisplayText": "cooperation",
+            "NumericValue": 10,
+            "StringValue": "cooperation",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-04f1a8eb",
+            "CodeType": "Normal",
+            "DisplayText": "promoting love and unity",
+            "NumericValue": 11,
+            "StringValue": "promoting_love_and_unity",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-fae8672d",
+            "CodeType": "Normal",
+            "DisplayText": "need for help",
+            "NumericValue": 12,
+            "StringValue": "need_for_help",
+            "VisibleInCoda": true
+          },
+          {
             "CodeID": "code-b6c1fa6a",
             "CodeType": "Normal",
             "DisplayText": "other theme",
