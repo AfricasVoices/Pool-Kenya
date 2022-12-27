@@ -38,6 +38,14 @@
           {
             "CodeID": "code-f5873ec0",
             "CodeType": "Normal",
+            "DisplayText": "fight corruption",
+            "NumericValue": 5,
+            "StringValue": "fight_corruption",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-927df1d6",
+            "CodeType": "Normal",
             "DisplayText": "digitization (of kra)",
             "NumericValue": 10,
             "StringValue": "digitization_kra",
