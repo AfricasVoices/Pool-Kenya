@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-2078e789",
+            "CodeType": "Normal",
+            "DisplayText": "accountability and transparency",
+            "NumericValue": 1,
+            "StringValue": "accountability_and_transparency",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-94109cee",
+            "CodeType": "Normal",
+            "DisplayText": "taking legal action & reporting corrupt leaders",
+            "NumericValue": 2,
+            "StringValue": "taking_legal_action_and_reporting_corrupt_leaders",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-3eee3392",
+            "CodeType": "Normal",
+            "DisplayText": "providing security",
+            "NumericValue": 3,
+            "StringValue": "providing_security",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-63225a3f",
+            "CodeType": "Normal",
+            "DisplayText": "i don't know",
+            "NumericValue": 4,
+            "StringValue": "i_dont_know",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-47f4e0c4",
+            "CodeType": "Normal",
+            "DisplayText": "suggestions",
+            "NumericValue": 5,
+            "StringValue": "suggestions",
+            "VisibleInCoda": true
+          },
+          {
+            "CodeID": "code-64c2675d",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+          },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
