@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-03db8eb3",
+            "DisplayText": "equal job opportunities",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "equal_job_opportunities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9338d6cc",
+            "DisplayText": "education and capacity building",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "education_and_capacity_building",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-883bb831",
+            "DisplayText": "financial assistance",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "financial_assistance",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fb43c2ed",
+            "DisplayText": "invove them in decision making",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "invove_them_in_decision_making",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-485da118",
+            "DisplayText": "involve them in projects",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "involve_them_in_projects",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-588887a1",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
