@@ -2001,7 +2001,8 @@
       "StringValue": "suba_north",
       "VisibleInCoda": true,
       "MatchValues": [
-        "suba north/mbita"
+        "mbita",
+        "suba north"
       ]
     },
     {
