@@ -69,7 +69,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
 
                     QuestionConfiguration(engagement_db_dataset="porticus_s01e01", question_titles=["What are the three priority developments that you would like the County Government to implement in your ward in the next five years?"]),
                     QuestionConfiguration(engagement_db_dataset="porticus_s01e02", question_titles=["What projects can Kitui, Machakos and Makueni counties collaborate in to advance the region?"]),
-                    QuestionConfiguration(engagement_db_dataset="porticus_s01e03", question_titles=["What ways do you use to participate in the decision making processes in your county?"]),
+                    QuestionConfiguration(engagement_db_dataset="porticus_s01e03_intro", question_titles=["What ways do you use to participate in the decision making processes in your county?"]),
+                    QuestionConfiguration(engagement_db_dataset="porticus_s01e03", question_titles=["What can your county government do to improve your participation in the county's decision making process?"]),
                 ]
             )
         ),
@@ -317,6 +318,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+        cross_tabs=[
+            ("age_category", "gender"),
+            ("kenya_county", "gender")
+        ],
     ),
     rapid_pro_target=RapidProTarget(
         rapid_pro=RapidProClientConfiguration(
@@ -360,7 +365,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                         "aik_electoral_sexual_gender_based_violence", "aik_concern_about_safety_and_security", "aik_election_conversations",
                                         "aik_influence_on_voting_choices", "aik_political_participation", # Amnesty Datasets 
                                         "giz_s01e01", "giz_s01e02", "giz_s01e03", "giz_s01e04", "giz_s01e05", "giz_s01e06", # GIZ datasets
-                                        "porticus_s01e01", "porticus_s01e02", # Porticus datasets
+                                        "porticus_s01e01", "porticus_s01e02", "porticus_s01e03", "porticus_s01e04", "porticus_s01e05" # Porticus datasets
                                         "kenya_pool_old_rqa_datasets"
                                         ],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")

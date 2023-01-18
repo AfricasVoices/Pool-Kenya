@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-52f2e2a7",
+            "DisplayText": "periodic monitoring and reporting",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "periodic_monitoring_and_reporting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-37babb36",
+            "DisplayText": "working with ward administrators",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "working_with_ward_administrators",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ff20989b",
+            "DisplayText": "media intervention",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "media_intervention",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-43f44b56",
+            "DisplayText": "engaging with elected leaders",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "engaging_with_elected_leaders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3bc9f762",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
