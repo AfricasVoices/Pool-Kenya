@@ -154,6 +154,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="porticus_s01e03"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Porticus_s01e03_intro",
+                    engagement_db_dataset="porticus_s01e03_intro",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01e03_intro"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="porticus_s01e03_intro"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Porticus_s01e04",
                     engagement_db_dataset="porticus_s01e04",
                     code_scheme_configurations=[
@@ -211,6 +220,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/porticus/porticus_s01e02"),
                         analysis_dataset="s01e02"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["porticus_s01e03_intro"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="porticus_s01e03_intro_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/porticus/porticus_s01e03_intro"),
+                        analysis_dataset="s01e03_intro"
                     )
                 ],
             ),
