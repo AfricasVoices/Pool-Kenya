@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-d9af93b9",
+            "DisplayText": "make more inclusive",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "make_more_inclusive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c40a91b2",
+            "DisplayText": "improve communication beforehand",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "improve_communication_beforehand",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-74850fed",
+            "DisplayText": "start at village level",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "start_at_village_level",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-29de5111",
+            "DisplayText": "utilize technology plattforms",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "utilize_technology_plattforms",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ef93cbb9",
+            "DisplayText": "increase civic education",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "increase_civic_education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f95dfa03",
+            "DisplayText": "implement projects prioritised by citizens",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "implement_projects_prioritised_by_citizens",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b772cd1d",
+            "DisplayText": "provide incentives",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "provide_incentives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1a09a199",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
