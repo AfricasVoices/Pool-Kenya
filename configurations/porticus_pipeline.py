@@ -51,6 +51,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("porticus_s01e05_activation", "rqa_s01e05", "porticus_s01e05"),
                     
                     FlowResultConfiguration("porticus_s01_evaluation_activation", "porticus_s01_evaluation", "porticus_s01_evaluation"),
+                    FlowResultConfiguration("porticus_s01_closeout_activation", "porticus_s01_close_out", "porticus_s01_closeout"),
                 ],
             )
         )
@@ -189,6 +190,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="porticus_s01_evaluation"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Porticus_s01_closeout",
+                    engagement_db_dataset="porticus_s01_closeout",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/porticus/porticus_s01_closeout"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="porticus_s01_closeout"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
@@ -275,6 +285,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/porticus/porticus_s01_evaluation"),
                         analysis_dataset="s01_evaluation"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["porticus_s01_closeout"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="porticus_s01_closeout_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/porticus/porticus_s01_closeout"),
+                        analysis_dataset="s01_closeout"
                     )
                 ],
             ),
