@@ -130,7 +130,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
                 question_configurations=[
                     # Demographic Questions
-                    # QuestionConfiguration(engagement_db_dataset="aik_language", question_titles=["We could either do the interview in English or Swahili. Which language would you prefer? "]),
                     QuestionConfiguration(engagement_db_dataset="age", question_titles=["Do you mind telling me how old you are?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_education", question_titles=["What is the highest level of education attained ? "]),
                     QuestionConfiguration(engagement_db_dataset="aik_employment_status", question_titles=["What is your employment Status ?"]),
@@ -150,7 +149,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     QuestionConfiguration(engagement_db_dataset="aik_political_environment", question_titles=["Do you think the political and security environment is conducive to free and fair elections?"]),
 
                     ## HATE SPEECH AND INCITEMENT 
-                    # QuestionConfiguration(engagement_db_dataset="aik_election_conversations", question_titles=["In your view, have elections-related conversations become more controversial and conflictual in the past two weeks than the two weeks before?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_hate_speech_and_actions_target", question_titles=["Have you heard comments or seen actions motivated by hatred/negative attitudes regarding a person's identity in the last two weeks?", 
                                                                                                                       "If YES, What did they target?"]),
                     QuestionConfiguration(engagement_db_dataset="aik_identity_groups_increase", question_titles=["In your view, has there been an increase in groups with strong political identities challenging others with different loyalties?"]),
