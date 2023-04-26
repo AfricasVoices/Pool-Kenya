@@ -383,7 +383,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
         cross_tabs=[
             ("age_category", "gender"),
-            ("kenya_county", "gender")
+            ("kenya_county", "gender"),
+            ("kenya_county", "preferred_language"),
+            ("kenya_county", "disabled"),
+            ("kenya_county", "age_category")
         ],
     ),
     rapid_pro_target=RapidProTarget(
