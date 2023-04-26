@@ -2,12 +2,11 @@ from core_data_modules.cleaners import swahili
 
 from src.pipeline_configuration_spec import *
 
-def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER, survey=1):
-    if survey == 1:
-        suffix = ""
-    else:
-        suffix = f"_{survey}"
+def get_suffix(survey):
+    return "" if survey == 1 else f"_{survey}"
 
+def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER, survey=1):
+    suffix = get_suffix(survey)
     return AnalysisDatasetConfiguration(
         engagement_db_datasets=[f"{dataset_name}{suffix}".strip()],
         dataset_type=dataset_type,
@@ -22,11 +21,7 @@ def make_rqa_analysis_dataset_config(dataset_name, dataset_type=DatasetTypes.RES
 
 
 def make_rqa_coda_dataset_config(coda_dataset_id, survey=1):
-    if survey == 1:
-        suffix = ""
-    else:
-        suffix = f"_{survey}"
-    
+    suffix = get_suffix(survey)
     return CodaDatasetConfiguration(
         coda_dataset_id=f"{coda_dataset_id}{suffix}".strip(),
         engagement_db_dataset=f"{coda_dataset_id.lower()}{suffix}".strip(),
