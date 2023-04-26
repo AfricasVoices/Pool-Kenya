@@ -7,7 +7,7 @@ rapid_pro_uuid_filter = UuidFilter(
 )
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
-    pipeline_name="Create-Kenya-Pool",
+    pipeline_name="Create-Initial-Kenya-Pool",
     description="Creates the initial Kenya Pool from demographics responses to COVID19, COVID19-Ke-Urban, "
                 "UNDP-Kenya, UNICEF-KENYA, OXFAM-KENYA, World Vision, GPSDD and KE polls",
     engagement_database=EngagementDatabaseClientConfiguration(
@@ -245,6 +245,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",
-        bucket_dir_path="2022/CREATE-KENYA-POOL"
+        bucket_dir_path="2022/CREATE-INITIAL-KENYA-POOL"
     )
 )
