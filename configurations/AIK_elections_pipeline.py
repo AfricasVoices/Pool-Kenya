@@ -449,7 +449,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
     ),
-rapid_pro_target=RapidProTarget(
+    rapid_pro_target=RapidProTarget(
         rapid_pro=RapidProClientConfiguration(
             domain="textit.com",
             token_file_url="gs://avf-credentials/pool-kenya-textit-token.txt"
