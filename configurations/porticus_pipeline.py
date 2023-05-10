@@ -20,7 +20,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     ],
     engagement_database=EngagementDatabaseClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-engagement-databases-firebase-credentials-file.json",
-        database_path="engagement_databases/POOL-KENYA-REBUILD-MAY-2023-REBUILD" #TODO: rebuilt due to duplicate msgs in POOL-KENYA, update once the pool is fixed.  
+        database_path="engagement_databases/POOL-KENYA-REBUILD-MAY-2023" #TODO: rebuilt due to duplicate msgs in POOL-KENYA, update once the pool is fixed.  
     ),
     uuid_table=UUIDTableClientConfiguration(
         credentials_file_url="gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
