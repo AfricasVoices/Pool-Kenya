@@ -241,7 +241,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,
-            allow_clearing_fields=False
+            allow_clearing_fields=True
         )
     ),
     archive_configuration=ArchiveConfiguration(
