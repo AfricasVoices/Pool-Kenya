@@ -240,8 +240,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 engagement_db_datasets=["age", "gender", "location", "disabled",],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
-            write_mode=WriteModes.CONCATENATE_TEXTS,
-            allow_clearing_fields=True
+            write_mode=WriteModes.CONCATENATE_TEXTS
         )
     ),
     archive_configuration=ArchiveConfiguration(
