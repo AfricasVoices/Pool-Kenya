@@ -333,7 +333,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     analysis=AnalysisConfiguration(
         google_drive_upload=GoogleDriveUploadConfiguration(
             credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
-            drive_dir="aik_elections_analysis_outputs"
+            drive_dir="aik_elections_analysis_outputs_ke_pool_rebuild_2023"
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
