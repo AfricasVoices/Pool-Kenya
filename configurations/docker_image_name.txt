@@ -1,1 +1,1 @@
-ghcr.io/africasvoices/engagement-data-pipeline:coredatamodules-v0.17.0
+ghcr.io/africasvoices/engagement-data-pipeline:use-standard-normal-codes
