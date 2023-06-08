@@ -400,6 +400,15 @@
             "MatchValues": ["icl_machakos_womenrep_poll_2022"]
         },
         {
+            "CodeID": "code-c6da3842",
+            "CodeType": "Normal",
+            "DisplayText": "icl machakos womenrep poll 2022 rita",
+            "StringValue": "icl_machakos_womenrep_poll_2022_rita",
+            "NumericValue": 508,
+            "VisibleInCoda": true,
+            "MatchValues": ["icl_machakos_womenrep_poll_2022_rita"]
+        },
+        {
             "CodeID": "code-4efc0969",
             "CodeType": "Normal",
             "DisplayText": "icl machakos senator poll 2022",
