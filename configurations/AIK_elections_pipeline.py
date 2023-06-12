@@ -123,6 +123,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     question_title="What is your phone number",
                     id_type=GoogleFormParticipantIdTypes.KENYA_MOBILE_NUMBER
                 ),
+                ignore_invalid_mobile_numbers=True,
                 question_configurations=[
                     # Demographic Questions
                     QuestionConfiguration(engagement_db_dataset="age", question_titles=["Do you mind telling me how old you are?"]),
