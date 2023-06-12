@@ -409,6 +409,231 @@
             "MatchValues": ["aik_willingness_to_help_victims"]
         },
         {
+            "CodeID": "code-6b8f93c1",
+            "CodeType": "Normal",
+            "DisplayText": "aik_engaging_authorities",
+            "StringValue": "aik_engaging_authorities",
+            "NumericValue": 512,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_engaging_authorities"]
+        },
+        {
+            "CodeID": "code-516a087a",
+            "CodeType": "Normal",
+            "DisplayText": "aik_incitement_sources",
+            "StringValue": "aik_incitement_sources",
+            "NumericValue": 513,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_incitement_sources"]
+        },
+        {
+            "CodeID": "code-4d543540",
+            "CodeType": "Normal",
+            "DisplayText": "aik_vote_buying_incidents",
+            "StringValue": "aik_vote_buying_incidents",
+            "NumericValue": 514,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_vote_buying_incidents"]
+        },
+        {
+            "CodeID": "code-9f36f17b",
+            "CodeType": "Normal",
+            "DisplayText": "aik_source_of_vote_buying",
+            "StringValue": "aik_source_of_vote_buying",
+            "NumericValue": 515,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_source_of_vote_buying"]
+        },
+        {
+            "CodeID": "code-1acb591a",
+            "CodeType": "Normal",
+            "DisplayText": "aik_incidents_of_polarisation",
+            "StringValue": "aik_incidents_of_polarisation",
+            "NumericValue": 516,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_incidents_of_polarisation"]
+        },
+        {
+            "CodeID": "code-06a16a5a",
+            "CodeType": "Normal",
+            "DisplayText": "aik_electoral_violence_anxiety",
+            "StringValue": "aik_electoral_violence_anxiety",
+            "NumericValue": 517,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_electoral_violence_anxiety"]
+        },
+        {
+            "CodeID": "code-3c521904",
+            "CodeType": "Normal",
+            "DisplayText": "aik_hate_speech_and_actions_target",
+            "StringValue": "aik_hate_speech_and_actions_target",
+            "NumericValue": 518,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_hate_speech_and_actions_target"]
+        },
+        {
+            "CodeID": "code-ccbc283e",
+            "CodeType": "Normal",
+            "DisplayText": "aik_identity_groups_increase",
+            "StringValue": "aik_identity_groups_increase",
+            "NumericValue": 519,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_identity_groups_increase"]
+        },
+        {
+            "CodeID": "code-acbd341d",
+            "CodeType": "Normal",
+            "DisplayText": "aik_inability_to_work",
+            "StringValue": "aik_inability_to_work",
+            "NumericValue": 520,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_inability_to_work"]
+        },
+        {
+            "CodeID": "code-b3a17925",
+            "CodeType": "Normal",
+            "DisplayText": "aik_intolerance_incidents",
+            "StringValue": "aik_intolerance_incidents",
+            "NumericValue": 521,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_intolerance_incidents"]
+        },
+        {
+            "CodeID": "code-15791b49",
+            "CodeType": "Normal",
+            "DisplayText": "aik_peace_and_security_initiatives",
+            "StringValue": "aik_peace_and_security_initiatives",
+            "NumericValue": 522,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_peace_and_security_initiatives"]
+        },
+        {
+            "CodeID": "code-dc72640b",
+            "CodeType": "Normal",
+            "DisplayText": "aik_physical_harm",
+            "StringValue": "aik_physical_harm",
+            "NumericValue": 523,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_physical_harm"]
+        },
+        {
+            "CodeID": "code-4e248e3d",
+            "CodeType": "Normal",
+            "DisplayText": "aik_police_brutality",
+            "StringValue": "aik_police_brutality",
+            "NumericValue": 524,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_police_brutality"]
+        },
+        {
+            "CodeID": "code-96156e05",
+            "CodeType": "Normal",
+            "DisplayText": "aik_political_environment",
+            "StringValue": "aik_political_environment",
+            "NumericValue": 525,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_political_environment"]
+        },
+        {
+            "CodeID": "code-5b89458a",
+            "CodeType": "Normal",
+            "DisplayText": "aik_political_events_disruption",
+            "StringValue": "aik_political_events_disruption",
+            "NumericValue": 526,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_political_events_disruption"]
+        },
+        {
+            "CodeID": "code-069f7d3c",
+            "CodeType": "Normal",
+            "DisplayText": "aik_sexual_assault",
+            "StringValue": "aik_sexual_assault",
+            "NumericValue": 527,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_sexual_assault"]
+        },
+        {
+            "CodeID": "code-851813a6",
+            "CodeType": "Normal",
+            "DisplayText": "aik_unsafe_areas",
+            "StringValue": "aik_unsafe_areas",
+            "NumericValue": 528,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_unsafe_areas"]
+        },
+        {
+            "CodeID": "code-fff31371",
+            "CodeType": "Normal",
+            "DisplayText": "aik_vandalism_theft_incidents",
+            "StringValue": "aik_vandalism_theft_incidents",
+            "NumericValue": 529,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_vandalism_theft_incidents"]
+        },
+        {
+            "CodeID": "code-d1d39f89",
+            "CodeType": "Normal",
+            "DisplayText": "aik_violence_displacement",
+            "StringValue": "aik_violence_displacement",
+            "NumericValue": 530,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_violence_displacement"]
+        },
+        {
+            "CodeID": "code-681a943d",
+            "CodeType": "Normal",
+            "DisplayText": "aik_education",
+            "StringValue": "aik_education",
+            "NumericValue": 531,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_education"]
+        },
+        {
+            "CodeID": "code-73ba8f2f",
+            "CodeType": "Normal",
+            "DisplayText": "aik_employment_status",
+            "StringValue": "aik_employment_status",
+            "NumericValue": 532,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_employment_status"]
+        },
+        {
+            "CodeID": "code-b8fbaa1a",
+            "CodeType": "Normal",
+            "DisplayText": "aik_religion",
+            "StringValue": "aik_religion",
+            "NumericValue": 533,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_religion"]
+        },
+        {
+            "CodeID": "code-1c150767",
+            "CodeType": "Normal",
+            "DisplayText": "aik_household_income",
+            "StringValue": "aik_household_income",
+            "NumericValue": 534,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_household_income"]
+        },
+        {
+            "CodeID": "code-ee82963e",
+            "CodeType": "Normal",
+            "DisplayText": "aik_communities",
+            "StringValue": "aik_communities",
+            "NumericValue": 535,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_communities"]
+        },
+        {
+            "CodeID": "code-ca796321",
+            "CodeType": "Normal",
+            "DisplayText": "aik_indigenous_or_minority",
+            "StringValue": "aik_indigenous_or_minority",
+            "NumericValue": 536,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_indigenous_or_minority"]
+        },
+        {
             "CodeID": "code-180095d9",
             "CodeType": "Normal",
             "DisplayText": "machakos county priorities 2022",
