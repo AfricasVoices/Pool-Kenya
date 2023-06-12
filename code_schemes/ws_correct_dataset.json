@@ -400,6 +400,15 @@
             "MatchValues": ["aik_voting_participation"]
         },
         {
+            "CodeID": "code-a6d84e07",
+            "CodeType": "Normal",
+            "DisplayText": "aik willingness to help victims",
+            "StringValue": "aik_willingness_to_help_victims",
+            "NumericValue": 511,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_willingness_to_help_victims"]
+        },
+        {
             "CodeID": "code-180095d9",
             "CodeType": "Normal",
             "DisplayText": "machakos county priorities 2022",
