@@ -391,6 +391,15 @@
             "MatchValues": ["aik_pool_invitation_2022"]
         },
         {
+            "CodeID": "code-6c5506a2",
+            "CodeType": "Normal",
+            "DisplayText": "aik voting participation",
+            "StringValue": "aik_voting_participation",
+            "NumericValue": 510,
+            "VisibleInCoda": true,
+            "MatchValues": ["aik_voting_participation"]
+        },
+        {
             "CodeID": "code-180095d9",
             "CodeType": "Normal",
             "DisplayText": "machakos county priorities 2022",
