@@ -1998,7 +1998,7 @@
       "DisplayText": "suba north/mbita",
       "CodeType": "Normal",
       "NumericValue": 254,
-      "StringValue": "suba_north",
+      "StringValue": "suba_north_mbita",
       "VisibleInCoda": true,
       "MatchValues": [
         "mbita",
