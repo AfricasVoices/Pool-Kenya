@@ -102,7 +102,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/icl/machakos_county_priorities_2022"),
                                                 auto_coder=None, coda_code_schemes_count=3),
                     ],
-                    ws_code_match_value="machakos_county_priorities_2022"
+                    ws_code_match_value="icl_machakos_county_priorities_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_poll_registration_2022",
@@ -112,7 +112,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                             code_scheme=load_code_scheme("rqas/icl/machakos_poll_registration_2022"),
                             auto_coder=None, coda_code_schemes_count=3),
                     ],
-                    ws_code_match_value="machakos_poll_registration_2022"
+                    ws_code_match_value="icl_machakos_poll_registration_2022"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="ICL_machakos_womenrep_poll_2022",
