@@ -167,6 +167,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     coda_dataset_id="Kenya_Pool_location", #TODO Rename as Pool_Kenya_location
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
                     ],

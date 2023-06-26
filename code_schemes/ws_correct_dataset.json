@@ -312,11 +312,11 @@
         {
             "CodeID": "code-41ce38e7",
             "CodeType": "Normal",
-            "DisplayText": "machakos poll registration 2022",
-            "StringValue": "machakos_poll_registration_2022",
+            "DisplayText": "icl machakos poll registration 2022",
+            "StringValue": "icl_machakos_poll_registration_2022",
             "NumericValue": 493,
             "VisibleInCoda": true,
-            "MatchValues": ["machakos_poll_registration_2022"]
+            "MatchValues": ["icl_machakos_poll_registration_2022"]
         },
         {
             "CodeID": "code-8cec7e7a",
@@ -636,11 +636,11 @@
         {
             "CodeID": "code-180095d9",
             "CodeType": "Normal",
-            "DisplayText": "machakos county priorities 2022",
-            "StringValue": "machakos_county_priorities_2022",
+            "DisplayText": "icl machakos county priorities 2022",
+            "StringValue": "icl_machakos_county_priorities_2022",
             "NumericValue": 466,
             "VisibleInCoda": true,
-            "MatchValues": ["machakos_county_priorities_2022"]
+            "MatchValues": ["icl_machakos_county_priorities_2022"]
         },
         {
             "CodeID": "code-2d23e497",
