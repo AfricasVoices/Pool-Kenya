@@ -49,7 +49,7 @@ echo "Starting a new pipeline run with id ${RUN_ID}"
     "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR"
 
 ./docker-run-engagement-db-to-analysis.sh \
-    --dry-run --incremental-cache-volume "$PIPELINE_NAME-engagement-db-to-analysis-cache" \
+    --incremental-cache-volume "$PIPELINE_NAME-engagement-db-to-analysis-cache" \
     "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$DATA_DIR"
 
 ./archive_data_dir.sh "$DATA_DIR" "$ARCHIVE_FILE"
