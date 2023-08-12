@@ -24,7 +24,16 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 token_file_url="gs://avf-credentials/pool-kenya-2-textit-token.txt"
             ),
             sync_config=RapidProToEngagementDBConfiguration(
-                flow_result_configurations=[],
+                flow_result_configurations=[
+                    FlowResultConfiguration("uraia_s01_demogs", "pool_kenya_location", "location"),
+                    FlowResultConfiguration("uraia_s01_demogs", "pool_kenya_gender", "gender"),
+                    FlowResultConfiguration("uraia_s01_demogs", "pool_kenya_age", "age"),
+                    FlowResultConfiguration("uraia_s01_demogs", "pool_kenya_disabled", "disabled"),
+                    FlowResultConfiguration("uraia_s01_demogs", "preferred_language", "preferred_language"),
+
+                    FlowResultConfiguration("uraia_s01e01_activation", "rqa_s01e01", "uraia_s01e01"),
+                    FlowResultConfiguration("uraia_s01e01_follow_up_activation", "rqa_s01e01_followup", "uraia_s01e01_follow_up"),
+                ],
             )
         )
     ],
