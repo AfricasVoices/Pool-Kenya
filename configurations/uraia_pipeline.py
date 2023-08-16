@@ -211,6 +211,23 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+        traffic_labels=[
+            TrafficLabel(
+                label="Promos",
+                start_date=isoparse("2021-08-12T00:00+03:00"), 
+                end_date=isoparse("2021-08-14T00:00+03:00")
+            ),
+            TrafficLabel(
+                label="Mbaitu FM",
+                start_date=isoparse("2021-08-15T09:00+03:00"), 
+                end_date=isoparse("2021-08-15T00:00+03:00")
+            ),
+            TrafficLabel(
+                label="Athiani FM & Ene FM",
+                start_date = isoparse("2021-08-16T08:00+03:00"), 
+                end_date = isoparse("2021-08-16T00:00+03:00"),
+            )
+        ]
     ),
     rapid_pro_target=RapidProTarget(
         rapid_pro=RapidProClientConfiguration(
