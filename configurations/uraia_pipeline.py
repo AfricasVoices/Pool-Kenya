@@ -214,33 +214,33 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         traffic_labels=[
             TrafficLabel(
                 label="Promos",
-                start_date=isoparse("2021-08-12T00:00+03:00"), 
-                end_date=isoparse("2021-08-14T17:29+03:00")
+                start_date=isoparse("2023-08-12T00:00+03:00"), 
+                end_date=isoparse("2023-08-14T17:29+03:00")
             ),
             TrafficLabel(
                 label="SMS Ad",
-                start_date=isoparse("2021-08-14T17:30+03:00"), 
-                end_date=isoparse("2021-08-15T08:59+03:00")
+                start_date=isoparse("2023-08-14T17:30+03:00"), 
+                end_date=isoparse("2023-08-15T08:59+03:00")
             ),
             TrafficLabel(
                 label="Mbaitu FM",
-                start_date=isoparse("2021-08-15T09:00+03:00"), 
-                end_date=isoparse("2021-08-15T10:15+03:00")
+                start_date=isoparse("2023-08-15T09:00+03:00"), 
+                end_date=isoparse("2023-08-15T10:15+03:00")
             ),
             TrafficLabel(
                 label="After - Mbaitu FM",
-                start_date=isoparse("2021-08-15T10:15+03:00"),
-                end_date=isoparse("2021-08-15T24:00+03:00")
+                start_date=isoparse("2023-08-15T10:15+03:00"),
+                end_date=isoparse("2023-08-15T24:00+03:00")
             ),
             TrafficLabel(
                 label="Athiani FM & Ene FM",
-                start_date=isoparse("2021-08-16T08:00+03:00"), 
-                end_date=isoparse("2021-08-16T09:15+03:00"),
+                start_date=isoparse("2023-08-16T08:00+03:00"), 
+                end_date=isoparse("2023-08-16T09:15+03:00"),
             ),
             TrafficLabel(
                 label="After - Athiani FM & Ene FM",
-                start_date=isoparse("2021-08-16T09:15+03:00"),
-                end_date=isoparse("2021-08-16T24:00+03:00"),
+                start_date=isoparse("2023-08-16T09:15+03:00"),
+                end_date=isoparse("2023-08-16T24:00+03:00"),
             )
         ]
     ),
