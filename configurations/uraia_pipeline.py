@@ -130,6 +130,28 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e01"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e01_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e01"),
+                        analysis_dataset="s01e01"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e01_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e01_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e01_follow_up"),
+                        analysis_dataset="s01e01 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["preferred_language"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
                 raw_dataset="preferred_language_raw",
