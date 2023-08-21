@@ -1,5 +1,5 @@
 from core_data_modules.cleaners import swahili
-
+from dateutil.parser import isoparse
 from src.pipeline_configuration_spec import *
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
@@ -211,6 +211,38 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+        traffic_labels=[
+            TrafficLabel(
+                label="Promos",
+                start_date=isoparse("2023-08-12T00:00+03:00"), 
+                end_date=isoparse("2023-08-14T17:29+03:00")
+            ),
+            TrafficLabel(
+                label="SMS Ad",
+                start_date=isoparse("2023-08-14T17:30+03:00"), 
+                end_date=isoparse("2023-08-15T08:59+03:00")
+            ),
+            TrafficLabel(
+                label="Mbaitu FM",
+                start_date=isoparse("2023-08-15T09:00+03:00"), 
+                end_date=isoparse("2023-08-15T10:15+03:00")
+            ),
+            TrafficLabel(
+                label="After - Mbaitu FM",
+                start_date=isoparse("2023-08-15T10:15+03:00"),
+                end_date=isoparse("2023-08-15T24:00+03:00")
+            ),
+            TrafficLabel(
+                label="Athiani FM & Ene FM",
+                start_date=isoparse("2023-08-16T08:00+03:00"), 
+                end_date=isoparse("2023-08-16T09:15+03:00"),
+            ),
+            TrafficLabel(
+                label="After - Athiani FM & Ene FM",
+                start_date=isoparse("2023-08-16T09:15+03:00"),
+                end_date=isoparse("2023-08-16T24:00+03:00"),
+            )
+        ]
     ),
     rapid_pro_target=RapidProTarget(
         rapid_pro=RapidProClientConfiguration(
