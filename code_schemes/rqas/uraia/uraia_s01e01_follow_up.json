@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-54dd352d",
+            "DisplayText": "deforestation",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "deforestation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8a406d68",
+            "DisplayText": "abandoning religious tradition",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "abandoning_religious_tradition",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7c2a3b09",
+            "DisplayText": "pollution",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "pollution",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f5a7141a",
+            "DisplayText": "insufficient rain",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "insufficient_rain",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7368a7aa",
+            "DisplayText": "sand harvesting",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "sand_harvesting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9fa134da",
+            "DisplayText": "drought",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "drought",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bbbd492f",
+            "DisplayText": "poor farming methods",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "poor_farming_methods",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-aa95b197",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
