@@ -45,7 +45,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s01_demogs", "preferred_language", "preferred_language"),
 
                     FlowResultConfiguration("uraia_s01e01_activation", "rqa_s01e01", "uraia_s01e01"),
+                    FlowResultConfiguration("uraia_s01e02_activation", "rqa_s01e02", "uraia_s01e02"),
+                    
                     FlowResultConfiguration("uraia_s01e01_follow_up_activation", "rqa_s01e01_followup", "uraia_s01e01_follow_up"),
+                    FlowResultConfiguration("uraia_s01e02_follow_up_activation", "rqa_s01e02_followup", "uraia_s01e02_follow_up"),
                 ],
             )
         )
