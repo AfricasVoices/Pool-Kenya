@@ -67,6 +67,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="uraia_s01e01"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e02",
+                    engagement_db_dataset="uraia_s01e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e02"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_s01e01_follow_up",
                     engagement_db_dataset="uraia_s01e01_follow_up",
                     code_scheme_configurations=[
@@ -74,6 +83,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s01e01_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e02_follow_up",
+                    engagement_db_dataset="uraia_s01e02_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e02_follow_up"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
