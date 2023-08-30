@@ -282,7 +282,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             TrafficLabel(label="s01e01 Mbaitu FM", start_date=isoparse("2023-08-15T09:00+03:00"), end_date=isoparse("2023-08-15T10:15+03:00")),
             TrafficLabel(label="s01e01 After - Mbaitu FM", start_date=isoparse("2023-08-15T10:15+03:00"), end_date=isoparse("2023-08-15T24:00+03:00")),
             TrafficLabel(label="s01e01 Athiani FM & Ene FM", start_date=isoparse("2023-08-16T08:00+03:00"), end_date=isoparse("2023-08-16T09:15+03:00")),
-            TrafficLabel(label="s01e01 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-16T09:15+03:00"), end_date=isoparse("2023-08-16T24:00+03:00"))
+            TrafficLabel(label="s01e01 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-16T09:15+03:00"), end_date=isoparse("2023-08-16T24:00+03:00")),
+
+            TrafficLabel(label="s01e02 Promos", start_date=isoparse("2023-08-19T00:00+03:00"), end_date=isoparse("2023-08-21T16:29+03:00")),
+            TrafficLabel(label="s01e02 SMS Ad", start_date=isoparse("2023-08-21T16:30+03:00"), end_date=isoparse("2023-08-22T08:59+03:00")),
+            TrafficLabel(label="s01e02 Mbaitu FM", start_date=isoparse("2023-08-22T09:00+03:00"), end_date=isoparse("2023-08-22T10:15+03:00")),
+            TrafficLabel(label="s01e02 After - Mbaitu FM", start_date=isoparse("2023-08-22T10:15+03:00"), end_date=isoparse("2023-08-22T24:00+03:00")),
+            TrafficLabel(label="s01e02 Athiani FM & Ene FM", start_date=isoparse("2023-08-23T08:00+03:00"), end_date=isoparse("2023-08-23T09:15+03:00")),
+            TrafficLabel(label="s01e02 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-23T09:15+03:00"), end_date=isoparse("2023-08-23T24:00+03:00"))
         ]
     ),
     rapid_pro_target=RapidProTarget(
