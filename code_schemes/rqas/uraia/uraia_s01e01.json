@@ -21,10 +21,10 @@
         },
         {
             "CodeID": "code-b5878467",
-            "DisplayText": "increased temparatures",
+            "DisplayText": "extreme temparatures",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "increased_temparatures",
+            "StringValue": "extreme_temparatures",
             "VisibleInCoda": true
         },
         {
@@ -49,6 +49,14 @@
             "CodeType": "Normal",
             "NumericValue": 6,
             "StringValue": "drought",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-667a1dd9",
+            "DisplayText": "diseases",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "diseases",
             "VisibleInCoda": true
         },
         {
