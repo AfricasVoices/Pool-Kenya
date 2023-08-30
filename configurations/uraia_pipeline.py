@@ -46,9 +46,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
 
                     FlowResultConfiguration("uraia_s01e01_activation", "rqa_s01e01", "uraia_s01e01"),
                     FlowResultConfiguration("uraia_s01e02_activation", "rqa_s01e02", "uraia_s01e02"),
+                    FlowResultConfiguration("uraia_s01e03_activation", "rqa_s01e03", "uraia_s01e03"),
                     
                     FlowResultConfiguration("uraia_s01e01_follow_up_activation", "rqa_s01e01_followup", "uraia_s01e01_follow_up"),
                     FlowResultConfiguration("uraia_s01e02_follow_up_activation", "rqa_s01e02_followup", "uraia_s01e02_follow_up"),
+                    FlowResultConfiguration("uraia_s01e03_follow_up_activation", "rqa_s01e03_followup", "uraia_s01e03_follow_up"),
                 ],
             )
         )
@@ -76,6 +78,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="uraia_s01e02"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e03",
+                    engagement_db_dataset="uraia_s01e03",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e03"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_s01e01_follow_up",
                     engagement_db_dataset="uraia_s01e01_follow_up",
                     code_scheme_configurations=[
@@ -92,6 +103,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s01e02_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e03_follow_up",
+                    engagement_db_dataset="uraia_s01e03_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e03_follow_up"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
@@ -173,6 +193,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ],
             ),
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e03"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e03_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03"),
+                        analysis_dataset="s01e03"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["uraia_s01e01_follow_up"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
                 raw_dataset="uraia_s01e01_follow_up_raw",
@@ -191,6 +222,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02_follow_up"),
                         analysis_dataset="s01e02 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e03_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e03_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03_follow_up"),
+                        analysis_dataset="s01e03 follow-up"
                     )
                 ],
             ),
@@ -289,7 +331,14 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             TrafficLabel(label="s01e02 Mbaitu FM", start_date=isoparse("2023-08-22T09:00+03:00"), end_date=isoparse("2023-08-22T10:15+03:00")),
             TrafficLabel(label="s01e02 After - Mbaitu FM", start_date=isoparse("2023-08-22T10:15+03:00"), end_date=isoparse("2023-08-22T24:00+03:00")),
             TrafficLabel(label="s01e02 Athiani FM & Ene FM", start_date=isoparse("2023-08-23T08:00+03:00"), end_date=isoparse("2023-08-23T09:15+03:00")),
-            TrafficLabel(label="s01e02 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-23T09:15+03:00"), end_date=isoparse("2023-08-23T24:00+03:00"))
+            TrafficLabel(label="s01e02 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-23T09:15+03:00"), end_date=isoparse("2023-08-23T24:00+03:00")),
+
+            TrafficLabel(label="s01e03 Promos", start_date=isoparse("2023-08-26T00:00+03:00"), end_date=isoparse("2023-08-28T16:29+03:00")),
+            TrafficLabel(label="s01e03 SMS Ad", start_date=isoparse("2023-08-28T16:30+03:00"), end_date=isoparse("2023-08-29T08:59+03:00")),
+            TrafficLabel(label="s01e03 Mbaitu FM", start_date=isoparse("2023-08-29T09:00+03:00"), end_date=isoparse("2023-08-29T10:15+03:00")),
+            TrafficLabel(label="s01e03 After - Mbaitu FM", start_date=isoparse("2023-08-29T10:15+03:00"), end_date=isoparse("2023-08-29T24:00+03:00")),
+            TrafficLabel(label="s01e03 Athiani FM & Ene FM", start_date=isoparse("2023-08-30T08:00+03:00"), end_date=isoparse("2023-08-30T09:15+03:00")),
+            TrafficLabel(label="s01e03 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-30T09:15+03:00"), end_date=isoparse("2023-08-30T24:00+03:00"))
         ]
     ),
     rapid_pro_target=RapidProTarget(
@@ -317,7 +366,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             consent_withdrawn_dataset=DatasetConfiguration(
-                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language", "uraia_s01e01", "uraia_s01e02"],
+                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language", "uraia_s01e01", "uraia_s01e02"
+                                        "uraia_s01e03"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,
