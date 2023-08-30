@@ -310,7 +310,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             consent_withdrawn_dataset=DatasetConfiguration(
-                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language"],
+                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language", "uraia_s01e01", "uraia_s01e02"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,
