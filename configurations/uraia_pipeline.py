@@ -50,6 +50,28 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         )
     ],
+    google_form_sources=[
+        GoogleFormSource(
+            # https://docs.google.com/forms/d/e/1FAIpQLScdAoHrn-SInfMIPAKdXXgeUpHbsxtbO2UfycRTrZbiZU54eA/viewform?usp=sf_link
+            google_form_client=GoogleFormsClientConfiguration(
+                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+            ),
+            sync_config=GoogleFormToEngagementDBConfiguration(
+                form_id="1hSfp65ktENBozanB9TMxWICBIZ8mT3uVNLSHiIUqIc4",
+                question_configurations=[
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your gender?"]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Which ward do you currently live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability?"]),
+
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e01", question_titles=["What are some of the impacts that your community has experienced as a result of the unusual changes in weather patterns overtime?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e02", question_titles=["How is your community dealing with the negative impacts of climate changes?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e03", question_titles=["What is your county government doing to help your community cope with climatic changes?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e04", question_titles=["What else can your county government do to help your community adapt to the changes in the climate?"]),
+                ]
+            )
+        ),
+    ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
