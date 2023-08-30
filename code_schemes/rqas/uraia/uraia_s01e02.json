@@ -29,10 +29,10 @@
         },
         {
             "CodeID": "code-e21ce102",
-            "DisplayText": "protecting environment",
+            "DisplayText": "protecting the environment",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "protecting_environment",
+            "StringValue": "protecting_the_environment",
             "VisibleInCoda": true
         },
         {
