@@ -51,6 +51,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s01e01_follow_up_activation", "rqa_s01e01_followup", "uraia_s01e01_follow_up"),
                     FlowResultConfiguration("uraia_s01e02_follow_up_activation", "rqa_s01e02_followup", "uraia_s01e02_follow_up"),
                     FlowResultConfiguration("uraia_s01e03_follow_up_activation", "rqa_s01e03_followup", "uraia_s01e03_follow_up"),
+
+                    FlowResultConfiguration("uraia_s01_preference_activation", "uraia_preferred_contact_mode", "uraia_preferred_contact_mode"),
                 ],
             )
         )
@@ -112,6 +114,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s01e03_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_preferred_contact_mode",
+                    engagement_db_dataset="uraia_preferred_contact_mode",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_preferred_contact_mode"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_preferred_contact_mode"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
