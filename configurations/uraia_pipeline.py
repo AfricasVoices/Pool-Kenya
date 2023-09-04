@@ -47,6 +47,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s01e01_activation", "rqa_s01e01", "uraia_s01e01"),
                     FlowResultConfiguration("uraia_s01e02_activation", "rqa_s01e02", "uraia_s01e02"),
                     FlowResultConfiguration("uraia_s01e03_activation", "rqa_s01e03", "uraia_s01e03"),
+                    FlowResultConfiguration("uraia_s01e04_activation", "rqa_s01e04", "uraia_s01e04"),
                     
                     FlowResultConfiguration("uraia_s01e01_follow_up_activation", "rqa_s01e01_followup", "uraia_s01e01_follow_up"),
                     FlowResultConfiguration("uraia_s01e02_follow_up_activation", "rqa_s01e02_followup", "uraia_s01e02_follow_up"),
@@ -87,6 +88,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s01e03"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e04",
+                    engagement_db_dataset="uraia_s01e04",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e04"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e04"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_s01e01_follow_up",
