@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-f579da59",
+            "DisplayText": "not involved at all",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "not_involved_at_all",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-67b27873",
+            "DisplayText": "supporting tree planting",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "supporting_tree_planting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b11f0a09",
+            "DisplayText": "supporting drought resistant farming practices",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "supporting_drought_resistant_farming_practices",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-45e27295",
+            "DisplayText": "facilitating climate change awareness",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "facilitating_climate_change_awareness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c53034c8",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
