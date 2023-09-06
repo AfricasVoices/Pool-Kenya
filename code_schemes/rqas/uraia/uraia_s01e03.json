@@ -20,19 +20,11 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-6ec4a2df",
-            "DisplayText": "improved agricultural practices",
-            "CodeType": "Normal",
-            "NumericValue": 3,
-            "StringValue": "improved_agricultural_practices",
-            "VisibleInCoda": true
-        },
-        {
             "CodeID": "code-0270b31d",
-            "DisplayText": "protecting environment",
+            "DisplayText": "awareness campaigns",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "protecting_environment",
+            "StringValue": "awareness_campaigns",
             "VisibleInCoda": true
         },
         {
