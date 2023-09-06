@@ -45,10 +45,35 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s01_demogs", "preferred_language", "preferred_language"),
 
                     FlowResultConfiguration("uraia_s01e01_activation", "rqa_s01e01", "uraia_s01e01"),
+                    FlowResultConfiguration("uraia_s01e02_activation", "rqa_s01e02", "uraia_s01e02"),
+                    
                     FlowResultConfiguration("uraia_s01e01_follow_up_activation", "rqa_s01e01_followup", "uraia_s01e01_follow_up"),
+                    FlowResultConfiguration("uraia_s01e02_follow_up_activation", "rqa_s01e02_followup", "uraia_s01e02_follow_up"),
                 ],
             )
         )
+    ],
+    google_form_sources=[
+        GoogleFormSource(
+            # https://docs.google.com/forms/d/e/1FAIpQLScdAoHrn-SInfMIPAKdXXgeUpHbsxtbO2UfycRTrZbiZU54eA/viewform?usp=sf_link
+            google_form_client=GoogleFormsClientConfiguration(
+                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+            ),
+            sync_config=GoogleFormToEngagementDBConfiguration(
+                form_id="1hSfp65ktENBozanB9TMxWICBIZ8mT3uVNLSHiIUqIc4",
+                question_configurations=[
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your gender?"]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Which ward do you currently live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability?"]),
+
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e01", question_titles=["What are some of the impacts that your community has experienced as a result of the unusual changes in weather patterns overtime?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e02", question_titles=["How is your community dealing with the negative impacts of climate changes?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e03", question_titles=["What is your county government doing to help your community cope with climatic changes?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e04", question_titles=["What else can your county government do to help your community adapt to the changes in the climate?"]),
+                ]
+            )
+        ),
     ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
@@ -64,6 +89,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="uraia_s01e01"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e02",
+                    engagement_db_dataset="uraia_s01e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e02"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_s01e01_follow_up",
                     engagement_db_dataset="uraia_s01e01_follow_up",
                     code_scheme_configurations=[
@@ -71,6 +105,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s01e01_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e02_follow_up",
+                    engagement_db_dataset="uraia_s01e02_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e02_follow_up"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
@@ -141,6 +184,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ],
             ),
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e02"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e02_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02"),
+                        analysis_dataset="s01e02"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["uraia_s01e01_follow_up"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
                 raw_dataset="uraia_s01e01_follow_up_raw",
@@ -148,6 +202,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_s01e01_follow_up"),
                         analysis_dataset="s01e01 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e02_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e02_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02_follow_up"),
+                        analysis_dataset="s01e02 follow-up"
                     )
                 ],
             ),
@@ -234,36 +299,19 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
         traffic_labels=[
-            TrafficLabel(
-                label="Promos",
-                start_date=isoparse("2023-08-12T00:00+03:00"), 
-                end_date=isoparse("2023-08-14T17:29+03:00")
-            ),
-            TrafficLabel(
-                label="SMS Ad",
-                start_date=isoparse("2023-08-14T17:30+03:00"), 
-                end_date=isoparse("2023-08-15T08:59+03:00")
-            ),
-            TrafficLabel(
-                label="Mbaitu FM",
-                start_date=isoparse("2023-08-15T09:00+03:00"), 
-                end_date=isoparse("2023-08-15T10:15+03:00")
-            ),
-            TrafficLabel(
-                label="After - Mbaitu FM",
-                start_date=isoparse("2023-08-15T10:15+03:00"),
-                end_date=isoparse("2023-08-15T24:00+03:00")
-            ),
-            TrafficLabel(
-                label="Athiani FM & Ene FM",
-                start_date=isoparse("2023-08-16T08:00+03:00"), 
-                end_date=isoparse("2023-08-16T09:15+03:00"),
-            ),
-            TrafficLabel(
-                label="After - Athiani FM & Ene FM",
-                start_date=isoparse("2023-08-16T09:15+03:00"),
-                end_date=isoparse("2023-08-16T24:00+03:00"),
-            )
+            TrafficLabel(label="s01e01 Promos", start_date=isoparse("2023-08-12T00:00+03:00"), end_date=isoparse("2023-08-14T17:29+03:00")),
+            TrafficLabel(label="s01e01 SMS Ad", start_date=isoparse("2023-08-14T17:30+03:00"), end_date=isoparse("2023-08-15T08:59+03:00")),
+            TrafficLabel(label="s01e01 Mbaitu FM", start_date=isoparse("2023-08-15T09:00+03:00"), end_date=isoparse("2023-08-15T10:15+03:00")),
+            TrafficLabel(label="s01e01 After - Mbaitu FM", start_date=isoparse("2023-08-15T10:15+03:00"), end_date=isoparse("2023-08-15T24:00+03:00")),
+            TrafficLabel(label="s01e01 Athiani FM & Ene FM", start_date=isoparse("2023-08-16T08:00+03:00"), end_date=isoparse("2023-08-16T09:15+03:00")),
+            TrafficLabel(label="s01e01 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-16T09:15+03:00"), end_date=isoparse("2023-08-16T24:00+03:00")),
+
+            TrafficLabel(label="s01e02 Promos", start_date=isoparse("2023-08-19T00:00+03:00"), end_date=isoparse("2023-08-21T16:29+03:00")),
+            TrafficLabel(label="s01e02 SMS Ad", start_date=isoparse("2023-08-21T16:30+03:00"), end_date=isoparse("2023-08-22T08:59+03:00")),
+            TrafficLabel(label="s01e02 Mbaitu FM", start_date=isoparse("2023-08-22T09:00+03:00"), end_date=isoparse("2023-08-22T10:15+03:00")),
+            TrafficLabel(label="s01e02 After - Mbaitu FM", start_date=isoparse("2023-08-22T10:15+03:00"), end_date=isoparse("2023-08-22T24:00+03:00")),
+            TrafficLabel(label="s01e02 Athiani FM & Ene FM", start_date=isoparse("2023-08-23T08:00+03:00"), end_date=isoparse("2023-08-23T09:15+03:00")),
+            TrafficLabel(label="s01e02 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-23T09:15+03:00"), end_date=isoparse("2023-08-23T24:00+03:00"))
         ]
     ),
     rapid_pro_target=RapidProTarget(
@@ -291,7 +339,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             consent_withdrawn_dataset=DatasetConfiguration(
-                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language"],
+                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language", "uraia_s01e01", "uraia_s01e02"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,
