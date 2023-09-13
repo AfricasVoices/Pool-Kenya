@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-a12fc144",
+            "DisplayText": "awareness campaigns",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "awareness_campaigns",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5ff5b55d",
+            "DisplayText": "plant tress",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "plant_tress",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e69fc4cd",
+            "DisplayText": "provide water infrastructure",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "provide_water_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fd2ef56b",
+            "DisplayText": "prevent deforestation",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "prevent_deforestation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-63c8c9a8",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-bd5de2e9",
             "DisplayText": "awareness campaigns",
             "CodeType": "Normal",
