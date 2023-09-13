@@ -29,10 +29,10 @@
         },
         {
             "CodeID": "code-e21ce102",
-            "DisplayText": "protecting the environment",
+            "DisplayText": "reduce pollution",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "protecting_the_environment",
+            "StringValue": "reduce_pollution",
             "VisibleInCoda": true
         },
         {
