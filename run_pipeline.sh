@@ -26,27 +26,23 @@ ARCHIVE_FILE="$ARCHIVE_DIR/data-$RUN_ID.tar.gzip"
 echo "Starting a new pipeline run with id ${RUN_ID}"
 
 ./docker-run-log-pipeline-event.sh \
-    "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$RUN_ID" "PipelineRunStart"
+     $CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$RUN_ID" "PipelineRunStart"
 
 ./docker-sync-rapid-pro-to-engagement-db.sh \
     --incremental-cache-volume "$PIPELINE_NAME-rapid-pro-to-engagement-db-cache"  \
     "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$DATA_DIR"
 
-./docker-sync-google-forms-to-engagement-db.sh \
-    --incremental-cache-volume "$PIPELINE_NAME-google-forms-to-engagement-db-cache"  \
-    "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$DATA_DIR"
+ ./docker-sync-engagement-db-to-coda.sh \
+     --incremental-cache-volume "$PIPELINE_NAME-engagement-db-to-coda-cache" \
+     "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$DATA_DIR"
 
-./docker-sync-engagement-db-to-coda.sh \
-    --incremental-cache-volume "$PIPELINE_NAME-engagement-db-to-coda-cache" \
-    "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$DATA_DIR"
+ ./docker-sync-coda-to-engagement-db.sh \
+     --incremental-cache-volume "$PIPELINE_NAME-coda-to-engagement-db-cache" \
+     "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$DATA_DIR"
 
-./docker-sync-coda-to-engagement-db.sh \
-    --incremental-cache-volume "$PIPELINE_NAME-coda-to-engagement-db-cache" \
-    "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$DATA_DIR"
-
-./docker-sync-engagement-db-to-rapid-pro.sh \
-    --incremental-cache-volume "$PIPELINE_NAME-engagement-db-to-rapid-pro-cache"  \
-    "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR"
+ ./docker-sync-engagement-db-to-rapid-pro.sh \
+     --incremental-cache-volume "$PIPELINE_NAME-engagement-db-to-rapid-pro-cache"  \
+     "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR"
 
 ./docker-run-engagement-db-to-analysis.sh \
     --incremental-cache-volume "$PIPELINE_NAME-engagement-db-to-analysis-cache" \
@@ -57,5 +53,5 @@ echo "Starting a new pipeline run with id ${RUN_ID}"
 ./docker-run-upload-archive-files.sh \
     "$USER" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$ARCHIVE_DIR"
 
-./docker-run-log-pipeline-event.sh \
-    "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$RUN_ID" "PipelineRunEnd"
+# ./docker-run-log-pipeline-event.sh \
+#     "$CONFIGURATION_FILE" "$CODE_SCHEMES_DIR" "$GOOGLE_CLOUD_CREDENTIALS_PATH" "$RUN_ID" "PipelineRunEnd"
