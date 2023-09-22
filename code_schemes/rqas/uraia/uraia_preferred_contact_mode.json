@@ -1,45 +1,29 @@
 {
-    "SchemeID": "Scheme-93e7a01b",
-    "Name": "Uraia S01E03 Follow-Up",
+    "SchemeID": "Scheme-5282f0ba",
+    "Name": "Uraia Preferred Contact Mode",
     "Version": "0.0.0.1",
     "Codes": [
         {
-            "CodeID": "code-f579da59",
-            "DisplayText": "not involved at all",
+            "CodeID": "code-def9e3f7",
+            "DisplayText": "WhatsApp",
             "CodeType": "Normal",
             "NumericValue": 1,
-            "StringValue": "not_involved_at_all",
+            "StringValue": "whatsapp",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-67b27873",
-            "DisplayText": "supporting tree planting",
+            "CodeID": "code-25566884",
+            "DisplayText": "SMS",
             "CodeType": "Normal",
             "NumericValue": 2,
-            "StringValue": "supporting_tree_planting",
+            "StringValue": "sms",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-b11f0a09",
-            "DisplayText": "supporting drought resistant farming practices",
-            "CodeType": "Normal",
-            "NumericValue": 3,
-            "StringValue": "supporting_drought_resistant_farming_practices",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-45e27295",
-            "DisplayText": "facilitating climate change awareness",
-            "CodeType": "Normal",
-            "NumericValue": 4,
-            "StringValue": "facilitating_climate_change_awareness",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-c53034c8",
+            "CodeID": "code-4a1f3483",
             "DisplayText": "other theme",
             "CodeType": "Normal",
-            "NumericValue": 5,
+            "NumericValue": 3,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
