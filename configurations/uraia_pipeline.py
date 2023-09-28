@@ -81,6 +81,30 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         ),
     ],
+    kobotoolbox_sources=[
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/uraia-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                asset_uid="aN5mtcuPMzv7qJ6gv3CNLt",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e01", engagement_db_dataset="uraia_s01e01"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e02", engagement_db_dataset="uraia_s01e02"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e03", engagement_db_dataset="uraia_s01e03"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e04", engagement_db_dataset="uraia_s01e04"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
+                ]
+            )
+        ),
+    ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
