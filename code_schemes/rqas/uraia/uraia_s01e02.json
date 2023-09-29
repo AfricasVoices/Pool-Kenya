@@ -4,6 +4,14 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-85f057e0",
+            "DisplayText": "barely surviving",
+            "CodeType": "Normal",
+            "NumericValue": 0,
+            "StringValue": "barely_surviving",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-021f6653",
             "DisplayText": "planting trees",
             "CodeType": "Normal",
