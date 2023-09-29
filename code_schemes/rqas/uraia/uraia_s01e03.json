@@ -4,6 +4,22 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-df843693",
+            "DisplayText": "providing food relief",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "providing_food_relief",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-976f26c0",
+            "DisplayText": "providing seeds and fertilizer",
+            "CodeType": "Normal",
+            "NumericValue": 0,
+            "StringValue": "providing_seeds_and_fertilizer",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-e15e28c0",
             "DisplayText": "planting trees",
             "CodeType": "Normal",
