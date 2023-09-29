@@ -102,9 +102,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
                     KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
 
-                    KoboToolBoxQuestionConfiguration(data_column_name="Radio Access", engagement_db_dataset="uraia_radio_access"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile Phone Access", engagement_db_dataset="uraia_mobile_phone_access"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Radio Topic", engagement_db_dataset="uraia_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="uraia_radio_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="uraia_mobile_phone_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="uraia_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="uraia_radio_topic_reason"),
                     KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="uraia_literacy"),
                 ]
             )
@@ -268,6 +269,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="uraia_radio_topic"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_radio_topic_reason",
+                    engagement_db_dataset="uraia_radio_topic_reason",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic_reason"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_radio_topic_reason"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_literacy",
                     engagement_db_dataset="uraia_literacy",
                     code_scheme_configurations=[
@@ -406,6 +416,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic"),
                         analysis_dataset="radio_topic"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_radio_topic_reason"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_radio_topic_reason_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic_reason"),
+                        analysis_dataset="radio_topic_reason"
                     )
                 ],
             ),
