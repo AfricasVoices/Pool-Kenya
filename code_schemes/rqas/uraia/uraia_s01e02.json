@@ -4,6 +4,14 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-ce7f986e",
+            "DisplayText": "alternative livelihoods",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "alternative_livelihoods",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-85f057e0",
             "DisplayText": "barely surviving",
             "CodeType": "Normal",
