@@ -130,6 +130,51 @@
             "MatchValues": ["uraia_preferred_contact_mode"]
         },
         {
+            "CodeID": "code-28ceafc9",
+            "CodeType": "Normal",
+            "DisplayText": "uraia literacy",
+            "StringValue": "uraia_literacy",
+            "NumericValue": 546,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_literacy"]
+        },
+        {
+            "CodeID": "code-a216200a",
+            "CodeType": "Normal",
+            "DisplayText": "uraia mobile phone access",
+            "StringValue": "uraia_mobile_phone_access",
+            "NumericValue": 547,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_mobile_phone_access"]
+        },
+        {
+            "CodeID": "code-2bccc778",
+            "CodeType": "Normal",
+            "DisplayText": "uraia radio access",
+            "StringValue": "uraia_radio_access",
+            "NumericValue": 548,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_radio_access"]
+        },
+        {
+            "CodeID": "code-d63f6c9f",
+            "CodeType": "Normal",
+            "DisplayText": "uraia radio topic",
+            "StringValue": "uraia_radio_topic",
+            "NumericValue": 549,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_radio_topic"]
+        },
+        {
+            "CodeID": "code-de66148f",
+            "CodeType": "Normal",
+            "DisplayText": "uraia radio topic reason",
+            "StringValue": "uraia_radio_topic_reason",
+            "NumericValue": 550,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_radio_topic_reason"]
+        },
+        {
             "CodeID": "code-ge0d191c",
             "CodeType": "Normal",
             "DisplayText": "giz s01e01",
