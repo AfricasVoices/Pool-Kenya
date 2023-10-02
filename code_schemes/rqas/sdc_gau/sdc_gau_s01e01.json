@@ -36,10 +36,18 @@
             "VisibleInCoda": true
         },
         {
+            "CodeID": "code-53f5bb0e",
+            "DisplayText": "social justice and equality",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "social_justice_and_equality",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-fb035e85",
             "DisplayText": "freedom without fear",
             "CodeType": "Normal",
-            "NumericValue": 5,
+            "NumericValue": 6,
             "StringValue": "freedom_without_fear",
             "VisibleInCoda": true
         },
@@ -47,7 +55,7 @@
             "CodeID": "code-05e1cf9d",
             "DisplayText": "access to basic needs",
             "CodeType": "Normal",
-            "NumericValue": 6,
+            "NumericValue": 7,
             "StringValue": "access_to_basic_needs",
             "VisibleInCoda": true
         },
@@ -55,7 +63,7 @@
             "CodeID": "code-06c084f0",
             "DisplayText": "love, joy & happiness",
             "CodeType": "Normal",
-            "NumericValue": 7,
+            "NumericValue": 8,
             "StringValue": "love_joy_and_happiness",
             "VisibleInCoda": true
         },
@@ -63,7 +71,7 @@
             "CodeID": "code-f03424ad",
             "DisplayText": "mutual respect and tolerance",
             "CodeType": "Normal",
-            "NumericValue": 8,
+            "NumericValue": 9,
             "StringValue": "mutual_respect_and_tolerance",
             "VisibleInCoda": true
         },
@@ -71,7 +79,7 @@
             "CodeID": "code-ee463751",
             "DisplayText": "other theme",
             "CodeType": "Normal",
-            "NumericValue": 9,
+            "NumericValue": 10,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
