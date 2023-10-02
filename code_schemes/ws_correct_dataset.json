@@ -191,6 +191,50 @@
             ]
         },
         {
+            "CodeID": "code-a09e2ba5",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_literacy",
+            "StringValue": "sdc_gau_literacy",
+            "NumericValue": 614,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "sdc_gau_literacy"
+            ]
+        },
+        {
+            "CodeID": "code-45a21ef1",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_interesting_radio_topic",
+            "StringValue": "sdc_gau_interesting_radio_topic",
+            "NumericValue": 615,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "sdc_gau_interesting_radio_topic"
+            ]
+        },
+        {
+            "CodeID": "code-2d2229f6",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_mobile_phone_access",
+            "StringValue": "sdc_gau_mobile_phone_access",
+            "NumericValue": 616,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "sdc_gau_mobile_phone_access"
+            ]
+        },
+        {
+            "CodeID": "code-950184aa",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_radio_access",
+            "StringValue": "sdc_gau_radio_access",
+            "NumericValue": 617,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "sdc_gau_radio_access"
+            ]
+        },
+        {
             "CodeID": "code-b8c41779",
             "CodeType": "Normal",
             "DisplayText": "uraia s01e01",

@@ -1,80 +1,8 @@
 {
-    "SchemeID": "Scheme-a8d338c2",
-    "Name": "SDC GAU S01E01",
+    "SchemeID": "Scheme-94f29c1f",
+    "Name": "SDC GAU LITERACY",
     "Version": "0.0.0.1",
     "Codes": [
-        {
-            "CodeID": "code-a1a8992e",
-            "DisplayText": "unity and co-existence",
-            "CodeType": "Normal",
-            "NumericValue": 1,
-            "StringValue": "unity_and_co_existence",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-5f739e2a",
-            "DisplayText": "state of calmness",
-            "CodeType": "Normal",
-            "NumericValue": 2,
-            "StringValue": "state_of_calmness",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-ba878a8c",
-            "DisplayText": "absence of violence and insecurity",
-            "CodeType": "Normal",
-            "NumericValue": 3,
-            "StringValue": "absence_of_violence_and_insecurity",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-f067832a",
-            "DisplayText": "state of law and order",
-            "CodeType": "Normal",
-            "NumericValue": 4,
-            "StringValue": "state_of_law_and_order",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-fb035e85",
-            "DisplayText": "freedom without fear",
-            "CodeType": "Normal",
-            "NumericValue": 5,
-            "StringValue": "freedom_without_fear",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-05e1cf9d",
-            "DisplayText": "access to basic needs",
-            "CodeType": "Normal",
-            "NumericValue": 6,
-            "StringValue": "access_to_basic_needs",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-06c084f0",
-            "DisplayText": "love, joy & happiness",
-            "CodeType": "Normal",
-            "NumericValue": 7,
-            "StringValue": "love_joy_and_happiness",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-f03424ad",
-            "DisplayText": "mutual respect and tolerance",
-            "CodeType": "Normal",
-            "NumericValue": 8,
-            "StringValue": "mutual_respect_and_tolerance",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-ee463751",
-            "DisplayText": "other theme",
-            "CodeType": "Normal",
-            "NumericValue": 9,
-            "StringValue": "other_theme",
-            "VisibleInCoda": true
-        },
         {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
