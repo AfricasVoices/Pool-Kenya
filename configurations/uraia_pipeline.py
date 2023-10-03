@@ -83,7 +83,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     ],
     kobotoolbox_sources=[
         KoboToolBoxSource(
-            token_file_url="gs://avf-credentials/uraia-kobotoolbox-token.json",
+            token_file_url="gs://avf-credentials/wusc-kobotoolbox-token.json",
             sync_config=KoboToolBoxToEngagementDBConfiguration(    
                 asset_uid="aN5mtcuPMzv7qJ6gv3CNLt",
                 participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
@@ -101,6 +101,12 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
                     KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
                     KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="uraia_radio_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="uraia_mobile_phone_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="uraia_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="uraia_radio_topic_reason"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="uraia_literacy"),
                 ]
             )
         ),
@@ -235,6 +241,51 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="preferred_language"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_radio_access",
+                    engagement_db_dataset="uraia_radio_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_radio_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_radio_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_mobile_phone_access",
+                    engagement_db_dataset="uraia_mobile_phone_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_mobile_phone_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_mobile_phone_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_radio_topic",
+                    engagement_db_dataset="uraia_radio_topic",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_radio_topic"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_radio_topic_reason",
+                    engagement_db_dataset="uraia_radio_topic_reason",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic_reason"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_radio_topic_reason"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_literacy",
+                    engagement_db_dataset="uraia_literacy",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_literacy"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_literacy"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
@@ -332,6 +383,61 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_s01e04_follow_up"),
                         analysis_dataset="s01e04 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_radio_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_radio_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_radio_access"),
+                        analysis_dataset="radio_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_mobile_phone_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_mobile_phone_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_mobile_phone_access"),
+                        analysis_dataset="mobile_phone_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_radio_topic"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_radio_topic_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic"),
+                        analysis_dataset="radio_topic"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_radio_topic_reason"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_radio_topic_reason_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic_reason"),
+                        analysis_dataset="radio_topic_reason"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_literacy"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_literacy_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_literacy"),
+                        analysis_dataset="literacy"
                     )
                 ],
             ),
