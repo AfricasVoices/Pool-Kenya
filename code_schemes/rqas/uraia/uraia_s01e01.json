@@ -4,6 +4,14 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-bbd83a93",
+            "DisplayText": "unpredictable weather patterns",
+            "CodeType": "Normal",
+            "NumericValue": 0,
+            "StringValue": "unpredictable_weather_patterns",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-bb885fd7",
             "DisplayText": "food insecurity",
             "CodeType": "Normal",
