@@ -3,12 +3,171 @@
     "Name": "SDC GAU S01E02",
     "Version": "0.0.0.1",
     "Codes": [
-        
         {
-            "CodeID": "code-d2baf084",
-            "DisplayText": "other theme",
+            "CodeID": "code-75fa75fa",
+            "DisplayText": "poor leadership",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "poor_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d96d6bf7",
+            "DisplayText": "animosity and hatred",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "animosity_and_hatred",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ba878a8c",
+            "DisplayText": "violent terrorism",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "violet_terrorism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8a5776c0",
+            "DisplayText": "land disputes",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "land_disputes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-53f5bb0e",
+            "DisplayText": "illiteracy",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "illiteracy",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8a1d7d54",
+            "DisplayText": "poverty",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "poverty",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-05e1cf9d",
+            "DisplayText": "regional instability",
             "CodeType": "Normal",
             "NumericValue": 7,
+            "StringValue": "regional_instability",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-68d0eddb",
+            "DisplayText": "drug abuse and alcoholism",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "drug_abuse_and_alcoholism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f03424ad",
+            "DisplayText": "cattle raiding",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "cattle_raiding",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-04eefe9d",
+            "DisplayText": "scarcity of resources",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "scarcity_of_resources",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e7ea4cd0",
+            "DisplayText": "lack of unity",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "lack_of_unity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f03424ad",
+            "DisplayText": "climate change",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "climate_change",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ac985f46",
+            "DisplayText": "tribalism",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "trabilism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f03424ad",
+            "DisplayText": "misinformation",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "misinformation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0094d59c",
+            "DisplayText": "discrimination",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "discrimination",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f9495ae7",
+            "DisplayText": "arms proliferation",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "arms_proliferation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f03424ad",
+            "DisplayText": "poor economic conditions",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "poor_economic_conditions",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f079e7ac",
+            "DisplayText": "cultural beliefs",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "cultural_beliefs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f03424ad",
+            "DisplayText": "business competition",
+            "CodeType": "Normal",
+            "NumericValue": 19,
+            "StringValue": "business_competition",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-281acb0e",
+            "DisplayText": "family disputes",
+            "CodeType": "Normal",
+            "NumericValue": 20,
+            "StringValue": "family_disputes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dee409dd",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 21,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

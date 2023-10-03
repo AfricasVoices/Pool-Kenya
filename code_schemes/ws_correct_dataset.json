@@ -213,6 +213,17 @@
             ]
         },
         {
+            "CodeID": "code-e4527f9d",
+            "CodeType": "Normal",
+            "DisplayText": "sdc gau radio topic reason",
+            "StringValue": "sdc_gau_radio_topic_reason",
+            "NumericValue": 618,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "sdc_gau_radio_topic_reason"
+            ]
+        },
+        {
             "CodeID": "code-2d2229f6",
             "CodeType": "Normal",
             "DisplayText": "sdc_gau_mobile_phone_access",
