@@ -68,7 +68,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-f03424ad",
+            "CodeID": "code-fb011375",
             "DisplayText": "cattle raiding",
             "CodeType": "Normal",
             "NumericValue": 9,
@@ -92,7 +92,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-f03424ad",
+            "CodeID": "code-d00f2a8c",
             "DisplayText": "climate change",
             "CodeType": "Normal",
             "NumericValue": 12,
@@ -108,7 +108,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-f03424ad",
+            "CodeID": "code-869d3a16",
             "DisplayText": "misinformation",
             "CodeType": "Normal",
             "NumericValue": 14,
@@ -132,7 +132,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-f03424ad",
+            "CodeID": "code-830a7092",
             "DisplayText": "poor economic conditions",
             "CodeType": "Normal",
             "NumericValue": 17,
@@ -148,7 +148,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-f03424ad",
+            "CodeID": "code-7d027892",
             "DisplayText": "business competition",
             "CodeType": "Normal",
             "NumericValue": 19,
@@ -156,7 +156,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-281acb0e",
+            "CodeID": "code-54233feb",
             "DisplayText": "family disputes",
             "CodeType": "Normal",
             "NumericValue": 20,
@@ -167,7 +167,7 @@
             "CodeID": "code-dee409dd",
             "DisplayText": "other theme",
             "CodeType": "Normal",
-            "NumericValue": 21,
+            "NumericValue": 7,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

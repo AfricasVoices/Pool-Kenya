@@ -38,60 +38,110 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
-                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_location", "location"),
-                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_gender", "gender"),
-                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_age", "age"),
-                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_disabled", "disabled"),
-                    # FlowResultConfiguration("sdc_gau_s01_demog", "preferred_language", "preferred_language"),
+                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_location", "location"),
+                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_gender", "gender"),
+                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_age", "age"),
+                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_disabled", "disabled"),
+                    FlowResultConfiguration("sdc_gau_s01_demog", "preferred_language", "preferred_language"),
 
-                    # FlowResultConfiguration("sdc_gau_s01e01_activation", "rqa_s01e01", "sdc_gau_s01e01"),
-                    # FlowResultConfiguration("sdc_gau_s01e02_activation", "rqa_s01e02", "sdc_gau_s01e02"),
-                    # FlowResultConfiguration("sdc_gau_s01e03_activation", "rqa_s01e03", "sdc_gau_s01e03"),
+                    FlowResultConfiguration("sdc_gau_s01e01_activation", "rqa_s01e01", "sdc_gau_s01e01"),
+                    FlowResultConfiguration("sdc_gau_s01e02_activation", "rqa_s01e02", "sdc_gau_s01e02"),
+                    FlowResultConfiguration("sdc_gau_s01e03_activation", "rqa_s01e03", "sdc_gau_s01e03"),
                     FlowResultConfiguration("sdc_gau_s01e04_activation", "rqa_s01e04", "sdc_gau_s01e04"),
-                    # FlowResultConfiguration("sdc_gau_s01e05_activation", "rqa_s01e05", "sdc_gau_s01e05"),
-                    # FlowResultConfiguration("sdc_gau_s01e06_activation", "rqa_s01e06", "sdc_gau_s01e06"),
+                    FlowResultConfiguration("sdc_gau_s01e05_activation", "rqa_s01e05", "sdc_gau_s01e05"),
+                    FlowResultConfiguration("sdc_gau_s01e06_activation", "rqa_s01e06", "sdc_gau_s01e06"),
                     # FlowResultConfiguration("sdc_gau_s01e07_activation", "rqa_s01e07", "sdc_gau_s01e07"),
 
-                    # FlowResultConfiguration("sdc_gau_s01e01_follow_up_activation", "rqa_s01e01_follow_up", "sdc_gau_s01e01_follow_up"),
-                    # FlowResultConfiguration("sdc_gau_s01e03_follow_up_activation", "rqa_s01e03_follow_up", "sdc_gau_s01e03_follow_up"),
-                    # FlowResultConfiguration("sdc_gau_s01e04_follow_up_activation", "rqa_s01e04_follow_up", "sdc_gau_s01e04_follow_up"),
-                    # FlowResultConfiguration("sdc_gau_s01e06_follow_up_activation", "rqa_s01e06_follow_up", "sdc_gau_s01e06_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e01_follow_up_activation", "rqa_s01e01_follow_up", "sdc_gau_s01e01_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e03_follow_up_activation", "rqa_s01e03_follow_up", "sdc_gau_s01e03_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e04_follow_up_activation", "rqa_s01e04_follow_up", "sdc_gau_s01e04_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e06_follow_up_activation", "rqa_s01e06_follow_up", "sdc_gau_s01e06_follow_up"),
                     # FlowResultConfiguration("sdc_gau_s01e07_follow_up_activation", "rqa_s01e07_follow_up", "sdc_gau_s01e07_follow_up")
                 ],
             )
         )
     ],
+    kobotoolbox_sources=[
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                asset_uid="aRShjHtCNepU2MEptvHDmW",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e01", engagement_db_dataset="sdc_gau_s01e01"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e02", engagement_db_dataset="sdc_gau_s01e02"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="sdc_gau_radio_topic_reason"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
+                ] 
+            )
+        ),
+        KoboToolBoxSource(
+                token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
+                sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                    asset_uid="aMxyY3sXQhPkfLeZWQrYSH",
+                    participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                        data_column_name="Contacts",
+                        id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                    ),
+                    ignore_invalid_mobile_numbers=True,
+                    question_configurations=[
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e03", engagement_db_dataset="sdc_gau_s01e03"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e04", engagement_db_dataset="sdc_gau_s01e04"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="sdc_gau_radio_topic_reason"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
+                    ] 
+                )
+            ),
+    ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e01",
-                #     engagement_db_dataset="sdc_gau_s01e01",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e01"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e02",
-                #     engagement_db_dataset="sdc_gau_s01e02",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e02"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e02"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e03",
-                #     engagement_db_dataset="sdc_gau_s01e03",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e03"
-                # ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e01",
+                    engagement_db_dataset="sdc_gau_s01e01",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e01"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e02",
+                    engagement_db_dataset="sdc_gau_s01e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e02"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e03",
+                    engagement_db_dataset="sdc_gau_s01e03",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e03"
+                ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="SDC_GAU_s01e04",
                     engagement_db_dataset="sdc_gau_s01e04",
@@ -100,25 +150,25 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="sdc_gau_s01e04"
-                )
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e05",
-                #     engagement_db_dataset="sdc_gau_s01e05",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e05"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e05"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e06",
-                #     engagement_db_dataset="sdc_gau_s01e06",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e06"
-                # ),
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e05",
+                    engagement_db_dataset="sdc_gau_s01e05",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e05"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e05"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e06",
+                    engagement_db_dataset="sdc_gau_s01e06",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e06"
+                ),
                 # CodaDatasetConfiguration(
                 #     coda_dataset_id="SDC_GAU_s01e07",
                 #     engagement_db_dataset="sdc_gau_s01e07",
@@ -128,96 +178,141 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 #     ],
                 #     ws_code_match_value="sdc_gau_s01e07"
                 # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e01_follow_up",
-                #     engagement_db_dataset="sdc_gau_s01e01_follow_up",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01_follow_up"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e01_follow_up"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e03_follow_up",
-                #     engagement_db_dataset="sdc_gau_s01e03_follow_up",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03_follow_up"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e03_follow_up"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e04_follow_up",
-                #     engagement_db_dataset="sdc_gau_s01e04_follow_up",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04_follow_up"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e04_follow_up"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e06_follow_up",
-                #     engagement_db_dataset="sdc_gau_s01e06_follow_up",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06_follow_up"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e06_follow_up"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e07_follow_up",
-                #     engagement_db_dataset="sdc_gau_s01e07_follow_up",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07_follow_up"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_s01e07_follow_up"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="Kenya_Pool_location",
-                #     engagement_db_dataset="location",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
-                #     ],
-                #     ws_code_match_value="location"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="Kenya_Pool_gender",
-                #     engagement_db_dataset="gender",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
-                #                                 auto_coder=swahili.DemographicCleaner.clean_gender)
-                #     ],
-                #     ws_code_match_value="gender"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="Kenya_Pool_age",
-                #     engagement_db_dataset="age",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
-                #                                 str(swahili.DemographicCleaner.clean_age_within_range(x)))
-                #     ],
-                #     ws_code_match_value="age"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="Kenya_Pool_disabled",
-                #     engagement_db_dataset="disabled",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
-                #     ],
-                #     ws_code_match_value="disabled"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="Kenya_Pool_preferred_language",
-                #     engagement_db_dataset="preferred_language",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/preferred_language"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="preferred_language"
-                # ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e01_follow_up",
+                    engagement_db_dataset="sdc_gau_s01e01_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e01_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e03_follow_up",
+                    engagement_db_dataset="sdc_gau_s01e03_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e03_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e04_follow_up",
+                    engagement_db_dataset="sdc_gau_s01e04_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e04_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e06_follow_up",
+                    engagement_db_dataset="sdc_gau_s01e06_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e06_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e07_follow_up",
+                    engagement_db_dataset="sdc_gau_s01e07_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e07_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_location",
+                    engagement_db_dataset="location",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
+                    ],
+                    ws_code_match_value="location"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_gender",
+                    engagement_db_dataset="gender",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
+                                                auto_coder=swahili.DemographicCleaner.clean_gender)
+                    ],
+                    ws_code_match_value="gender"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_age",
+                    engagement_db_dataset="age",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
+                                                str(swahili.DemographicCleaner.clean_age_within_range(x)))
+                    ],
+                    ws_code_match_value="age"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_disabled",
+                    engagement_db_dataset="disabled",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
+                    ],
+                    ws_code_match_value="disabled"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Kenya_Pool_preferred_language",
+                    engagement_db_dataset="preferred_language",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/preferred_language"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="preferred_language"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_radio_access",
+                    engagement_db_dataset="sdc_gau_radio_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_radio_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_mobile_phone_access",
+                    engagement_db_dataset="sdc_gau_mobile_phone_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_mobile_phone_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_interesting_radio_topic",
+                    engagement_db_dataset="sdc_gau_interesting_radio_topic",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_interesting_radio_topic"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_radio_topic_reason",
+                    engagement_db_dataset="sdc_gau_radio_topic_reason",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_radio_topic_reason"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_literacy",
+                    engagement_db_dataset="sdc_gau_literacy",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/literacy"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_literacy"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
@@ -234,7 +329,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e01"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e01_raw",
+                raw_dataset="s01e01_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01"),
@@ -245,7 +340,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e02"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e02_raw",
+                raw_dataset="s01e02_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e02"),
@@ -256,7 +351,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e03"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e03_raw",
+                raw_dataset="s01e03_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03"),
@@ -267,7 +362,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e04"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e04_raw",
+                raw_dataset="s01e04_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04"),
@@ -278,7 +373,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e05"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e05_raw",
+                raw_dataset="s01e05_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e05"),
@@ -289,7 +384,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e06"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e06_raw",
+                raw_dataset="s01e06_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06"),
@@ -300,7 +395,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e07"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e07_raw",
+                raw_dataset="s01e07_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07"),
@@ -311,11 +406,110 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e01_follow_up"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="sdc_gau_s01e01_follow_up_raw",
+                raw_dataset="s01e01_follow_up_raw",
                 coding_configs=[
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01_follow_up"),
-                        analysis_dataset="s01e01 follow-up"
+                        analysis_dataset="s01e01_follow_up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_s01e03_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01e03_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03_follow_up"),
+                        analysis_dataset="s01e03_follow_up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_s01e04_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01e04_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04_follow_up"),
+                        analysis_dataset="s01e04_follow_up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_s01e06_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01e06_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06_follow_up"),
+                        analysis_dataset="s01e06_follow_up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_s01e07_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01e07_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07_follow_up"),
+                        analysis_dataset="s01e07_follow_up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_radio_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="radio_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"),
+                        analysis_dataset="radio_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_mobile_phone_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="mobile_phone_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"),
+                        analysis_dataset="mobile_phone_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_interesting_radio_topic"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="interesting_radio_topic_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"),
+                        analysis_dataset="interesting_radio_topic"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_radio_topic_reason"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="radio_topic_reason_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"),
+                        analysis_dataset="radio_topic_reason"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["sdc_gau_literacy"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="literacy_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/sdc_gau/literacy"),
+                        analysis_dataset="literacy"
                     )
                 ],
             ),
@@ -402,45 +596,69 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
         traffic_labels=[
-            TrafficLabel(label="s01e03 Promos", start_date=isoparse("2023-09-15T16:00+03:00"), end_date=isoparse("2023-08-18T17:00+03:00")),
-            TrafficLabel(label="s01e03 SMS Ad", start_date=isoparse("2023-08-18T17:00+03:00"), end_date=isoparse("2023-08-18T20:00+03:00")),
-            TrafficLabel(label="s01e03 EJOK & STAR FM", start_date=isoparse("2023-08-18T20:00+03:00"), end_date=isoparse("2023-08-18T22:00+03:00")),
-            TrafficLabel(label="s01e03 ANGAF FM", start_date=isoparse("2023-08-19T16:30+03:00"), end_date=isoparse("2023-08-19T18:30+03:00")),
-            TrafficLabel(label="s01e03 NORTHRIFT FM", start_date=isoparse("2023-08-19T20:00+03:00"), end_date=isoparse("2023-08-19T22:00+03:00")),
-            TrafficLabel(label="s01e03 ASHE & IBSE FM", start_date=isoparse("2023-08-20T20:00+03:00"), end_date=isoparse("2023-08-20T22:00+03:00")),
-            TrafficLabel(label="s01e03 PWANI FM", start_date=isoparse("2023-08-20T08:00+03:00"), end_date=isoparse("2023-08-20T10:00+03:00")),
+            TrafficLabel(label="s01e01 Promos", start_date=isoparse("2023-08-25T16:00+03:00"), end_date=isoparse("2023-08-28T17:00+03:00")),
+            TrafficLabel(label="s01e01 SMS Ad", start_date=isoparse("2023-08-28T17:00+03:00"), end_date=isoparse("2023-08-28T20:00+03:00")),
+            TrafficLabel(label="s01e01 EJOK & STAR FM", start_date=isoparse("2023-08-28T20:00+03:00"), end_date=isoparse("2023-08-28T22:00+03:00")),
+            TrafficLabel(label="s01e01 ANGAF FM", start_date=isoparse("2023-08-29T16:30+03:00"), end_date=isoparse("2023-08-29T18:30+03:00")),
+            TrafficLabel(label="s01e01 NORTHRIFT FM", start_date=isoparse("2023-08-29T20:00+03:00"), end_date=isoparse("2023-08-29T22:00+03:00")),
+            TrafficLabel(label="s01e01 PWANI FM", start_date=isoparse("2023-08-30T08:00+03:00"), end_date=isoparse("2023-08-30T10:00+03:00")),
+            TrafficLabel(label="s01e01 ASHE & IBSE FM", start_date=isoparse("2023-08-30T20:00+03:00"), end_date=isoparse("2023-08-30T22:00+03:00")),
 
-            TrafficLabel(label="s01e04 Promos", start_date=isoparse("2023-09-22T16:00+03:00"), end_date=isoparse("2023-08-25T17:00+03:00")),
-            TrafficLabel(label="s01e04 SMS Ad", start_date=isoparse("2023-08-25T17:00+03:00"), end_date=isoparse("2023-08-25T20:00+03:00")),
-            TrafficLabel(label="s01e04 EJOK & STAR FM", start_date=isoparse("2023-08-25T20:00+03:00"), end_date=isoparse("2023-08-25T22:00+03:00")),
-            TrafficLabel(label="s01e04 ANGAF FM", start_date=isoparse("2023-08-26T16:30+03:00"), end_date=isoparse("2023-08-26T18:30+03:00")),
-            TrafficLabel(label="s01e04 NORTHRIFT FM", start_date=isoparse("2023-08-26T20:00+03:00"), end_date=isoparse("2023-08-26T22:00+03:00")),
-            TrafficLabel(label="s01e04 PWANI FM", start_date=isoparse("2023-08-27T08:00+03:00"), end_date=isoparse("2023-08-27T10:00+03:00")),
-            TrafficLabel(label="s01e04 ASHE & IBSE FM", start_date=isoparse("2023-08-27T20:00+03:00"), end_date=isoparse("2023-08-27T22:00+03:00")),
+            TrafficLabel(label="s01e02 Promos", start_date=isoparse("2023-09-01T16:00+03:00"), end_date=isoparse("2023-09-04T17:00+03:00")),
+            TrafficLabel(label="s01e02 SMS Ad", start_date=isoparse("2023-09-04T17:00+03:00"), end_date=isoparse("2023-09-04T20:00+03:00")),
+            TrafficLabel(label="s01e02 EJOK & STAR FM", start_date=isoparse("2023-09-04T20:00+03:00"), end_date=isoparse("2023-09-04T22:00+03:00")),
+            TrafficLabel(label="s01e02 ANGAF FM", start_date=isoparse("2023-09-05T16:30+03:00"), end_date=isoparse("2023-09-05T18:30+03:00")),
+            TrafficLabel(label="s01e02 NORTHRIFT FM", start_date=isoparse("2023-09-05T20:00+03:00"), end_date=isoparse("2023-09-05T22:00+03:00")),
+            TrafficLabel(label="s01e02 PWANI FM", start_date=isoparse("2023-09-06T08:00+03:00"), end_date=isoparse("2023-09-06T10:00+03:00")),
+            TrafficLabel(label="s01e02 ASHE & IBSE FM", start_date=isoparse("2023-09-06T20:00+03:00"), end_date=isoparse("2023-09-06T22:00+03:00")),
+
+            TrafficLabel(label="s01e03 Promos", start_date=isoparse("2023-09-08T16:00+03:00"), end_date=isoparse("2023-09-11T17:00+03:00")),
+            TrafficLabel(label="s01e03 SMS Ad", start_date=isoparse("2023-09-11T17:00+03:00"), end_date=isoparse("2023-09-11T20:00+03:00")),
+            TrafficLabel(label="s01e03 EJOK & STAR FM", start_date=isoparse("2023-09-11T20:00+03:00"), end_date=isoparse("2023-09-11T22:00+03:00")),
+            TrafficLabel(label="s01e03 ANGAF FM", start_date=isoparse("2023-09-12T16:30+03:00"), end_date=isoparse("2023-09-12T18:30+03:00")),
+            TrafficLabel(label="s01e03 NORTHRIFT FM", start_date=isoparse("2023-09-12T20:00+03:00"), end_date=isoparse("2023-09-12T22:00+03:00")),
+            TrafficLabel(label="s01e03 PWANI FM", start_date=isoparse("2023-09-13T08:00+03:00"), end_date=isoparse("2023-09-13T10:00+03:00")),
+            TrafficLabel(label="s01e03 ASHE & IBSE FM", start_date=isoparse("2023-09-13T20:00+03:00"), end_date=isoparse("2023-09-13T22:00+03:00")),
+
+            TrafficLabel(label="s01e04 Promos", start_date=isoparse("2023-09-15T16:00+03:00"), end_date=isoparse("2023-09-18T17:00+03:00")),
+            TrafficLabel(label="s01e04 SMS Ad", start_date=isoparse("2023-09-18T17:00+03:00"), end_date=isoparse("2023-09-18T20:00+03:00")),
+            TrafficLabel(label="s01e04 EJOK & STAR FM", start_date=isoparse("2023-09-18T20:00+03:00"), end_date=isoparse("2023-09-18T22:00+03:00")),
+            TrafficLabel(label="s01e04 ANGAF FM", start_date=isoparse("2023-09-19T16:30+03:00"), end_date=isoparse("2023-09-19T18:30+03:00")),
+            TrafficLabel(label="s01e04 NORTHRIFT FM", start_date=isoparse("2023-09-19T20:00+03:00"), end_date=isoparse("2023-09-19T22:00+03:00")),
+            TrafficLabel(label="s01e04 PWANI FM", start_date=isoparse("2023-09-20T08:00+03:00"), end_date=isoparse("2023-09-20T10:00+03:00")),
+            TrafficLabel(label="s01e04 ASHE & IBSE FM", start_date=isoparse("2023-09-20T20:00+03:00"), end_date=isoparse("2023-09-20T22:00+03:00")),
+
+            TrafficLabel(label="s01e05 Promos", start_date=isoparse("2023-09-22T16:00+03:00"), end_date=isoparse("2023-09-25T17:00+03:00")),
+            TrafficLabel(label="s01e05 SMS Ad", start_date=isoparse("2023-09-25T17:00+03:00"), end_date=isoparse("2023-09-25T20:00+03:00")),
+            TrafficLabel(label="s01e05 EJOK & STAR FM", start_date=isoparse("2023-09-25T20:00+03:00"), end_date=isoparse("2023-09-25T22:00+03:00")),
+            TrafficLabel(label="s01e05 ANGAF FM", start_date=isoparse("2023-09-26T16:30+03:00"), end_date=isoparse("2023-09-26T18:30+03:00")),
+            TrafficLabel(label="s01e05 NORTHRIFT FM", start_date=isoparse("2023-09-26T20:00+03:00"), end_date=isoparse("2023-09-26T22:00+03:00")),
+            TrafficLabel(label="s01e05 PWANI FM", start_date=isoparse("2023-09-27T08:00+03:00"), end_date=isoparse("2023-09-27T10:00+03:00")),
+            TrafficLabel(label="s01e05 ASHE & IBSE FM", start_date=isoparse("2023-09-27T20:00+03:00"), end_date=isoparse("2023-09-27T22:00+03:00")),
             
-            TrafficLabel(label="s01e05 Promos", start_date=isoparse("2023-09-02T16:00+03:00"), end_date=isoparse("2023-09-02T17:00+03:00")),
-            TrafficLabel(label="s01e05 SMS Ad", start_date=isoparse("2023-09-02T17:00+03:00"), end_date=isoparse("2023-09-02T20:00+03:00")),
-            TrafficLabel(label="s01e05 EJOK & STAR FM", start_date=isoparse("2023-09-02T20:00+03:00"), end_date=isoparse("2023-09-02T22:00+03:00")),
-            TrafficLabel(label="s01e05 ANGAF FM", start_date=isoparse("2023-09-03T16:30+03:00"), end_date=isoparse("2023-09-03T18:30+03:00")),
-            TrafficLabel(label="s01e05 NORTHRIFT FM", start_date=isoparse("2023-09-03T20:00+03:00"), end_date=isoparse("2023-09-03T22:00+03:00")),
-            TrafficLabel(label="s01e05 PWANI FM", start_date=isoparse("2023-09-04T08:00+03:00"), end_date=isoparse("2023-09-04T10:00+03:00")),
-            TrafficLabel(label="s01e05 ASHE & IBSE FM", start_date=isoparse("2023-09-04T20:00+03:00"), end_date=isoparse("2023-09-04T22:00+03:00")),
+            TrafficLabel(label="s01e06 Promos", start_date=isoparse("2023-09-30T16:00+03:00"), end_date=isoparse("2023-10-02T17:00+03:00")),
+            TrafficLabel(label="s01e06 SMS Ad", start_date=isoparse("2023-10-02T17:00+03:00"), end_date=isoparse("2023-10-02T20:00+03:00")),
+            TrafficLabel(label="s01e06 EJOK & STAR FM", start_date=isoparse("2023-10-02T20:00+03:00"), end_date=isoparse("2023-10-02T22:00+03:00")),
+            TrafficLabel(label="s01e06 ANGAF FM", start_date=isoparse("2023-10-03T16:30+03:00"), end_date=isoparse("2023-10-03T18:30+03:00")),
+            TrafficLabel(label="s01e06 NORTHRIFT FM", start_date=isoparse("2023-10-03T20:00+03:00"), end_date=isoparse("2023-10-03T22:00+03:00")),
+            TrafficLabel(label="s01e06 PWANI FM", start_date=isoparse("2023-10-04T08:00+03:00"), end_date=isoparse("2023-10-04T10:00+03:00")),
+            TrafficLabel(label="s01e06 ASHE & IBSE FM", start_date=isoparse("2023-10-04T20:00+03:00"), end_date=isoparse("2023-10-04T22:00+03:00")),
 
-            TrafficLabel(label="s01e06 Promos", start_date=isoparse("2023-09-06T16:00+03:00"), end_date=isoparse("2023-09-09T17:00+03:00")),
-            TrafficLabel(label="s01e06 SMS Ad", start_date=isoparse("2023-09-09T17:00+03:00"), end_date=isoparse("2023-09-09T20:00+03:00")),
-            TrafficLabel(label="s01e06 EJOK & STAR FM", start_date=isoparse("2023-09-09T20:00+03:00"), end_date=isoparse("2023-09-09T22:00+03:00")),
-            TrafficLabel(label="s01e06 ANGAF FM", start_date=isoparse("2023-09-10T16:30+03:00"), end_date=isoparse("2023-09-10T18:30+03:00")),
-            TrafficLabel(label="s01e06 NORTHRIFT FM", start_date=isoparse("2023-09-10T20:00+03:00"), end_date=isoparse("2023-09-10T22:00+03:00")),
-            TrafficLabel(label="s01e06 PWANI FM", start_date=isoparse("2023-09-11T08:00+03:00"), end_date=isoparse("2023-09-11T10:00+03:00")),
-            TrafficLabel(label="s01e06 ASHE & IBSE FM", start_date=isoparse("2023-09-11T20:00+03:00"), end_date=isoparse("2023-09-11T22:00+03:00")),
+            TrafficLabel(label="s01e07 Promos", start_date=isoparse("2023-10-06T16:00+03:00"), end_date=isoparse("2023-10-10T17:00+03:00")),
+            TrafficLabel(label="s01e07 SMS Ad", start_date=isoparse("2023-10-09T17:00+03:00"), end_date=isoparse("2023-10-09T20:00+03:00")),
+            TrafficLabel(label="s01e07 EJOK & STAR FM", start_date=isoparse("2023-10-09T20:00+03:00"), end_date=isoparse("2023-10-09T22:00+03:00")),
+            TrafficLabel(label="s01e07 ANGAF FM", start_date=isoparse("2023-10-10T16:30+03:00"), end_date=isoparse("2023-10-10T18:30+03:00")),
+            TrafficLabel(label="s01e07 NORTHRIFT FM", start_date=isoparse("2023-10-10T20:00+03:00"), end_date=isoparse("2023-10-10T22:00+03:00")),
+            TrafficLabel(label="s01e07 PWANI FM", start_date=isoparse("2023-10-11T08:00+03:00"), end_date=isoparse("2023-10-11T10:00+03:00")),
+            TrafficLabel(label="s01e07 ASHE & IBSE FM", start_date=isoparse("2023-10-11T20:00+03:00"), end_date=isoparse("2023-10-11T22:00+03:00")),
 
-            TrafficLabel(label="s01e07 Promos", start_date=isoparse("2023-09-13T16:00+03:00"), end_date=isoparse("2023-09-16T17:00+03:00")),
-            TrafficLabel(label="s01e07 SMS Ad", start_date=isoparse("2023-09-16T17:00+03:00"), end_date=isoparse("2023-09-16T20:00+03:00")),
-            TrafficLabel(label="s01e07 EJOK & STAR FM", start_date=isoparse("2023-09-16T20:00+03:00"), end_date=isoparse("2023-09-16T22:00+03:00")),
-            TrafficLabel(label="s01e07 ANGAF FM", start_date=isoparse("2023-09-17T16:30+03:00"), end_date=isoparse("2023-09-17T18:30+03:00")),
-            TrafficLabel(label="s01e07 NORTHRIFT FM", start_date=isoparse("2023-09-17T20:00+03:00"), end_date=isoparse("2023-09-17T22:00+03:00")),
-            TrafficLabel(label="s01e07 PWANI FM", start_date=isoparse("2023-09-18T08:00+03:00"), end_date=isoparse("2023-09-18T10:00+03:00")),
-            TrafficLabel(label="s01e07 ASHE & IBSE FM", start_date=isoparse("2023-09-18T20:00+03:00"), end_date=isoparse("2023-09-18T22:00+03:00"))
+            # TrafficLabel(label="s01e07 Promos", start_date=isoparse("2023-10-13T16:00+03:00"), end_date=isoparse("2023-10-16T17:00+03:00")),
+            # TrafficLabel(label="s01e07 SMS Ad", start_date=isoparse("2023-10-16T17:00+03:00"), end_date=isoparse("2023-10-16T20:00+03:00")),
+            # TrafficLabel(label="s01e07 EJOK & STAR FM", start_date=isoparse("2023-10-16T20:00+03:00"), end_date=isoparse("2023-10-16T22:00+03:00")),
+            # TrafficLabel(label="s01e07 ANGAF FM", start_date=isoparse("2023-10-17T16:30+03:00"), end_date=isoparse("2023-10-17T18:30+03:00")),
+            # TrafficLabel(label="s01e07 NORTHRIFT FM", start_date=isoparse("2023-10-17T20:00+03:00"), end_date=isoparse("2023-10-17T22:00+03:00")),
+            # TrafficLabel(label="s01e07 PWANI FM", start_date=isoparse("2023-10-18T08:00+03:00"), end_date=isoparse("2023-10-18T10:00+03:00")),
+            # TrafficLabel(label="s01e07 ASHE & IBSE FM", start_date=isoparse("2023-10-18T20:00+03:00"), end_date=isoparse("2023-10-18T22:00+03:00"))
         ]
     ),
     rapid_pro_target=RapidProTarget(
