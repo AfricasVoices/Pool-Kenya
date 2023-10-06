@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-342c4b73",
+            "DisplayText": "informs government leadership",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "informs_government_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-60d4a357",
+            "DisplayText": "opportunity to share views",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "opportunity_to_share_views",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-832102ea",
+            "DisplayText": "creates awareness",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "creates_awareness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1d3ad25c",
+            "DisplayText": "restores hope",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "restores_hope",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-66973bd9",
+            "DisplayText": "not helpful",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "not_helpful",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f15f2f91",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
