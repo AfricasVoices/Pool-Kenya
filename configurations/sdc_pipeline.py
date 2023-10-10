@@ -38,146 +38,146 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
-                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_location", "location"),
-                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_gender", "gender"),
-                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_age", "age"),
-                    FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_disabled", "disabled"),
-                    FlowResultConfiguration("sdc_gau_s01_demog", "preferred_language", "preferred_language"),
+                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_location", "location"),
+                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_gender", "gender"),
+                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_age", "age"),
+                    # FlowResultConfiguration("sdc_gau_s01_demog", "pool_kenya_disabled", "disabled"),
+                    # FlowResultConfiguration("sdc_gau_s01_demog", "preferred_language", "preferred_language"),
 
-                    FlowResultConfiguration("sdc_gau_s01e01_activation", "rqa_s01e01", "sdc_gau_s01e01"),
-                    FlowResultConfiguration("sdc_gau_s01e02_activation", "rqa_s01e02", "sdc_gau_s01e02"),
-                    FlowResultConfiguration("sdc_gau_s01e03_activation", "rqa_s01e03", "sdc_gau_s01e03"),
-                    FlowResultConfiguration("sdc_gau_s01e04_activation", "rqa_s01e04", "sdc_gau_s01e04"),
-                    FlowResultConfiguration("sdc_gau_s01e05_activation", "rqa_s01e05", "sdc_gau_s01e05"),
-                    FlowResultConfiguration("sdc_gau_s01e06_activation", "rqa_s01e06", "sdc_gau_s01e06"),
-                    # FlowResultConfiguration("sdc_gau_s01e07_activation", "rqa_s01e07", "sdc_gau_s01e07"),
+                    # FlowResultConfiguration("sdc_gau_s01e01_activation", "rqa_s01e01", "sdc_gau_s01e01"),
+                    # FlowResultConfiguration("sdc_gau_s01e02_activation", "rqa_s01e02", "sdc_gau_s01e02"),
+                    # FlowResultConfiguration("sdc_gau_s01e03_activation", "rqa_s01e03", "sdc_gau_s01e03"),
+                    # FlowResultConfiguration("sdc_gau_s01e04_activation", "rqa_s01e04", "sdc_gau_s01e04"),
+                    # FlowResultConfiguration("sdc_gau_s01e05_activation", "rqa_s01e05", "sdc_gau_s01e05"),
+                    # FlowResultConfiguration("sdc_gau_s01e06_activation", "rqa_s01e06", "sdc_gau_s01e06"),
+                    FlowResultConfiguration("sdc_gau_s01e07_activation", "rqa_s01e07", "sdc_gau_s01e07"),
 
-                    FlowResultConfiguration("sdc_gau_s01e01_follow_up_activation", "rqa_s01e01_follow_up", "sdc_gau_s01e01_follow_up"),
-                    FlowResultConfiguration("sdc_gau_s01e03_follow_up_activation", "rqa_s01e03_follow_up", "sdc_gau_s01e03_follow_up"),
-                    FlowResultConfiguration("sdc_gau_s01e04_follow_up_activation", "rqa_s01e04_follow_up", "sdc_gau_s01e04_follow_up"),
-                    FlowResultConfiguration("sdc_gau_s01e06_follow_up_activation", "rqa_s01e06_follow_up", "sdc_gau_s01e06_follow_up"),
+                    # FlowResultConfiguration("sdc_gau_s01e01_follow_up_activation", "rqa_s01e01_follow_up", "sdc_gau_s01e01_follow_up"),
+                    # FlowResultConfiguration("sdc_gau_s01e03_follow_up_activation", "rqa_s01e03_follow_up", "sdc_gau_s01e03_follow_up"),
+                    # FlowResultConfiguration("sdc_gau_s01e04_follow_up_activation", "rqa_s01e04_follow_up", "sdc_gau_s01e04_follow_up"),
+                    # FlowResultConfiguration("sdc_gau_s01e06_follow_up_activation", "rqa_s01e06_follow_up", "sdc_gau_s01e06_follow_up"),
                     # FlowResultConfiguration("sdc_gau_s01e07_follow_up_activation", "rqa_s01e07_follow_up", "sdc_gau_s01e07_follow_up")
                 ],
             )
         )
     ],
-    kobotoolbox_sources=[
-        KoboToolBoxSource(
-            token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
-            sync_config=KoboToolBoxToEngagementDBConfiguration(    
-                asset_uid="aRShjHtCNepU2MEptvHDmW",
-                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
-                    data_column_name="Contacts",
-                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
-                ),
-                ignore_invalid_mobile_numbers=True,
-                question_configurations=[
-                    KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e01", engagement_db_dataset="sdc_gau_s01e01"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e02", engagement_db_dataset="sdc_gau_s01e02"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="sdc_gau_radio_topic_reason"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
-                ] 
-            )
-        ),
-        KoboToolBoxSource(
-                token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
-                sync_config=KoboToolBoxToEngagementDBConfiguration(    
-                    asset_uid="aMxyY3sXQhPkfLeZWQrYSH",
-                    participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
-                        data_column_name="Contacts",
-                        id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
-                    ),
-                    ignore_invalid_mobile_numbers=True,
-                    question_configurations=[
-                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e03", engagement_db_dataset="sdc_gau_s01e03"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e04", engagement_db_dataset="sdc_gau_s01e04"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="sdc_gau_radio_topic_reason"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
-                    ] 
-                )
-            ),
-    ],
+    # kobotoolbox_sources=[
+    #     KoboToolBoxSource(
+    #         token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
+    #         sync_config=KoboToolBoxToEngagementDBConfiguration(    
+    #             asset_uid="aRShjHtCNepU2MEptvHDmW",
+    #             participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+    #                 data_column_name="Contacts",
+    #                 id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+    #             ),
+    #             ignore_invalid_mobile_numbers=True,
+    #             question_configurations=[
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e01", engagement_db_dataset="sdc_gau_s01e01"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e02", engagement_db_dataset="sdc_gau_s01e02"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="sdc_gau_radio_topic_reason"),
+    #                 KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
+    #             ] 
+    #         )
+    #     ),
+    #     KoboToolBoxSource(
+    #             token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
+    #             sync_config=KoboToolBoxToEngagementDBConfiguration(    
+    #                 asset_uid="aMxyY3sXQhPkfLeZWQrYSH",
+    #                 participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+    #                     data_column_name="Contacts",
+    #                     id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+    #                 ),
+    #                 ignore_invalid_mobile_numbers=True,
+    #                 question_configurations=[
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e03", engagement_db_dataset="sdc_gau_s01e03"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e04", engagement_db_dataset="sdc_gau_s01e04"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="sdc_gau_radio_topic_reason"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
+    #                 ] 
+    #             )
+    #         ),
+    # ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e01",
-                    engagement_db_dataset="sdc_gau_s01e01",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e01"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e02",
-                    engagement_db_dataset="sdc_gau_s01e02",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e02"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e02"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e03",
-                    engagement_db_dataset="sdc_gau_s01e03",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e03"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e04",
-                    engagement_db_dataset="sdc_gau_s01e04",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e04"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e05",
-                    engagement_db_dataset="sdc_gau_s01e05",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e05"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e05"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e06",
-                    engagement_db_dataset="sdc_gau_s01e06",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e06"
-                ),
                 # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_s01e07",
-                #     engagement_db_dataset="sdc_gau_s01e07",
+                #     coda_dataset_id="SDC_GAU_s01e01",
+                #     engagement_db_dataset="sdc_gau_s01e01",
                 #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07"), 
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01"), 
                 #                                 auto_coder=None, coda_code_schemes_count=3)
                 #     ],
-                #     ws_code_match_value="sdc_gau_s01e07"
+                #     ws_code_match_value="sdc_gau_s01e01"
                 # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e02",
+                #     engagement_db_dataset="sdc_gau_s01e02",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e02"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e02"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e03",
+                #     engagement_db_dataset="sdc_gau_s01e03",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e03"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e04",
+                #     engagement_db_dataset="sdc_gau_s01e04",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e04"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e05",
+                #     engagement_db_dataset="sdc_gau_s01e05",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e05"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e05"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e06",
+                #     engagement_db_dataset="sdc_gau_s01e06",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e06"
+                # ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_s01e07",
+                    engagement_db_dataset="sdc_gau_s01e07",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_s01e07"
+                ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="SDC_GAU_s01e01_follow_up",
                     engagement_db_dataset="sdc_gau_s01e01_follow_up",
