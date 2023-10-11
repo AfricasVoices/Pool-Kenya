@@ -4,6 +4,30 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-c981691e",
+            "DisplayText": "providing food relief",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "providing_food_relief",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-57b6df94",
+            "DisplayText": "create employment",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "create_employment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cfe78d74",
+            "DisplayText": "provide seeds and fertilizer",
+            "CodeType": "Normal",
+            "NumericValue": 0,
+            "StringValue": "provide_seeds_and_fertilizer",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-d9427b6b",
             "DisplayText": "awareness campaigns",
             "CodeType": "Normal",
