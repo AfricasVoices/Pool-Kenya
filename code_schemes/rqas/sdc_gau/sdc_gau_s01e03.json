@@ -4,6 +4,158 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-b9c4886a",
+            "DisplayText": "involve community leaders",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "involve_community_leaders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-59d860ee",
+            "DisplayText": "involve the community",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "involve_the_community",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ba878a8c",
+            "DisplayText": "create job and business opportunties",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "create_job_and_business_opportunties",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4be04c5c",
+            "DisplayText": "improve security measures",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "improve_security_measures",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-40bc8e15",
+            "DisplayText": "peace education",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "peace_education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-12b86093",
+            "DisplayText": "adopt alternative livelihood",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "adopt_alternative_livelihood",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8a1d7d54",
+            "DisplayText": "take legal action",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "take_legal_action",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9dd7423b",
+            "DisplayText": "promote community dialogue and mediation",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "promote_community_dialogue_and_mediation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0392d206",
+            "DisplayText": "equal distribution of resources",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "equal_distribution_of_resources",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fb011375",
+            "DisplayText": "report illegal firearms or disarm",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "report_illegal_firearms_or_disarm",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5f58c679",
+            "DisplayText": "intermarriages",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "intermarriages",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-984811b7",
+            "DisplayText": "ban illegal breweries",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "ban_illegal_breweries",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-43dbc334",
+            "DisplayText": "embrace peace, love & unity",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "embrace_peace_love_and_unity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2c3169c4",
+            "DisplayText": "stop tribalism and discrimination",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "stop_tribalism_and_discrimination",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-869d3a16",
+            "DisplayText": "good governance or leadership",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "good_governance_or_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d1129272",
+            "DisplayText": "collaboration between stakeholders",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "collaboration_between_stakeholders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f9495ae7",
+            "DisplayText": "identify & address causes of conflict",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "identify_and_address_causes_of_conflict",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2e6d9954",
+            "DisplayText": "improving road infrastructure",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "improving_road_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d4f8c693",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 19,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
