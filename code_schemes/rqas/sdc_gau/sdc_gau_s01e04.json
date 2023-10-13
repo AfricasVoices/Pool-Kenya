@@ -4,6 +4,190 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-2715d425",
+            "DisplayText": "peace tournaments",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "peace_tournaments",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b189c9fa",
+            "DisplayText": "security forces deployed",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "security_forces_deployed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ba878a8c",
+            "DisplayText": "local leaders initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "local_leaders_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-db10d181",
+            "DisplayText": "civic education",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "civic_education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-328b90b4",
+            "DisplayText": "penalizing criminals",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "penalizing_criminals",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-730f6650",
+            "DisplayText": "creating economic opportunities",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "creating_economic_opportunities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-99663da3",
+            "DisplayText": "disarmament",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "disarmament",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a7036a61",
+            "DisplayText": "NGOs programs",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "ngo_programs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cb06009c",
+            "DisplayText": "peace committees",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "peace_committees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fb011375",
+            "DisplayText": "de-radicalisation initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "de_radicalisation_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bdfe6882",
+            "DisplayText": "dialogue and mediation",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "dialogue_and_mediation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a5880022",
+            "DisplayText": "reporting to authorities",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "reporting_to_authorities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-63d6af42",
+            "DisplayText": "intermarriage",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "intermarriage",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-05485dd7",
+            "DisplayText": "nyumba kumi initiative",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "nyumba_kumi_initiative",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6fafab8f",
+            "DisplayText": "cultural initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "cultural_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c390883c",
+            "DisplayText": "traditional justice",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "traditional_justice",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f9495ae7",
+            "DisplayText": "rule of law",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "rule_of_law",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2e6d9954",
+            "DisplayText": "collaboration between stakeholders",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "collaboration_between_stakeholders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-215aee3b",
+            "DisplayText": "conflict monitoring",
+            "CodeType": "Normal",
+            "NumericValue": 19,
+            "StringValue": "conflict_monitoring",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c29a0b1e",
+            "DisplayText": "water infrastructure construction",
+            "CodeType": "Normal",
+            "NumericValue": 20,
+            "StringValue": "water_infrastructure_construction",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1877d844",
+            "DisplayText": "cross-border peace initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 21,
+            "StringValue": "cross_border_peace_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4a11fec8",
+            "DisplayText": "not aware of any",
+            "CodeType": "Normal",
+            "NumericValue": 22,
+            "StringValue": "not_aware_of_any",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3f3564d9",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 23,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
