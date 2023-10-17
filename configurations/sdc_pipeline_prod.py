@@ -110,18 +110,41 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     #                 ] 
     #             )
     #         ),
+    # KoboToolBoxSource(
+    #             token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
+    #             sync_config=KoboToolBoxToEngagementDBConfiguration(    
+    #                 asset_uid="aHx8dSPUmjjfesZ9myYPbE",
+    #                 participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+    #                     data_column_name="Contacts",
+    #                     id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+    #                 ),
+    #                 ignore_invalid_mobile_numbers=True,
+    #                 question_configurations=[
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e05", engagement_db_dataset="sdc_gau_s01e05"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e06", engagement_db_dataset="sdc_gau_s01e06"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_Reasons", engagement_db_dataset="sdc_gau_radio_topic_reason"),
+    #                     KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
+    #                 ] 
+    #             )
+    #         ),
     KoboToolBoxSource(
                 token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
                 sync_config=KoboToolBoxToEngagementDBConfiguration(    
-                    asset_uid="aHx8dSPUmjjfesZ9myYPbE",
+                    asset_uid="aDYzVWP6mHBjpaATD3TxHo",
                     participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
                         data_column_name="Contacts",
                         id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
                     ),
                     ignore_invalid_mobile_numbers=True,
                     question_configurations=[
-                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e05", engagement_db_dataset="sdc_gau_s01e05"),
-                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e06", engagement_db_dataset="sdc_gau_s01e06"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e07", engagement_db_dataset="sdc_gau_s01e07"),
                         KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
                         KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
                         KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
@@ -175,24 +198,24 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 #     ],
                 #     ws_code_match_value="sdc_gau_s01e04"
                 # ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e05",
-                    engagement_db_dataset="sdc_gau_s01e05",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e05"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e05"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e06",
-                    engagement_db_dataset="sdc_gau_s01e06",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e06"
-                ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e05",
+                #     engagement_db_dataset="sdc_gau_s01e05",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e05"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e05"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e06",
+                #     engagement_db_dataset="sdc_gau_s01e06",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e06"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e06"
+                # ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="SDC_GAU_s01e07",
                     engagement_db_dataset="sdc_gau_s01e07",
@@ -292,51 +315,51 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 #     ],
                 #     ws_code_match_value="preferred_language"
                 # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_radio_access",
-                #     engagement_db_dataset="sdc_gau_radio_access",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_radio_access"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_mobile_phone_access",
-                #     engagement_db_dataset="sdc_gau_mobile_phone_access",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_mobile_phone_access"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_interesting_radio_topic",
-                #     engagement_db_dataset="sdc_gau_interesting_radio_topic",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_interesting_radio_topic"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_radio_topic_reason",
-                #     engagement_db_dataset="sdc_gau_radio_topic_reason",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_radio_topic_reason"
-                # ),
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="SDC_GAU_literacy",
-                #     engagement_db_dataset="sdc_gau_literacy",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/literacy"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="sdc_gau_literacy"
-                # ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_radio_access",
+                    engagement_db_dataset="sdc_gau_radio_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_radio_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_mobile_phone_access",
+                    engagement_db_dataset="sdc_gau_mobile_phone_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_mobile_phone_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_interesting_radio_topic",
+                    engagement_db_dataset="sdc_gau_interesting_radio_topic",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_interesting_radio_topic"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_radio_topic_reason",
+                    engagement_db_dataset="sdc_gau_radio_topic_reason",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_radio_topic_reason"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="SDC_GAU_literacy",
+                    engagement_db_dataset="sdc_gau_literacy",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/literacy"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="sdc_gau_literacy"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
@@ -350,50 +373,50 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         #     drive_dir="sdc_gau_analysis_output"
         # ),
         dataset_configurations=[
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e01"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e01_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01"),
-                        analysis_dataset="s01e01"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e02"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e02_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e02"),
-                        analysis_dataset="s01e02"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e03"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e03_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03"),
-                        analysis_dataset="s01e03"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e04"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e04_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04"),
-                        analysis_dataset="s01e04"
-                    )
-                ],
-            ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e01"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e01_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01"),
+            #             analysis_dataset="s01e01"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e02"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e02_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e02"),
+            #             analysis_dataset="s01e02"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e03"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e03_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03"),
+            #             analysis_dataset="s01e03"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e04"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e04_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04"),
+            #             analysis_dataset="s01e04"
+            #         )
+            #     ],
+            # ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e05"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
@@ -427,39 +450,39 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     )
                 ],
             ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e01_follow_up"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e01_follow_up_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01_follow_up"),
-                        analysis_dataset="s01e01_follow_up"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e03_follow_up"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e03_follow_up_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03_follow_up"),
-                        analysis_dataset="s01e03_follow_up"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e04_follow_up"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e04_follow_up_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04_follow_up"),
-                        analysis_dataset="s01e04_follow_up"
-                    )
-                ],
-            ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e01_follow_up"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e01_follow_up_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e01_follow_up"),
+            #             analysis_dataset="s01e01_follow_up"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e03_follow_up"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e03_follow_up_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e03_follow_up"),
+            #             analysis_dataset="s01e03_follow_up"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e04_follow_up"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e04_follow_up_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e04_follow_up"),
+            #             analysis_dataset="s01e04_follow_up"
+            #         )
+            #     ],
+            # ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e06_follow_up"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
@@ -471,72 +494,72 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     )
                 ],
             ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_s01e07_follow_up"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01e07_follow_up_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07_follow_up"),
-                        analysis_dataset="s01e07_follow_up"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_radio_access"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="radio_access_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"),
-                        analysis_dataset="radio_access"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_mobile_phone_access"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="mobile_phone_access_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"),
-                        analysis_dataset="mobile_phone_access"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_interesting_radio_topic"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="interesting_radio_topic_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"),
-                        analysis_dataset="interesting_radio_topic"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_radio_topic_reason"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="radio_topic_reason_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"),
-                        analysis_dataset="radio_topic_reason"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["sdc_gau_literacy"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="literacy_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/sdc_gau/literacy"),
-                        analysis_dataset="literacy"
-                    )
-                ],
-            ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_s01e07_follow_up"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="s01e07_follow_up_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07_follow_up"),
+            #             analysis_dataset="s01e07_follow_up"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_radio_access"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="radio_access_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"),
+            #             analysis_dataset="radio_access"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_mobile_phone_access"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="mobile_phone_access_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"),
+            #             analysis_dataset="mobile_phone_access"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_interesting_radio_topic"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="interesting_radio_topic_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"),
+            #             analysis_dataset="interesting_radio_topic"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_radio_topic_reason"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="radio_topic_reason_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"),
+            #             analysis_dataset="radio_topic_reason"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["sdc_gau_literacy"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="literacy_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/sdc_gau/literacy"),
+            #             analysis_dataset="literacy"
+            #         )
+            #     ],
+            # ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["preferred_language"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
