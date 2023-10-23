@@ -52,16 +52,16 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     # FlowResultConfiguration("sdc_gau_s01e06_activation", "rqa_s01e06", "sdc_gau_s01e06"),
                     FlowResultConfiguration("sdc_gau_s01e07_activation", "rqa_s01e07", "sdc_gau_s01e07"),
 
-                    # FlowResultConfiguration("sdc_gau_s01e01_follow_up_activation", "rqa_s01e01_follow_up", "sdc_gau_s01e01_follow_up"),
-                    # FlowResultConfiguration("sdc_gau_s01e03_follow_up_activation", "rqa_s01e03_follow_up", "sdc_gau_s01e03_follow_up"),
-                    # FlowResultConfiguration("sdc_gau_s01e04_follow_up_activation", "rqa_s01e04_follow_up", "sdc_gau_s01e04_follow_up"),
-                    # FlowResultConfiguration("sdc_gau_s01e06_follow_up_activation", "rqa_s01e06_follow_up", "sdc_gau_s01e06_follow_up"),
-                    # FlowResultConfiguration("sdc_gau_s01e07_follow_up_activation", "rqa_s01e07_follow_up", "sdc_gau_s01e07_follow_up")
+                    FlowResultConfiguration("sdc_gau_s01e01_follow_up_activation", "rqa_s01e01_follow_up", "sdc_gau_s01e01_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e03_follow_up_activation", "rqa_s01e03_follow_up", "sdc_gau_s01e03_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e04_follow_up_activation", "rqa_s01e04_follow_up", "sdc_gau_s01e04_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e06_follow_up_activation", "rqa_s01e06_follow_up", "sdc_gau_s01e06_follow_up"),
+                    FlowResultConfiguration("sdc_gau_s01e07_follow_up_activation", "rqa_s01e07_follow_up", "sdc_gau_s01e07_follow_up")
                 ],
             )
         )
     ],
-    # kobotoolbox_sources=[
+    kobotoolbox_sources=[
     #     KoboToolBoxSource(
     #         token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
     #         sync_config=KoboToolBoxToEngagementDBConfiguration(    
@@ -110,7 +110,25 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     #                 ] 
     #             )
     #         ),
-    # ],
+       KoboToolBoxSource(
+                token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
+                sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                    asset_uid="aEZd267qK84ZRubLmmZG9y",
+                    participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                        data_column_name="Contacts",
+                        id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                    ),
+                    ignore_invalid_mobile_numbers=True,
+                    question_configurations=[
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_fup_e01", engagement_db_dataset="sdc_gau_s01e01_follow_up"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_fup_e03", engagement_db_dataset="sdc_gau_s01e03_follow_up"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_fup_e04", engagement_db_dataset="sdc_gau_s01e04_follow_up"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_fup_e06", engagement_db_dataset="sdc_gau_s01e06_follow_up"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_fup_e07", engagement_db_dataset="sdc_gau_s01e07_follow_up")
+                    ] 
+                )
+            ),
+    ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
@@ -169,15 +187,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 #     ],
                 #     ws_code_match_value="sdc_gau_s01e06"
                 # ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_s01e07",
-                    engagement_db_dataset="sdc_gau_s01e07",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_s01e07"
-                ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="SDC_GAU_s01e07",
+                #     engagement_db_dataset="sdc_gau_s01e07",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/sdc_gau_s01e07"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="sdc_gau_s01e07"
+                # ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="SDC_GAU_s01e01_follow_up",
                     engagement_db_dataset="sdc_gau_s01e01_follow_up",
@@ -223,96 +241,96 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="sdc_gau_s01e07_follow_up"
                 ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_location",
-                    engagement_db_dataset="location",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
-                    ],
-                    ws_code_match_value="location"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_gender",
-                    engagement_db_dataset="gender",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
-                                                auto_coder=swahili.DemographicCleaner.clean_gender)
-                    ],
-                    ws_code_match_value="gender"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_age",
-                    engagement_db_dataset="age",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
-                                                str(swahili.DemographicCleaner.clean_age_within_range(x)))
-                    ],
-                    ws_code_match_value="age"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_disabled",
-                    engagement_db_dataset="disabled",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
-                    ],
-                    ws_code_match_value="disabled"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Kenya_Pool_preferred_language",
-                    engagement_db_dataset="preferred_language",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/preferred_language"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="preferred_language"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_radio_access",
-                    engagement_db_dataset="sdc_gau_radio_access",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_radio_access"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_mobile_phone_access",
-                    engagement_db_dataset="sdc_gau_mobile_phone_access",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_mobile_phone_access"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_interesting_radio_topic",
-                    engagement_db_dataset="sdc_gau_interesting_radio_topic",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_interesting_radio_topic"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_radio_topic_reason",
-                    engagement_db_dataset="sdc_gau_radio_topic_reason",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_radio_topic_reason"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="SDC_GAU_literacy",
-                    engagement_db_dataset="sdc_gau_literacy",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/literacy"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="sdc_gau_literacy"
-                ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="Kenya_Pool_location",
+        #             engagement_db_dataset="location",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_ward"), auto_coder=None),
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_constituency"), auto_coder=None),
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/kenya_county"), auto_coder=None)
+        #             ],
+        #             ws_code_match_value="location"
+        #         ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Kenya_Pool_gender",
+                #     engagement_db_dataset="gender",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
+                #                                 auto_coder=swahili.DemographicCleaner.clean_gender)
+                #     ],
+                #     ws_code_match_value="gender"
+                # ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="Kenya_Pool_age",
+        #             engagement_db_dataset="age",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"), auto_coder=lambda x:
+        #                                         str(swahili.DemographicCleaner.clean_age_within_range(x)))
+        #             ],
+        #             ws_code_match_value="age"
+        #         ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="Kenya_Pool_disabled",
+        #             engagement_db_dataset="disabled",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disabled"), auto_coder=None)
+        #             ],
+        #             ws_code_match_value="disabled"
+        #         ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="Kenya_Pool_preferred_language",
+        #             engagement_db_dataset="preferred_language",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/preferred_language"), 
+        #                                         auto_coder=None, coda_code_schemes_count=3)
+        #             ],
+        #             ws_code_match_value="preferred_language"
+        #         ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="SDC_GAU_radio_access",
+        #             engagement_db_dataset="sdc_gau_radio_access",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_access"), 
+        #                                         auto_coder=None, coda_code_schemes_count=3)
+        #             ],
+        #             ws_code_match_value="sdc_gau_radio_access"
+        #         ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="SDC_GAU_mobile_phone_access",
+        #             engagement_db_dataset="sdc_gau_mobile_phone_access",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/mobile_phone_access"), 
+        #                                         auto_coder=None, coda_code_schemes_count=3)
+        #             ],
+        #             ws_code_match_value="sdc_gau_mobile_phone_access"
+        #         ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="SDC_GAU_interesting_radio_topic",
+        #             engagement_db_dataset="sdc_gau_interesting_radio_topic",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/interesting_radio_topic"), 
+        #                                         auto_coder=None, coda_code_schemes_count=3)
+        #             ],
+        #             ws_code_match_value="sdc_gau_interesting_radio_topic"
+        #         ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="SDC_GAU_radio_topic_reason",
+        #             engagement_db_dataset="sdc_gau_radio_topic_reason",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/radio_topic_reason"), 
+        #                                         auto_coder=None, coda_code_schemes_count=3)
+        #             ],
+        #             ws_code_match_value="sdc_gau_radio_topic_reason"
+        #         ),
+        #         CodaDatasetConfiguration(
+        #             coda_dataset_id="SDC_GAU_literacy",
+        #             engagement_db_dataset="sdc_gau_literacy",
+        #             code_scheme_configurations=[
+        #                 CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/sdc_gau/literacy"), 
+        #                                         auto_coder=None, coda_code_schemes_count=3)
+        #             ],
+        #             ws_code_match_value="sdc_gau_literacy"
+        #         ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
