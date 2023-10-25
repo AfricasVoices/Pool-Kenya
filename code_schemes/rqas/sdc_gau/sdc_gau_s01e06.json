@@ -4,6 +4,134 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-f969251a",
+            "DisplayText": "restricted movement",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "restricted_movement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ea26ecd6",
+            "DisplayText": "education distrupted",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "education_distrupted",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6494eade",
+            "DisplayText": "limited access to healthcare",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "limited_access_to_healthcare",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-30e432d8",
+            "DisplayText": "business operations hindered",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "business_operations_hindered",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-18757a9b",
+            "DisplayText": "loss of livelihoods",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "loss_of_livelihoods",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d60a1ee3",
+            "DisplayText": "unemployment",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "unemployment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6240312f",
+            "DisplayText": "NGOs relocated",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "ngos_relocated",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-91cbf303",
+            "DisplayText": "displacement",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "displacement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c0e8454c",
+            "DisplayText": "limited access to finacial services",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "limited_access_to_finacial_services",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-161bd591",
+            "DisplayText": "destruction of properties",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "destruction_of_properties",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b1ec88b9",
+            "DisplayText": "loss of life",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "loss_of_life",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ec3a3622",
+            "DisplayText": "fear and anxiety",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "fear_and_nxiety",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5ce6cb62",
+            "DisplayText": "increased theft",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "increased_theft",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d57f6114",
+            "DisplayText": "investments prevented",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "investments_prevented",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-94826872",
+            "DisplayText": "limits economic development",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "limits_economic_development",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0828be76",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
