@@ -4,6 +4,134 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-eba46a6f",
+            "DisplayText": "land disputes",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "land_disputes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2e1965f4",
+            "DisplayText": "gender based violence",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "gender_based_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-178c4b1a",
+            "DisplayText": "political disputes",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "political_disputes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ca38d773",
+            "DisplayText": "tribalism & clannism",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "tribalism_and_clannism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b17142bc",
+            "DisplayText": "cattle raiding",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "cattle_raiding",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5e7f6856",
+            "DisplayText": "drug abuse",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "drug_abuse",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-05e1cf9d",
+            "DisplayText": "competition over resources",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "competition_over_resources",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-76ad6310",
+            "DisplayText": "family and neighbour disputes",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "family_and_neighbour_disputes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c655ee1c",
+            "DisplayText": "religious and cultural differences",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "religious_and_cultural_differences",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7b5f2377",
+            "DisplayText": "climate change",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "climate_change",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2962bd77",
+            "DisplayText": "terrorism",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "terrorism ",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5d710bf6",
+            "DisplayText": "communication barriers",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "communication_barriers",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cb76b653",
+            "DisplayText": "false accusations and mistrust",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "false accusations and mistrust",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3330f2f3",
+            "DisplayText": "cross border conflict",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "cross_border_conflict",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b2ba9dc7",
+            "DisplayText": "economic hardship and injustice",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "economic_hardship_and_injustice",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3353c03f",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",

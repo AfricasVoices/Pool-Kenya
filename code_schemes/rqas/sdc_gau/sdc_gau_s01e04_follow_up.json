@@ -4,6 +4,86 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-fd0067c8",
+            "DisplayText": "created awareness",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "created_awareness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-24169b0f",
+            "DisplayText": "promoted peace",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "promoted_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ba878a8c",
+            "DisplayText": "improved security",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "improved_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d04eaec7",
+            "DisplayText": "promoted tolerance",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "promoted_tolerance",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a81c5750",
+            "DisplayText": "help to solve conflicts",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "help_to _solve_conflicts",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4f44d822",
+            "DisplayText": "reduced conflict",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "reduced_conflict",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e8d23342",
+            "DisplayText": "promoted unity",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "promoted_unity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7a720347",
+            "DisplayText": "built trust",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "built_trust",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e8d23342",
+            "DisplayText": "promoted inclusivity",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "promoted_inclusivity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1ee1a4d0",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
