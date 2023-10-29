@@ -4,6 +4,126 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-fb086737",
+            "DisplayText": "financial aid",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "financial_aid",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1cbe0112",
+            "DisplayText": "community led economic activities",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "community_led_economic_activities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-004d3333",
+            "DisplayText": "create employment",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "create_employment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-796ccaf6",
+            "DisplayText": "market access",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "market_access",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a93f66aa",
+            "DisplayText": "facilitate mediation",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "facilitate_mediation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-789fec51",
+            "DisplayText": "ensure equal resource distribution",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "ensure_equal_resource_distribution",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c61f5017",
+            "DisplayText": "increase policing",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "increase_policing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0c65c4cd",
+            "DisplayText": "community led security",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "community_led_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3dc96724",
+            "DisplayText": "learning programs",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "learning_programs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1cb45da0",
+            "DisplayText": "awareness creation",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "awareness_creation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dc822c66",
+            "DisplayText": "collaboration between government and community",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "collaboration_between_government_and_community",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7730ab38",
+            "DisplayText": "avoid violence",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "avoid_violence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e8f7ee4c",
+            "DisplayText": "arrest offenders",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "arrest_offenders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f09fb686",
+            "DisplayText": "promote unity & trust",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "promote_unity_and_trust",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-28d3eb2d",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",

@@ -4,6 +4,182 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-111c08b7",
+            "DisplayText": "organise cultural and sports events",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "organise_cultural_and_sports_events",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ab69e284",
+            "DisplayText": "involving local leaders",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "involving_local_leaders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-004d3333",
+            "DisplayText": "community led initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "community_led_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-04f1903f",
+            "DisplayText": "collaboration with security forces",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "collaboration_with_security_forces",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2abe7d0c",
+            "DisplayText": "collaborating with other stakeholders",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "collaborating_with_other_stakeholders",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4316fb78",
+            "DisplayText": "Conduct awareness campaigns",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "conduct_awareness_campaigns",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a93f66aa",
+            "DisplayText": "open communication",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "open_communication",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dcd8270e",
+            "DisplayText": "ensure transparent leadership",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "ensure_transparent_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8973957b",
+            "DisplayText": "form committees",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "form_committees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-35a6b747",
+            "DisplayText": "natural resource conservation",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "natural_resource_conservation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3dc96724",
+            "DisplayText": "lead mediation efforts",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "lead_mediation_efforts",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ae4e6727",
+            "DisplayText": "advocate for policies",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "advocate_for_policies",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-27b734e5",
+            "DisplayText": "equal resource distribution",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "equal_resource_distribution",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-42f210dd",
+            "DisplayText": "promote dialogue",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "promote_dialogue",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e8f7ee4c",
+            "DisplayText": "encourage alternative livelihoods",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "encourage_alternative_livelihoods",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ba65c99a",
+            "DisplayText": "creating economic opportunities",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "creating_economic_opportunities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a9ad6c68",
+            "DisplayText": "foster tolerance and peace",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "foster_tolerance_and_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f09fb686",
+            "DisplayText": "learning programmes",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "learning_programmes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-58026268",
+            "DisplayText": "play advocacy roles",
+            "CodeType": "Normal",
+            "NumericValue": 19,
+            "StringValue": "play_advocacy_roles",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6aac04f6",
+            "DisplayText": "end tribalism",
+            "CodeType": "Normal",
+            "NumericValue": 20,
+            "StringValue": "end_tribalism",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7dfc7fd5",
+            "DisplayText": "play preventive roles",
+            "CodeType": "Normal",
+            "NumericValue": 21,
+            "StringValue": "play_preventive_roles",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-edd55aea",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 23,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",

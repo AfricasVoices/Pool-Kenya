@@ -4,7 +4,7 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
-            "CodeID": "code-fd0067c8",
+            "CodeID": "code-27dd6826",
             "DisplayText": "created awareness",
             "CodeType": "Normal",
             "NumericValue": 1,
@@ -12,7 +12,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-24169b0f",
+            "CodeID": "code-b6481026",
             "DisplayText": "promoted peace",
             "CodeType": "Normal",
             "NumericValue": 2,
@@ -28,7 +28,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-d04eaec7",
+            "CodeID": "code-eb881766",
             "DisplayText": "promoted tolerance",
             "CodeType": "Normal",
             "NumericValue": 4,
@@ -36,7 +36,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-a81c5750",
+            "CodeID": "code-bbbc0690",
             "DisplayText": "help to solve conflicts",
             "CodeType": "Normal",
             "NumericValue": 5,
@@ -44,7 +44,7 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-4f44d822",
+            "CodeID": "code-226b558c",
             "DisplayText": "reduced conflict",
             "CodeType": "Normal",
             "NumericValue": 6,
@@ -52,34 +52,34 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-e8d23342",
+            "CodeID": "code-3876e14e",
             "DisplayText": "promoted unity",
             "CodeType": "Normal",
-            "NumericValue": 8,
+            "NumericValue": 7,
             "StringValue": "promoted_unity",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-7a720347",
+            "CodeID": "code-c096e6a1",
             "DisplayText": "built trust",
             "CodeType": "Normal",
-            "NumericValue": 7,
+            "NumericValue": 8,
             "StringValue": "built_trust",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-e8d23342",
+            "CodeID": "code-0501da80",
             "DisplayText": "promoted inclusivity",
             "CodeType": "Normal",
-            "NumericValue": 8,
+            "NumericValue": 9,
             "StringValue": "promoted_inclusivity",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-1ee1a4d0",
+            "CodeID": "code-be25b9ff",
             "DisplayText": "other theme",
             "CodeType": "Normal",
-            "NumericValue": 9,
+            "NumericValue": 10,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
