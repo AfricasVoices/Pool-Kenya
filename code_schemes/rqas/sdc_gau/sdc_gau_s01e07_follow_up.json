@@ -4,6 +4,150 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-4732b6c2",
+            "DisplayText": "encourage collaboration",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "encourage_collaboration",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-61a9a9fe",
+            "DisplayText": "equal resources allocation",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "equal_resources_allocation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-709c455f",
+            "DisplayText": "dialogue and mediation",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "dialogue_and_mediation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ddf0f7e6",
+            "DisplayText": "promote transparency and accountability",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "promote_transparency_and_accountability",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5bcdb878",
+            "DisplayText": "educational programmes",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "educational_programmes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bb1f3ae8",
+            "DisplayText": "advocate for policies and rights",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "advocate_for_policies_and_rights",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6dad7e1b",
+            "DisplayText": "end corruption",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "end_corruption",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-75228eb7",
+            "DisplayText": "adopting alternative livelihoods",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "adopting_alternative_livelihoods",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-31bb6c4d",
+            "DisplayText": "rules for resources management",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "rules_for_resources_management",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b92f6dec",
+            "DisplayText": "building water infrastructure",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "building_water_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fdba89cb",
+            "DisplayText": "natural resources conservation",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "natural_resources_conservation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1e98a045",
+            "DisplayText": "increase security measures",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "increase_security_measures",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5801766c",
+            "DisplayText": "implement peace initiatives",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "implement_peace_initiatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fb9410a0",
+            "DisplayText": "open communication",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "open_communication",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7b98f949",
+            "DisplayText": "conflict prevention",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "conflict_prevention",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1f136dcc",
+            "DisplayText": "form committees",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "form_committees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9f3a0062",
+            "DisplayText": "cultural and sport events",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "cultural_and_sport_events",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-56b4a41d",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",

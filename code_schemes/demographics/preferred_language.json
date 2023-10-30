@@ -28,6 +28,46 @@
         "StringValue": "kamba"
       },
       {
+        "DisplayText": "samburu",
+        "VisibleInCoda": true,
+        "NumericValue": 4,
+        "CodeID": "code-57bdc082",
+        "CodeType": "Normal",
+        "StringValue": "samburu"
+      },
+      {
+        "DisplayText": "borana",
+        "VisibleInCoda": true,
+        "NumericValue": 5,
+        "CodeID": "code-3995fd52",
+        "CodeType": "Normal",
+        "StringValue": "borana"
+      },
+      {
+        "DisplayText": "turkana",
+        "VisibleInCoda": true,
+        "NumericValue": 6,
+        "CodeID": "code-b841b982",
+        "CodeType": "Normal",
+        "StringValue": "turkana"
+      },
+      {
+        "DisplayText": "somali",
+        "VisibleInCoda": true,
+        "NumericValue": 7,
+        "CodeID": "code-47a4ff2a",
+        "CodeType": "Normal",
+        "StringValue": "somali"
+      },
+      {
+        "DisplayText": "pokot",
+        "VisibleInCoda": true,
+        "NumericValue": 8,
+        "CodeID": "code-c012294e",
+        "CodeType": "Normal",
+        "StringValue": "pokot"
+      },
+      {
         "DisplayText": "other",
         "VisibleInCoda": true,
         "NumericValue": 3,
