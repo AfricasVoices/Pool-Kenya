@@ -4,6 +4,78 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-11ac08b7",
+            "DisplayText": "informative",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "informative",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-eb69e284",
+            "DisplayText": "promotes peace",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "promotes_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a04d3333",
+            "DisplayText": "creates dialogue platform",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "creates_dialogue_platform",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-84f1903f",
+            "DisplayText": "engaging",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "engaging",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2abe7d0c",
+            "DisplayText": "promotes equality",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "promotes_equality",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8316fb78",
+            "DisplayText": "good for community",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "good_for_community",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e93h66aa",
+            "DisplayText": "brings development",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "brings_development",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5ed8270e",
+            "DisplayText": "builds trust and inclusivity",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "builds_trust_and_inclusivity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2fd55aea",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
