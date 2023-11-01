@@ -338,11 +338,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         )
     ),
     analysis=AnalysisConfiguration(
-        # #Temporarily disabled due to drive issues
-        # google_drive_upload=GoogleDriveUploadConfiguration(
-        #     credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
-        #     drive_dir="sdc_gau_analysis_output"
-        # ),
+        #Temporarily disabled due to drive issues
+        google_drive_upload=GoogleDriveUploadConfiguration(
+            credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+            drive_dir="sdc_gau_analysis_output"
+        ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["sdc_gau_s01e01"],
