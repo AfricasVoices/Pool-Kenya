@@ -1,69 +1,45 @@
 {
-    "SchemeID": "Scheme-7a4fdb25",
-    "Name": "Uraia S01E02",
+    "SchemeID": "Scheme-93e7a01b",
+    "Name": "Uraia S01E03 Follow-Up",
     "Version": "0.0.0.1",
     "Codes": [
         {
-            "CodeID": "code-ce7f986e",
-            "DisplayText": "alternative livelihoods",
-            "CodeType": "Normal",
-            "NumericValue": 8,
-            "StringValue": "alternative_livelihoods",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-85f057e0",
-            "DisplayText": "barely surviving",
-            "CodeType": "Normal",
-            "NumericValue": 0,
-            "StringValue": "barely_surviving",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-021f6653",
-            "DisplayText": "planting trees",
+            "CodeID": "code-f579da59",
+            "DisplayText": "not involved at all",
             "CodeType": "Normal",
             "NumericValue": 1,
-            "StringValue": "planting_trees",
+            "StringValue": "not_involved_at_all",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-9385c279",
-            "DisplayText": "nothing",
+            "CodeID": "code-67b27873",
+            "DisplayText": "supporting tree planting",
             "CodeType": "Normal",
             "NumericValue": 2,
-            "StringValue": "nothing",
+            "StringValue": "supporting_tree_planting",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-ea6f0694",
-            "DisplayText": "improved agricultural practices",
+            "CodeID": "code-b11f0a09",
+            "DisplayText": "supporting drought resistant farming practices",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "improved_agricultural_practices",
+            "StringValue": "supporting_drought_resistant_farming_practices",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-e21ce102",
-            "DisplayText": "reduce pollution",
+            "CodeID": "code-45e27295",
+            "DisplayText": "facilitating climate change awareness",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "reduce_pollution",
+            "StringValue": "facilitating_climate_change_awareness",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-84d4233a",
-            "DisplayText": "water harvesting",
-            "CodeType": "Normal",
-            "NumericValue": 6,
-            "StringValue": "water_harvesting",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-902a7298",
+            "CodeID": "code-c53034c8",
             "DisplayText": "other theme",
             "CodeType": "Normal",
-            "NumericValue": 7,
+            "NumericValue": 5,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },

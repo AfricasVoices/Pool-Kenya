@@ -1,69 +1,29 @@
 {
-    "SchemeID": "Scheme-7a4fdb25",
-    "Name": "Uraia S01E02",
+    "SchemeID": "Scheme-27c90b71",
+    "Name": "Uraia Literacy",
     "Version": "0.0.0.1",
     "Codes": [
         {
-            "CodeID": "code-ce7f986e",
-            "DisplayText": "alternative livelihoods",
-            "CodeType": "Normal",
-            "NumericValue": 8,
-            "StringValue": "alternative_livelihoods",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-85f057e0",
-            "DisplayText": "barely surviving",
-            "CodeType": "Normal",
-            "NumericValue": 0,
-            "StringValue": "barely_surviving",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-021f6653",
-            "DisplayText": "planting trees",
+            "CodeID": "code-e50bb70e",
+            "DisplayText": "yes",
             "CodeType": "Normal",
             "NumericValue": 1,
-            "StringValue": "planting_trees",
+            "StringValue": "yes",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-9385c279",
-            "DisplayText": "nothing",
+            "CodeID": "code-f6c37dd8",
+            "DisplayText": "no",
             "CodeType": "Normal",
             "NumericValue": 2,
-            "StringValue": "nothing",
+            "StringValue": "no",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-ea6f0694",
-            "DisplayText": "improved agricultural practices",
-            "CodeType": "Normal",
-            "NumericValue": 3,
-            "StringValue": "improved_agricultural_practices",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-e21ce102",
-            "DisplayText": "reduce pollution",
-            "CodeType": "Normal",
-            "NumericValue": 4,
-            "StringValue": "reduce_pollution",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-84d4233a",
-            "DisplayText": "water harvesting",
-            "CodeType": "Normal",
-            "NumericValue": 6,
-            "StringValue": "water_harvesting",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-902a7298",
+            "CodeID": "code-d099d88c",
             "DisplayText": "other theme",
             "CodeType": "Normal",
-            "NumericValue": 7,
+            "NumericValue": 3,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
