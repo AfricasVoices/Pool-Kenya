@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-c981691e",
+            "DisplayText": "providing food relief",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "providing_food_relief",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-57b6df94",
+            "DisplayText": "create employment",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "create_employment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cfe78d74",
+            "DisplayText": "provide seeds and fertilizer",
+            "CodeType": "Normal",
+            "NumericValue": 0,
+            "StringValue": "provide_seeds_and_fertilizer",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d9427b6b",
+            "DisplayText": "awareness campaigns",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "awareness_campaigns",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5aacf9fd",
+            "DisplayText": "plant tress",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "plant_tress",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2164f8bf",
+            "DisplayText": "provide water infrastructure",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "provide_water_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7c9d86cc",
+            "DisplayText": "prevent deforestation",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "prevent_deforestation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fba52fe5",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",

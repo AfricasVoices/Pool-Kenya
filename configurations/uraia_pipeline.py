@@ -45,10 +45,71 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s01_demogs", "preferred_language", "preferred_language"),
 
                     FlowResultConfiguration("uraia_s01e01_activation", "rqa_s01e01", "uraia_s01e01"),
+                    FlowResultConfiguration("uraia_s01e02_activation", "rqa_s01e02", "uraia_s01e02"),
+                    FlowResultConfiguration("uraia_s01e03_activation", "rqa_s01e03", "uraia_s01e03"),
+                    FlowResultConfiguration("uraia_s01e04_activation", "rqa_s01e04", "uraia_s01e04"),
+                    
                     FlowResultConfiguration("uraia_s01e01_follow_up_activation", "rqa_s01e01_followup", "uraia_s01e01_follow_up"),
+                    FlowResultConfiguration("uraia_s01e02_follow_up_activation", "rqa_s01e02_followup", "uraia_s01e02_follow_up"),
+                    FlowResultConfiguration("uraia_s01e03_follow_up_activation", "rqa_s01e03_followup", "uraia_s01e03_follow_up"),
+                    FlowResultConfiguration("uraia_s01e04_follow_up_activation", "rqa_s01e04_followup", "uraia_s01e04_follow_up"),
+
+                    FlowResultConfiguration("uraia_s01_preference_activation", "uraia_preferred_contact_mode", "uraia_preferred_contact_mode"),
                 ],
             )
         )
+    ],
+    google_form_sources=[
+        GoogleFormSource(
+            # https://docs.google.com/forms/d/e/1FAIpQLScdAoHrn-SInfMIPAKdXXgeUpHbsxtbO2UfycRTrZbiZU54eA/viewform?usp=sf_link
+            google_form_client=GoogleFormsClientConfiguration(
+                credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
+            ),
+            sync_config=GoogleFormToEngagementDBConfiguration(
+                form_id="1hSfp65ktENBozanB9TMxWICBIZ8mT3uVNLSHiIUqIc4",
+                question_configurations=[
+                    QuestionConfiguration(engagement_db_dataset="age", question_titles=["How old are you?"]),
+                    QuestionConfiguration(engagement_db_dataset="gender", question_titles=["What is your gender?"]),
+                    QuestionConfiguration(engagement_db_dataset="location", question_titles=["Which ward do you currently live in?"]),
+                    QuestionConfiguration(engagement_db_dataset="disabled", question_titles=["Do you have any form of disability?"]),
+
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e01", question_titles=["What are some of the impacts that your community has experienced as a result of the unusual changes in weather patterns overtime?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e02", question_titles=["How is your community dealing with the negative impacts of climate changes?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e03", question_titles=["What is your county government doing to help your community cope with climatic changes?"]),
+                    QuestionConfiguration(engagement_db_dataset="uraia_s01e04", question_titles=["What else can your county government do to help your community adapt to the changes in the climate?"]),
+                ]
+            )
+        ),
+    ],
+    kobotoolbox_sources=[
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/wusc-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                asset_uid="aN5mtcuPMzv7qJ6gv3CNLt",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e01", engagement_db_dataset="uraia_s01e01"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e02", engagement_db_dataset="uraia_s01e02"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e03", engagement_db_dataset="uraia_s01e03"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e04", engagement_db_dataset="uraia_s01e04"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="uraia_radio_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="uraia_mobile_phone_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="uraia_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="uraia_radio_topic_reason"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="uraia_literacy"),
+                ]
+            )
+        ),
     ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
@@ -64,6 +125,33 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="uraia_s01e01"
                 ),
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e02",
+                    engagement_db_dataset="uraia_s01e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e02"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e03",
+                    engagement_db_dataset="uraia_s01e03",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e03"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e04",
+                    engagement_db_dataset="uraia_s01e04",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e04"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e04"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_s01e01_follow_up",
                     engagement_db_dataset="uraia_s01e01_follow_up",
                     code_scheme_configurations=[
@@ -71,6 +159,42 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s01e01_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e02_follow_up",
+                    engagement_db_dataset="uraia_s01e02_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e02_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e03_follow_up",
+                    engagement_db_dataset="uraia_s01e03_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e03_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s01e04_follow_up",
+                    engagement_db_dataset="uraia_s01e04_follow_up",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s01e04_follow_up"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s01e04_follow_up"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_preferred_contact_mode",
+                    engagement_db_dataset="uraia_preferred_contact_mode",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_preferred_contact_mode"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_preferred_contact_mode"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
@@ -117,6 +241,51 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="preferred_language"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_radio_access",
+                    engagement_db_dataset="uraia_radio_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_radio_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_radio_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_mobile_phone_access",
+                    engagement_db_dataset="uraia_mobile_phone_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_mobile_phone_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_mobile_phone_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_radio_topic",
+                    engagement_db_dataset="uraia_radio_topic",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_radio_topic"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_radio_topic_reason",
+                    engagement_db_dataset="uraia_radio_topic_reason",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic_reason"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_radio_topic_reason"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_literacy",
+                    engagement_db_dataset="uraia_literacy",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_literacy"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_literacy"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
@@ -141,6 +310,39 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ],
             ),
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e02"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e02_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02"),
+                        analysis_dataset="s01e02"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e03"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e03_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03"),
+                        analysis_dataset="s01e03"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e04"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e04_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e04"),
+                        analysis_dataset="s01e04"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["uraia_s01e01_follow_up"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
                 raw_dataset="uraia_s01e01_follow_up_raw",
@@ -148,6 +350,94 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_s01e01_follow_up"),
                         analysis_dataset="s01e01 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e02_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e02_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e02_follow_up"),
+                        analysis_dataset="s01e02 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e03_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e03_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e03_follow_up"),
+                        analysis_dataset="s01e03 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s01e04_follow_up"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s01e04_follow_up_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s01e04_follow_up"),
+                        analysis_dataset="s01e04 follow-up"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_radio_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_radio_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_radio_access"),
+                        analysis_dataset="radio_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_mobile_phone_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_mobile_phone_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_mobile_phone_access"),
+                        analysis_dataset="mobile_phone_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_radio_topic"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_radio_topic_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic"),
+                        analysis_dataset="radio_topic"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_radio_topic_reason"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_radio_topic_reason_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_radio_topic_reason"),
+                        analysis_dataset="radio_topic_reason"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_literacy"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_literacy_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_literacy"),
+                        analysis_dataset="literacy"
                     )
                 ],
             ),
@@ -234,36 +524,26 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
         traffic_labels=[
-            TrafficLabel(
-                label="Promos",
-                start_date=isoparse("2023-08-12T00:00+03:00"), 
-                end_date=isoparse("2023-08-14T17:29+03:00")
-            ),
-            TrafficLabel(
-                label="SMS Ad",
-                start_date=isoparse("2023-08-14T17:30+03:00"), 
-                end_date=isoparse("2023-08-15T08:59+03:00")
-            ),
-            TrafficLabel(
-                label="Mbaitu FM",
-                start_date=isoparse("2023-08-15T09:00+03:00"), 
-                end_date=isoparse("2023-08-15T10:15+03:00")
-            ),
-            TrafficLabel(
-                label="After - Mbaitu FM",
-                start_date=isoparse("2023-08-15T10:15+03:00"),
-                end_date=isoparse("2023-08-15T24:00+03:00")
-            ),
-            TrafficLabel(
-                label="Athiani FM & Ene FM",
-                start_date=isoparse("2023-08-16T08:00+03:00"), 
-                end_date=isoparse("2023-08-16T09:15+03:00"),
-            ),
-            TrafficLabel(
-                label="After - Athiani FM & Ene FM",
-                start_date=isoparse("2023-08-16T09:15+03:00"),
-                end_date=isoparse("2023-08-16T24:00+03:00"),
-            )
+            TrafficLabel(label="s01e01 Promos", start_date=isoparse("2023-08-12T00:00+03:00"), end_date=isoparse("2023-08-14T17:29+03:00")),
+            TrafficLabel(label="s01e01 SMS Ad", start_date=isoparse("2023-08-14T17:30+03:00"), end_date=isoparse("2023-08-15T08:59+03:00")),
+            TrafficLabel(label="s01e01 Mbaitu FM", start_date=isoparse("2023-08-15T09:00+03:00"), end_date=isoparse("2023-08-15T10:15+03:00")),
+            TrafficLabel(label="s01e01 After - Mbaitu FM", start_date=isoparse("2023-08-15T10:15+03:00"), end_date=isoparse("2023-08-15T24:00+03:00")),
+            TrafficLabel(label="s01e01 Athiani FM & Ene FM", start_date=isoparse("2023-08-16T08:00+03:00"), end_date=isoparse("2023-08-16T09:15+03:00")),
+            TrafficLabel(label="s01e01 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-16T09:15+03:00"), end_date=isoparse("2023-08-16T24:00+03:00")),
+
+            TrafficLabel(label="s01e02 Promos", start_date=isoparse("2023-08-19T00:00+03:00"), end_date=isoparse("2023-08-21T16:29+03:00")),
+            TrafficLabel(label="s01e02 SMS Ad", start_date=isoparse("2023-08-21T16:30+03:00"), end_date=isoparse("2023-08-22T08:59+03:00")),
+            TrafficLabel(label="s01e02 Mbaitu FM", start_date=isoparse("2023-08-22T09:00+03:00"), end_date=isoparse("2023-08-22T10:15+03:00")),
+            TrafficLabel(label="s01e02 After - Mbaitu FM", start_date=isoparse("2023-08-22T10:15+03:00"), end_date=isoparse("2023-08-22T24:00+03:00")),
+            TrafficLabel(label="s01e02 Athiani FM & Ene FM", start_date=isoparse("2023-08-23T08:00+03:00"), end_date=isoparse("2023-08-23T09:15+03:00")),
+            TrafficLabel(label="s01e02 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-23T09:15+03:00"), end_date=isoparse("2023-08-23T24:00+03:00")),
+
+            TrafficLabel(label="s01e03 Promos", start_date=isoparse("2023-08-26T00:00+03:00"), end_date=isoparse("2023-08-28T16:29+03:00")),
+            TrafficLabel(label="s01e03 SMS Ad", start_date=isoparse("2023-08-28T16:30+03:00"), end_date=isoparse("2023-08-29T08:59+03:00")),
+            TrafficLabel(label="s01e03 Mbaitu FM", start_date=isoparse("2023-08-29T09:00+03:00"), end_date=isoparse("2023-08-29T10:15+03:00")),
+            TrafficLabel(label="s01e03 After - Mbaitu FM", start_date=isoparse("2023-08-29T10:15+03:00"), end_date=isoparse("2023-08-29T24:00+03:00")),
+            TrafficLabel(label="s01e03 Athiani FM & Ene FM", start_date=isoparse("2023-08-30T08:00+03:00"), end_date=isoparse("2023-08-30T09:15+03:00")),
+            TrafficLabel(label="s01e03 After - Athiani FM & Ene FM", start_date=isoparse("2023-08-30T09:15+03:00"), end_date=isoparse("2023-08-30T24:00+03:00"))
         ]
     ),
     rapid_pro_target=RapidProTarget(
@@ -291,7 +571,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             consent_withdrawn_dataset=DatasetConfiguration(
-                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language"],
+                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language", "uraia_s01e01", "uraia_s01e02"
+                                        "uraia_s01e03", "uraia_s01e04", "uraia_s01e01_follow_up", "uraia_s01e02_follow_up", 
+                                        "uraia_s01e03_follow_up", "uraia_s01e04_follow_up" 
+                                        "uraia_preferred_contact_mode"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,

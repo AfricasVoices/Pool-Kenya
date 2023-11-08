@@ -1,69 +1,45 @@
 {
-    "SchemeID": "Scheme-7a4fdb25",
-    "Name": "Uraia S01E02",
+    "SchemeID": "Scheme-48a15d7f",
+    "Name": "Uraia S01E02 Follow-Up",
     "Version": "0.0.0.1",
     "Codes": [
         {
-            "CodeID": "code-ce7f986e",
-            "DisplayText": "alternative livelihoods",
-            "CodeType": "Normal",
-            "NumericValue": 8,
-            "StringValue": "alternative_livelihoods",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-85f057e0",
-            "DisplayText": "barely surviving",
-            "CodeType": "Normal",
-            "NumericValue": 0,
-            "StringValue": "barely_surviving",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-021f6653",
-            "DisplayText": "planting trees",
+            "CodeID": "code-0e105368",
+            "DisplayText": "provide trees for planting",
             "CodeType": "Normal",
             "NumericValue": 1,
-            "StringValue": "planting_trees",
+            "StringValue": "provide_trees_for_planting",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-9385c279",
-            "DisplayText": "nothing",
+            "CodeID": "code-9b3b9cae",
+            "DisplayText": "climate change awareness",
             "CodeType": "Normal",
             "NumericValue": 2,
-            "StringValue": "nothing",
+            "StringValue": "climate_change_awareness",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-ea6f0694",
-            "DisplayText": "improved agricultural practices",
+            "CodeID": "code-187a027d",
+            "DisplayText": "provide food",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "improved_agricultural_practices",
+            "StringValue": "provide_food",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-e21ce102",
-            "DisplayText": "reduce pollution",
+            "CodeID": "code-5ab7adc1",
+            "DisplayText": "provide water security",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "reduce_pollution",
+            "StringValue": "provide_water_security",
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-84d4233a",
-            "DisplayText": "water harvesting",
-            "CodeType": "Normal",
-            "NumericValue": 6,
-            "StringValue": "water_harvesting",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-902a7298",
+            "CodeID": "code-7780965f",
             "DisplayText": "other theme",
             "CodeType": "Normal",
-            "NumericValue": 7,
+            "NumericValue": 5,
             "StringValue": "other_theme",
             "VisibleInCoda": true
         },
