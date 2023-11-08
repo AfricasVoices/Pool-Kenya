@@ -113,6 +113,30 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ] 
                 )
             ),
+        KoboToolBoxSource(
+                token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
+                sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                    asset_uid="aHx8dSPUmjjfesZ9myYPbE",
+                    participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                        data_column_name="Contacts",
+                        id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                    ),
+                    ignore_invalid_mobile_numbers=True,
+                    question_configurations=[
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e05", engagement_db_dataset="sdc_gau_s01e05"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="sdc_gau_s01e06", engagement_db_dataset="sdc_gau_s01e06"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disability"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="sdc_gau_radio_access"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="sdc_gau_mobile_phone_access"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="sdc_gau_interesting_radio_topic"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_Reasons", engagement_db_dataset="sdc_gau_radio_topic_reason"),
+                        KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="sdc_gau_literacy"),
+                    ] 
+                )
+            ),
        KoboToolBoxSource(
                 token_file_url="gs://avf-credentials/sdc-gau-kobotoolbox-token.json",
                 sync_config=KoboToolBoxToEngagementDBConfiguration(    
@@ -359,7 +383,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         )
     ),
     analysis=AnalysisConfiguration(
-        Temporarily disabled due to drive issues
         google_drive_upload=GoogleDriveUploadConfiguration(
             credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
             drive_dir="sdc_gau_analysis_output"
