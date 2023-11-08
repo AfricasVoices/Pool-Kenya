@@ -55,6 +55,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_s01e01",
+                    engagement_db_dataset="luminate_s01e01",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_s01e01"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_s01e01"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
@@ -111,6 +120,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             drive_dir="luminate_analysis_output"
         ),
         dataset_configurations=[
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_s01e01"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_s01e01_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_s01e01"),
+                        analysis_dataset="s01e01"
+                    )
+                ],
+            ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["preferred_language"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
