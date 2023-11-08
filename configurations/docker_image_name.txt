@@ -1,1 +1,1 @@
-ghcr.io/africasvoices/engagement-data-pipeline:handle-whatsapp-urns-rapid-pro-to-engagement-db-1
+ghcr.io/africasvoices/engagement-data-pipeline:handle-whatsapp-urns-rapid-pro-to-engagement-db-2
