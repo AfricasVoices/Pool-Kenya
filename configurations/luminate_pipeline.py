@@ -48,8 +48,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         )
     ],
-    google_form_sources=[],
-    kobotoolbox_sources=[],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
