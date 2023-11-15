@@ -10,9 +10,7 @@
             "StringValue": "preferred_language",
             "NumericValue": 0,
             "VisibleInCoda": true,
-            "MatchValues": [
-                "preferred_language"
-            ]
+            "MatchValues": ["preferred_language"]
         },
         {
             "CodeID": "code-02d4450d",
@@ -21,9 +19,7 @@
             "StringValue": "location",
             "NumericValue": 1,
             "VisibleInCoda": true,
-            "MatchValues": [
-                "location"
-            ]
+            "MatchValues": ["location"]
         },
         {
             "CodeID": "code-c473f7bb",
@@ -32,9 +28,7 @@
             "StringValue": "age",
             "NumericValue": 2,
             "VisibleInCoda": true,
-            "MatchValues": [
-                "age"
-            ]
+            "MatchValues": ["age"]
         },
         {
             "CodeID": "code-80edd5c3",
@@ -43,9 +37,7 @@
             "StringValue": "gender",
             "NumericValue": 3,
             "VisibleInCoda": true,
-            "MatchValues": [
-                "gender"
-            ]
+            "MatchValues": ["gender"]
         },
         {
             "CodeID": "code-2b7a12a0",
@@ -54,9 +46,7 @@
             "StringValue": "disabled",
             "NumericValue": 7,
             "VisibleInCoda": true,
-            "MatchValues": [
-                "disabled"
-            ]
+            "MatchValues": ["disabled"]
         },
         {
             "CodeID": "code-3545f098",
