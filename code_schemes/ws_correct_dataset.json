@@ -49,6 +49,51 @@
             "MatchValues": ["disabled"]
         },
         {
+            "CodeID": "code-38974310",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e01",
+            "StringValue": "luminate_s01e01",
+            "NumericValue": 551,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e01"]
+        },
+        {
+            "CodeID": "code-d786ef67",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e02",
+            "StringValue": "luminate_s01e02",
+            "NumericValue": 552,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e02"]
+        },
+        {
+            "CodeID": "code-656426c4",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e03",
+            "StringValue": "luminate_s01e03",
+            "NumericValue": 553,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e03"]
+        },
+        {
+            "CodeID": "code-76cc44bd",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e04",
+            "StringValue": "luminate_s01e04",
+            "NumericValue": 554,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e04"]
+        },
+        {
+            "CodeID": "code-c2224413",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e05",
+            "StringValue": "luminate_s01e05",
+            "NumericValue": 555,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e05"]
+        },
+        {
             "CodeID": "code-b8c41779",
             "CodeType": "Normal",
             "DisplayText": "uraia s01e01",
