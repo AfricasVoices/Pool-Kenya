@@ -43,7 +43,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("Luminate_s01_demogs", "pool_kenya_disabled", "disabled"),
                     FlowResultConfiguration("Luminate_s01_demogs", "preferred_language", "preferred_language"),
 
-                    FlowResultConfiguration("Luminate_s01e01_activation", "rqa_s01e01", "luminate_s01e01")
+                    FlowResultConfiguration("Luminate_s01e01_activation", "rqa_s01e01", "luminate_s01e01"),
+                    FlowResultConfiguration("Luminate_s01e02_activation", "rqa_s01e02", "luminate_s01e02"),
+                    FlowResultConfiguration("Luminate_s01e03_activation", "rqa_s01e03", "luminate_s01e03"),
+                    FlowResultConfiguration("Luminate_s01e04_activation", "rqa_s01e04", "luminate_s01e04"),
+                    FlowResultConfiguration("Luminate_s01e05_activation", "rqa_s01e05", "luminate_s01e05"),
                 ],
             )
         )
