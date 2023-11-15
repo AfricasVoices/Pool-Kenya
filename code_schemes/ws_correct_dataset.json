@@ -49,6 +49,176 @@
             "MatchValues": ["disabled"]
         },
         {
+            "CodeID": "code-3545f098",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau s01e01",
+            "StringValue": "sdc_gau_s01e01",
+            "NumericValue": 600,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e01"]
+        },
+        {
+            "CodeID": "code-8f7d17e8",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_s01e01_follow_up",
+            "StringValue": "sdc_gau_s01e01_follow_up",
+            "NumericValue": 601,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e01_follow_up"]
+        },
+        {
+            "CodeID": "code-13798a3a",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau s01e02",
+            "StringValue": "sdc_gau_s01e02",
+            "NumericValue": 602,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e02"]
+        },
+        {
+            "CodeID": "code-2dc8ba25",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau s01e03",
+            "StringValue": "sdc_gau_s01e03",
+            "NumericValue": 603,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e03"]
+        },
+        {
+            "CodeID": "code-42d2150a",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau s01e04",
+            "StringValue": "sdc_gau_s01e04",
+            "NumericValue": 605,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e04"]
+        },
+        {
+            "CodeID": "code-a4a54be3",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau s01e05",
+            "StringValue": "sdc_gau_s01e05",
+            "NumericValue": 606,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e05"]
+        },
+        {
+            "CodeID": "code-c4732216",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau s01e06",
+            "StringValue": "sdc_gau_s01e06",
+            "NumericValue": 607,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e06"]
+        },
+        {
+            "CodeID": "code-af2e89c0",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau s01e07",
+            "StringValue": "sdc_gau_s01e07",
+            "NumericValue": 608,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e07"]
+        },
+        {
+            "CodeID": "code-2b218bd0",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_s01e03_follow_up",
+            "StringValue": "sdc_gau_s01e03_follow_up",
+            "NumericValue": 609,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e03_follow_up"]
+        },
+        {
+            "CodeID": "code-c88dbd85",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_s01e04_follow_up",
+            "StringValue": "sdc_gau_s01e04_follow_up",
+            "NumericValue": 610,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e04_follow_up"]
+        },
+        {
+            "CodeID": "code-2bdeb5dc",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_s01e06_follow_up",
+            "StringValue": "sdc_gau_s01e06_follow_up",
+            "NumericValue": 611,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e06_follow_up"]
+        },
+        {
+            "CodeID": "code-19e00e28",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_s01e07_follow_up",
+            "StringValue": "sdc_gau_s01e07_follow_up",
+            "NumericValue": 613,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_s01e07_follow_up"]
+        },
+        {
+            "CodeID": "code-a09e2ba5",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_literacy",
+            "StringValue": "sdc_gau_literacy",
+            "NumericValue": 614,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_literacy"]
+        },
+        {
+            "CodeID": "code-45a21ef1",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_interesting_radio_topic",
+            "StringValue": "sdc_gau_interesting_radio_topic",
+            "NumericValue": 615,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_interesting_radio_topic"]
+        },
+        {
+            "CodeID": "code-e4527f9d",
+            "CodeType": "Normal",
+            "DisplayText": "sdc gau radio topic reason",
+            "StringValue": "sdc_gau_radio_topic_reason",
+            "NumericValue": 618,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_radio_topic_reason"]
+        },
+        {
+            "CodeID": "code-2d2229f6",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_mobile_phone_access",
+            "StringValue": "sdc_gau_mobile_phone_access",
+            "NumericValue": 616,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_mobile_phone_access"]
+        },
+        {
+            "CodeID": "code-950184aa",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_radio_access",
+            "StringValue": "sdc_gau_radio_access",
+            "NumericValue": 617,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_radio_access"]
+        },
+        {
+            "CodeID": "code-43c50726",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_kobo_collect_consent",
+            "StringValue": "sdc_gau_kobo_collect_consent",
+            "NumericValue": 619,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_kobo_collect_consent"]
+        },
+        {
+            "CodeID": "code-84430a7c",
+            "CodeType": "Normal",
+            "DisplayText": "sdc_gau_peace_building_org",
+            "StringValue": "sdc_gau_peace_building_org",
+            "NumericValue": 620,
+            "VisibleInCoda": true,
+            "MatchValues": ["sdc_gau_peace_building_org"]
+        },
             "CodeID": "code-38974310",
             "CodeType": "Normal",
             "DisplayText": "luminate s01e01",
