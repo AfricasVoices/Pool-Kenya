@@ -2,7 +2,7 @@ from core_data_modules.cleaners import swahili
 from src.pipeline_configuration_spec import *
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
-    pipeline_name="Luminate",
+    pipeline_name="Luminate-S01",
     test_participant_uuids=[
         "avf-participant-uuid-ced0f78f-f989-42e4-8813-b1ead4fff0ae",
         "avf-participant-uuid-d38dcb19-5170-4441-99de-5aa3e9bcafc1",
