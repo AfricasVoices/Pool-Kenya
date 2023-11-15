@@ -43,7 +43,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("Luminate_s01_demogs", "pool_kenya_disabled", "disabled"),
                     FlowResultConfiguration("Luminate_s01_demogs", "preferred_language", "preferred_language"),
 
-                    FlowResultConfiguration("Luminate_s01e01_activation", "rqa_s01e01", "luminate_s01e01")
+                    FlowResultConfiguration("Luminate_s01e01_activation", "rqa_s01e01", "luminate_s01e01"),
+                    FlowResultConfiguration("Luminate_s01e02_activation", "rqa_s01e02", "luminate_s01e02"),
+                    FlowResultConfiguration("Luminate_s01e03_activation", "rqa_s01e03", "luminate_s01e03"),
+                    FlowResultConfiguration("Luminate_s01e04_activation", "rqa_s01e04", "luminate_s01e04"),
+                    FlowResultConfiguration("Luminate_s01e05_activation", "rqa_s01e05", "luminate_s01e05"),
                 ],
             )
         )
@@ -60,6 +64,42 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="luminate_s01e01"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_s01e02",
+                    engagement_db_dataset="luminate_s01e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_s01e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_s01e02"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_s01e03",
+                    engagement_db_dataset="luminate_s01e03",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_s01e03"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_s01e03"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_s01e04",
+                    engagement_db_dataset="luminate_s01e04",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_s01e04"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_s01e04"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_s01e05",
+                    engagement_db_dataset="luminate_s01e05",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_s01e05"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_s01e05"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
@@ -126,6 +166,50 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/luminate/luminate_s01e01"),
                         analysis_dataset="s01e01"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_s01e02"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_s01e02_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_s01e02"),
+                        analysis_dataset="s01e02"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_s01e03"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_s01e03_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_s01e03"),
+                        analysis_dataset="s01e03"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_s01e04"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_s01e04_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_s01e04"),
+                        analysis_dataset="s01e04"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_s01e05"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_s01e05_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_s01e05"),
+                        analysis_dataset="s01e05"
                     )
                 ],
             ),
@@ -238,7 +322,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             consent_withdrawn_dataset=DatasetConfiguration(
-                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language"],
+                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language", "luminate_s01e01",
+                                        "luminate_s01e02", "luminate_s01e03", "luminate_s01e04", "luminate_s01e05"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
             write_mode=WriteModes.CONCATENATE_TEXTS,
