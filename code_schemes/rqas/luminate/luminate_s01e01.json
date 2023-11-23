@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-9d425cf3",
+            "DisplayText": "water infrastructure",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "water_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ac970325",
+            "DisplayText": "health sector",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "health_sector",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-37e4dbd6",
+            "DisplayText": "roads",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "roads",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-04baca40",
+            "DisplayText": "none",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "none",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-982faef1",
+            "DisplayText": "agriculture",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "agriculture",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0fea6917",
+            "DisplayText": "education",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-76195595",
+            "DisplayText": "requests for projects",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "requests_for_projects",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bd07adb7",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",

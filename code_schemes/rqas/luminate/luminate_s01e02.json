@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-01e02c58",
+            "DisplayText": "public participation meetings",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "public_participation_meetings",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ddf83d1f",
+            "DisplayText": "monitoring projects",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "monitoring_projects",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e65635db",
+            "DisplayText": "providing labor",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "providing_labor",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f52495c3",
+            "DisplayText": "not involved",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "not_involved",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b255abb9",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
