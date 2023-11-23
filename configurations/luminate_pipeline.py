@@ -297,6 +297,72 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ],
             ),
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_radio_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_radio_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_radio_access"),
+                        analysis_dataset="radio_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_mobile_phone_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_mobile_phone_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_mobile_phone_access"),
+                        analysis_dataset="mobile_phone_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_radio_topic"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_radio_topic_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic"),
+                        analysis_dataset="radio_topic"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_radio_topic_reason"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_radio_topic_reason_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic_reason"),
+                        analysis_dataset="radio_topic_reason"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_literacy"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_literacy_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_literacy"),
+                        analysis_dataset="literacy"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_mode_of_communication"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_mode_of_communication_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_mode_of_communication"),
+                        analysis_dataset="mode_of_communication"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["preferred_language"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
                 raw_dataset="preferred_language_raw",
