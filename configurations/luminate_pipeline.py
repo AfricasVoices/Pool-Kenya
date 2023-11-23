@@ -175,6 +175,60 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="preferred_language"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_radio_access",
+                    engagement_db_dataset="luminate_radio_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_radio_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_radio_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_mobile_phone_access",
+                    engagement_db_dataset="luminate_mobile_phone_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_mobile_phone_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_mobile_phone_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_radio_topic",
+                    engagement_db_dataset="luminate_radio_topic",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_radio_topic"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_radio_topic_reason",
+                    engagement_db_dataset="luminate_radio_topic_reason",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic_reason"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_radio_topic_reason"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_literacy",
+                    engagement_db_dataset="luminate_literacy",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_literacy"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_literacy"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_mode_of_communication",
+                    engagement_db_dataset="luminate_mode_of_communication",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_mode_of_communication"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_mode_of_communication"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
