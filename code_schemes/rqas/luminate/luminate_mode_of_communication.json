@@ -4,6 +4,30 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-def9e3f7",
+            "DisplayText": "WhatsApp",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "whatsapp",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-25566884",
+            "DisplayText": "SMS",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "sms",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4a1f3483",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
