@@ -12,14 +12,6 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-ac077d00",
-            "DisplayText": "conduct follow ups",
-            "CodeType": "Normal",
-            "NumericValue": 2,
-            "StringValue": "conduct_follow_ups",
-            "VisibleInCoda": true
-        },
-        {
             "CodeID": "code-7165a108",
             "DisplayText": "enforce security",
             "CodeType": "Normal",
@@ -44,27 +36,11 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c6050457",
-            "DisplayText": "report vandalism",
-            "CodeType": "Normal",
-            "NumericValue": 6,
-            "StringValue": "report_vandalism",
-            "VisibleInCoda": true
-        },
-        {
             "CodeID": "code-fb8cdab8",
             "DisplayText": "foster public participation",
             "CodeType": "Normal",
             "NumericValue": 7,
             "StringValue": "foster_public_participation",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-4caf05d5",
-            "DisplayText": "promote community involvement",
-            "CodeType": "Normal",
-            "NumericValue": 8,
-            "StringValue": "promote_community_involvement",
             "VisibleInCoda": true
         },
         {
