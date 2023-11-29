@@ -52,6 +52,35 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         )
     ],
+    kobotoolbox_sources=[
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/wusc-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                asset_uid="aL2jVGhZYhnrbgq4uq4pHM",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="Luminate_e01", engagement_db_dataset="luminate_s01e01"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Luminate_e02", engagement_db_dataset="luminate_s01e02"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="luminate_radio_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="luminate_mobile_phone_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="luminate_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="luminate_radio_topic_reason"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="luminate_literacy"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mode_of_communication", engagement_db_dataset="luminate_mode_of_communication"),
+                ]
+            )
+        ),
+    ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
@@ -146,6 +175,60 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="preferred_language"
                 ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_radio_access",
+                    engagement_db_dataset="luminate_radio_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_radio_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_radio_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_mobile_phone_access",
+                    engagement_db_dataset="luminate_mobile_phone_access",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_mobile_phone_access"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_mobile_phone_access"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_radio_topic",
+                    engagement_db_dataset="luminate_radio_topic",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_radio_topic"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_radio_topic_reason",
+                    engagement_db_dataset="luminate_radio_topic_reason",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic_reason"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_radio_topic_reason"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_literacy",
+                    engagement_db_dataset="luminate_literacy",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_literacy"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_literacy"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Luminate_mode_of_communication",
+                    engagement_db_dataset="luminate_mode_of_communication",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/luminate/luminate_mode_of_communication"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="luminate_mode_of_communication"
+                ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
             project_users_file_url="gs://avf-project-datasets/2022/POOL-KENYA/pool-kenya-users.json",
@@ -210,6 +293,72 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/luminate/luminate_s01e05"),
                         analysis_dataset="s01e05"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_radio_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_radio_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_radio_access"),
+                        analysis_dataset="radio_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_mobile_phone_access"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_mobile_phone_access_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_mobile_phone_access"),
+                        analysis_dataset="mobile_phone_access"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_radio_topic"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_radio_topic_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic"),
+                        analysis_dataset="radio_topic"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_radio_topic_reason"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_radio_topic_reason_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_radio_topic_reason"),
+                        analysis_dataset="radio_topic_reason"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_literacy"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_literacy_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_literacy"),
+                        analysis_dataset="literacy"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["luminate_mode_of_communication"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="luminate_mode_of_communication_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/luminate/luminate_mode_of_communication"),
+                        analysis_dataset="mode_of_communication"
                     )
                 ],
             ),

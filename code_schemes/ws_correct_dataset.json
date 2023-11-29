@@ -49,6 +49,105 @@
             "MatchValues": ["disabled"]
         },
         {
+            "CodeID": "code-38974310",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e01",
+            "StringValue": "luminate_s01e01",
+            "NumericValue": 551,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e01"]
+        },
+        {
+            "CodeID": "code-d786ef67",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e02",
+            "StringValue": "luminate_s01e02",
+            "NumericValue": 552,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e02"]
+        },
+        {
+            "CodeID": "code-656426c4",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e03",
+            "StringValue": "luminate_s01e03",
+            "NumericValue": 553,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e03"]
+        },
+        {
+            "CodeID": "code-76cc44bd",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e04",
+            "StringValue": "luminate_s01e04",
+            "NumericValue": 554,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e04"]
+        },
+        {
+            "CodeID": "code-c2224413",
+            "CodeType": "Normal",
+            "DisplayText": "luminate s01e05",
+            "StringValue": "luminate_s01e05",
+            "NumericValue": 555,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_s01e05"]
+        },
+        {
+            "CodeID": "code-64097bbf",
+            "CodeType": "Normal",
+            "DisplayText": "luminate mode of communication",
+            "StringValue": "luminate_mode_of_communication",
+            "NumericValue": 556,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_mode_of_communication"]
+        },
+        {
+            "CodeID": "code-73087cb8",
+            "CodeType": "Normal",
+            "DisplayText": "luminate literacy",
+            "StringValue": "luminate_literacy",
+            "NumericValue": 557,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_literacy"]
+        },
+        {
+            "CodeID": "code-c3ba5fa4",
+            "CodeType": "Normal",
+            "DisplayText": "luminate mobile phone access",
+            "StringValue": "luminate_mobile_phone_access",
+            "NumericValue": 558,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_mobile_phone_access"]
+        },
+        {
+            "CodeID": "code-b94fb739",
+            "CodeType": "Normal",
+            "DisplayText": "luminate radio access",
+            "StringValue": "luminate_radio_access",
+            "NumericValue": 559,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_radio_access"]
+        },
+        {
+            "CodeID": "code-74aa4583",
+            "CodeType": "Normal",
+            "DisplayText": "luminate radio topic",
+            "StringValue": "luminate_radio_topic",
+            "NumericValue": 560,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_radio_topic"]
+        },
+        {
+            "CodeID": "code-207ceb1c",
+            "CodeType": "Normal",
+            "DisplayText": "luminate radio topic reason",
+            "StringValue": "luminate_radio_topic_reason",
+            "NumericValue": 561,
+            "VisibleInCoda": true,
+            "MatchValues": ["luminate_radio_topic_reason"]
+        },
+        {
             "CodeID": "code-3545f098",
             "CodeType": "Normal",
             "DisplayText": "sdc_gau s01e01",
@@ -218,51 +317,6 @@
             "NumericValue": 620,
             "VisibleInCoda": true,
             "MatchValues": ["sdc_gau_peace_building_org"]
-        },
-        {
-            "CodeID": "code-38974310",
-            "CodeType": "Normal",
-            "DisplayText": "luminate s01e01",
-            "StringValue": "luminate_s01e01",
-            "NumericValue": 551,
-            "VisibleInCoda": true,
-            "MatchValues": ["luminate_s01e01"]
-        },
-        {
-            "CodeID": "code-d786ef67",
-            "CodeType": "Normal",
-            "DisplayText": "luminate s01e02",
-            "StringValue": "luminate_s01e02",
-            "NumericValue": 552,
-            "VisibleInCoda": true,
-            "MatchValues": ["luminate_s01e02"]
-        },
-        {
-            "CodeID": "code-656426c4",
-            "CodeType": "Normal",
-            "DisplayText": "luminate s01e03",
-            "StringValue": "luminate_s01e03",
-            "NumericValue": 553,
-            "VisibleInCoda": true,
-            "MatchValues": ["luminate_s01e03"]
-        },
-        {
-            "CodeID": "code-76cc44bd",
-            "CodeType": "Normal",
-            "DisplayText": "luminate s01e04",
-            "StringValue": "luminate_s01e04",
-            "NumericValue": 554,
-            "VisibleInCoda": true,
-            "MatchValues": ["luminate_s01e04"]
-        },
-        {
-            "CodeID": "code-c2224413",
-            "CodeType": "Normal",
-            "DisplayText": "luminate s01e05",
-            "StringValue": "luminate_s01e05",
-            "NumericValue": 555,
-            "VisibleInCoda": true,
-            "MatchValues": ["luminate_s01e05"]
         },
         {
             "CodeID": "code-b8c41779",
