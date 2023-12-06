@@ -80,6 +80,32 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ]
             )
         ),
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/wusc-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(    
+                asset_uid="aDHtuLKxZfAtC7Bcm447dR",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="Luminate_e03", engagement_db_dataset="luminate_s01e03"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="luminate_radio_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="luminate_mobile_phone_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="luminate_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="luminate_radio_topic_reason"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="luminate_literacy"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mode_of_communication", engagement_db_dataset="luminate_mode_of_communication"),
+                ]
+            )
+        ),
     ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
