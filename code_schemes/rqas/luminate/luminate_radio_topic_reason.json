@@ -4,59 +4,11 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
-            "CodeID": "code-69b022e3",
-            "DisplayText": "opportunity to share views",
-            "CodeType": "Normal",
-            "NumericValue": 1,
-            "StringValue": "opportunity_to_share_views",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-9c359f50",
-            "DisplayText": "creates awareness",
-            "CodeType": "Normal",
-            "NumericValue": 2,
-            "StringValue": "creates_awareness",
-            "VisibleInCoda": true
-        },
-        {
             "CodeID": "code-591f7e88",
             "DisplayText": "fosters project monitoring",
             "CodeType": "Normal",
-            "NumericValue": 3,
-            "StringValue": "fosters_project_monitoring",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-7a32210f",
-            "DisplayText": "gives hope",
-            "CodeType": "Normal",
-            "NumericValue": 4,
-            "StringValue": "gives_hope",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-7d567106",
-            "DisplayText": "not helpful",
-            "CodeType": "Normal",
-            "NumericValue": 5,
-            "StringValue": "not_helpful",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-5242c160",
-            "DisplayText": "informs government leadership",
-            "CodeType": "Normal",
-            "NumericValue": 6,
-            "StringValue": "informs_government_leadership",
-            "VisibleInCoda": true
-        },
-        {
-            "CodeID": "code-4a19bf03",
-            "DisplayText": "other theme",
-            "CodeType": "Normal",
             "NumericValue": 7,
-            "StringValue": "other_theme",
+            "StringValue": "fosters_project_monitoring",
             "VisibleInCoda": true
         },
         {
@@ -85,10 +37,10 @@
         },
         {
             "CodeID": "code-1d3ad25c",
-            "DisplayText": "restores hope",
+            "DisplayText": "gives hope",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "restores_hope",
+            "StringValue": "gives_hope",
             "VisibleInCoda": true
         },
         {
