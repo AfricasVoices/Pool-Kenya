@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-4faa62fc",
+            "DisplayText": "regular monitoring",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "regular_monitoring",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7165a108",
+            "DisplayText": "enforce security",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "enforce_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b4812851",
+            "DisplayText": "establish management committes",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "establish_management_committes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-375685c2",
+            "DisplayText": "promote community  ownership ",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "promote_community_ownership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fb8cdab8",
+            "DisplayText": "foster public participation",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "foster_public_participation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-426db99a",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
