@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-2b70e095",
+            "DisplayText": "through public participation",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "through_public_participation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5c3a6631",
+            "DisplayText": "through awareness creation",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "through_awareness_creation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3cfc3f9c",
+            "DisplayText": "providing employment",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "providing_employment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-60b432c2",
+            "DisplayText": "provide equal opportunities",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "provide_equal_opportunities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-10cc5e72",
+            "DisplayText": "financial support",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "financial_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e8c3fd19",
+            "DisplayText": "provide food relief",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "provide_food_relief",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5061a55b",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
