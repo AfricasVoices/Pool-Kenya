@@ -37,10 +37,10 @@
         },
         {
             "CodeID": "code-10cc5e72",
-            "DisplayText": "finacial support",
+            "DisplayText": "financial support",
             "CodeType": "Normal",
             "NumericValue": 5,
-            "StringValue": "finacial_support",
+            "StringValue": "financial_support",
             "VisibleInCoda": true
         },
         {
