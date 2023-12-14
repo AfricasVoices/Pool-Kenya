@@ -4,6 +4,38 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-f354e3c8",
+            "DisplayText": "through public participation",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "through_public_participation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-67973616",
+            "DisplayText": "through civic education",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "through_civic_education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-22dd10e9",
+            "DisplayText": "not involved",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "not_involved",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c4e98d61",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-E-720cdb66",
             "CodeType": "Meta",
             "MetaCode": "escalate",
