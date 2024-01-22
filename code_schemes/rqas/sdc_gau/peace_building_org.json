@@ -438,7 +438,7 @@
             "CodeType": "Meta",
             "MetaCode": "impact",
             "DisplayText": "meta: impact",
-            "StringValue": "impact",
+            "StringValue": "meta_impact",
             "NumericValue": -100140,
             "VisibleInCoda": false
         }
