@@ -56,6 +56,33 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_political_agency",
+                    engagement_db_dataset="uraia_political_agency",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_political_agency"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_political_agency"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_personal_initiatives",
+                    engagement_db_dataset="uraia_personal_initiatives",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_personal_initiatives"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_personal_initiatives"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_climate_change_understanding",
+                    engagement_db_dataset="uraia_climate_change_understanding",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_climate_change_understanding"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_climate_change_understanding"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
