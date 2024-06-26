@@ -76,6 +76,33 @@
             "MatchValues": ["uraia_climate_change_understanding"]
         },
         {
+            "CodeID": "code-2acaf407",
+            "CodeType": "Normal",
+            "DisplayText": "uraia s02e01",
+            "StringValue": "uraia_s02e01",
+            "NumericValue": 624,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_s02e01"]
+        },
+        {
+            "CodeID": "code-36be609c",
+            "CodeType": "Normal",
+            "DisplayText": "uraia s02e02",
+            "StringValue": "uraia_s02e02",
+            "NumericValue": 625,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_s02e02"]
+        },
+        {
+            "CodeID": "code-c00c55a2",
+            "CodeType": "Normal",
+            "DisplayText": "uraia s02e03",
+            "StringValue": "uraia_s02e03",
+            "NumericValue": 626,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_s02e03"]
+        },
+        {
             "CodeID": "code-38974310",
             "CodeType": "Normal",
             "DisplayText": "luminate s01e01",

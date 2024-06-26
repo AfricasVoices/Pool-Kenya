@@ -47,6 +47,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s02_evaluation", "uraia_political_agency", "uraia_political_agency"),
                     FlowResultConfiguration("uraia_s02_evaluation", "uraia_personal_initiatives", "uraia_personal_initiatives"),
                     FlowResultConfiguration("uraia_s02_evaluation", "uraia_climate_change_understanding", "uraia_climate_change_understanding"),
+
+                    FlowResultConfiguration("uraia_s02e01_activation", "rqa_s02e01", "uraia_s02e01")
                 ],
             )
         )
@@ -55,6 +57,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s02e01",
+                    engagement_db_dataset="uraia_s02e01",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s02e01"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s02e01"
+                ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_political_agency",
                     engagement_db_dataset="uraia_political_agency",
@@ -185,6 +196,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s02e01"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s02e01_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s02e01"),
+                        analysis_dataset="s02e01"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["preferred_language"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
                 raw_dataset="preferred_language_raw",
@@ -293,9 +315,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             consent_withdrawn_dataset=DatasetConfiguration(
-                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language", "uraia_s01e01", "uraia_s01e02"
-                                        "uraia_s01e03", "uraia_s01e04", "uraia_s01e01_follow_up", "uraia_s01e02_follow_up", 
-                                        "uraia_s01e03_follow_up", "uraia_s01e04_follow_up" 
+                engagement_db_datasets=["age", "gender", "location", "disabled", "preferred_language",
                                         "uraia_preferred_contact_mode"],
                 rapid_pro_contact_field=ContactField(key="pool_kenya_consent_withdrawn", label="pool kenya consent withdrawn")
             ),
