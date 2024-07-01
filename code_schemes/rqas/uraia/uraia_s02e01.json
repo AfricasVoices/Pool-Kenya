@@ -4,6 +4,86 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-13df0e38",
+            "DisplayText": "continue planting trees",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "continue_planting_trees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5b8aece3",
+            "DisplayText": "raising tree nursery",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "raising_tree_nursery",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3eb99f3c",
+            "DisplayText": "planting fruit trees",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "planting_fruit_trees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3cc62310",
+            "DisplayText": "planting the right species",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "planting_the_right_species",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1d0982d9",
+            "DisplayText": "lack of water",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "lack_of_water",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8d957104",
+            "DisplayText": "lack of knowledge of right variety",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "lack_of_knowledge_of_right_variety",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dcd9fb05",
+            "DisplayText": "lack of seedlings",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "lack_of_seedlings",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ae9dfbbf",
+            "DisplayText": "termite invasion",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "termite_invasion",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b7465edb",
+            "DisplayText": "recommendations to form groups",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "recommendations_to_form_groups",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7172784b",
+            "DisplayText": "request for awareness or support",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "request_for_awareness_or_support",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
