@@ -48,7 +48,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s02_evaluation", "uraia_personal_initiatives", "uraia_personal_initiatives"),
                     FlowResultConfiguration("uraia_s02_evaluation", "uraia_climate_change_understanding", "uraia_climate_change_understanding"),
 
-                    FlowResultConfiguration("uraia_s02e01_activation", "rqa_s02e01", "uraia_s02e01")
+                    FlowResultConfiguration("uraia_s02e01_activation", "rqa_s02e01", "uraia_s02e01"),
+                    FlowResultConfiguration("uraia_s02e02_activation", "rqa_s02e02", "uraia_s02e02")
                 ],
             )
         )
@@ -65,6 +66,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s02e01"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s02e02",
+                    engagement_db_dataset="uraia_s02e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s02e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s02e02"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_political_agency",
@@ -203,6 +213,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_s02e01"),
                         analysis_dataset="s02e01"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s02e02"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s02e02_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s02e02"),
+                        analysis_dataset="s02e02"
                     )
                 ],
             ),
