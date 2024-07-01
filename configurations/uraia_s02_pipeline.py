@@ -192,7 +192,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     analysis=AnalysisConfiguration(
         google_drive_upload=GoogleDriveUploadConfiguration(
             credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
-            drive_dir="uraia_analysis_output"
+            drive_dir="uraia_s02_analysis_output"
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
