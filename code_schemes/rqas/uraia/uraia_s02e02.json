@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-107eabbe",
+            "DisplayText": "terracing",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "terracing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-be0a94a8",
+            "DisplayText": "growing fodder",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "growing_fodder",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-80406155",
+            "DisplayText": "growing drought resistant crops",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "growing_drought_resistant_crops",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-60d26969",
+            "DisplayText": "zero gracing",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "zero_gracing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a8c736d0",
+            "DisplayText": "early planting",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "early_planting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-68f8d8c7",
+            "DisplayText": "poulrty keeping",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "poulrty_keeping",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6dad9004",
+            "DisplayText": "bee keeping",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "bee_keeping",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-87a10cca",
+            "DisplayText": "irrigation",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "irrigation",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
