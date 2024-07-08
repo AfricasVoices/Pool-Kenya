@@ -68,6 +68,22 @@
             "VisibleInCoda": true
         },
         {
+            "CodeID": "code-43fa5ff3",
+            "DisplayText": "dairy farming",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "dairy_farming",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-152eb7a0",
+            "DisplayText": "livestock keeping",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "livestock_keeping",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
