@@ -55,6 +55,34 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         )
     ],
+    kobotoolbox_sources=[
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/wusc-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(
+                asset_uid="aAarneBJYgfBEUzQoATwKW",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e01", engagement_db_dataset="uraia_s02e01"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e02", engagement_db_dataset="uraia_s02e02"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Ward", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Access", engagement_db_dataset="uraia_radio_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Mobile_Phone_Access", engagement_db_dataset="uraia_mobile_phone_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic", engagement_db_dataset="uraia_radio_topic"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Topic_001", engagement_db_dataset="uraia_radio_topic_reason"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Literacy", engagement_db_dataset="uraia_literacy"),
+                ]
+            )
+        ),
+    ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
