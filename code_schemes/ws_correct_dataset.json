@@ -103,6 +103,15 @@
             "MatchValues": ["uraia_s02e03"]
         },
         {
+            "CodeID": "code-b54087ac",
+            "CodeType": "Normal",
+            "DisplayText": "uraia s02e04",
+            "StringValue": "uraia_s02e04",
+            "NumericValue": 627,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_s02e04"]
+        },
+        {
             "CodeID": "code-38974310",
             "CodeType": "Normal",
             "DisplayText": "luminate s01e01",

@@ -50,7 +50,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
 
                     FlowResultConfiguration("uraia_s02e01_activation", "rqa_s02e01", "uraia_s02e01"),
                     FlowResultConfiguration("uraia_s02e02_activation", "rqa_s02e02", "uraia_s02e02"),
-                    FlowResultConfiguration("uraia_s02e03_activation", "rqa_s02e03", "uraia_s02e03")
+                    FlowResultConfiguration("uraia_s02e03_activation", "rqa_s02e03", "uraia_s02e03"),
+                    FlowResultConfiguration("uraia_s02e04_activation", "rqa_s02e04", "uraia_s02e04")
                 ],
             )
         )
@@ -113,6 +114,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_s02e03"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s02e04",
+                    engagement_db_dataset="uraia_s02e04",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s02e04"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s02e04"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Uraia_political_agency",
@@ -273,6 +283,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_s02e03"),
                         analysis_dataset="s02e03"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s02e04"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s02e04_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s02e04"),
+                        analysis_dataset="s02e04"
                     )
                 ],
             ),
