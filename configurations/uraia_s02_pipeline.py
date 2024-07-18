@@ -93,8 +93,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
                 ignore_invalid_mobile_numbers=True,
                 question_configurations=[
-                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e03", engagement_db_dataset="uraia_s02e03"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_e04", engagement_db_dataset="uraia_s02e04"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_s02e03", engagement_db_dataset="uraia_s02e03"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="uraia_s02e04", engagement_db_dataset="uraia_s02e04"),
 
                     KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
                     KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
