@@ -4,6 +4,38 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-ef823d25",
+            "DisplayText": "community surveillance",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "community_surveillance",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4e6e0103",
+            "DisplayText": "reporting perpetrators",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "reporting_perpetrators",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a552d9f5",
+            "DisplayText": "imposing penalties",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "imposing_penalties",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9da958c9",
+            "DisplayText": "no actions",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "no_actions",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
