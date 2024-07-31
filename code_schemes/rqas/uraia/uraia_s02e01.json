@@ -61,10 +61,10 @@
         },
         {
             "CodeID": "code-ae9dfbbf",
-            "DisplayText": "termite invasion",
+            "DisplayText": "termite infestation",
             "CodeType": "Normal",
             "NumericValue": 8,
-            "StringValue": "termite_invasion",
+            "StringValue": "termite_infestation",
             "VisibleInCoda": true
         },
         {
