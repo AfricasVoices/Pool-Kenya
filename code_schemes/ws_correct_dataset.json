@@ -112,6 +112,15 @@
             "MatchValues": ["uraia_s02e04"]
         },
         {
+            "CodeID": "code-a2eeae95",
+            "CodeType": "Normal",
+            "DisplayText": "uraia s02 close out",
+            "StringValue": "uraia_s02_close_out",
+            "NumericValue": 628,
+            "VisibleInCoda": true,
+            "MatchValues": ["uraia_s02_close_out"]
+        },
+        {
             "CodeID": "code-38974310",
             "CodeType": "Normal",
             "DisplayText": "luminate s01e01",

@@ -51,7 +51,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("uraia_s02e01_activation", "rqa_s02e01", "uraia_s02e01"),
                     FlowResultConfiguration("uraia_s02e02_activation", "rqa_s02e02", "uraia_s02e02"),
                     FlowResultConfiguration("uraia_s02e03_activation", "rqa_s02e03", "uraia_s02e03"),
-                    FlowResultConfiguration("uraia_s02e04_activation", "rqa_s02e04", "uraia_s02e04")
+                    FlowResultConfiguration("uraia_s02e04_activation", "rqa_s02e04", "uraia_s02e04"),
+
+                    FlowResultConfiguration("uraia_s02_closeout_activation", "uraia_s02_close_out", "uraia_s02_close_out")
                 ],
             )
         )
@@ -176,6 +178,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 auto_coder=None, coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="uraia_climate_change_understanding"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Uraia_s02_close_out",
+                    engagement_db_dataset="uraia_s02_close_out",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/uraia_s02_close_out"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="uraia_s02_close_out"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
@@ -353,6 +364,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/uraia/uraia_climate_change_understanding"),
                         analysis_dataset="climate_change_understanding"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["uraia_s02_close_out"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="uraia_s02_close_out_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/uraia/uraia_s02_close_out"),
+                        analysis_dataset="s02_close_out"
                     )
                 ],
             ),
