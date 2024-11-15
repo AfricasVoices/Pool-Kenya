@@ -60,7 +60,7 @@
         {
             "CodeID": "code-70ebee41",
             "CodeType": "Normal",
-            "DisplayText": "global fund s01_cop_citizen_participation",
+            "DisplayText": "global fund s01 cop citizen participation",
             "StringValue": "gf_s01_cop_citizen_participation",
             "NumericValue": 630,
             "VisibleInCoda": true,
@@ -69,7 +69,7 @@
         {
             "CodeID": "code-e323e3bf",
             "CodeType": "Normal",
-            "DisplayText": "global fund s01_cop_community_partnership",
+            "DisplayText": "global fund s01 cop community partnership",
             "StringValue": "gf_s01_cop_community_partnership",
             "NumericValue": 631,
             "VisibleInCoda": true,
