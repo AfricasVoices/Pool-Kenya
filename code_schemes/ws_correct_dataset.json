@@ -49,6 +49,69 @@
             "MatchValues": ["disabled"]
         },
         {
+            "CodeID": "code-78863c7d",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s01 cop awareness",
+            "StringValue": "gf_s01_cop_awareness",
+            "NumericValue": 629,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s01_cop_awareness"]
+        },
+        {
+            "CodeID": "code-70ebee41",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s01_cop_citizen_participation",
+            "StringValue": "gf_s01_cop_citizen_participation",
+            "NumericValue": 630,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s01_cop_citizen_participation"]
+        },
+        {
+            "CodeID": "code-e323e3bf",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s01_cop_community_partnership",
+            "StringValue": "gf_s01_cop_community_partnership",
+            "NumericValue": 631,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s01_cop_community_partnership"]
+        },
+        {
+            "CodeID": "code-9474230a",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s01e01",
+            "StringValue": "gf_s01e01",
+            "NumericValue": 632,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s01e01"]
+        },
+        {
+            "CodeID": "code-dde5dc4a",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s01e02",
+            "StringValue": "gf_s01e02",
+            "NumericValue": 633,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s01e02"]
+        },
+        {
+            "CodeID": "code-cccd5ed8",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s01e03",
+            "StringValue": "gf_s01e03",
+            "NumericValue": 634,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s01e03"]
+        },
+        {
+            "CodeID": "code-772889ac",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s01e04",
+            "StringValue": "gf_s01e04",
+            "NumericValue": 635,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s01e04"]
+        },
+        {
             "CodeID": "code-2749f820",
             "CodeType": "Normal",
             "DisplayText": "uraia political agency",

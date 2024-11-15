@@ -61,6 +61,33 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
                 CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s01_cop_awareness",
+                    engagement_db_dataset="gf_s01_cop_awareness",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/gf_s01_cop_awareness"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s01_cop_awareness"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s01_cop_citizen_participation",
+                    engagement_db_dataset="gf_s01_cop_citizen_participation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/gf_s01_cop_citizen_participation"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s01_cop_citizen_participation"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s01_cop_community_partnership",
+                    engagement_db_dataset="gf_s01_cop_community_partnership",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/uraia/"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s01_cop_community_partnership"
+                ),
+                CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
