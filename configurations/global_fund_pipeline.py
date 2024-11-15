@@ -145,6 +145,39 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s01_cop_awareness"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s01_cop_awareness_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_awareness"),
+                        analysis_dataset="s01_cop_awareness"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s01_cop_citizen_participation"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s01_cop_citizen_participation_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_citizen_participation"),
+                        analysis_dataset="s01_cop_citizen_participation"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s01_cop_community_partnership"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s01_cop_community_partnership_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_community_partnership"),
+                        analysis_dataset="s01_cop_community_partnership"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["preferred_language"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
                 raw_dataset="preferred_language_raw",
