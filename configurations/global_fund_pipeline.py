@@ -48,7 +48,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("global_fund_baseline", "cop_citizen_participation", "gf_s01_cop_citizen_participation"),
                     FlowResultConfiguration("global_fund_baseline", "cop_community_partnership", "gf_s01_cop_community_partnership"),
 
-                    # FlowResultConfiguration("global_fund_s01e01_activation", "rqa_s01e01", "gf_s01e01"),
+                    FlowResultConfiguration("global_fund_s01e01_activation", "rqa_s01e01", "gf_s01e01"),
                     # FlowResultConfiguration("global_fund_s01e02_activation", "rqa_s01e02", "gf_s01e02"),
                     # FlowResultConfiguration("global_fund_s01e03_activation", "rqa_s01e03", "gf_s01e03"),
                     # FlowResultConfiguration("global_fund_s01e04_activation", "rqa_s01e04", "gf_s01e04"),
@@ -60,15 +60,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
-                # CodaDatasetConfiguration(
-                #     coda_dataset_id="Global_Fund_s01e01",
-                #     engagement_db_dataset="gf_s01e01",
-                #     code_scheme_configurations=[
-                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"), 
-                #                                 auto_coder=None, coda_code_schemes_count=3)
-                #     ],
-                #     ws_code_match_value="gf_s01e01"
-                # ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s01e01",
+                    engagement_db_dataset="gf_s01e01",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s01e01"
+                ),
                 # CodaDatasetConfiguration(
                 #     coda_dataset_id="Global_Fund_s01e02",
                 #     engagement_db_dataset="gf_s01e02",
@@ -180,17 +180,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             drive_dir="global_fund_s01_analysis_output"
         ),
         dataset_configurations=[
-            # AnalysisDatasetConfiguration(
-            #     engagement_db_datasets=["gf_s01e01"],
-            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-            #     raw_dataset="gf_s01e01_raw",
-            #     coding_configs=[
-            #         CodingConfiguration(
-            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"),
-            #             analysis_dataset="s01e01"
-            #         )
-            #     ],
-            # ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s01e01"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s01e01_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"),
+                        analysis_dataset="s01e01"
+                    )
+                ],
+            ),
             # AnalysisDatasetConfiguration(
             #     engagement_db_datasets=["gf_s01e02"],
             #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
