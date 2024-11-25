@@ -4,6 +4,30 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-9d1763f8",
+            "DisplayText": "inclusive participation",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "inclusive_participation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-358b4e8f",
+            "DisplayText": "expanding citizen priorities",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "expanding_citizen_priorities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8e93b328",
+            "DisplayText": "improve community feedback",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "improve_community_feedback",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
