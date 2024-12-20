@@ -4,6 +4,38 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-e0391104",
+            "DisplayText": "by sensitization",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "by_sensitization",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1e44aa79",
+            "DisplayText": "take legal action",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "take_legal_action",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7f21577d",
+            "DisplayText": "involving the church",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "involving_the_church",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8970e03f",
+            "DisplayText": "provide helpline",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "provide_helpline",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
