@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-64d052d1",
+            "DisplayText": "farming activities",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "farming_activities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-643d6586",
+            "DisplayText": "tree planting",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "tree_planting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-40e3a003",
+            "DisplayText": "road repair",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "road_repair",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dc867205",
+            "DisplayText": "water harvesting",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "water_harvesting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b4d33218",
+            "DisplayText": "none",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "none",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

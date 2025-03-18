@@ -4,6 +4,22 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-3d5e478a",
+            "DisplayText": "yes",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "yes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-78980e0c",
+            "DisplayText": "none",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "none",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

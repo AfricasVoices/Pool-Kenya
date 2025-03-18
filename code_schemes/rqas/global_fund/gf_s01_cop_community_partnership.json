@@ -4,6 +4,22 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-b943db00",
+            "DisplayText": "no collaboration",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "no_collaboration",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6b34695e",
+            "DisplayText": "good collaboration",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "good_collaboration",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
