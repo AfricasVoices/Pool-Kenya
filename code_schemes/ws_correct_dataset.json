@@ -76,6 +76,42 @@
             "MatchValues": ["gf_s01_cop_community_partnership"]
         },
         {
+            "CodeID": "code-2a8a7fdc",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s02e01",
+            "StringValue": "gf_s02e01",
+            "NumericValue": 637,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s02e01"]
+        },
+        {
+            "CodeID": "code-72852bb8",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s02e02",
+            "StringValue": "gf_s02e02",
+            "NumericValue": 638,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s02e02"]
+        },
+        {
+            "CodeID": "code-54eb70a1",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s02e03",
+            "StringValue": "gf_s02e03",
+            "NumericValue": 639,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s02e03"]
+        },
+        {
+            "CodeID": "code-a72307a2",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s02e04",
+            "StringValue": "gf_s02e04",
+            "NumericValue": 640,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s02e04"]
+        },
+        {
             "CodeID": "code-9474230a",
             "CodeType": "Normal",
             "DisplayText": "global fund s01e01",
