@@ -445,6 +445,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         ],
         ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
+        maps=[],
         traffic_labels=[]
     ),
     rapid_pro_target=RapidProTarget(
