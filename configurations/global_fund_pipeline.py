@@ -53,6 +53,11 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("global_fund_s01e03_activation", "rqa_s01e03", "gf_s01e03"),
                     FlowResultConfiguration("global_fund_s01e04_activation", "rqa_s01e04", "gf_s01e04"),
                     FlowResultConfiguration("global_fund_s01e05_activation", "rqa_s01e05", "gf_s01e05"),
+
+                    FlowResultConfiguration("global_fund_s02e01_activation", "rqa_s02e01", "gf_s02e01"),
+                    # FlowResultConfiguration("global_fund_s02e02_activation", "rqa_s02e02", "gf_s02e02"),
+                    # FlowResultConfiguration("global_fund_s02e03_activation", "rqa_s02e03", "gf_s02e03"),
+                    # FlowResultConfiguration("global_fund_s02e04_activation", "rqa_s02e04", "gf_s02e04"),
                 ],
             )
         )
@@ -61,6 +66,42 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s02e01",
+                    engagement_db_dataset="gf_s02e01",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e01"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s02e01"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s02e02",
+                    engagement_db_dataset="gf_s02e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e02"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s02e02"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s02e03",
+                    engagement_db_dataset="gf_s02e03",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e03"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s02e03"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_s02e04",
+                    engagement_db_dataset="gf_s02e04",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e04"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_s02e04"
+                ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Global_Fund_s01e01",
                     engagement_db_dataset="gf_s01e01",
@@ -190,6 +231,50 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             drive_dir="global_fund_s01_analysis_output"
         ),
         dataset_configurations=[
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s02e01"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s02e01_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e01"),
+                        analysis_dataset="s02e01"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s02e02"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s02e02_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e02"),
+                        analysis_dataset="s02e02"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s02e03"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s02e03_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e03"),
+                        analysis_dataset="s02e03"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_s02e04"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_s02e04_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e04"),
+                        analysis_dataset="s02e04"
+                    )
+                ],
+            ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["gf_s01e01"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
