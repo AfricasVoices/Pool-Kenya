@@ -56,7 +56,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
 
                     FlowResultConfiguration("global_fund_s02e01_activation", "rqa_s02e01", "gf_s02e01"),
                     FlowResultConfiguration("global_fund_s02e02_activation", "rqa_s02e02", "gf_s02e02"),
-                    # FlowResultConfiguration("global_fund_s02e03_activation", "rqa_s02e03", "gf_s02e03"),
+                    FlowResultConfiguration("global_fund_s02e03_activation", "rqa_s02e03", "gf_s02e03"),
                     # FlowResultConfiguration("global_fund_s02e04_activation", "rqa_s02e04", "gf_s02e04"),
                 ],
             )
