@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-f8bce5d2",
+            "DisplayText": "facilitate participation",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "facilitate_participation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a3ff76b0",
+            "DisplayText": "showcase success stories",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "showcase_success_stories",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-71420cfb",
+            "DisplayText": "create awareness",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "create_awareness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1bde33bf",
+            "DisplayText": "ensure inclusive involvement",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "ensure_inclusive_involvement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-53976cba",
+            "DisplayText": "provide feedback",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "provide_feedback",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ef57a214",
+            "DisplayText": "capacity building",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "capacity_building",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
