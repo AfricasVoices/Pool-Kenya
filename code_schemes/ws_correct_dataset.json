@@ -112,6 +112,15 @@
             "MatchValues": ["gf_s02e04"]
         },
         {
+            "CodeID": "code-8032b990",
+            "CodeType": "Normal",
+            "DisplayText": "global fund radio show participation",
+            "StringValue": "gf_radio_show_participation",
+            "NumericValue": 641,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_radio_show_participation"]
+        },
+        {
             "CodeID": "code-9474230a",
             "CodeType": "Normal",
             "DisplayText": "global fund s01e01",

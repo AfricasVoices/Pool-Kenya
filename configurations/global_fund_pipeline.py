@@ -62,10 +62,45 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             )
         )
     ],
+    kobotoolbox_sources=[
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/uraia-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(
+                asset_uid="a4BbZBxRxq3zn4bc8ffAUu",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gf_s02e01", engagement_db_dataset="gf_s02e01"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gf_s02e02", engagement_db_dataset="gf_s02e02"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gf_s02e03", engagement_db_dataset="gf_s02e03"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gf_s02e04", engagement_db_dataset="gf_s02e04"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Location", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="Disability", engagement_db_dataset="disabled"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="Radio_Show_participation", engagement_db_dataset="gf_radio_show_participation")
+                ]
+            )
+        ),
+    ],
     coda_sync=CodaConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
+                CodaDatasetConfiguration(
+                    coda_dataset_id="Global_Fund_radio_show_participation",
+                    engagement_db_dataset="gf_radio_show_participation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_radio_show_participation"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_radio_show_participation"
+                ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Global_Fund_s02e01",
                     engagement_db_dataset="gf_s02e01",
