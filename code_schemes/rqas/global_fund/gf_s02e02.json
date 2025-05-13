@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-00c37e92",
+            "DisplayText": "inclusive community engagement",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "inclusive_community_engagement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-73d6172d",
+            "DisplayText": "meaningful involvement",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "meaningful_involvement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cbbf57bd",
+            "DisplayText": "through committees",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "through_committees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ee8ab4ad",
+            "DisplayText": "through capacity building",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "through_capacity_building",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a91491bd",
+            "DisplayText": "through awareness creation",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "through_awareness_creation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0f117fc0",
+            "DisplayText": "collaboration with local groups",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "collaboration_with_local_groups",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-686d368f",
+            "DisplayText": "through needs identification",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "through_needs_identification",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b672531a",
+            "DisplayText": "incentivize engagement",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "incentivize_engagement",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
