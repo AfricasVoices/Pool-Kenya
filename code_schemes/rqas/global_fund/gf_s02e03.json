@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-9ac739f5",
+            "DisplayText": "inadequate civic knowledge",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "inadequate_civic_knowledge",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fe59824c",
+            "DisplayText": "poor leadership",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "poor_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1848412c",
+            "DisplayText": "exclusion",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "exclusion",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-38ba5b81",
+            "DisplayText": "poor communication",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "poor_communication",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-257b9ff9",
+            "DisplayText": "lack of incentive",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "lack_of_incentive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-baf18093",
+            "DisplayText": "financial constraints",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "financial_constraints",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4e85fd73",
+            "DisplayText": "substance abuse",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "substance_abuse",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
