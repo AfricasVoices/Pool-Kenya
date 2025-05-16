@@ -4,6 +4,38 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-70e3631b",
+            "DisplayText": "collaborate",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "collaborate",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-49ff544f",
+            "DisplayText": "develop mous",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "develop_mous",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a102142d",
+            "DisplayText": "improve communication",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "improve_communication",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-89dc64b8",
+            "DisplayText": "inclusive community engagement",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "inclusive_community_engagement",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
