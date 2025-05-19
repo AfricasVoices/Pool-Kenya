@@ -58,6 +58,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("global_fund_s02e02_activation", "rqa_s02e02", "gf_s02e02"),
                     FlowResultConfiguration("global_fund_s02e03_activation", "rqa_s02e03", "gf_s02e03"),
                     FlowResultConfiguration("global_fund_s02e04_activation", "rqa_s02e04", "gf_s02e04"),
+
+                    FlowResultConfiguration("global_fund_endline", "gf_current_initiatives", "gf_endline_current_initiatives"),
+                    FlowResultConfiguration("global_fund_endline", "gf_group_membership", "gf_endline_group_membership"),
+                    FlowResultConfiguration("global_fund_endline", "gf_new_initiative_participation", "gf_endline_new_initiative_participation"),
                 ],
             )
         )
@@ -92,6 +96,33 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
+                CodaDatasetConfiguration(
+                    coda_dataset_id="GF_Endline_current_initiatives",
+                    engagement_db_dataset="gf_endline_current_initiatives",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_current_initiatives"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_endline_current_initiatives"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="GF_Endline_group_membership",
+                    engagement_db_dataset="gf_endline_group_membership",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_group_membership"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_endline_group_membership"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="GF_Endline_new_initiative_participation",
+                    engagement_db_dataset="gf_endline_new_initiative_participation",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_new_initiative_participation"), 
+                                                auto_coder=None, coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="gf_endline_new_initiative_participation"
+                ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Global_Fund_radio_show_participation",
                     engagement_db_dataset="gf_radio_show_participation",

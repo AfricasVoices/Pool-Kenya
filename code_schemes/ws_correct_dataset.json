@@ -121,6 +121,33 @@
             "MatchValues": ["gf_radio_show_participation"]
         },
         {
+            "CodeID": "code-5ce8c41a",
+            "CodeType": "Normal",
+            "DisplayText": "gf endline current initiatives",
+            "StringValue": "gf_endline_current_initiatives",
+            "NumericValue": 642,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_endline_current_initiatives"]
+        },
+        {
+            "CodeID": "code-0324d6bc",
+            "CodeType": "Normal",
+            "DisplayText": "gf endline group membership",
+            "StringValue": "gf_endline_group_membership",
+            "NumericValue": 643,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_endline_group_membership"]
+        },
+        {
+            "CodeID": "code-38009ef3",
+            "CodeType": "Normal",
+            "DisplayText": "gf endline new initiative participation",
+            "StringValue": "gf_endline_new_initiative_participation",
+            "NumericValue": 644,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_endline_new_initiative_participation"]
+        },
+        {
             "CodeID": "code-9474230a",
             "CodeType": "Normal",
             "DisplayText": "global fund s01e01",
