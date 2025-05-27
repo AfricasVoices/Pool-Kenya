@@ -298,6 +298,39 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_endline_current_initiatives"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_endline_current_initiatives_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_endline_current_initiatives"),
+                        analysis_dataset="endline_current_initiatives"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_endline_group_membership"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_endline_group_membership_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_endline_group_membership"),
+                        analysis_dataset="endline_group_membership"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["gf_endline_new_initiative_participation"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="gf_endline_new_initiative_participation_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/global_fund/gf_endline_new_initiative_participation"),
+                        analysis_dataset="endline_new_initiative_participation"
+                    )
+                ],
+            ),
+            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["gf_s02e01"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
                 raw_dataset="gf_s02e01_raw",
