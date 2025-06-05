@@ -133,10 +133,10 @@
         },
         {
             "CodeID": "code-830a7092",
-            "DisplayText": "poor economic conditions",
+            "DisplayText": "scarcity of resources",
             "CodeType": "Normal",
             "NumericValue": 17,
-            "StringValue": "poor_economic_conditions",
+            "StringValue": "scarcity_of_resources",
             "VisibleInCoda": true
         },
         {
