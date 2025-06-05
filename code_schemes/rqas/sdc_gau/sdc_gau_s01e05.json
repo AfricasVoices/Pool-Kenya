@@ -5,10 +5,10 @@
     "Codes": [
         {
             "CodeID": "code-2d5266b3",
-            "DisplayText": "encourage joint working",
+            "DisplayText": "peace initiavies",
             "CodeType": "Normal",
             "NumericValue": 1,
-            "StringValue": "encourage_joint_working",
+            "StringValue": "peace_initiavies",
             "VisibleInCoda": true
         },
         {
@@ -29,10 +29,10 @@
         },
         {
             "CodeID": "code-30e432d8",
-            "DisplayText": "educational programmes",
+            "DisplayText": "appropriate security training",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "educational_programmes",
+            "StringValue": "appropriate_security_training",
             "VisibleInCoda": true
         },
         {
@@ -69,10 +69,10 @@
         },
         {
             "CodeID": "code-dad4baaf",
-            "DisplayText": "enforcing laws and policies",
+            "DisplayText": "law enforcement",
             "CodeType": "Normal",
             "NumericValue": 9,
-            "StringValue": "enforcing_laws_and_policies",
+            "StringValue": "law_enforcement",
             "VisibleInCoda": true
         },
         {

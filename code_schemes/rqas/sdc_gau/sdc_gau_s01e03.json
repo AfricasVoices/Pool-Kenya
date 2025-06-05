@@ -21,26 +21,26 @@
         },
         {
             "CodeID": "code-ba878a8c",
-            "DisplayText": "create job and business opportunties",
+            "DisplayText": "creation of livelihoods",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "create_job_and_business_opportunties",
+            "StringValue": "creation_of_livelihoods",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-4be04c5c",
-            "DisplayText": "improve security measures",
+            "DisplayText": "security and legal action",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "improve_security_measures",
+            "StringValue": "security_and_legal_action",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-40bc8e15",
-            "DisplayText": "peace education",
+            "DisplayText": "enhance social cohesion",
             "CodeType": "Normal",
             "NumericValue": 5,
-            "StringValue": "peace_education",
+            "StringValue": "enhance_social_cohesion",
             "VisibleInCoda": true
         },
         {
@@ -61,18 +61,18 @@
         },
         {
             "CodeID": "code-9dd7423b",
-            "DisplayText": "promote community dialogue and mediation",
+            "DisplayText": "community engagement",
             "CodeType": "Normal",
             "NumericValue": 8,
-            "StringValue": "promote_community_dialogue_and_mediation",
+            "StringValue": "community_engagement",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-0392d206",
-            "DisplayText": "equal distribution of resources",
+            "DisplayText": "resource management",
             "CodeType": "Normal",
             "NumericValue": 9,
-            "StringValue": "equal_distribution_of_resources",
+            "StringValue": "resource_management",
             "VisibleInCoda": true
         },
         {
@@ -117,10 +117,10 @@
         },
         {
             "CodeID": "code-869d3a16",
-            "DisplayText": "good governance or leadership",
+            "DisplayText": "good governance",
             "CodeType": "Normal",
             "NumericValue": 15,
-            "StringValue": "good_governance_or_leadership",
+            "StringValue": "good_governance",
             "VisibleInCoda": true
         },
         {
@@ -133,10 +133,10 @@
         },
         {
             "CodeID": "code-f9495ae7",
-            "DisplayText": "identify & address causes of conflict",
+            "DisplayText": "conflict resolution",
             "CodeType": "Normal",
             "NumericValue": 17,
-            "StringValue": "identify_and_address_causes_of_conflict",
+            "StringValue": "conflict_resolution",
             "VisibleInCoda": true
         },
         {

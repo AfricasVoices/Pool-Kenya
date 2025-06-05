@@ -5,10 +5,10 @@
     "Codes": [
         {
             "CodeID": "code-a1a8992e",
-            "DisplayText": "unity and co-existence",
+            "DisplayText": "social cohesion",
             "CodeType": "Normal",
             "NumericValue": 1,
-            "StringValue": "unity_and_co_existence",
+            "StringValue": "social_cohesion",
             "VisibleInCoda": true
         },
         {
@@ -21,10 +21,10 @@
         },
         {
             "CodeID": "code-ba878a8c",
-            "DisplayText": "absence of violence and insecurity",
+            "DisplayText": "law and order",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "absence_of_violence_and_insecurity",
+            "StringValue": "law_and_order",
             "VisibleInCoda": true
         },
         {
@@ -61,10 +61,10 @@
         },
         {
             "CodeID": "code-06c084f0",
-            "DisplayText": "love, joy & happiness",
+            "DisplayText": "access to basic needs",
             "CodeType": "Normal",
             "NumericValue": 8,
-            "StringValue": "love_joy_and_happiness",
+            "StringValue": "access_to_basic_needs",
             "VisibleInCoda": true
         },
         {

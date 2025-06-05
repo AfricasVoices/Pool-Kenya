@@ -21,18 +21,18 @@
         },
         {
             "CodeID": "code-ba878a8c",
-            "DisplayText": "local leaders initiatives",
+            "DisplayText": "peace initiatives",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "local_leaders_initiatives",
+            "StringValue": "peace_initiatives",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-db10d181",
-            "DisplayText": "civic education",
+            "DisplayText": "cultural conflict resolution",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "civic_education",
+            "StringValue": "cultural_conflict_resolution",
             "VisibleInCoda": true
         },
         {
@@ -45,10 +45,10 @@
         },
         {
             "CodeID": "code-730f6650",
-            "DisplayText": "creating economic opportunities",
+            "DisplayText": "community development and economic opportunities",
             "CodeType": "Normal",
             "NumericValue": 6,
-            "StringValue": "creating_economic_opportunities",
+            "StringValue": "community_development_and_economic_opportunities",
             "VisibleInCoda": true
         },
         {
@@ -109,10 +109,10 @@
         },
         {
             "CodeID": "code-05485dd7",
-            "DisplayText": "nyumba kumi initiative",
+            "DisplayText": "collaboration and stakeholder engagement",
             "CodeType": "Normal",
             "NumericValue": 14,
-            "StringValue": "nyumba_kumi_initiative",
+            "StringValue": "collaboration_and_stakeholder_engagement",
             "VisibleInCoda": true
         },
         {
@@ -124,19 +124,11 @@
             "VisibleInCoda": true
         },
         {
-            "CodeID": "code-c390883c",
-            "DisplayText": "traditional justice",
-            "CodeType": "Normal",
-            "NumericValue": 16,
-            "StringValue": "traditional_justice",
-            "VisibleInCoda": true
-        },
-        {
             "CodeID": "code-f9495ae7",
-            "DisplayText": "rule of law",
+            "DisplayText": "law enforcement",
             "CodeType": "Normal",
             "NumericValue": 17,
-            "StringValue": "rule_of_law",
+            "StringValue": "law_enforcement",
             "VisibleInCoda": true
         },
         {

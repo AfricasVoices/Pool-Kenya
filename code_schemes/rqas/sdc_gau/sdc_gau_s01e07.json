@@ -21,10 +21,10 @@
         },
         {
             "CodeID": "code-abe914d0",
-            "DisplayText": "through dialogue",
+            "DisplayText": "community engagement",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "through_dialogue",
+            "StringValue": "community_engagement",
             "VisibleInCoda": true
         },
         {
@@ -45,18 +45,18 @@
         },
         {
             "CodeID": "code-c3f6b273",
-            "DisplayText": "through traditional means",
+            "DisplayText": "cultural conflict resolution",
             "CodeType": "Normal",
             "NumericValue": 6,
-            "StringValue": "through_traditional_means",
+            "StringValue": "cultural_conflict_resolution",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-4b500373",
-            "DisplayText": "formation of peace committees",
+            "DisplayText": "peace initiatives",
             "CodeType": "Normal",
             "NumericValue": 7,
-            "StringValue": "formation_of_peace_committees",
+            "StringValue": "peace_initiatives",
             "VisibleInCoda": true
         },
         {
@@ -101,10 +101,10 @@
         },
         {
             "CodeID": "code-b359dd23",
-            "DisplayText": "establishing rules for resource management",
+            "DisplayText": "resource management",
             "CodeType": "Normal",
             "NumericValue": 13,
-            "StringValue": "establishing_rules_for_resource_management",
+            "StringValue": "resource_management",
             "VisibleInCoda": true
         },
         {
@@ -117,10 +117,10 @@
         },
         {
             "CodeID": "code-7b98f949",
-            "DisplayText": "through security agencies",
+            "DisplayText": "law enforcement",
             "CodeType": "Normal",
             "NumericValue": 15,
-            "StringValue": "through_security_agencies",
+            "StringValue": "law_enforcement",
             "VisibleInCoda": true
         },
         {

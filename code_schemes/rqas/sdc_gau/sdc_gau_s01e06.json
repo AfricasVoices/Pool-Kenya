@@ -13,10 +13,10 @@
         },
         {
             "CodeID": "code-ea26ecd6",
-            "DisplayText": "education disrupted",
+            "DisplayText": "disrupted social amenities",
             "CodeType": "Normal",
             "NumericValue": 2,
-            "StringValue": "education_disrupted",
+            "StringValue": "disrupted_social_amenities",
             "VisibleInCoda": true
         },
         {
@@ -29,10 +29,10 @@
         },
         {
             "CodeID": "code-30e432d8",
-            "DisplayText": "business operations hindered",
+            "DisplayText": "unconducive business environment",
             "CodeType": "Normal",
             "NumericValue": 4,
-            "StringValue": "business_operations_hindered",
+            "StringValue": "unconducive_business_environment",
             "VisibleInCoda": true
         },
         {
@@ -93,10 +93,10 @@
         },
         {
             "CodeID": "code-ec3a3622",
-            "DisplayText": "fear and anxiety",
+            "DisplayText": "caused public distress",
             "CodeType": "Normal",
             "NumericValue": 12,
-            "StringValue": "fear_and_nxiety",
+            "StringValue": "caused_public_distress",
             "VisibleInCoda": true
         },
         {
@@ -117,10 +117,10 @@
         },
         {
             "CodeID": "code-94826872",
-            "DisplayText": "limits economic development",
+            "DisplayText": "financial constraints",
             "CodeType": "Normal",
             "NumericValue": 15,
-            "StringValue": "limits_economic_development",
+            "StringValue": "financial_constraints",
             "VisibleInCoda": true
         },
         {

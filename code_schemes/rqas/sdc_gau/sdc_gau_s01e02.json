@@ -5,10 +5,10 @@
     "Codes": [
         {
             "CodeID": "code-75fa75fa",
-            "DisplayText": "poor leadership",
+            "DisplayText": "social issues",
             "CodeType": "Normal",
             "NumericValue": 1,
-            "StringValue": "poor_leadership",
+            "StringValue": "social_issues",
             "VisibleInCoda": true
         },
         {
@@ -21,10 +21,10 @@
         },
         {
             "CodeID": "code-ba878a8c",
-            "DisplayText": "violent terrorism",
+            "DisplayText": "insecurity",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "violet_terrorism",
+            "StringValue": "insecurity",
             "VisibleInCoda": true
         },
         {
@@ -77,10 +77,10 @@
         },
         {
             "CodeID": "code-04eefe9d",
-            "DisplayText": "scarcity of resources",
+            "DisplayText": "poor economic conditions",
             "CodeType": "Normal",
             "NumericValue": 10,
-            "StringValue": "scarcity_of_resources",
+            "StringValue": "poor_economic_conditions",
             "VisibleInCoda": true
         },
         {
@@ -101,18 +101,18 @@
         },
         {
             "CodeID": "code-ac985f46",
-            "DisplayText": "tribalism",
+            "DisplayText": "disunity",
             "CodeType": "Normal",
             "NumericValue": 13,
-            "StringValue": "trabilism",
+            "StringValue": "disunity",
             "VisibleInCoda": true
         },
         {
             "CodeID": "code-869d3a16",
-            "DisplayText": "misinformation",
+            "DisplayText": "lack of awareness",
             "CodeType": "Normal",
             "NumericValue": 14,
-            "StringValue": "misinformation",
+            "StringValue": "lack_of_awareness",
             "VisibleInCoda": true
         },
         {
