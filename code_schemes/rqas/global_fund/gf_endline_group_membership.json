@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-1e7be73c",
+            "DisplayText": "self-help groups",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "self_help_groups",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6e55c0df",
+            "DisplayText": "water projects and environmental sustainability.",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "water_projects_and_environmental_sustainability.",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9ed1744e",
+            "DisplayText": "farming",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "farming",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f51429ac",
+            "DisplayText": "none",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "none",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d0ec803e",
+            "DisplayText": "yes",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "yes",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

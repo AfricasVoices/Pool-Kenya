@@ -4,6 +4,30 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-0a76b27f",
+            "DisplayText": "road infrastructure",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "road_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0d86617f",
+            "DisplayText": "farming",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "farming",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-85b7fce2",
+            "DisplayText": "water infrastructure",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "water_infrastructure",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
