@@ -37,10 +37,10 @@
         },
         {
             "CodeID": "code-0614b082",
-            "DisplayText": "other theme",
+            "DisplayText": "none",
             "CodeType": "Normal",
             "NumericValue": -11,
-            "StringValue": "other_theme",
+            "StringValue": "none",
             "VisibleInCoda": true
         },
         {
