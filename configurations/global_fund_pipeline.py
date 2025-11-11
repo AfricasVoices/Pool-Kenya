@@ -44,29 +44,29 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("global_fund_s01_demogs", "pool_kenya_disabled", "disabled"),
                     FlowResultConfiguration("global_fund_s01_demogs", "preferred_language", "preferred_language"),
 
-                    FlowResultConfiguration("global_fund_baseline", "cop_awareness", "gf_s01_cop_awareness"),
-                    FlowResultConfiguration("global_fund_baseline", "cop_citizen_participation", "gf_s01_cop_citizen_participation"),
-                    FlowResultConfiguration("global_fund_baseline", "cop_community_partnership", "gf_s01_cop_community_partnership"),
+                    # FlowResultConfiguration("global_fund_baseline", "cop_awareness", "gf_s01_cop_awareness"),
+                    # FlowResultConfiguration("global_fund_baseline", "cop_citizen_participation", "gf_s01_cop_citizen_participation"),
+                    # FlowResultConfiguration("global_fund_baseline", "cop_community_partnership", "gf_s01_cop_community_partnership"),
 
-                    FlowResultConfiguration("global_fund_s01e01_activation", "rqa_s01e01", "gf_s01e01"),
-                    FlowResultConfiguration("global_fund_s01e02_activation", "rqa_s01e02", "gf_s01e02"),
-                    FlowResultConfiguration("global_fund_s01e03_activation", "rqa_s01e03", "gf_s01e03"),
-                    FlowResultConfiguration("global_fund_s01e04_activation", "rqa_s01e04", "gf_s01e04"),
-                    FlowResultConfiguration("global_fund_s01e05_activation", "rqa_s01e05", "gf_s01e05"),
+                    # FlowResultConfiguration("global_fund_s01e01_activation", "rqa_s01e01", "gf_s01e01"),
+                    # FlowResultConfiguration("global_fund_s01e02_activation", "rqa_s01e02", "gf_s01e02"),
+                    # FlowResultConfiguration("global_fund_s01e03_activation", "rqa_s01e03", "gf_s01e03"),
+                    # FlowResultConfiguration("global_fund_s01e04_activation", "rqa_s01e04", "gf_s01e04"),
+                    # FlowResultConfiguration("global_fund_s01e05_activation", "rqa_s01e05", "gf_s01e05"),
 
-                    FlowResultConfiguration("global_fund_s02e01_activation", "rqa_s02e01", "gf_s02e01"),
-                    FlowResultConfiguration("global_fund_s02e02_activation", "rqa_s02e02", "gf_s02e02"),
-                    FlowResultConfiguration("global_fund_s02e03_activation", "rqa_s02e03", "gf_s02e03"),
-                    FlowResultConfiguration("global_fund_s02e04_activation", "rqa_s02e04", "gf_s02e04"),
+                    # FlowResultConfiguration("global_fund_s02e01_activation", "rqa_s02e01", "gf_s02e01"),
+                    # FlowResultConfiguration("global_fund_s02e02_activation", "rqa_s02e02", "gf_s02e02"),
+                    # FlowResultConfiguration("global_fund_s02e03_activation", "rqa_s02e03", "gf_s02e03"),
+                    # FlowResultConfiguration("global_fund_s02e04_activation", "rqa_s02e04", "gf_s02e04"),
 
                     FlowResultConfiguration("global_fund_s03e01_activation", "rqa_s03e01", "gf_s03e01"),
                     FlowResultConfiguration("global_fund_s03e02_activation", "rqa_s03e02", "gf_s03e02"),
                     FlowResultConfiguration("global_fund_s03e03_activation", "rqa_s03e03", "gf_s03e03"),
                     FlowResultConfiguration("global_fund_s03e04_activation", "rqa_s03e04", "gf_s03e04"),
 
-                    FlowResultConfiguration("global_fund_endline", "gf_current_initiatives", "gf_endline_current_initiatives"),
-                    FlowResultConfiguration("global_fund_endline", "gf_group_membership", "gf_endline_group_membership"),
-                    FlowResultConfiguration("global_fund_endline", "gf_new_initiative_participation", "gf_endline_new_initiative_participation"),
+                    # FlowResultConfiguration("global_fund_endline", "gf_current_initiatives", "gf_endline_current_initiatives"),
+                    # FlowResultConfiguration("global_fund_endline", "gf_group_membership", "gf_endline_group_membership"),
+                    # FlowResultConfiguration("global_fund_endline", "gf_new_initiative_participation", "gf_endline_new_initiative_participation"),
                 ],
             )
         )
@@ -101,42 +101,42 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         coda=CodaClientConfiguration(credentials_file_url="gs://avf-credentials/coda-production.json"),
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
-                CodaDatasetConfiguration(
-                    coda_dataset_id="GF_Endline_current_initiatives",
-                    engagement_db_dataset="gf_endline_current_initiatives",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_current_initiatives"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_endline_current_initiatives"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="GF_Endline_group_membership",
-                    engagement_db_dataset="gf_endline_group_membership",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_group_membership"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_endline_group_membership"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="GF_Endline_new_initiative_participation",
-                    engagement_db_dataset="gf_endline_new_initiative_participation",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_new_initiative_participation"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_endline_new_initiative_participation"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_radio_show_participation",
-                    engagement_db_dataset="gf_radio_show_participation",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_radio_show_participation"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_radio_show_participation"
-                ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="GF_Endline_current_initiatives",
+                #     engagement_db_dataset="gf_endline_current_initiatives",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_current_initiatives"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_endline_current_initiatives"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="GF_Endline_group_membership",
+                #     engagement_db_dataset="gf_endline_group_membership",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_group_membership"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_endline_group_membership"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="GF_Endline_new_initiative_participation",
+                #     engagement_db_dataset="gf_endline_new_initiative_participation",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_endline_new_initiative_participation"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_endline_new_initiative_participation"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_radio_show_participation",
+                #     engagement_db_dataset="gf_radio_show_participation",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_radio_show_participation"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_radio_show_participation"
+                # ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Global_Fund_s03e01",
                     engagement_db_dataset="gf_s03e01",
@@ -173,114 +173,114 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ],
                     ws_code_match_value="gf_s03e04"
                 ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s02e01",
-                    engagement_db_dataset="gf_s02e01",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e01"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s02e01"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s02e02",
-                    engagement_db_dataset="gf_s02e02",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e02"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s02e02"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s02e03",
-                    engagement_db_dataset="gf_s02e03",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e03"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s02e03"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s02e04",
-                    engagement_db_dataset="gf_s02e04",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e04"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s02e04"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01e01",
-                    engagement_db_dataset="gf_s01e01",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01e01"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01e02",
-                    engagement_db_dataset="gf_s01e02",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e02"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01e02"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01e03",
-                    engagement_db_dataset="gf_s01e03",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e03"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01e03"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01e04",
-                    engagement_db_dataset="gf_s01e04",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e04"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01e04"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01e05",
-                    engagement_db_dataset="gf_s01e05",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e05"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01e05"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01_cop_awareness",
-                    engagement_db_dataset="gf_s01_cop_awareness",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_awareness"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01_cop_awareness"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01_cop_citizen_participation",
-                    engagement_db_dataset="gf_s01_cop_citizen_participation",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_citizen_participation"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01_cop_citizen_participation"
-                ),
-                CodaDatasetConfiguration(
-                    coda_dataset_id="Global_Fund_s01_cop_community_partnership",
-                    engagement_db_dataset="gf_s01_cop_community_partnership",
-                    code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_community_partnership"), 
-                                                auto_coder=None, coda_code_schemes_count=3)
-                    ],
-                    ws_code_match_value="gf_s01_cop_community_partnership"
-                ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s02e01",
+                #     engagement_db_dataset="gf_s02e01",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e01"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s02e01"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s02e02",
+                #     engagement_db_dataset="gf_s02e02",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e02"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s02e02"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s02e03",
+                #     engagement_db_dataset="gf_s02e03",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e03"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s02e03"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s02e04",
+                #     engagement_db_dataset="gf_s02e04",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s02e04"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s02e04"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01e01",
+                #     engagement_db_dataset="gf_s01e01",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01e01"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01e02",
+                #     engagement_db_dataset="gf_s01e02",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e02"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01e02"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01e03",
+                #     engagement_db_dataset="gf_s01e03",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e03"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01e03"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01e04",
+                #     engagement_db_dataset="gf_s01e04",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e04"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01e04"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01e05",
+                #     engagement_db_dataset="gf_s01e05",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01e05"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01e05"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01_cop_awareness",
+                #     engagement_db_dataset="gf_s01_cop_awareness",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_awareness"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01_cop_awareness"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01_cop_citizen_participation",
+                #     engagement_db_dataset="gf_s01_cop_citizen_participation",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_citizen_participation"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01_cop_citizen_participation"
+                # ),
+                # CodaDatasetConfiguration(
+                #     coda_dataset_id="Global_Fund_s01_cop_community_partnership",
+                #     engagement_db_dataset="gf_s01_cop_community_partnership",
+                #     code_scheme_configurations=[
+                #         CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_community_partnership"), 
+                #                                 auto_coder=None, coda_code_schemes_count=3)
+                #     ],
+                #     ws_code_match_value="gf_s01_cop_community_partnership"
+                # ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="Kenya_Pool_location",
                     engagement_db_dataset="location",
@@ -338,39 +338,39 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             drive_dir="global_fund_s01_analysis_output"
         ),
         dataset_configurations=[
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_endline_current_initiatives"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_endline_current_initiatives_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_endline_current_initiatives"),
-                        analysis_dataset="endline_current_initiatives"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_endline_group_membership"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_endline_group_membership_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_endline_group_membership"),
-                        analysis_dataset="endline_group_membership"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_endline_new_initiative_participation"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_endline_new_initiative_participation_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_endline_new_initiative_participation"),
-                        analysis_dataset="endline_new_initiative_participation"
-                    )
-                ],
-            ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_endline_current_initiatives"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_endline_current_initiatives_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_endline_current_initiatives"),
+            #             analysis_dataset="endline_current_initiatives"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_endline_group_membership"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_endline_group_membership_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_endline_group_membership"),
+            #             analysis_dataset="endline_group_membership"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_endline_new_initiative_participation"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_endline_new_initiative_participation_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_endline_new_initiative_participation"),
+            #             analysis_dataset="endline_new_initiative_participation"
+            #         )
+            #     ],
+            # ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["gf_s03e01"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
@@ -415,138 +415,138 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     )
                 ],
             ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s02e01"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s02e01_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e01"),
-                        analysis_dataset="s02e01"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s02e02"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s02e02_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e02"),
-                        analysis_dataset="s02e02"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s02e03"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s02e03_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e03"),
-                        analysis_dataset="s02e03"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s02e04"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s02e04_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s02e04"),
-                        analysis_dataset="s02e04"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01e01"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01e01_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"),
-                        analysis_dataset="s01e01"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01e02"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01e02_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01e02"),
-                        analysis_dataset="s01e02"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01e03"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01e03_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01e03"),
-                        analysis_dataset="s01e03"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01e04"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01e04_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01e04"),
-                        analysis_dataset="s01e04"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01e05"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01e05_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01e05"),
-                        analysis_dataset="s01e05"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01_cop_awareness"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01_cop_awareness_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_awareness"),
-                        analysis_dataset="s01_cop_awareness"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01_cop_citizen_participation"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01_cop_citizen_participation_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_citizen_participation"),
-                        analysis_dataset="s01_cop_citizen_participation"
-                    )
-                ],
-            ),
-            AnalysisDatasetConfiguration(
-                engagement_db_datasets=["gf_s01_cop_community_partnership"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="gf_s01_cop_community_partnership_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_community_partnership"),
-                        analysis_dataset="s01_cop_community_partnership"
-                    )
-                ],
-            ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s02e01"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s02e01_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s02e01"),
+            #             analysis_dataset="s02e01"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s02e02"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s02e02_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s02e02"),
+            #             analysis_dataset="s02e02"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s02e03"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s02e03_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s02e03"),
+            #             analysis_dataset="s02e03"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s02e04"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s02e04_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s02e04"),
+            #             analysis_dataset="s02e04"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01e01"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01e01_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01e01"),
+            #             analysis_dataset="s01e01"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01e02"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01e02_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01e02"),
+            #             analysis_dataset="s01e02"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01e03"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01e03_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01e03"),
+            #             analysis_dataset="s01e03"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01e04"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01e04_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01e04"),
+            #             analysis_dataset="s01e04"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01e05"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01e05_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01e05"),
+            #             analysis_dataset="s01e05"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01_cop_awareness"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01_cop_awareness_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_awareness"),
+            #             analysis_dataset="s01_cop_awareness"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01_cop_citizen_participation"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01_cop_citizen_participation_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_citizen_participation"),
+            #             analysis_dataset="s01_cop_citizen_participation"
+            #         )
+            #     ],
+            # ),
+            # AnalysisDatasetConfiguration(
+            #     engagement_db_datasets=["gf_s01_cop_community_partnership"],
+            #     dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+            #     raw_dataset="gf_s01_cop_community_partnership_raw",
+            #     coding_configs=[
+            #         CodingConfiguration(
+            #             code_scheme=load_code_scheme("rqas/global_fund/gf_s01_cop_community_partnership"),
+            #             analysis_dataset="s01_cop_community_partnership"
+            #         )
+            #     ],
+            # ),
             AnalysisDatasetConfiguration(
                 engagement_db_datasets=["preferred_language"],
                 dataset_type=DatasetTypes.DEMOGRAPHIC,
