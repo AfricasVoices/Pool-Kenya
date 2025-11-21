@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-ea3cfec4",
+            "DisplayText": "clan systems",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "clan_systems",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-daef174f",
+            "DisplayText": "giving counsel",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "giving_counsel",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-631bf384",
+            "DisplayText": "communal children rising",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "communal_children_rising",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9c73a560",
+            "DisplayText": "community collaboration",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "community_collaboration",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8c8e98b4",
+            "DisplayText": "story telling",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "story_telling",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3f203679",
+            "DisplayText": "traditional farming practices",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "traditional_farming_practices",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-39c074fe",
+            "DisplayText": "dowry support",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "dowry_support",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
