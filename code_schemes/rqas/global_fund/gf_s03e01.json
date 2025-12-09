@@ -21,10 +21,10 @@
         },
         {
             "CodeID": "code-631bf384",
-            "DisplayText": "communal children rising",
+            "DisplayText": "shared child care",
             "CodeType": "Normal",
             "NumericValue": 3,
-            "StringValue": "communal_children_rising",
+            "StringValue": "shared_child_care",
             "VisibleInCoda": true
         },
         {
