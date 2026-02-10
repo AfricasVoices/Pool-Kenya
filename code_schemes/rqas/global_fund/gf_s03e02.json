@@ -4,6 +4,150 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-3a482465",
+            "DisplayText": "keeping promises",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "keeping_promises",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fd917b6c",
+            "DisplayText": "ensuring equal opportunities",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "ensuring_equal_opportunities",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7edcd0aa",
+            "DisplayText": "ensuring transparency",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "ensuring_transparency",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7c42d1c2",
+            "DisplayText": "creating safe spaces",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "creating_safe_spaces",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f9de1936",
+            "DisplayText": "promoting inclusion",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "promoting_inclusion",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cebc9876",
+            "DisplayText": "shared responsibility",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "shared_responsibility",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1b4089b6",
+            "DisplayText": "clear communication",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "clear_communication",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-408fc30e",
+            "DisplayText": "public appreciation",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "public_appreciation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-22d6b90c",
+            "DisplayText": "community events",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "community_events",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a5f2d077",
+            "DisplayText": "through groups",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "through_groups",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9aef0e0f",
+            "DisplayText": "good leadership",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "good_leadership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8358d529",
+            "DisplayText": "through mentorhsip",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "through_mentorhsip",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5648d593",
+            "DisplayText": "promote good conduct",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "promote_good_conduct",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f4fde6cc",
+            "DisplayText": "through partnership",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "through_partnership",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-599fe528",
+            "DisplayText": "through empowerment",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "through_empowerment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-56f49e8f",
+            "DisplayText": "working with the right people",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "working_with_the_right_people",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fd5824bc",
+            "DisplayText": "embracing unity",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "embracing_unity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c6934a34",
+            "DisplayText": "sensitizing the community",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "sensitizing_the_community",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
