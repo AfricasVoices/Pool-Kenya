@@ -4,6 +4,102 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-81f7d646",
+            "DisplayText": "public appreciation",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "public_appreciation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-734af762",
+            "DisplayText": "through recommendation",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "through_recommendation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7ec66e4d",
+            "DisplayText": "through representation",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "through_representation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-50f6548a",
+            "DisplayText": "token of appreciation",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "token_of_appreciation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-56b12e32",
+            "DisplayText": "through training",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "through_training",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-4388bb8f",
+            "DisplayText": "inclusion in decision making",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "inclusion_in_decision_making",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ed997d22",
+            "DisplayText": "issueing certificates",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "issueing_certificates",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a1df1359",
+            "DisplayText": "through leadership roles",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "through_leadership_roles",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ce33c817",
+            "DisplayText": "through documentation",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "through_documentation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-113e6f61",
+            "DisplayText": "fair compensation",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "fair_compensation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f1ea6545",
+            "DisplayText": "offering support",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "offering_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-faab69a7",
+            "DisplayText": "through collaboration",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "through_collaboration",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
