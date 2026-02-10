@@ -4,6 +4,126 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-35e29d7f",
+            "DisplayText": "food sharing",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "food_sharing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dce51c97",
+            "DisplayText": "providing support",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "providing_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-33a7b624",
+            "DisplayText": "gift giving",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "gift_giving",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3a0bf30e",
+            "DisplayText": "traditional skills",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "traditional_skills",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c1bf5fff",
+            "DisplayText": "support for the bereaved",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "support_for_the_bereaved",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-15d70483",
+            "DisplayText": "communal labor",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "communal_labor",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6c7db3e7",
+            "DisplayText": "providing alerts",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "providing_alerts",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a99974c0",
+            "DisplayText": "resource sharing",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "resource_sharing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9d7f0a0c",
+            "DisplayText": "safegaurding",
+            "CodeType": "Normal",
+            "NumericValue": 16,
+            "StringValue": "safegaurding",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bcc4f0d6",
+            "DisplayText": "helping new mothers",
+            "CodeType": "Normal",
+            "NumericValue": 17,
+            "StringValue": "helping_new_mothers",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ab7e921a",
+            "DisplayText": "dowry payment",
+            "CodeType": "Normal",
+            "NumericValue": 18,
+            "StringValue": "dowry_payment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a857d31b",
+            "DisplayText": "polygammy",
+            "CodeType": "Normal",
+            "NumericValue": 19,
+            "StringValue": "polygammy",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2f85dcdf",
+            "DisplayText": "traditional offerings",
+            "CodeType": "Normal",
+            "NumericValue": 20,
+            "StringValue": "traditional_offerings",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ae12a23e",
+            "DisplayText": "trade",
+            "CodeType": "Normal",
+            "NumericValue": 21,
+            "StringValue": "trade",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-16f5510f",
+            "DisplayText": "cultural presavation",
+            "CodeType": "Normal",
+            "NumericValue": 22,
+            "StringValue": "cultural_presavation",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-ea3cfec4",
             "DisplayText": "clan systems",
             "CodeType": "Normal",
