@@ -4,6 +4,126 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-21953c89",
+            "DisplayText": "inclusive involvement",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "inclusive_involvement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d3eae65e",
+            "DisplayText": "transparency",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "transparency",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d35c2160",
+            "DisplayText": "through campaigns",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "through_campaigns",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d62e0084",
+            "DisplayText": "holding barazas",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "holding_barazas",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5fcbbb2b",
+            "DisplayText": "through empowerment",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "through_empowerment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-eca68161",
+            "DisplayText": "mentorship",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "mentorship",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f690f1c0",
+            "DisplayText": "community policing",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "community_policing",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-066664ba",
+            "DisplayText": "reporting",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "reporting",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0e4d2462",
+            "DisplayText": "shared responsibity",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "shared_responsibity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1f4eda9f",
+            "DisplayText": "groups",
+            "CodeType": "Normal",
+            "NumericValue": 10,
+            "StringValue": "groups",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7ec8a5fe",
+            "DisplayText": "sensitization",
+            "CodeType": "Normal",
+            "NumericValue": 11,
+            "StringValue": "sensitization",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-07ad0dd7",
+            "DisplayText": "mainting peace",
+            "CodeType": "Normal",
+            "NumericValue": 12,
+            "StringValue": "mainting_peace",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3217a820",
+            "DisplayText": "through collaboration",
+            "CodeType": "Normal",
+            "NumericValue": 13,
+            "StringValue": "through_collaboration",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-cb4948ee",
+            "DisplayText": "through public participation",
+            "CodeType": "Normal",
+            "NumericValue": 14,
+            "StringValue": "through_public_participation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-118815bf",
+            "DisplayText": "nothing",
+            "CodeType": "Normal",
+            "NumericValue": 15,
+            "StringValue": "nothing",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
