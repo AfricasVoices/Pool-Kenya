@@ -49,6 +49,42 @@
             "MatchValues": ["disabled"]
         },
         {
+            "CodeID": "code-475d4347",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s03e01",
+            "StringValue": "gf_s03e01",
+            "NumericValue": 645,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s03e01"]
+        },
+        {
+            "CodeID": "code-2dcbe277",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s03e02",
+            "StringValue": "gf_s03e02",
+            "NumericValue": 646,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s03e02"]
+        },
+        {
+            "CodeID": "code-31966cb0",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s03e03",
+            "StringValue": "gf_s03e03",
+            "NumericValue": 647,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s03e03"]
+        },
+        {
+            "CodeID": "code-18214331",
+            "CodeType": "Normal",
+            "DisplayText": "global fund s03e04",
+            "StringValue": "gf_s03e04",
+            "NumericValue": 648,
+            "VisibleInCoda": true,
+            "MatchValues": ["gf_s03e04"]
+        },
+        {
             "CodeID": "code-78863c7d",
             "CodeType": "Normal",
             "DisplayText": "global fund s01 cop awareness",
