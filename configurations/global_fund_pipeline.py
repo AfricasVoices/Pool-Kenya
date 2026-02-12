@@ -93,7 +93,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Location", engagement_db_dataset="location"),
                     KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Disability", engagement_db_dataset="disabled"),
 
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_tl9vi82/Radio_Show_Participation", engagement_db_dataset="gf_radio_show_participation")
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_tl9vi82/Radio_Show_Participation", engagement_db_dataset="gf_radio_show_participation"),
                     KoboToolBoxQuestionConfiguration(data_column_name="group_tl9vi82/Radio_Show_Participation_001", engagement_db_dataset="gf_radio_show_participation")
                 ]
             )
