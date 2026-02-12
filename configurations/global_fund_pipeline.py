@@ -76,7 +76,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             token_file_url="gs://avf-credentials/uraia-kobotoolbox-token.json",
             sync_config=KoboToolBoxToEngagementDBConfiguration(
                 asset_uid="aEWQfEwY6MZkGHQyLG2nLw",
-                asset_uid="6a25bc072d5e45e09b51835fa6ecd20d",
                 participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
                     data_column_name="group_go9un15/Contacts",
                     id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
