@@ -75,6 +75,32 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         KoboToolBoxSource(
             token_file_url="gs://avf-credentials/uraia-kobotoolbox-token.json",
             sync_config=KoboToolBoxToEngagementDBConfiguration(
+                asset_uid="aEWQfEwY6MZkGHQyLG2nLw",
+                asset_uid="6a25bc072d5e45e09b51835fa6ecd20d",
+                participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
+                    data_column_name="group_go9un15/Contacts",
+                    id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
+                ),
+                ignore_invalid_mobile_numbers=True,
+                question_configurations=[
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e01", engagement_db_dataset="gf_s03e01"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e02", engagement_db_dataset="gf_s03e02"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e03", engagement_db_dataset="gf_s03e03"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e04", engagement_db_dataset="gf_s03e04"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Gender", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Age", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Location", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Disability", engagement_db_dataset="disabled"),
+
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_tl9vi82/Radio_Show_Participation", engagement_db_dataset="gf_radio_show_participation")
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_tl9vi82/Radio_Show_Participation_001", engagement_db_dataset="gf_radio_show_participation")
+                ]
+            )
+        ),
+        KoboToolBoxSource(
+            token_file_url="gs://avf-credentials/uraia-kobotoolbox-token.json",
+            sync_config=KoboToolBoxToEngagementDBConfiguration(
                 asset_uid="a4BbZBxRxq3zn4bc8ffAUu",
                 participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
                     data_column_name="Contacts",
