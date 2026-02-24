@@ -23,22 +23,26 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json"
             ),
             sync_config=GoogleFormToEngagementDBConfiguration(
-                form_id="16SywNx3MoXuFEF0bQEpJuZhIMYrbT5y0FqcmpJ-keB4",
+                form_id="116JuidEgKiT3f0Qhp8dvLpFtVia_0Wr-ud5V1IuWL4o",
                 question_configurations=[
                     # RQAs
-                    QuestionConfiguration(question_ids=["07080f07"], engagement_db_dataset="sdc_cc_eval_1_lessons_learned"),
-                    QuestionConfiguration(question_ids=["313fbefb"], engagement_db_dataset="sdc_cc_eval_2_decision_making"),
-                    QuestionConfiguration(question_ids=["3c7de91e"], engagement_db_dataset="sdc_cc_eval_3_suggestions"),
-                    QuestionConfiguration(question_ids=["4a784e12"], engagement_db_dataset="sdc_cc_eval_4_application"),
-                    QuestionConfiguration(question_ids=["37bc99c8"], engagement_db_dataset="sdc_cc_eval_5_available_resources"),
+                    QuestionConfiguration(question_ids=["279f382c"], engagement_db_dataset="general_perception"),
+                    QuestionConfiguration(question_ids=["138b8e5f"], engagement_db_dataset="trust_aspects"),
+                    QuestionConfiguration(question_ids=["19010aee"], engagement_db_dataset="improvements"),
+
+                    QuestionConfiguration(question_ids=["232aef3e"], engagement_db_dataset="frequent_challenges"),
+                    QuestionConfiguration(question_ids=["6d56517f"], engagement_db_dataset="challenge_implications"),
+
+                    QuestionConfiguration(question_ids=["4995747b"], engagement_db_dataset="reforms_needed"),
+                    QuestionConfiguration(question_ids=["60a23f4c"], engagement_db_dataset="bridge_the_gap"),
+                    QuestionConfiguration(question_ids=["21d4514e"], engagement_db_dataset="priority_reform"),
 
                     # Demogs
-                    QuestionConfiguration(question_ids=["33d86de1"], engagement_db_dataset="age"),
-                    QuestionConfiguration(question_ids=["33ff86fc"], engagement_db_dataset="gender"),
-                    QuestionConfiguration(question_ids=["15edfd95"], engagement_db_dataset="household_language"),
-                    QuestionConfiguration(question_ids=["265ff47f"], engagement_db_dataset="location"),
-                    QuestionConfiguration(question_ids=["1b9b0759"], engagement_db_dataset="recently_displaced"),
-                    QuestionConfiguration(question_ids=["353988cc"], engagement_db_dataset="disability"),
+                    QuestionConfiguration(question_ids=["2bc7d007"], engagement_db_dataset="age"),
+                    QuestionConfiguration(question_ids=["46b733bc"], engagement_db_dataset="gender"),
+                    QuestionConfiguration(question_ids=["26d37c17"], engagement_db_dataset="location"),
+                    QuestionConfiguration(question_ids=["7f0a3296"], engagement_db_dataset="disability"),
+                    QuestionConfiguration(question_ids=["57785ec1"], engagement_db_dataset="disability_type"),
                 ]
             )
         ),
