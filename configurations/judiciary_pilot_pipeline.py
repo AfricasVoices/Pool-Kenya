@@ -43,6 +43,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     QuestionConfiguration(question_ids=["26d37c17"], engagement_db_dataset="location"),
                     QuestionConfiguration(question_ids=["7f0a3296"], engagement_db_dataset="disability"),
                     QuestionConfiguration(question_ids=["57785ec1"], engagement_db_dataset="disability_type"),
+                    QuestionConfiguration(question_ids=["294685b5"], engagement_db_dataset="law_court"),
                 ]
             )
         ),
@@ -51,25 +52,26 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         KoboToolBoxSource(
             token_file_url="gs://avf-credentials/uraia-kobotoolbox-token.json",
             sync_config=KoboToolBoxToEngagementDBConfiguration(
-                asset_uid="aEWQfEwY6MZkGHQyLG2nLw",
+                asset_uid="aHh6nR5ADxkzWCp4ZSqFqr",
                 participant_id_configuration=KoboToolBoxParticipantIdConfiguration(
-                    data_column_name="group_go9un15/Contacts",
+                    data_column_name="group_mx8ue07/What_is_your_phone_n_yako_ya_simu_ni_gani",
                     id_type=KoboToolBoxParticipantIdTypes.KENYA_MOBILE_NUMBER
                 ),
                 ignore_invalid_mobile_numbers=True,
                 question_configurations=[
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e01", engagement_db_dataset="gf_s03e01"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e02", engagement_db_dataset="gf_s03e02"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e03", engagement_db_dataset="gf_s03e03"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_dt2ko10/Gf_s03e04", engagement_db_dataset="gf_s03e04"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_wj5hl79/What_specific_experi_a_huduma_za_mahakama", engagement_db_dataset="specific_experiences"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_wj5hl79/How_would_you_descri_ahakama_haswa_raiya", engagement_db_dataset="treatment_by_court_staff"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_wj5hl79/To_what_extent_do_yo_ali_elezea_jibu_lako", engagement_db_dataset="extent_of_transparency"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_wj5hl79/In_your_opinion_wha_ell_or_have_improved", engagement_db_dataset="aspects_working_well"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_qb1ef19/What_barriers_finan_a_huduma_za_mahakama", engagement_db_dataset="barriers_to_access"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_qb1ef19/In_your_opinion_how_a_huduma_za_mahakama", engagement_db_dataset="challenges_influence_trust"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_fl5wo14/If_you_could_recomme_uwa_lipi_na_kwa_nini", engagement_db_dataset="recommend_priority_reform"),
 
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Gender", engagement_db_dataset="gender"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Age", engagement_db_dataset="age"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Location", engagement_db_dataset="location"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/Disability", engagement_db_dataset="disabled"),
-
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_tl9vi82/Radio_Show_Participation", engagement_db_dataset="gf_radio_show_participation"),
-                    KoboToolBoxQuestionConfiguration(data_column_name="group_tl9vi82/Radio_Show_Participation_001", engagement_db_dataset="gf_radio_show_participation")
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dp2wm27/What_is_you_age_Je_umri_wako_ni_upi", engagement_db_dataset="age"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_go9un15/group_dp2wm27/What_is_your_gender_jinsia_yako_ni_ipi", engagement_db_dataset="gender"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dp2wm27/What_is_your_locatio_shi_wapi_eneo_bunge", engagement_db_dataset="location"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dp2wm27/Do_you_have_a_disabi_una_ulemavu_wowote", engagement_db_dataset="disabled"),
+                    KoboToolBoxQuestionConfiguration(data_column_name="group_dp2wm27/What_court_s_have_y_kutumia_huduma_zake", engagement_db_dataset="law_court"),
                 ]
             )
         )
