@@ -4,6 +4,46 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-a6fc9069",
+            "DisplayText": "lost trust",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "lost_trust",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-40e2d0ab",
+            "DisplayText": "seek alternatives",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "seek_alternatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bbf6de8b",
+            "DisplayText": "justice delayed",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "justice_delayed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f78e8df3",
+            "DisplayText": "justice denied",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "justice_denied",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-bf089cfd",
+            "DisplayText": "costly and inaccessible",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "costly_and_inaccessible",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

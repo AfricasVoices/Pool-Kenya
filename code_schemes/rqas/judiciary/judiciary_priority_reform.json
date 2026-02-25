@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-50ab2750",
+            "DisplayText": "anti-corruption measures",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "anti-corruption_measures",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3db67799",
+            "DisplayText": "witness protection",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "witness_protection",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-77677dab",
+            "DisplayText": "increase transparency",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "increase_transparency",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d2f72e25",
+            "DisplayText": "prompt dispensation",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "prompt_dispensation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-355a5cca",
+            "DisplayText": "make judiciary accessible",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "make_judiciary_accessible",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-da42211a",
+            "DisplayText": "alternative justice systems",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "alternative_justice_systems",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

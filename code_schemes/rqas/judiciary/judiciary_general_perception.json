@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-e706ed28",
+            "DisplayText": "corrupt",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "corrupt",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-38a3376e",
+            "DisplayText": "difficult to understand",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "difficult_to_understand",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-38e14e38",
+            "DisplayText": "elitist and expensive",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "elitist_and_expensive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ef0bb373",
+            "DisplayText": "essential",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "essential",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-93b381a7",
+            "DisplayText": "mixed feelings",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "mixed_feelings",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0bdca827",
+            "DisplayText": "negatively",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "negatively",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-573e970b",
+            "DisplayText": "slow and inefficient",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "slow_and_inefficient",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

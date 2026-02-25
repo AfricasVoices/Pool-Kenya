@@ -4,6 +4,78 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-4cc4c415",
+            "DisplayText": "corrupt and extortive",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "corrupt_and_extortive",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c0517490",
+            "DisplayText": "discriminatory",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "discriminatory",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5f6c5883",
+            "DisplayText": "harsh and unhelpful",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "harsh_and_unhelpful",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b5e3f254",
+            "DisplayText": "poor communicators",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "poor_communicators",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-badbe7f1",
+            "DisplayText": "overwhelmed",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "overwhelmed",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5c6b49af",
+            "DisplayText": "indifferent",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "indifferent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2d674a4e",
+            "DisplayText": "fair",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "fair",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a142cf7c",
+            "DisplayText": "helpful and competent",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "helpful_and_competent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fc4b17a2",
+            "DisplayText": "depends on role of official",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "depends_on_role_of_official",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

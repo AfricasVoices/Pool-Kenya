@@ -4,6 +4,78 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-315d9244",
+            "DisplayText": "online systems",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "online_systems",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e4a9c77b",
+            "DisplayText": "open to public",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "open_to_public",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a67a6c3e",
+            "DisplayText": "biased",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "biased",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-462103c2",
+            "DisplayText": "they are opaque",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "they_are_opaque",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7afa0e5a",
+            "DisplayText": "legal jargon",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "legal_jargon",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-964dd838",
+            "DisplayText": "moderately transparent",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "moderately_transparent",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ee30df63",
+            "DisplayText": "have required documents",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "have_required_documents",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-88ffca2d",
+            "DisplayText": "no transparency at all",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "no_transparency_at_all",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fbcc8c4a",
+            "DisplayText": "recommendations",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "recommendations",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

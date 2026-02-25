@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-d0567fa0",
+            "DisplayText": "prompt dispensation",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "prompt_dispensation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a8c593c7",
+            "DisplayText": "legal aid",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "legal_aid",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-70e0836a",
+            "DisplayText": "independence",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "independence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b70a7ecc",
+            "DisplayText": "digitization",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "digitization",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-983d76dc",
+            "DisplayText": "increase personnel and resources",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "increase_personnel_and_resources",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7bca5f1b",
+            "DisplayText": "friendly environment",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "friendly_environment",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b94738e6",
+            "DisplayText": "communication and awareness",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "communication_and_awareness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-78f92166",
+            "DisplayText": "fairness",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "fairness",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

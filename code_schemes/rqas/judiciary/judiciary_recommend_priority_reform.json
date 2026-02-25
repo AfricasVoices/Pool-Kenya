@@ -4,6 +4,78 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-1b2ae870",
+            "DisplayText": "judicial education",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "judicial_education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0ba6bc5b",
+            "DisplayText": "digitize judicial systems",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "digitize_judicial_systems",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a30537a8",
+            "DisplayText": "humanize court environments",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "humanize_court_environments",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-836a4f3c",
+            "DisplayText": "clear communication",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "clear_communication",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-8b595e47",
+            "DisplayText": "provide legal support",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "provide_legal_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-613cf235",
+            "DisplayText": "increase transparency",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "increase_transparency",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3cf66980",
+            "DisplayText": "judicial independence",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "judicial_independence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3e760122",
+            "DisplayText": "reduce backlog",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "reduce_backlog",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-e67e8f9c",
+            "DisplayText": "reduce judicial costs",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "reduce_judicial_costs",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

@@ -4,6 +4,70 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-48ac286b",
+            "DisplayText": "fair ruling",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "fair_ruling",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ac27c83c",
+            "DisplayText": "prompt dispensation",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "prompt_dispensation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-a8ad0c6b",
+            "DisplayText": "independence",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "independence",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d5531638",
+            "DisplayText": "transparency",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "transparency",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d6142570",
+            "DisplayText": "community involvement",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "community_involvement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d305e978",
+            "DisplayText": "political interference",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "political_interference",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6a806807",
+            "DisplayText": "corruption",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "corruption",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-03a82bb4",
+            "DisplayText": "delays",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "delays",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-ce063a96",
+            "DisplayText": "digitization of judicial systems",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "digitization_of_judicial_systems",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-676582fa",
+            "DisplayText": "judicial reforms",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "judicial_reforms",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3be0c95f",
+            "DisplayText": "specialized courts",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "specialized_courts",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-115eb324",
+            "DisplayText": "accessibility and inclusivity",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "accessibility_and_inclusivity",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1cb86b13",
+            "DisplayText": "provision of lawyers",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "provision_of_lawyers",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-03ec5d70",
+            "DisplayText": "no improvement",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "no_improvement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-96a63ea3",
+            "DisplayText": "recommendation",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "recommendation",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

@@ -4,6 +4,78 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-b5945e35",
+            "DisplayText": "poor communication",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "poor_communication",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f40b5a84",
+            "DisplayText": "corruption and exploitation",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "corruption_and_exploitation",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-78195a8a",
+            "DisplayText": "mismanagement",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "mismanagement",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2920ef15",
+            "DisplayText": "mistreatment of court users",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "mistreatment_of_court_users",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-421e4dd5",
+            "DisplayText": "case backlogs",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "case_backlogs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-59080c29",
+            "DisplayText": "delays",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "delays",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-afc665b5",
+            "DisplayText": "financial challenges",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "financial_challenges",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-50680e33",
+            "DisplayText": "limited resources",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "limited_resources",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-0ce21611",
+            "DisplayText": "no witness protection",
+            "CodeType": "Normal",
+            "NumericValue": 9,
+            "StringValue": "no_witness_protection",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

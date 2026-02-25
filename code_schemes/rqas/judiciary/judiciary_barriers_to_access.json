@@ -4,6 +4,54 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-7998a64b",
+            "DisplayText": "legal jargon",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "legal_jargon",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6b9b2a09",
+            "DisplayText": "knowledge of court processes",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "knowledge_of_court_processes",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-b86d6b0e",
+            "DisplayText": "legal costs",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "legal_costs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-dbab8af7",
+            "DisplayText": "unfair rulings",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "unfair_rulings",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-830b400e",
+            "DisplayText": "distance to courts",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "distance_to_courts",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f9d0940e",
+            "DisplayText": "access issues",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "access_issues",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",

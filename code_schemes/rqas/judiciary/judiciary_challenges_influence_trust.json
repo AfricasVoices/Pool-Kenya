@@ -4,6 +4,62 @@
     "Version": "0.0.0.1",
     "Codes": [
         {
+            "CodeID": "code-15fbc90d",
+            "DisplayText": "failure to seek justice",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "failure_to_seek_justice",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2f4e9916",
+            "DisplayText": "justice for sale",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "justice_for_sale",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d1460619",
+            "DisplayText": "failure to understand",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "failure_to_understand",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-254fb589",
+            "DisplayText": "perceived exclusion",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "perceived_exclusion",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-2a60d313",
+            "DisplayText": "frustration",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "frustration",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-7a17a431",
+            "DisplayText": "opt for alternatives",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "opt_for_alternatives",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9248ddd7",
+            "DisplayText": "eroded trust",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "eroded_trust",
+            "VisibleInCoda": true
+        },
+        {
             "CodeID": "code-0614b082",
             "DisplayText": "other theme",
             "CodeType": "Normal",
